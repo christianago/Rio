@@ -31,17 +31,11 @@ $(document).ready(function(){
          else
              window.setTimeout(ScaleSlider, 30);
      }
-     //Scale slider after document ready
      ScaleSlider();
      if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-         //Capture window resize event
          $(window).bind('resize', ScaleSlider);
      }
 
-     
-    //$('#slider1_container').css({ height: 100 });
-    //jssor_slider1.$ScaleWidth(1600);
-    
     
     
 });
