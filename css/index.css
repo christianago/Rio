@@ -1,0 +1,158 @@
+@CHARSET "UTF-8";
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-greek.woff);
+}
+
+body{	
+	background: #e5e5e5;
+}
+
+.btn.language-area{	
+	background: #e5e5e5;
+}
+
+.container{
+	width: 100%;
+	margin-top: 20px;
+	font-family: 'Roboto' sans serif;
+}
+
+.header-1{
+	height: 40px;
+}
+
+.flag{
+	width: 18px;
+	margin-right: 5px;
+}
+
+.languages{
+	font-size: 9pt;
+	min-width: 130px;
+}
+
+.reserve-container, .availability{
+	font-size: 11pt;
+	background: #008080;
+	color: #fff;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background: #008080;
+}
+
+
+.datepicker, input{
+	font-family: 'Roboto' sans serif;
+}
+
+.datepicker .table-condensed thead tr:nth-child(1){
+	background: #DC143C;
+	color: #fff;
+}
+
+td.day.active{
+	background: #8B0000 !important;
+}
+
+.header-2{
+	background: #8B0000;
+	color: #fff;
+	margin-top: 40px;
+}
+
+.header-2 .header-literal{
+	padding: 10px;
+	min-width: 80px !important; 
+	display: inline-block;
+	font-size: 12pt;
+}
+
+.header-literal a, .header-literal a:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+.header-2 .header-literal:hover{
+	background: #888888;
+	color: #fff;
+}
+
+.header-2 .header-home{
+	display: inline-block;
+}
+
+.fa-home{
+	position: relative;
+	top:5px;
+}
+
+input.datepicker{
+	font-weight: bold;
+	width: 100px;
+}
+
+.reserve-menu{
+	width: 260px;
+	padding: 5px;
+}
+
+.reserve-label-container div{
+	margin-top: 20px;
+}
+
+.reserve-label{
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+.select-adults, .select-rooms{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.select-kids, .password-area{
+	margin-top: 5px;
+	position: relative;
+	left: -10px;
+}
+
+.availability-area{
+	margin-top: 15px;
+}
+
+.edit-delete-reservation{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.availability-center-area{
+	position: relative;
+	top: -50px;
+	opacity: 0.8;
+	background: url("../images/availability.png");
+	color: #fff;
+	float: none;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
