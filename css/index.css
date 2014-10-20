@@ -9,7 +9,6 @@
 .general-area-1{
 	background: #E5E5E5;
 	padding-bottom: 50px;
-	padding-bottom: 30px;
 }
 
 .general-area-2{
@@ -285,6 +284,11 @@ input.datepicker{
 	padding-bottom: 10px;
 	font-size: 9pt;
 	color: #fff;
+}
+
+.accomodation-area .title{
+	font-size: 16pt;
+	color: #8B0000;
 }
 
 

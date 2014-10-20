@@ -5,6 +5,16 @@ $(document).ready(function(){
 		startDate: '+1d'
 	});
 	
+	var pages = ['accomodation.php'];
+	var myURL = document.URL.split('/');
+	myURL = myURL[myURL.length-1]
+	
+	if ( $.inArray(myURL, pages) == -1 ){
+		$('#slider1_container').css({height:190});
+	} else{
+		$('#slider1_container').css({height:240});
+	}
+
 	
 	$(this).on('mouseenter', '.datepicker-switch', function(){
 		$(this).css('background', '#DC143C');
