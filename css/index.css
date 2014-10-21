@@ -6,6 +6,10 @@
     src: url(fonts/Roboto-greek.woff);
 }
 
+body#accomodation{
+	background: #E5E5E5;
+}
+
 .general-area-1{
 	background: #E5E5E5;
 	padding-bottom: 50px;
@@ -54,11 +58,9 @@
 	color: #fff;
 }
 
-
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
   background: #008080;
 }
-
 
 .datepicker, input{
 	font-family: 'Roboto' sans serif;
@@ -89,12 +91,12 @@ td.day.active{
 	padding-left: 5px;
 }
 
-.header-hover:nth-child(2){
+.header-hover{
 	position: relative;
 	left: -4px;
 }
 
-.header-literal a, .header-literal a:active{
+.header-hover a, .header-hover a:active{
 	text-decoration: none;
 	color: #fff;
 }
@@ -104,7 +106,7 @@ td.day.active{
 	color: #8B0000;;
 }
 
-.header-2 .header-literal:hover{
+.header-2 .header-hover:hover{
 	background: #888888;
 	color: #fff;
 }
@@ -286,12 +288,74 @@ input.datepicker{
 	color: #fff;
 }
 
+.accomodation-area .rooms-header{
+	float: none;
+	margin: 0 auto;
+	font-size: 12pt;
+}
+
+.accomodation-area .rooms{
+	font-size: 11pt;
+}
+
 .accomodation-area .title{
 	font-size: 16pt;
 	color: #8B0000;
 }
 
+.rooms .left-side{
+	text-align: right;
+}
 
+.rooms .right-side{
+	text-align: center;
+	font-size: 13pt;
+	color: #8B0000;
+}
+
+.rooms img{
+	width: 100%;
+}
+
+.camera{
+	width: 40px !important;
+	position: relative;
+	top: -25px;
+	left: 7px;
+}
+
+.rooms .price{
+	font-size: 20pt;
+}
+
+.btn.do-reserve{
+	background: #008080;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.plus-area{
+	margin-top: 35px;
+	cursor: pointer;
+}
+
+.fa-plus{
+	color: #8B0000;
+	font-size: 20pt;
+}
+
+.rooms-details{
+	display: none;
+	font-size: 11pt;
+}
+
+.horizontal-line{
+	border-top: 1px solid #8B0000;
+	width: 100%;
+	//position: relative;
+	//left: -3%;
+}
 
 
 

@@ -5,14 +5,19 @@ $(document).ready(function(){
 		startDate: '+1d'
 	});
 	
-	var pages = ['accomodation.php'];
+	var pages = ['home', 'accomodation.php'];
 	var myURL = document.URL.split('/');
-	myURL = myURL[myURL.length-1]
+	myURL = myURL[myURL.length-1];
+	myURL = myURL.replace("#", "");
+	//console.log(myURL);
 	
 	if ( $.inArray(myURL, pages) == -1 ){
 		$('#slider1_container').css({height:190});
 	} else{
 		$('#slider1_container').css({height:240});
+		var index = $.inArray(myURL, pages);
+		$('div.active').removeClass('active');
+		$('div.header-hover:eq("'+index+'")').addClass('active');
 	}
 
 	
@@ -27,6 +32,10 @@ $(document).ready(function(){
 	 $(this).on('focus', 'input', function(){
 		 if ( $('.datepicker').length > 0 )
 		 $('input.datepicker').datepicker('hide');
+	 });
+	 
+	 $(this).on('click', 'div.plus-area', function(){
+		 $(this).closest('div.rooms').next('div.rooms-details:first').slideToggle('normal');
 	 });
 	 
 	 var options = { $AutoPlay:true, $SlideshowOptions: { $Class: $JssorSlideshowRunner$, $Transitions: [{ $Duration:700, $Fade: true, $Opacity:2 }] }};
@@ -45,8 +54,10 @@ $(document).ready(function(){
      if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
          $(window).bind('resize', ScaleSlider);
      }
+     
+     
+     $('a.fullsizable').fullsizable();
 
-    
     
 });
 	

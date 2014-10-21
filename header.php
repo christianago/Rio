@@ -112,8 +112,8 @@
 	
 	<div class="row header-2">
 		<div class="col-xs-offset-3">
-			<div class="header-home header-hover active"><i class="fa fa-home fa-2x"></i></div>
-			<div class="header-literal header-hover"><a href="#">Δωμάτια &amp; τιμές</a></div>
+			<div class="header-home header-hover active"><a href="index.php"><i class="fa fa-home fa-2x"></i></a></div>
+			<div class="header-literal header-hover"><a href="accomodation.php">Δωμάτια &amp; τιμές</a></div>
 			<div class="header-literal header-hover"><a href="#">Προσφορές</a></div>
 			<div class="header-literal header-hover"><a href="#">Τοποθεσία</a></div>
 			<div class="header-literal header-hover"><a href="#">Ξενοδοχείο</a></div>
