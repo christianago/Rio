@@ -336,11 +336,11 @@ input.datepicker{
 }
 
 .plus-area{
-	margin-top: 35px;
+	margin-top: 15px;
 	cursor: pointer;
 }
 
-.fa-plus{
+.fa-plus, .fa-minus{
 	color: #8B0000;
 	font-size: 20pt;
 }
@@ -353,8 +353,11 @@ input.datepicker{
 .horizontal-line{
 	border-top: 1px solid #8B0000;
 	width: 100%;
-	//position: relative;
-	//left: -3%;
+}
+
+.room-title{
+	font-size: 14pt;
+	color: #8B0000;
 }
 
 

@@ -35,7 +35,17 @@ $(document).ready(function(){
 	 });
 	 
 	 $(this).on('click', 'div.plus-area', function(){
-		 $(this).closest('div.rooms').next('div.rooms-details:first').slideToggle('normal');
+		 var $elem = $(this).closest('div.rooms').next('div.rooms-details:first');
+		 var $this = $(this);
+		 if ( $elem.is(':hidden') ){
+			 $elem.slideDown().promise().done(function(){
+				 $this.find('.fa-plus').removeClass('fa-plus').addClass('fa-minus');
+			 });
+		 } else{
+			 $elem.slideUp().promise().done(function(){
+				 $this.find('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+			 });
+		 }
 	 });
 	 
 	 var options = { $AutoPlay:true, $SlideshowOptions: { $Class: $JssorSlideshowRunner$, $Transitions: [{ $Duration:700, $Fade: true, $Opacity:2 }] }};

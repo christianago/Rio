@@ -31,7 +31,7 @@
 	<div class="row accomodation-area">
 		
 		<div class="col-xs-7 rooms-header">
-			<div class="title">Ανακαλύψτε την εκπληκτική θέα, υπέροχα δωμάτια, και ασυναγώνιστες υπηρεσίες</div>
+			<div class="title">Ανακαλύψτε την εκπληκτική θέα, υπέροχα δωμάτια, και ασυναγώνιστες υπηρεσίες<br/><br/></div>
 
 			<div class="row">
 			
@@ -54,8 +54,9 @@
 				</div>
 				
 				<div class="col-xs-6 middle-area">
+					<div class="room-title">Comfy Δωμάτια<br/><br/></div>
 					18μ<sup>2</sup>, διαμονή έως 2 άτομα<br/>
-					1 διπλό κρεβάτι, ή 2 μονά κρεβάτια <br/><br/>
+					1 διπλό κρεβάτι, ή 2 μονά κρεβάτια <br/>
 					Άνετα και μοντέρνα, τα Comfy δωμάτια είναι <br/> κάτι περισσότερο από "standard" δωμάτια.
 					<div class="plus-area"><i class="fa fa-plus"></i></div>
 				</div>
