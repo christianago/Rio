@@ -5,7 +5,11 @@ $(document).ready(function(){
 		startDate: '+1d'
 	});
 	
-	var pages = ['home', 'accomodation.php'];
+	if ( $('#googleMap').length ){
+		google.maps.event.addDomListener(window, 'load', initiate_geolocation);
+	}
+	
+	var pages = ['home', 'accomodation.php', 'offers.php', 'location.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
@@ -35,7 +39,7 @@ $(document).ready(function(){
 	 });
 	 
 	 $(this).on('click', 'div.plus-area', function(){
-		 var $elem = $(this).closest('div.rooms').next('div.rooms-details:first');
+		 var $elem = $(this).closest('div.boxes').next('div.details:first');
 		 var $this = $(this);
 		 if ( $elem.is(':hidden') ){
 			 $elem.slideDown().promise().done(function(){
@@ -70,7 +74,51 @@ $(document).ready(function(){
 
     
 });
+
+
+function initiate_geolocation() {  
+    navigator.geolocation.getCurrentPosition(handle_geolocation_query);  
+}  
+
+
+function handle_geolocation_query(position){
 	
+	//var lng = position.coords.longitude;
+	//var lat = position.coords.latitude;
+	
+	var myLatlng = new google.maps.LatLng(37.985298,23.719681);
+	
+    var mapOptions = {
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoom: 16
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+    
+    var marker = createMarker(map, myLatlng);
+    markerInfo(map, marker);
+}
+
+
+function createMarker(map, myLatlng){
+	var marker = new google.maps.Marker({
+		map: map,
+        position: myLatlng,
+        title: "Hotel Rio Athens",
+    });
+	return marker;
+}
+	
+
+function markerInfo(map, marker){
+   var address = "Hotel Rio Athens";
+   var infoLen = address.length * 8;
+   var infoStyle = "style=width:"+infoLen+"px";
+   infowindow = new google.maps.InfoWindow({
+      content: '<div id="infoWindow"'+infoStyle+'>' + address,
+   });
+   infowindow.open(map, marker);
+}
 
 function getToday(){
 	var today = new Date();
