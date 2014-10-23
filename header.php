@@ -116,7 +116,7 @@
 			<div class="header-literal header-hover"><a href="accomodation.php">Δωμάτια &amp; τιμές</a></div>
 			<div class="header-literal header-hover"><a href="offers.php">Προσφορές</a></div>
 			<div class="header-literal header-hover"><a href="location.php">Τοποθεσία</a></div>
-			<div class="header-literal header-hover"><a href="#">Ξενοδοχείο</a></div>
+			<div class="header-literal header-hover"><a href="thehotel.php">Ξενοδοχείο</a></div>
 			<div class="header-literal header-hover"><a href="#">Εστίαση</a></div>
 			<div class="header-literal header-hover"><a href="#">Εκδηλώσεις &amp; συνέδρια</a></div>
 			<div class="header-literal header-hover"><a href="#">Φωτογραφίες</a></div>

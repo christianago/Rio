@@ -9,7 +9,7 @@ $(document).ready(function(){
 		google.maps.event.addDomListener(window, 'load', initiate_geolocation);
 	}
 	
-	var pages = ['home', 'accomodation.php', 'offers.php', 'location.php'];
+	var pages = ['home', 'accomodation.php', 'offers.php', 'location.php', 'thehotel.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
