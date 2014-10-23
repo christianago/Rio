@@ -55,7 +55,7 @@
 				</div>
 			
 				<div class="col-xs-6">
-					<div id="googleMap"></div>
+					<div class="googleMap" id="googleMap"></div>
 					<br/>
 					<div id="view-map">Προβολή <a target="_blank" href="https://www.google.gr/maps/place/Hotel+Rio+Athens+%CE%9E%CE%B5%CE%BD%CE%BF%CE%B4%CE%BF%CF%87%CE%B5%CE%AF%CE%BF/@37.985298,23.719681,17z/data=!3m1!4b1!4m2!3m1!1s0x14a1bd289e43daf1:0x5ec06e896de5ab4c">Ξενοδοχείο Rio</a> σε χάρτη μεγαλύτερου μεγέθους</div>
 				</div>

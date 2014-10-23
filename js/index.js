@@ -1,27 +1,38 @@
+var map = null;
+
 $(document).ready(function(){
 
 	$('input.datepicker').datepicker({
 		autoclose: true,
 		startDate: '+1d'
 	});
+
 	
-	if ( $('#googleMap').length ){
+	if ( $('div.googleMap').length ){
 		google.maps.event.addDomListener(window, 'load', initiate_geolocation);
 	}
 	
-	var pages = ['home', 'accomodation.php', 'offers.php', 'location.php', 'thehotel.php'];
+	
+	 $('#tabs a').click(function(e){
+        e.preventDefault();
+        $(this).tab('show');
+        if ( map ) google.maps.event.trigger(map, 'resize');
+    });
+	
+	var pages = ['home', 'accomodation.php', 'offers.php', 'location.php', 'thehotel.php', 'dining.php', 'photo-gallery.php'];
+	
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
-	//console.log(myURL);
+	console.log(myURL);
 	
 	if ( $.inArray(myURL, pages) == -1 ){
 		$('#slider1_container').css({height:190});
 	} else{
 		$('#slider1_container').css({height:240});
 		var index = $.inArray(myURL, pages);
-		$('div.active').removeClass('active');
-		$('div.header-hover:eq("'+index+'")').addClass('active');
+		$('div.active-link').removeClass('active-link');
+		$('div.header-hover:eq("'+index+'")').addClass('active-link');
 	}
 
 	
@@ -34,7 +45,7 @@ $(document).ready(function(){
 	 });
 	 
 	 $(this).on('focus', 'input', function(){
-		 if ( $('.datepicker').length > 0 )
+		 if ( $('.datepicker').length )
 		 $('input.datepicker').datepicker('hide');
 	 });
 	 
@@ -52,31 +63,34 @@ $(document).ready(function(){
 		 }
 	 });
 	 
-	 var options = { $AutoPlay:true, $SlideshowOptions: { $Class: $JssorSlideshowRunner$, $Transitions: [{ $Duration:700, $Fade: true, $Opacity:2 }] }};
-     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+	 if ( myURL != 'photo-gallery.php' ){
+		 var options = { $AutoPlay:true, $SlideshowOptions: { $Class: $JssorSlideshowRunner$, $Transitions: [{ $Duration:700, $Fade: true, $Opacity:2 }] }};
+	     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+	     
+	
+	     function ScaleSlider() {
+	         var parentWidth = $('#slider1_container').parent().width();
+	         if (parentWidth) {
+	             jssor_slider1.$ScaleWidth(parentWidth);
+	         }
+	         else
+	             window.setTimeout(ScaleSlider, 30);
+	     }
+	     ScaleSlider();
+	     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+	         $(window).bind('resize', ScaleSlider);
+	     }
      
-
-     function ScaleSlider() {
-         var parentWidth = $('#slider1_container').parent().width();
-         if (parentWidth) {
-             jssor_slider1.$ScaleWidth(parentWidth);
-         }
-         else
-             window.setTimeout(ScaleSlider, 30);
-     }
-     ScaleSlider();
-     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-         $(window).bind('resize', ScaleSlider);
-     }
-     
+	 } else{
+		 $('#slider1_container').hide();
+	 }
      
      $('a.fullsizable').fullsizable();
 
-    
 });
 
 
-function initiate_geolocation() {  
+function initiate_geolocation(mapString) {  
     navigator.geolocation.getCurrentPosition(handle_geolocation_query);  
 }  
 
@@ -85,15 +99,19 @@ function handle_geolocation_query(position){
 	
 	//var lng = position.coords.longitude;
 	//var lat = position.coords.latitude;
-	
 	var myLatlng = new google.maps.LatLng(37.985298,23.719681);
 	
     var mapOptions = {
       center: myLatlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-      zoom: 16
+      zoom: 15
     };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+    
+    if ( $('#googleMap').length ){
+    	map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+    } else if ( $('#googleMap-2').length ){
+    	map = new google.maps.Map(document.getElementById("googleMap-2"), mapOptions);
+    }
     
     var marker = createMarker(map, myLatlng);
     markerInfo(map, marker);
@@ -119,6 +137,7 @@ function markerInfo(map, marker){
    });
    infowindow.open(map, marker);
 }
+
 
 function getToday(){
 	var today = new Date();
