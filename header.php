@@ -6,26 +6,6 @@
 			<img src="images/logo.png"/>
 		</div>
 		
-		<div class="col-xs-1 col-xs-offset-3">
-		
-			<div class="btn-group">
-			   <button type="button" class="btn btn-default dropdown-toggle language-area" data-toggle="dropdown">
-			      Language <span class="caret"></span>
-			   </button>
-			   <ul class="dropdown-menu languages" role="menu">
-			      <li><a href="#"><img class="flag" src="images/en.png" /> English</a></li>
-			      <li><a href="#"><img class="flag" src="images/gr.png" /> Ελληνικά</a></li>
-			      <li><a href="#"><img class="flag" src="images/it.png" /> Italian</a></li>
-			      <li><a href="#"><img class="flag" src="images/sp.png" /> Español</a></li>
-			      <li><a href="#"><img class="flag" src="images/fr.png" /> Français</a></li>
-			      <li><a href="#"><img class="flag" src="images/de.png" /> Deutsch</a></li>
-			      <li><a href="#"><img class="flag" src="images/rus.png" /> Русский</a></li>
-			   </ul>
-			</div>
-		
-		</div>
-		
-		
 		<div class="col-xs-2">
 		  
 			<div class="btn-group">
@@ -111,14 +91,15 @@
 	
 	
 	<div class="row header-2">
-		<div class="col-xs-offset-3">
-			<div class="header-home header-hover active-link"><a href="index.php"><i class="fa fa-home fa-2x"></i></a></div>
-			<div class="header-literal header-hover"><a href="accomodation.php">Δωμάτια &amp; τιμές</a></div>
-			<div class="header-literal header-hover"><a href="offers.php">Προσφορές</a></div>
+		<div class="col-xs-offset-1">
+			<div class="header-home header-hover active-link"><a href="index.php">Αρχική</a></div>
+			<div class="header-literal header-hover"><a href="accomodation.php">Διαμονή</a></div>
+			<div class="header-literal header-hover"><a href="offers.php">Κράτηση</a></div>
 			<div class="header-literal header-hover"><a href="location.php">Τοποθεσία</a></div>
-			<div class="header-literal header-hover"><a href="thehotel.php">Ξενοδοχείο</a></div>
+			<div class="header-literal header-hover"><a href="thehotel.php">Φωτογραφίες</a></div>
 			<div class="header-literal header-hover"><a href="dining.php">Εστίαση</a></div>
-			<div class="header-literal header-hover"><a href="photo-gallery.php">Φωτογραφίες</a></div>
+			<div class="header-literal header-hover"><a href="photo-gallery.php">Επικοινωνία</a></div>
+			<div class="header-literal header-hover"><a href="photo-gallery.php">Αξιολόγηση</a></div>
 		</div>
 	</div>
 	

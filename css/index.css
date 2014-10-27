@@ -6,27 +6,48 @@
     src: url(fonts/Roboto-greek.woff);
 }
 
-body#accomodation, body#offers, body#location, body#thehotel, body#dining, body#photo-gallery{
-	background: #E5E5E5;
+body{
+	background: #F2F2F2;
 }
 
 .container{
 	width: 100%;
 	font-family: 'Roboto', sans serif;
+	font-size: 11pt;
+}
+
+.header-1{
+	padding-top: 5px;
+	height: 40px;
+}
+
+.header-2{
+	background: #8B0000;
+	color: #fff;
+	margin-top: 40px;
+}
+
+.header-2 .header-literal{
+	min-width: 80px !important; 
+	display: inline-table;
+	font-size: 11pt;
+	padding-top: 16px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .general-area-1{
-	background: #E5E5E5;
 	padding-bottom: 50px;
 }
 
 .general-area-2{
-	background: #F4F4F4;
 	padding-bottom: 20px;
 }
 
 .general-area-3{
-	background: #E5E5E5;
 	padding-bottom: 20px;
 	float: none;
 	margin: 0 auto;
@@ -42,12 +63,6 @@ body#accomodation, body#offers, body#location, body#thehotel, body#dining, body#
     top: 0;
     width: 100%;
     z-index: 999;
-    background: #E5E5E5;
-}
-
-.header-1{
-	padding-top: 20px;
-	height: 40px;
 }
 
 .flag{
@@ -81,24 +96,6 @@ body#accomodation, body#offers, body#location, body#thehotel, body#dining, body#
 
 td.day.active{
 	background: #8B0000 !important;
-}
-
-.header-2{
-	background: #8B0000;
-	color: #fff;
-	margin-top: 40px;
-}
-
-.header-2 .header-literal{
-	min-width: 80px !important; 
-	display: inline-table;
-	font-size: 12pt;
-	padding-top: 16px;
-	padding-bottom: 10px;
-	margin-right: 5px;
-	margin-left: 5px;
-	padding-right: 10px;
-	padding-left: 10px;
 }
 
 .header-hover a, .header-hover a:active{
