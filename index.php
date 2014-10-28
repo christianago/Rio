@@ -14,134 +14,76 @@
 <body>
 
 
+<div class="modal fade" id="weather-window">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Καιρός</h4>
+      </div>
+      <div class="modal-body">
+        <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=37.985298&lon=-23.719681&name=Athens&units=ca"> </iframe>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="time-window">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Ώρα</h4>
+      </div>
+      <div class="modal-body">
+        <iframe type="text/html" frameborder="0" height="500" width="100%" src="http://www.worldtimeserver.com/current_time_in_GR.aspx"></iframe>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="currency-window">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Συνάλλαγμα</h4>
+      </div>
+      <div class="modal-body">
+        <iframe id="tmcmini" src="http://themoneyconverter.com/MoneyConverter.aspx?from=USD&amp;to=EUR"
+        style="width: 185px; height: 210px; border: none; background-color: #ffffff;" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <div class="container">
 
-	<div class="general-area-1 row">
-	
-	<?php include_once 'header.php'; ?>
-		
-		<div class="row slideshow">
-	
-			<?php include_once 'slideshow.php'; ?>
-			
-			<div class="col-xs-7 availability-center-area">
-				<div class="row">
-					<div class="avail-label">Άφιξη</div>
-					<div class="avail-label">Αναχώρηση</div>
-					<div class="avail-label">Ενήλικες</div>
-					<div class="avail-label">Παιδιά</div>
-					<div class="avail-label">Δωμάτια</div>
-					<div class="avail-label">Κωδικός</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="avail-form-group">
-						<input class="datepicker form-control" data-date-format="dd/mm/yyyy" />
-					</div>
-				
-					<div class="avail-form-group">
-						<input class="datepicker form-control" data-date-format="dd/mm/yyyy" />
-					</div>
-					
-					<div class="avail-form-group">
-						<select class="form-control select-adults-2">
-						    <option value="1">1</option>
-						    <option value="2">2</option>
-						    <option value="3">3</option>
-						    <option value="4">4</option>
-						</select>
-					</div>
-					
-					<div class="avail-form-group">
-						<select class="form-control select-kids-2">
-				       		<option value="0">0</option>
-						    <option value="1">1</option>
-						    <option value="2">2</option>
-						    <option value="3">3</option>
-						    <option value="4">4</option>
-						</select>
-					</div>
-					
-					<div class="avail-form-group">
-						<select class="form-control select-rooms-2">
-						    <option value="1">1</option>
-						    <option value="2">2</option>
-						    <option value="3">3</option>
-						    <option value="4">4</option>
-						</select>
-					</div>
-					
-					<div class="avail-form-group">
-						<input type="password" class="form-control" />
-					</div>
-					
-					<div class="avail-form-group">
-						<button type="button" class="btn btn-primary availability">Διαθεσιμότητα</button>
-					</div>
-					
-				</div>
-				
-			</div>
-		
-		</div>
-		
-		
-		<div class="col-xs-7 welcome">
-			<div class="title">Καλώς ορίσατε στο ξενοδοχείο Lato Boutique</div>
-			
-		Η μοναδική θέα του <b>Ενετικού κάστρου</b> στο <b>παλιό λιμάνι</b> του Ηρακλείου και το θαυμάσιο Κρητικό πέλαγος είναι από τα πιο φωτογραφημένα αξιοθέατα στη Κρήτη.
-		Δεν είναι πολλοί οι επισκέπτες της πόλης που μπορουν να απολαύσουν το πλήρες <b>πανοραμικό μεγαλείο</b> αυτού του τοπίου, όπως αυτοί που διαμένουν στο ξενοδοχείο Lato Boutique.
-		<br/><br/>
-		Ακριβώς πάνω από τη μαρίνα, το ξενοδοχείο μας <b>λειτουργεί 365</b> ημέρες το χρόνο για περισσότερα από 40 χρόνια.
-		Διάσημο για την <b>αυθεντική Κρητική φιλοξενία</b> του, αποτελεί μαγνήτη για ρομαντικά ζευγάρια, για οικογένειες, αλλά και για επαγγελματίες επισκέπτες.
-		<br/><br/>
-		Το ξενοδοχείο Lato Boutique είναι ιδανικό σημείο εκκίνησης για εξερεύνηση της Κρήτης και της συναρπαστικής πρωτεύουσας του νησιού.
-		Αφού απολαύσετε την εκπληκτική θέα πάνω από το παλιό Λιμάνι, μπορείτε να ανακαλύψετε το ιστορικό κέντρο της πόλης και τα πιο σημαντικά αξιοθέατα ή να επισκεφθείτε τα διάσημα μουσεία,
-		τα οποία βρίσκονται σε πολύ κοντινή απόσταση από την είσοδο του ξενοδοχείου. Το γεμάτο ζωή κέντρο της παλιάς πόλης του Ηρακλείου με τα πιο όμορφα εμπορικά καταστήματα, και χώρους αναψυχής
-		και διασκέδασης είναι επίσης λίγα βήματα από το ξενοδοχείο μας. Επιπλέον, αν θέλετε να απολαύσετε την πιο φρέσκια δημιουργική <b>Κρητική κουζίνα</b>, δεν χρειάζεται να απομακρυνθείτε.
-		Τα διεθνούς φήμης εστιατόρια του Lato είναι πάντα έτοιμα να σας εντυπωσιάσουν.
-		</div>
-	
+
+	<div class="row the-header" align="center">
+		<?php include_once 'header.php'; ?>
 	</div>
 
 
-	<div class="general-area-2 row">
+	<div class="general-area-1 row">
 	
-		<div class="row area-1">
-			<div class="col-xs-3 title link-1"><a href="#">Τιμές & Προσφορές</a></div>
-			<div class="col-xs-3 col-xs-offset-3 title link-1"><a href="#">Εστιατόριο Herbs' Garden</a></div>
-		</div>
-		
-		<div class="row area-2">
-			<div class="col-xs-3"><img src="images/homeoffers.jpg" /></div>
-			<div class="col-xs-3 area-3">
-				<div class="side-text"><i class="fa fa-chevron-right"></i>Μεγάλη Διαμονή – ειδικές τιμές</div>
-				<br/>
-				<div class="side-text"><i class="fa fa-chevron-right"></i>Ρομαντική διαφυγή</div>
-				<br/>
-				<div class="side-text"><i class="fa fa-chevron-right"></i>Διαμονή και Αυτοκίνητο</div>
+		<div class="col-xs-11 col-lg-8 welcome">
+			<div class="title" align="center">Καλώς ορίσατε στο ξενοδοχείο Rio Athens</div><br/>
+				Το Ξενοδοχείο ΡΙΟ βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του Μετρό ΜΕΤΑΞΟΥΡΓΕΙΟ και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό της Αθήνας.
+				Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος,
+				απέχει 35΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του ΠΕΙΡΑΙΑ, με τον ηλεκτρικό σιδηρόδρομο.
+				Το Ξενοδοχείο ΡΙΟ στεγάζεται σε ένα πολύ όμορφο νεοκλασικό κτίριο το οποίο έχει ανακαινισθεί πλήρως, συνδυάζοντας όλες τις ευκολίες της σύγχρονης ζωής με την κλασική αισθητική του κτιρίου. 
+				Τα δωμάτια του Ξενοδοχείου είναι φιλόξενα και εξοπλισμένα με σύστημα κλιματισμού, ατομική τουαλέτα με μπάνιο ή ντουζιέρα, δορυφορική τηλεόραση,
+				mini bar, στεγνωτήρα μαλλιών, τηλεφωνική συσκευή άμεσης κλήσης, που αποσκοπούν στην πλήρη προσωπική σας ικανοποίηση.
+				Το Bar - Εστιατόριο που βρίσκεται στο ισόγειο του ξενοδοχείου, αποτελεί έναν ιδανικό χώρο για να απολαύσετε το ποτό και το φαγητό σας, ακούγοντας ευχάριστη μουσική.
+				Σερβίρονται πολλά είδη ποτών και εδεσμάτων από την ελληνική κουζίνα, έως τις πρώτες πρωινές ώρες.
+				Το Ξενοδοχείο ΡΙΟ συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. 
+				Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον. 
 			</div>
-			
-			<div class="col-xs-3 title"><img src="images/herbsgardenrestaurantgree.jpg" /></div>
-		</div>
-		
-		
-		
-		<div class="row area-4">
-			<div class="col-xs-4 title">Γαστρονομία - Κρητική διατροφή</div>
-			<div class="col-xs-4 title">Κοινωνικές & Επαγγελματικές εκδηλώσεις</div>
-			<div class="col-xs-3 title">Πώς να έρθετε</div>
-		</div>
-		
-		
-		<div class="row area-5">
-			<div class="col-xs-4"><a href="#"><img src="images/gastronomy.jpg" /></a></div>
-			<div class="col-xs-4"><a href="#"><img src="images/socialbusinessevents.jpg" /></a></div>
-			<div class="col-xs-3"><a href="#"><img src="images/findus.jpg" /></a></div>
-		</div>
 
-	
 	</div>
 	
 	<?php include_once 'footer.php'; ?>
@@ -151,9 +93,10 @@
 
 
 	<script src="js/jquery.min.js"></script>
+	<script src="http://www.google-analytics.com/ga.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/jssor.slider.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

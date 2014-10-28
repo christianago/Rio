@@ -1,48 +1,34 @@
 <div class="row footer-1">
-	<div class="col-xs-4 col-xs-offset-4">
-		<b>Join our Social Scene & share with your friends:</b>
-		<a href="#"><img src="images/social-fb.png" /></a>
-		<a href="#"><img src="images/social-google.png" /></a>
-		<a href="#"><img src="images/social-twiter.png" /></a>
-		<a href="#"><img src="images/social-youtube.png" /></a>
+	<div class="col-xs-12" align="center">
+		<b>Join us on Facebook & share with your friends:</b>
+		<a target="_blank" href="https://el-gr.facebook.com/pages/Hotel-Rio-Athens/163973293694518"><img src="images/social-fb.png" /></a>
 	</div>	
 </div>
 
 
 <div class="row footer-2">
-
-	<div class="row area-6">
-		<div class="col-xs-4 title">Περισσότερο ΡΙΟ</div>
-		<div class="col-xs-4 title">Περισσότερη Αθήνα</div>
-		<div class="col-xs-4 title">Επικοινωνία</div>
+	
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-2 weather">Καιρός</div>
+		<div class="col-xs-3 bookmarkme">Bookmark this site</div>
+		<div class="col-xs-3">Οδυσσέως 13, Πλατεία Καραισκάκη</div>
 	</div>
 	
-	<div class="row area-7">
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Φόρμα Αίτησης Κράτησης</div>
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Χρήσιμοι Σύνδεσμοι</div>
-		<div class="col-xs-4 contact">Επιμενίδου 15, 712 02, Ηράκλειο, Κρήτη, Ελλάδα</div>
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-2 time">Τοπική ώρα</div>
+		<div class="col-xs-3">Πολιτική ξενοδοχείου</div>
+		<div class="col-xs-3">Τηλ.: 210 5227075, Fax: 210 5227377</div>
 	</div>
 	
-	<div class="row area-8">
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Πολιτικές ξενοδοχείου</div>
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Αθηναικά Νέα</div>
-		<div class="col-xs-4 contact">Τηλ.: 2810 228103, Fax: +30 2810 240350</div>
+	<div class="row">
+		
+		<div class="col-xs-3 col-xs-offset-2 currency">Συνάλλαγμα</div>
+		<div class="col-xs-3">Προτείνετε σε φίλο</div>
+		<div class="col-xs-3">Latitude: 37.985298, Longitude: 23.719681</div>
 	</div>
 	
-	<div class="row area-9">
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Γραφείο Τύπου</div>
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Αξιοθέατα Αθήνας</div>
-		<div class="col-xs-4 contact">Επικοινωνία</div>
-	</div>
-	
-	<div class="row area-9">
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Downloads</div>
-		<div class="col-xs-4 dashed"><span class="vertical-line">|</span>Προορισμοί στην Αθήνα</div>
-		<div class="col-xs-4 contact">Εγγραφείτε στο Ενημερωτικό μας Δελτίο</div>
-	</div>
-	
-	<div class="row area-10 copyright">
-		<div class="col-xs-4 col-xs-offset-5">All rights reserved | ΡΙΟ Hotel</div>
+	<div class="row copyright">
+		<div class="col-xs-4 col-xs-offset-5">All rights reserved | ΡΙΟ Hotel Athens</div>
 	
 	</div>
 

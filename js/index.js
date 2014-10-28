@@ -2,11 +2,68 @@ var map = null;
 
 $(document).ready(function(){
 
+	//DATEPICKER//
 	$('input.datepicker').datepicker({
 		autoclose: true,
 		startDate: '+1d'
 	});
+	
+	 $(this).on('focus', 'input', function(){
+		 if ( $('.datepicker').length )
+		 $('input.datepicker').datepicker('hide');
+	 });
+	 
+	 $(this).on('click', '.dropdown-menu *', function(e){
+	     e.stopPropagation();
+	 });
+	 
+	 
+	 $(this).on('click', 'div.weather', function(e){
+		 $('#weather-window').modal('show');
+	 });
+	 
+	 
+	 $(this).on('click', 'div.time', function(e){
+		 $('#time-window').modal('show');
+	 });
+	 
+	 $(this).on('click', 'div.currency', function(e){
+		 $('#currency-window').modal('show');
+	 });
+	 
+	 
+	 $(this).on('click', 'div.bookmarkme', function() {
+         if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
+             window.sidebar.addPanel(document.title,window.location.href,'');
+         } else if(window.external && ('AddFavorite' in window.external)) { // IE Favorite
+             window.external.AddFavorite(location.href,document.title); 
+         } else if(window.opera && window.print) { // Opera Hotlist
+             this.title=document.title;
+             return true;
+         } else { // webkit - safari/chrome
+             alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+         }
+     });
 
+	 
+	
+	$(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
+		$(this).css('background', '#8B0000');
+	});
+	
+	$(this).on('mouseenter', 'div.header-hover:not(.active-link)', function(){
+		$(this).css('background', '#888888');
+	});
+
+	$(this).on('mouseleave', 'div.header-hover:not(.active-link)', function(){
+		$(this).css('background', '#8B0000');
+	});
+	
+	$(this).on('click', '.fa-calendar', function(){
+		$(this).closest('div.book-field').find('input.datepicker:first').datepicker('show');
+	});
+	
+	
 	
 	if ( $('div.googleMap').length ){
 		google.maps.event.addDomListener(window, 'load', initiate_geolocation);
@@ -27,27 +84,15 @@ $(document).ready(function(){
 	console.log(myURL);
 	
 	if ( $.inArray(myURL, pages) == -1 ){
-		$('#slider1_container').css({height:190});
+		
 	} else{
-		$('#slider1_container').css({height:240});
 		var index = $.inArray(myURL, pages);
 		$('div.active-link').removeClass('active-link');
 		$('div.header-hover:eq("'+index+'")').addClass('active-link');
 	}
 
-	
-	$(this).on('mouseenter', '.datepicker-switch', function(){
-		$(this).css('background', '#DC143C');
-	});
 
-	 $(this).on('click', '.dropdown-menu *', function(e){
-	     e.stopPropagation();
-	 });
-	 
-	 $(this).on('focus', 'input', function(){
-		 if ( $('.datepicker').length )
-		 $('input.datepicker').datepicker('hide');
-	 });
+
 	 
 	 $(this).on('click', 'div.plus-area', function(){
 		 var $elem = $(this).closest('div.boxes').next('div.details:first');
@@ -63,29 +108,12 @@ $(document).ready(function(){
 		 }
 	 });
 	 
-	 if ( myURL != 'photo-gallery.php' ){
-		 var options = { $AutoPlay:true, $SlideshowOptions: { $Class: $JssorSlideshowRunner$, $Transitions: [{ $Duration:700, $Fade: true, $Opacity:2 }] }};
-	     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-	     
-	
-	     function ScaleSlider() {
-	         var parentWidth = $('#slider1_container').parent().width();
-	         if (parentWidth) {
-	             jssor_slider1.$ScaleWidth(parentWidth);
-	         }
-	         else
-	             window.setTimeout(ScaleSlider, 30);
-	     }
-	     ScaleSlider();
-	     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-	         $(window).bind('resize', ScaleSlider);
-	     }
+	 
+	 //SLIDESHOW//
+	 $('div.slideshow').cycle('fade');
+
      
-	 } else{
-		 $('#slider1_container').hide();
-	 }
-     
-     $('a.fullsizable').fullsizable();
+     //$('a.fullsizable').fullsizable();
 
 });
 
