@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Τοποθεσία - Hotel Rio Athens</title>
+<title>Bar &amp; Restaurant - Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -24,11 +24,9 @@
 	<div class="general-area-1 row">
 	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="title" align="center">Τοποθεσία</div>
+			<div class="title" align="center">Bar &amp; Restaurant στο Rio Athens</div><br/>
 
-			<div class="googleMap" id="googleMap"></div>
-
-			</div>
+		</div>
 
 	</div>
 	
@@ -38,10 +36,10 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="http://www.google-analytics.com/ga.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=el"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>
+

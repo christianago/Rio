@@ -1,10 +1,11 @@
 eclipse.preferences.version=1
-encoding/accomodation.php=UTF-8
-encoding/dining.php=UTF-8
+encoding/bar-restaurant.php=UTF-8
+encoding/booking-info.php=UTF-8
+encoding/contact.php=UTF-8
+encoding/email.php=UTF-8
 encoding/footer.php=UTF-8
 encoding/header.php=UTF-8
 encoding/index.php=UTF-8
 encoding/location.php=UTF-8
-encoding/offers.php=UTF-8
+encoding/modals.php=UTF-8
 encoding/photo-gallery.php=UTF-8
-encoding/thehotel.php=UTF-8

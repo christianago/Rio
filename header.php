@@ -19,7 +19,7 @@
 					<div class="header-literal header-hover"><a href="booking-info.php">Κράτηση</a></div>
 					<div class="header-literal header-hover"><a href="location.php">Τοποθεσία</a></div>
 					<div class="header-literal header-hover"><a href="photo-gallery.php">Φωτογραφίες</a></div>
-					<div class="header-literal header-hover"><a href="bar-restaurant.php">Εστίαση</a></div>
+					<div class="header-literal header-hover"><a href="bar-restaurant.php">Bar &amp; Restaurant</a></div>
 					<div class="header-literal header-hover"><a href="contact.php">Επικοινωνία</a></div>
 					<div class="header-literal header-hover"><a href="reviews.php">Αξιολόγηση</a></div>
 				</div>
@@ -119,8 +119,21 @@
 					<div class="row slideshow">
 					    <img src="images/balcony view2.jpg" /> 
 					    <img src="images/bat bottles.jpg" /> 
-					    <img src="images/cafe copy.jpg" /> 
-					    
+					    <img src="images/cafe.jpg" /> 
+					    <img src="images/bar.jpg" /> 
+					    <img src="images/chair.jpg" /> 
+					    <img src="images/chairs.jpg" /> 
+					    <img src="images/extern.jpg" /> 
+					    <img src="images/fountane view.jpg" /> 
+					    <img src="images/fountane.jpg" /> 
+					    <img src="images/lobby1.jpg" /> 
+					    <img src="images/lobby2.jpg" /> 
+					    <img src="images/pedestrian restaurant.jpg" /> 
+					    <img src="images/quad triple.jpg" /> 
+					    <img src="images/quad.jpg" /> 
+					    <img src="images/quad2.jpg" /> 
+					    <img src="images/rio bar.jpg" /> 
+					    <img src="images/shower.jpg" /> 
 					</div>
 				</div>
 			</div>

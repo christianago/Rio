@@ -13,6 +13,11 @@ $(document).ready(function(){
 		 $('input.datepicker').datepicker('hide');
 	 });
 	 
+	 $(this).on('click', '.fa-calendar', function(){
+		$(this).closest('div.book-field').find('input.datepicker:first').datepicker('show');
+	 });
+	
+	 
 	 $(this).on('click', '.dropdown-menu *', function(e){
 	     e.stopPropagation();
 	 });
@@ -29,6 +34,10 @@ $(document).ready(function(){
 	 
 	 $(this).on('click', 'div.currency', function(e){
 		 $('#currency-window').modal('show');
+	 });
+	 
+	 $(this).on('click', '.useful-links-container', function(e){
+		 $('ul.useful-links').slideToggle();
 	 });
 	 
 	 
@@ -59,61 +68,57 @@ $(document).ready(function(){
 		$(this).css('background', '#8B0000');
 	});
 	
-	$(this).on('click', '.fa-calendar', function(){
-		$(this).closest('div.book-field').find('input.datepicker:first').datepicker('show');
-	});
 	
+	 $(this).on('mouseenter', 'span.footer-elem, span.footer-elem a', function(e){
+		 $('span.active-footer-elem').removeClass('active-footer-elem');
+		 $(this).addClass('active-footer-elem');
+	 });
+	 
+	 $(this).on('mouseleave', 'span.footer-elem, span.footer-elem a', function(e){
+		 $('span.active-footer-elem').removeClass('active-footer-elem');
+	 });
 	
 	
 	if ( $('div.googleMap').length ){
 		google.maps.event.addDomListener(window, 'load', initiate_geolocation);
 	}
 	
-	
-	 $('#tabs a').click(function(e){
-        e.preventDefault();
-        $(this).tab('show');
-        if ( map ) google.maps.event.trigger(map, 'resize');
-    });
-	
-	var pages = ['home', 'accomodation.php', 'offers.php', 'location.php', 'thehotel.php', 'dining.php', 'photo-gallery.php'];
+	 
+	var pages = ['home', 'accomodation.php', 'booking-info.php', 'location.php', 'photo-gallery.php', 'bar-restaurant.php', 'contact.php', 'reviews.php'];
 	
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
 	
-	if ( $.inArray(myURL, pages) == -1 ){
-		
-	} else{
+	if ( $.inArray(myURL, pages) != -1 ){
 		var index = $.inArray(myURL, pages);
 		$('div.active-link').removeClass('active-link');
 		$('div.header-hover:eq("'+index+'")').addClass('active-link');
 	}
-
-
-
-	 
-	 $(this).on('click', 'div.plus-area', function(){
-		 var $elem = $(this).closest('div.boxes').next('div.details:first');
-		 var $this = $(this);
-		 if ( $elem.is(':hidden') ){
-			 $elem.slideDown().promise().done(function(){
-				 $this.find('.fa-plus').removeClass('fa-plus').addClass('fa-minus');
-			 });
-		 } else{
-			 $elem.slideUp().promise().done(function(){
-				 $this.find('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
-			 });
-		 }
-	 });
-	 
+	
+			
+	$('select.select-adults option:eq(1)').attr('selected',true);
+	$('select.select-rooms option:eq(1)').attr('selected',true);
 	 
 	 //SLIDESHOW//
 	 $('div.slideshow').cycle('fade');
 
-     
-     //$('a.fullsizable').fullsizable();
+	 
+     //GALLERY
+	 if(  $('a.fullsizable').length ){
+		 $('a.fullsizable').fullsizable();
+	 }
+	 
+	 
+	 if ( myURL == 'contact.php' && $('#message').html() != '' ){
+		 if ( $('#message').html() == '1' ){
+			 $('#email-window div.modal-body').html('Το μήνυμά σας στάλθηκε με επιτυχία.');
+		 } else{
+			 $('#email-window div.modal-body').html('Προέκυψε ένα σφάλμα. Παρακαλούμε προσπαθήστε εργότερα');
+		 }
+		 $('#email-window').modal('show');
+	 }
 
 });
 

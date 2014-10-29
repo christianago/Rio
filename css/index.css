@@ -42,9 +42,22 @@ body{
 	color: #fff;
 }
 
-.header-hover a, .header-hover a:active{
+a, a:active, a:hover{
 	text-decoration: none;
 	color: #fff;
+}
+
+.useful-links{
+	display: none;
+}
+
+.useful-links li a{
+	color: #000 !important;
+}
+
+.active-footer-elem{
+	color: #8B0000;
+	cursor: pointer;
 }
 
 .header-2 .header-literal{
@@ -136,8 +149,14 @@ td.day.active{
 }
 
 input, select{
-	font-weight: bold;
 	height: 30px;
+}
+
+input[type=submit]{
+	font-size: 12pt;
+	width: 100px;
+	height: 40px;
+	background: #8B0000;
 }
 
 .welcome{
@@ -149,6 +168,11 @@ input, select{
 
 .title{
 	font-size: 18pt;
+	color: #8B0000;
+}
+
+.sub-title{
+	font-size: 16pt;
 	color: #8B0000;
 }
 
@@ -190,10 +214,28 @@ input, select{
 	width: 205px;
 }
 
-.weather, .time, .bookmarkme, .currency{
-	cursor: pointer;
+#email-window .modal-dialog{
+	width: 100px;
 }
 
+#message{
+	display: none;
+}
+
+/*GALLERY*/
+.gallery-container img{
+	width: 200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.gallery-row{
+	margin-bottom: 20px;
+}
+/*->GALLERY*/
+
+/*LOCATION*/
 #googleMap{
 	margin-top: 50px;
 	width: 100%;
@@ -204,17 +246,15 @@ input, select{
 	font-size: 8pt;
 }
 
-
-.required{
-	color: #ff0000;
-	font-weight: bold;
-}
-
 #googleMap-2{
 	width: 100%;
 	height: 360px;
 }
+/*->LOCATION*/
 
+.contact-field{
+	margin-bottom: 10px;
+}
 
 	@media (max-width: 1200px) {
 		
