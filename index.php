@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hotel Rio Athens</title>
+<title>Ξενοδοχείο Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -21,10 +21,11 @@
 		<?php include_once 'header.php'; ?>
 	</div>
 
-	<div class="general-area-1 row">
+	<div class="row">
 	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="title" align="center">Καλώς ορίσατε στο ξενοδοχείο Rio Athens</div><br/>
+			<div class="content-title" align="center">Καλώς ορίσατε στο ξενοδοχείο Rio Athens</div><br/>
+			<div class="content">
 				Το Ξενοδοχείο ΡΙΟ βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του Μετρό ΜΕΤΑΞΟΥΡΓΕΙΟ και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό της Αθήνας.
 				Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος,
 				απέχει 35΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του ΠΕΙΡΑΙΑ, με τον ηλεκτρικό σιδηρόδρομο.
@@ -36,6 +37,7 @@
 				Το Ξενοδοχείο ΡΙΟ συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. 
 				Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον. 
 			</div>
+		</div>
 
 	</div>
 	

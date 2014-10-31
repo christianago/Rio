@@ -42,6 +42,16 @@ body{
 	color: #fff;
 }
 
+.header-hover{
+	display: inline-table;
+	padding-top: 16px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	cursor: pointer;
+}
+
 a, a:active, a:hover{
 	text-decoration: none;
 	color: #fff;
@@ -60,18 +70,9 @@ a, a:active, a:hover{
 	cursor: pointer;
 }
 
-.header-2 .header-literal{
-	display: inline-table;
-	padding-top: 16px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	float: left;
-}
-
 .slideshow img{
     width:  670px; 
-    height: 400px; 
+    height: 420px; 
     top:  0; 
     right: 0; 
 } 
@@ -105,13 +106,14 @@ a, a:active, a:hover{
 	margin-top: 20px;
 	background: #875422;
 	color: #fff;
-	width: 280px;
+	width: 295px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
 .slideshow-container{
+	display: none;
 	float: right;
 	width: 670px;
 }
@@ -124,7 +126,7 @@ a, a:active, a:hover{
 	margin-top: 10px;
 	font-size: 13pt;
 	position: relative;
-	left: -10px;
+	//left: -8px;
 	cursor: pointer;
 	color: #c7bc67;
 }
@@ -141,6 +143,10 @@ td.day.active{
 .book-field{
 	margin-bottom: 15px;
 }
+
+.book-field input, .book-field select{
+	width: 100px;
+}
 /*->HEADERS*/
 
 
@@ -152,11 +158,40 @@ input, select{
 	height: 30px;
 }
 
-input[type=submit]{
+input#email-us{
 	font-size: 12pt;
 	width: 100px;
 	height: 40px;
 	background: #8B0000;
+}
+
+input#review-us{
+	font-size: 12pt;
+	width: 120px;
+	height: 40px;
+	background: #8B0000;
+}
+
+.modal-title{
+	color: #8B0000;
+}
+
+.modal-content{
+	border: 1px solid #8B0000;
+}
+
+input#check-availability{
+	font-size: 11pt;
+	width: 190px;
+	height: 40px;
+	background: #8B0000;
+	border: 1px #875422 solid;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.text-hover{
+	color: #c7bc67 !important;
 }
 
 .welcome{
@@ -166,7 +201,7 @@ input[type=submit]{
 	margin-bottom: 40px;
 }
 
-.title{
+.content-title{
 	font-size: 18pt;
 	color: #8B0000;
 }
@@ -214,8 +249,12 @@ input[type=submit]{
 	width: 205px;
 }
 
-#email-window .modal-dialog{
-	width: 100px;
+#message-window .modal-dialog{
+	width: 300px;
+}
+
+.email-message, .review-message, .fail-message{
+	display: none;
 }
 
 #message{
@@ -251,6 +290,56 @@ input[type=submit]{
 	height: 360px;
 }
 /*->LOCATION*/
+
+
+.review-label{
+	color: #8B0000;
+	margin-bottom: 15px;
+}
+
+.review-label span{
+	margin-left: 10px;
+	font-weight: bold;
+	color: #000;
+}
+
+.review-label .fa-star-o, .review-label .fa-star{
+	cursor: pointer;
+}
+
+
+.review-container div{
+	border-bottom: 1px dotted #8B0000;
+}
+
+.review-line{
+	border-top: 1px solid #8B0000;
+}
+
+.review-date{
+	font-size: 12px;
+	width: 90px;
+	padding-bottom: 4px; 
+	border-right: 1px dotted #8B0000;
+}
+
+.review-comment{
+	font-style: italic;
+	border-right: 1px dotted #8B0000;
+}
+
+.review-avg{
+	color: #8B0000;
+	font-weight: bold;
+	width: 40px;
+}
+
+.review-star{
+	color: #8B0000;
+	font-weight: bold;
+	width: 100px;
+}
+
 
 .contact-field{
 	margin-bottom: 10px;

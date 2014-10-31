@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Τοποθεσία - Hotel Rio Athens</title>
+<title>Διαμονή - Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -21,11 +21,13 @@
 		<?php include_once 'header.php'; ?>
 	</div>
 
-	<div class="row">
+	<div class="general-area-1 row">
+	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="content-title" align="center">Τοποθεσία</div>
-			<div class="googleMap" id="googleMap"></div>
+			<div class="content-title" align="center">Διαμονή στο Rio Athens</div><br/>
+
 		</div>
+
 	</div>
 	
 	<?php include_once 'footer.php'; ?>
@@ -34,10 +36,10 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="http://www.google-analytics.com/ga.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=el"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>
+

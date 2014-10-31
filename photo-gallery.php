@@ -20,10 +20,10 @@
 		<?php include_once 'header.php'; ?>
 	</div>
 
-	<div class="general-area-1 row">
+	<div class="row">
 	
 		<div class="col-xs-11 col-lg-8 welcome gallery-container">
-			<div class="title" align="center">Φωτογραφίες</div><br/>
+			<div class="content-title" align="center">Φωτογραφίες</div><br/>
 			
 				<div class="row gallery-row">
 					<div class="col-xs-3"><a class="fullsizable" href="images/balcony view2.jpg"><img src="images/balcony view2.jpg" /></a></div>

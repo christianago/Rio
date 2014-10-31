@@ -6,7 +6,7 @@
         <h4 class="modal-title">Καιρός</h4>
       </div>
       <div class="modal-body">
-        <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=37.985298&lon=-23.719681&name=Athens&units=ca"> </iframe>
+        <iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=37.985298&lon=-23.719681&name=Athens&units=ca"> </iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -18,10 +18,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Ώρα</h4>
+        <h4 class="modal-title">Τοπική Ώρα</h4>
       </div>
       <div class="modal-body">
-        <iframe type="text/html" frameborder="0" height="500" width="100%" src="http://www.worldtimeserver.com/current_time_in_GR.aspx"></iframe>
+        <iframe frameborder="0" height="500" width="100%" src="http://www.worldtimeserver.com/current_time_in_GR.aspx"></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -43,14 +43,24 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<div class="modal fade" id="email-window">
+<div class="modal fade" id="message-window">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      	 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+     	 <h4 class="modal-title">Hotel Rio Athens</h4>
       </div>
       <div class="modal-body">
-        
+      
+      	 <div class="email-message" title="EL">Το μήνυμά σας εστάλη με επιτυχία.'</div>
+     	 <div class="email-message" title="EN">Your message sent succesfully.</div>
+     	 
+     	 <div class="review-message" title="EL">Η αξιολόγησή σας έγινε με επιτυχία.</div>
+     	 <div class="review-message" title="EN">Your review succesfully submited.</div>
+     	 
+     	 <div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
+     	 <div class="fail-message" title="EN">Error occured. Please try again later.</div>
+     	 
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

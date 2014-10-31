@@ -24,7 +24,7 @@
 	<div class="general-area-1 row">
 	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="title" align="center">Bar &amp; Restaurant στο Rio Athens</div><br/>
+			<div class="content-title" align="center">Bar &amp; Restaurant στο Rio Athens</div><br/>
 
 		</div>
 
