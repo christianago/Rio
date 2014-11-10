@@ -1,13 +1,26 @@
 var map = null;
 var currentLanguage = localStorage.getItem('language');
 
+function preventBack(){
+	window.history.forward();
+	if ( $('body').hasClass('modal-open') ){
+		window.history.forward();
+	}
+}
+
 $(document).ready(function(){
+	
+	//var language = window.navigator.userLanguage || window.navigator.language;
 	
 	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'location.php', 'photo-gallery.php', 'bar-restaurant.php', 'contact.php', 'reviews.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
+
+	
+	preventBack();
+	
 	
 	if ( $.inArray(myURL, pages) != -1 ){
 		var key = $.inArray(myURL, pages);
@@ -15,18 +28,29 @@ $(document).ready(function(){
 	}
 	
 	
+	//LANGUAGES//
 	if ( currentLanguage == 'undefined' || currentLanguage == null || currentLanguage == '' ){
 		language('EN', myURL);
 		localStorage.setItem('language', 'EN');
 	} else{
 		language(currentLanguage, myURL);
 	}
+
+	$(this).on('click', 'img.flag', function(e){
+		 var title = $(this).attr('title');
+	     language(title, myURL);
+	     localStorage.setItem('language', title);
+	 });
+	//<-LANGUAGES//
+	
 	
 	//SLIDESHOW//
 	$('div.slideshow').cycle('fade');
 	setTimeout(function(){
 		$('div.slideshow-container').fadeIn('slow');
 	}, 500);
+	//<-SLIDESHOW//
+	
 	
 	//DATEPICKER//
 	$('input.datepicker').datepicker({
@@ -43,31 +67,24 @@ $(document).ready(function(){
 		$(this).closest('div.book-field').find('input.datepicker:first').datepicker('show');
 	 });
 	
-	 
 	 $(this).on('click', '.dropdown-menu *', function(e){
 	     e.stopPropagation();
 	 });
 	 
-	 
-	 $(this).on('click', 'img.flag', function(e){
-		 var title = $(this).attr('title');
-	     language(title, myURL);
-	     localStorage.setItem('language', title);
+	 $(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
+		$(this).css('background', '#8B0000');
 	 });
+	 $('#start-date').val(getToday());
+	 $('#end-date').val(getTomorrow());
+	 //<-DATEPICKER//
 	 
 	 
-	 $(this).on('click', '.weather', function(e){
-		 $('#weather-window').modal('show');
-	 });
+	 //MODALS//
+	 $(this).on('click', '.weather', function(e){ $('#weather-window').modal('show'); });
+	 $(this).on('click', '.time', function(e){ $('#time-window').modal('show'); });
+	 $(this).on('click', '.currency', function(e){ $('#currency-window').modal('show'); });
+	 //<-MODALS//
 	 
-	 
-	 $(this).on('click', '.time', function(e){
-		 $('#time-window').modal('show');
-	 });
-	 
-	 $(this).on('click', '.currency', function(e){
-		 $('#currency-window').modal('show');
-	 });
 	 
 	 $(this).on('click', '.useful-links-container', function(e){
 		 $('ul.useful-links').slideToggle();
@@ -87,16 +104,15 @@ $(document).ready(function(){
          }
      });
 
-	 
-	
-	$(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
-		$(this).css('background', '#8B0000');
-	});
+
 	
 	$(this).on('mouseenter', 'div.header-hover:not(.active-link)', function(){
 		$(this).css('background', '#888888');
 	}).on('mouseleave', 'div.header-hover:not(.active-link)', function(){
 		$(this).css('background', '#8B0000');
+	}).on('click', 'div.header-hover:not(.active-link)', function(){
+		var link = $(this).find('a').attr('href');
+		window.location.href = link;
 	});
 	
 	
@@ -120,10 +136,13 @@ $(document).ready(function(){
 	 });
 	
 
+	 //MAPS
 	if ( $('div.googleMap').length ){
-		google.maps.event.addDomListener(window, 'load', initiate_geolocation);
+		google.maps.event.addDomListener(window, 'load', geolocation);
 	}
 	
+	
+	//AUTO SELECT DROPDOWNS
 	$('select.select-adults option:eq(1)').attr('selected',true);
 	$('select.select-rooms option:eq(1)').attr('selected',true);
 	 
@@ -179,6 +198,8 @@ $(document).ready(function(){
 
 
 function language(l, p){
+	
+	 $('body').hide();
 	
 	 var langs = ['EL', 'EN'];
 	 var key = 1;
@@ -272,7 +293,7 @@ function language(l, p){
 		 //footer
 		 var footer = data.general[key].footer.split(',');
 		 $('.footer-item').each(function(k, v){
-			 $(this).text(footer[k]);
+			 $(this).html(footer[k].split("|").join("<br/>"));
 		 });
 		 
 		//modals
@@ -287,18 +308,16 @@ function language(l, p){
 			 $(this).text(ri[k]); 
 		 }); 
 		 $('#check-availability').val(ri[ri.length-1]);
+		 
+		 
+		 $('body').show();
 
 	 });
 
 }
 
 
-function initiate_geolocation(mapString) {  
-    navigator.geolocation.getCurrentPosition(handle_geolocation_query);  
-}  
-
-
-function handle_geolocation_query(position){
+function geolocation(position){
 	
 	//var lng = position.coords.longitude;
 	//var lat = position.coords.latitude;
@@ -348,7 +367,23 @@ function getToday(){
 	if(dd<10) {
 	    dd='0'+dd;
 	} 
-	today = mm+'/'+dd+'/'+yyyy;
+	today = dd+'/'+mm+'/'+yyyy;
+	if(mm<10) {
+	    mm='0'+mm;
+	} 
+	return today;
+}
+
+
+function getTomorrow(){
+	var today = new Date();
+	var dd = today.getDate()+1;
+	var mm = today.getMonth()+1;
+	var yyyy = today.getFullYear();
+	if(dd<10) {
+	    dd='0'+dd;
+	} 
+	today = dd+'/'+mm+'/'+yyyy;
 	if(mm<10) {
 	    mm='0'+mm;
 	} 

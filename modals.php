@@ -6,7 +6,7 @@
         <h4 class="modal-title">Καιρός</h4>
       </div>
       <div class="modal-body">
-        <iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=37.985298&lon=-23.719681&name=Athens&units=ca"> </iframe>
+        <iframe id="forecast_embed" scrolling="no" frameborder="0" height="420" width="800" src="http://www.wunderground.com/q/locid:GRIX0012#city-page"></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

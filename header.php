@@ -13,14 +13,14 @@
 		
 			<div class="row header-2">
 				<div class="col-xs-offset-1 col-md-offset-2 col-lg-offset-3">
-					<div class="header-hover"><a href="index.php">Αρχική</a></div>
-					<div class="header-hover"><a href="accomodation.php">Διαμονή</a></div>
-					<div class="header-hover"><a href="booking-info.php">Κράτηση</a></div>
-					<div class="header-hover"><a href="location.php">Τοποθεσία</a></div>
-					<div class="header-hover"><a href="photo-gallery.php">Φωτογραφίες</a></div>
-					<div class="header-hover"><a href="bar-restaurant.php">Bar &amp; Restaurant</a></div>
-					<div class="header-hover"><a href="contact.php">Επικοινωνία</a></div>
-					<div class="header-hover"><a href="reviews.php">Αξιολογήσεις</a></div>
+					<div class="header-hover"><a href="index.php"></a></div>
+					<div class="header-hover"><a href="accomodation.php"></a></div>
+					<div class="header-hover"><a href="booking-info.php"></a></div>
+					<div class="header-hover"><a href="location.php"></a></div>
+					<div class="header-hover"><a href="photo-gallery.php"></a></div>
+					<div class="header-hover"><a href="bar-restaurant.php"></a></div>
+					<div class="header-hover"><a href="contact.php"></a></div>
+					<div class="header-hover"><a href="reviews.php"></a></div>
 				</div>
 			</div>
 
@@ -43,31 +43,31 @@
 					
 					<div class="row book-online">
 						<div class="col-xs-12">
-							<div class="book-online-literal reservation-item">Κάντε κράτηση</div>
+							<div class="book-online-literal reservation-item"></div>
 							
 							<div class="row book-field">
-								<div class="col-xs-5 reservation-item">Άφιξη</div>
-								<div class="col-xs-5">
-									<input class="datepicker form-control" data-date-format="dd/mm/yyyy" />
+								<div class="col-xs-4 reservation-item"></div>
+								<div class="col-xs-4">
+									<input id="start-date" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 								</div>
-								<div class="col-xs-1">
+								<div class="col-xs-1 col-xs-offset-1">
 									<i class="fa fa-calendar"></i>
 								</div>
 							</div>
 							
 							<div class="row book-field">
-								<div class="col-xs-5 reservation-item">Αναχώρηση</div>
-								<div class="col-xs-5">
-									<input class="datepicker form-control" data-date-format="dd/mm/yyyy" />
+								<div class="col-xs-4 reservation-item"></div>
+								<div class="col-xs-4">
+									<input id="end-date" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 								</div>
-								<div class="col-xs-1">
+								<div class="col-xs-1 col-xs-offset-1">
 									<i class="fa fa-calendar"></i>
 								</div>
 							</div>
 							
 							<div class="row book-field">
-								<div class="col-xs-5 reservation-item">Ενήλικες</div>
-								<div class="col-xs-5">
+								<div class="col-xs-4 reservation-item"></div>
+								<div class="col-xs-4">
 									<select class="form-control select-adults">
 									    <option value="1">1</option>
 									    <option value="2">2</option>
@@ -78,9 +78,10 @@
 							</div>
 							
 							<div class="row book-field">
-								<div class="col-xs-5 reservation-item">Παιδιά</div>
-								<div class="col-xs-5">
+								<div class="col-xs-4 reservation-item"></div>
+								<div class="col-xs-4">
 									<select class="form-control select-kids">
+									    <option value="-1">select</option>
 										<option value="0">0</option>
 										<option value="1">1</option>
 									    <option value="1">1</option>
@@ -92,15 +93,18 @@
 							</div>
 							
 							<div class="row book-field">
-								<div class="col-xs-5 reservation-item">Δωμάτια</div>
-								<div class="col-xs-5">
+								<div class="col-xs-4 reservation-item"></div>
+								<div class="col-xs-4">
 									<select class="form-control select-rooms">
-										<option value="1">1</option>
 									    <option value="1">1</option>
 									    <option value="2">2</option>
 									    <option value="3">3</option>
 									    <option value="4">4</option>
 									    <option value="5">5</option>
+									    <option value="6">6</option>
+									    <option value="7">7</option>
+									    <option value="8">8</option>
+									    <option value="9">9+</option>
 									</select>
 								</div>
 							</div>
