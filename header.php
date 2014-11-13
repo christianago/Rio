@@ -1,9 +1,19 @@
+
+<audio id="zorba" autoplay loop>
+  <source src="audio/zorba.mp3" type="audio/ogg">
+  <source src="audio/zorba.mp3" type="audio/mpeg">
+</audio>
+
+ 
 <div class="row header-1">
-	<div class="col-xs-4 col-lg-2 col-lg-offset-2" id="logo">RIO Athens Hotel</div>
-	<div class="col-xs-8 col-lg-5">
+	<div class="col-xs-5 col-lg-2 col-lg-offset-2" id="logo">RIO Athens Hotel</div>
+	<div class="col-xs-7 col-lg-5">
 		<img id="acropolis" src="images/acropolis.png" align="right" /> 
 	</div>
 </div>
+
+
+<img id="sound" src="images/sound.png" /> 
 
 
 <div class="row header-2">
@@ -159,10 +169,7 @@
 		</div>
 	</div>
 	
-	
 </div>
-
-
 
 
 

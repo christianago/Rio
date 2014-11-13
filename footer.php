@@ -85,4 +85,4 @@
 
 	</div>
 </div>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=el"></script>
+

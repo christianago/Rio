@@ -2,18 +2,18 @@
 	"general":[
 		{
 		"lang":"EL", 
-		"header":"Αρχική,Διαμονή,Κράτηση,Τοποθεσία,Φωτογραφίες,Travel Services,Επικοινωνία,Αξιολογήσεις",
+		"header":"Αρχική,Διαμονή,Κράτηση,Φωτογραφίες,Travel Services,Επικοινωνία,Αξιολογήσεις",
 		"reservation_item":"Κάντε κράτηση,Άφιξη,Αναχώρηση,Ενήλικες,Παιδιά,Δωμάτια,Έλεγχος διαθεσιμότητας",
-		"modal":"Καιρός,Τοπική Ώρα,Συνάλλαγμα",
+		"modal":"Καιρός,Τοπική Ώρα,Συνάλλαγμα,Χάρτης",
 		"footer":
 		"Καιρός#Πολιτική ξενοδοχείου#Τοπική ώρα#Συνάλλαγμα#Προτείνετε σε φίλο#Χρήσιμοι σύνδεσμοι#Οργανισμός Σιδηροδρόμων Ελλάδος#Διεθνής Αερολιμένας Αθηνών «Ελευθέριος Βενιζέλος»#Οργανισμός Λιμένος Πειραιώς#ΚΤΕΛ Αττικής#Νοσοκομεία στην Αθήνα#Τράπεζα της Ελλάδος#Εθνικό Κέντρο Άμεσης Βοήθειας#Γιατροί του Κόσμου#Ελληνική Αστυνομία#Λιμάνι Ραφήνας#Λιμάνι Λαυρίου"
 		},
 		
 		{
 		"lang":"EN",
-		"header":"Home,Accomodation,Booking info,Location,Photo gallery,Travel Services, Contact, Reviews",
+		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
 		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
-		"modal":"Weather,Local time,Currency",
+		"modal":"Weather,Local time,Currency,Map",
 		"footer":
 		"Καιρός#Πολιτική ξενοδοχείου#Συνάλλαγμα#Προτείνετε σε φίλο#Τηλ.: 210 5227075 | Fax: 210 5227377#Χρήσιμοι σύνδεσμοι#Οργανισμός Σιδηροδρόμων Ελλάδος#Διεθνής Αερολιμένας Αθηνών «Ελευθέριος Βενιζέλος»#Οργανισμός Λιμένος Πειραιώς#ΚΤΕΛ Αττικής#Νοσοκομεία στην Αθήνα#Τράπεζα της Ελλάδος#Εθνικό Κέντρο Άμεσης Βοήθειας#Γιατροί του Κόσμου#Ελληνική Αστυνομία#Λιμάνι Ραφήνας#Λιμάνι Λαυρίου"
 		}
@@ -42,14 +42,21 @@
 		"lang":"EL",
 		"title":"Διαμονή - Hotel Rio Athens",
 		"content_title":"Διαμονή στο Rio Athens",
-		"content":""
-		},
+		"content":"Το ξενοδοχείο Rio στην Αθήνα διαθέτει 67 περίτεχνα διακοσμημένα δωμάτια για τους επισκέπτες, τα περισσότερα με θέα στην Ακρόπολη, την Πλάκα ή το λόφο του Λυκαβητού. Σκοπός μας είναι να σας προσφέρουμε μια αξέχαστη διαμονή στην Αθήνα και ό,τι σας υποσχεθήκαμε.",
+		"content_sub_title":"Προδιαγραφές δωματίων:,Παροχές δωματίων:,Κατόπιν αιτήσεως:",
+		"sub_content_1":"Αυτόνομος κλιματισμός#Δορυφορική τηλεόραση#Ασύρματη σύνδεση διαδικτύου#Τηλεόραση 21 ιντσών#Ραδιόφωνο#Μικρό ψυγείο#Στεγνωτήρας μαλλιών#Χρηματοκιβώτιο με ασφάλεια ψηφιακού κωδικού / Ψηφιακή ασφάλεια / Digital safe#Μπάνιο με παροχές#Τηλέφωνο#Ανιχνευτές καπνού#Πυράντοχες πόρτες (45 λεπτά)#Εξυπηρέτηση δωματίων από 07.00 μέχρι 19.00#Δωμάτια με ξύλινο πάτωμα",
+		"sub_content_2":"Συνδεδεμένα δωμάτια#Στεγνό καθάρισμα#Πλύσιμο ρούχων#Σίδερο / Σιδερώστρα#Φύλαξη παιδιών",
+		"sub_content_3":"Μονόκλινο: Μικρό δωμάτιο με ένα μεγάλο κρεβάτι#Δίκλινο: Διαμπερές δωμάτιο με ή χωρίς μπαλκόνι, με δυνατότητα διπλού κρεβατιού κατόπιν αίτησης#Τρίκλινο: Διπλά κρεβάτια, με ένα επιπλέον αναδιπλώμενο κρεβάτι για παιδί ή εφηβο μεγέθους 80 x 190 εκατοστών#Τετράκλινο: "		},
 		
 		{
 		"lang":"EN",
 		"title":"Accomodation - Hotel Rio Athens",
 		"content_title":"Accomodation in Rio Athens",
-		"content":""
+		"content":"Το ξενοδοχείο Rio στην Αθήνα διαθέτει 67 περίτεχνα διακοσμημένα δωμάτια για τους επισκέπτες, τα περισσότερα με θέα στην Ακρόπολη, την Πλάκα ή το λόφο του Λυκαβητού. Σκοπός μας είναι να σας προσφέρουμε μια αξέχαστη διαμονή στην Αθήνα και ό,τι σας υποσχεθήκαμε.",
+		"content_sub_title":"Specifications of rooms:,Παροχές δωματίων:,Κατόπιν αιτήσεως:",
+		"sub_content_1":"Αυτόνομος κλιματισμός#Δορυφορική τηλεόραση#Ασύρματη σύνδεση διαδικτύου#Τηλεόραση 21 ιντσών#Ραδιόφωνο#Μικρό ψυγείο#Στεγνωτήρας μαλλιών#Χρηματοκιβώτιο με ασφάλεια ψηφιακού κωδικού / Ψηφιακή ασφάλεια / Digital safe#Μπάνιο με παροχές#Τηλέφωνο#Ανιχνευτές καπνού#Πυράντοχες πόρτες (45 λεπτά)#Εξυπηρέτηση δωματίων από 07.00 μέχρι 19.00#Δωμάτια με ξύλινο πάτωμα",
+		"sub_content_2":"Συνδεδεμένα δωμάτια#Στεγνό καθάρισμα#Πλύσιμο ρούχων#Σίδερο / Σιδερώστρα#Φύλαξη παιδιών",
+		"sub_content_3":"Single: Small room with one large bed.#Twin: Bright room with or without balcony, with possibility to request double bed.#Triple: Twin beds, plus an extra folding bed for a child or teen, size 80cm X 190cm.#Quadruple:"
 		}
 	], 
 	
@@ -106,14 +113,14 @@
 	"photo_gallery":[
 		{
 		"lang":"EL",
-		"title":"Φωτογραφίες - Hotel Rio Athens",
+		"title":"Φωτογραφίες - Ξενοδοχείο Rio Athens",
 		"content_title":"Φωτογραφίες",
 		"content":""
 		},
 		
 		{
 		"lang":"EN",
-		"title":"Photo gallery",
+		"title":"Photo gallery - Hotel Rio Athens",
 		"content_title":"Photo gallery - Hotel Rio Athens",
 		"content":""
 		}
@@ -124,14 +131,16 @@
 		"lang":"EL",
 		"title":"Travel Services - Hotel Rio Athens",
 		"content_title":"Travel Services",
-		"content":""
+		"content_image_title":"Σούνιο,Σαντορίνη,Καλλιμάρμαρο,Ακρόπολη,Δελφοί",
+		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece.|We can arrange your visit to Santorini, Mykonos, Naxos, Paros or other Greek islands at reasonable prices! "
 		},
 		
 		{
 		"lang":"EN",
 		"title":"Travel Services - Hotel Rio Athens",
 		"content_title":"Travel Services",
-		"content":""
+		"content_image_title":"Sounio,Santorini,Kallimarmaro,Acropolis,Delphi",
+		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece.|We can arrange your visit to Santorini, Mykonos, Naxos, Paros or other Greek islands at reasonable prices! "
 		}
 	],
 	
@@ -141,7 +150,7 @@
 		"title":"Επικοινωνία - Hotel Rio Athens",
 		"content_title":"Διεύθυνση,Φόρμα επικοινωνίας",
 		"content_1":"Οδυσσέως 13, Πλατεία Καραισκάκη | Τηλ.: 210 5227075 | Fax: 210 5227377 | 10436 Αθήνα κέντρο, Ελλάδα",
-		"content_2":"Όνομα:,Επώνυμο:,Διεύθυνση:,Χώρα:,Τηλέφωνο:,Email:,Μήνυμα:,Αποστολή"
+		"content_2":"Όνομα:,Επώνυμο:,Χώρα:,Διεύθυνση:,Τηλέφωνο:,Email:,Μήνυμα:,Αποστολή"
 		},
 		
 		{
@@ -149,7 +158,7 @@
 		"title":"Contact - Hotel Rio Athens",
 		"content_title":"Address,Contact form",
 		"content_1":"13 Odysseos str. - Karaiskaki sq.| Tel.: 210 5227075 | Fax: 210 5227377 | 10436 Athens, Greece",
-		"content_2":"First name:, Last name:,Address:,Country:,Tel:,Email:,Message:,Send"
+		"content_2":"First name:, Last name:,Country:,Address:,Tel:,Email:,Message:,Send"
 		}
 	],
 	

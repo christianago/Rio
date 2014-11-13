@@ -1,5 +1,14 @@
-var map = null;
+var map = null, map2 = null;
 var currentLanguage = localStorage.getItem('language');
+var playSound = true;
+
+
+jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +  $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) +  $(window).scrollLeft()) + "px");
+    return this;
+}
 
 function preventBack(){
 	window.history.forward();
@@ -8,15 +17,31 @@ function preventBack(){
 	}
 }
 
+$(window).blur(function() {
+	var audio = document.getElementById("zorba");
+	audio.pause();
+});
+
+$(window).focus(function() {
+	if ( playSound ){
+		var audio = document.getElementById("zorba");
+		audio.play();
+	}
+});
+
 $(document).ready(function(){
 	
 	//var language = window.navigator.userLanguage || window.navigator.language;
 	
-	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'location.php', 'photo-gallery.php', 'travel-services.php', 'contact.php', 'reviews.php'];
+	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'contact.php', 'reviews.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
+	
+	 //MAPS
+	 //geolocation();
+	 google.maps.event.addDomListener(window, 'load', geolocation);
 
 	
 	//preventBack();
@@ -36,12 +61,29 @@ $(document).ready(function(){
 		language(currentLanguage, myURL);
 	}
 
-	$(this).on('click', 'img.flag', function(e){
+	 $(this).on('click', 'img.flag', function(e){
 		 var title = $(this).attr('title');
 	     language(title, myURL);
 	     localStorage.setItem('language', title);
 	 });
 	//<-LANGUAGES//
+	 
+	 
+	 //AUDIO
+	 $(this).on('click', '#sound', function(e){
+		var src = $(this).attr('src');
+		var audio = document.getElementById("zorba");
+		if ( src == 'images/nosound.png' ){
+			$(this).attr('src', 'images/sound.png');
+			audio.play();
+			playSound = true;
+		} else{
+			$(this).attr('src', 'images/nosound.png');
+			audio.pause();
+			playSound = false;
+		}
+	 });
+	 //<-AUDIO
 	
 	
 	//SLIDESHOW//
@@ -91,6 +133,11 @@ $(document).ready(function(){
 	 $(this).on('click', '.weather', function(e){ $('#weather-window').modal('show'); });
 	 $(this).on('click', '.time', function(e){ $('#time-window').modal('show'); });
 	 $(this).on('click', '.currency', function(e){ $('#currency-window').modal('show'); });
+	 $(this).on('click', '#googleMap', function(e){ 
+		 $('#map-window').modal('show'); 
+		 geolocation2();
+		 google.maps.event.trigger(map2, 'resize'); 
+	 });
 	 //<-MODALS//
 	 
 	 
@@ -144,12 +191,6 @@ $(document).ready(function(){
 		 $(this).prevAll().andSelf().removeClass('fa-star-o').addClass('fa-star');
 	 });
 	
-
-	 //MAPS
-	if ( $('div.googleMap').length ){
-		google.maps.event.addDomListener(window, 'load', geolocation);
-	}
-	
 	
 	//AUTO SELECT DROPDOWNS
 	$('select.select-adults option:eq(1)').attr('selected',true);
@@ -157,12 +198,24 @@ $(document).ready(function(){
 	 
 	 
      //GALLERY//
-	 if(  $('a.fullsizable').length ){
-		 $('a.fullsizable').fullsizable();
-	 }
+	 $(this).on('click', 'body', function(e){
+		 if( $('div.full-image img').length )
+		 $('div.full-image img').fadeOut();
+	 });
 	 
+	 $(this).on('click', 'div.gallery-container img', function(e){
+		 e.stopImmediatePropagation();
+		 $('div.full-image img').fadeIn();
+		 $('div.full-image img').attr('src', $(this).attr('src'));
+		 var w = $(window).width() - 100;
+		 if ( w > 1000 ){ w = 1000; }
+		 $('div.full-image img').css({width:w});
+		 $('div.full-image img').center();
+	 });
+	 //<-GALLERY//
 	 
-	 //CONTACT//
+
+	 //CONTACT-REVIEW//
 	 if ( $('#message').text() == '2' || $('#message').text() == '1' || $('#message').text() == '0' ){
 		 
 		 $('#message-window div.modal-body .review-message').hide();
@@ -191,6 +244,7 @@ $(document).ready(function(){
 		 }
 		 $('#message-window').modal('show');
 	 }
+	 //<-CONTACT-REVIEW//
 	 
 	 
 	 //REVIEWS//
@@ -201,8 +255,8 @@ $(document).ready(function(){
 		 });
 		 //return false;
 	 });
-	 
-	 
+	//<-REVIEWS// 
+
 });
 
 
@@ -225,6 +279,31 @@ function language(l, p){
 		 if ( p == 'accomodation.php' ){
 			 $('title').text(data.accomodation[key].title);
 			 $('div.content-title').text(data.accomodation[key].content_title);
+			 $('div.content').text(data.accomodation[key].content);
+			 
+			 //content-sub-title
+			 var ct = data.accomodation[key].content_sub_title.split(',');
+			 $('div.content-sub-title').each(function(k, v){
+				 $(this).text(ct[k]);
+			 }); 
+			 
+			 //sub-content-1
+			 ct = data.accomodation[key].sub_content_1.split('#');
+			 var sc1 = '';
+			 $(ct).each(function(k, v){ sc1 += '<li>'+ct[k]+'</li>'; }); 
+			 $('ul.sub-content-1').html(sc1);
+			 
+			 //sub-content-2
+			 ct = data.accomodation[key].sub_content_2.split('#');
+			 var sc2 = '';
+			 $(ct).each(function(k, v){ sc2 += '<li>'+ct[k]+'</li>'; }); 
+			 $('ul.sub-content-2').html(sc2);
+			 
+			 //sub-content-3
+			 ct = data.accomodation[key].sub_content_3.split('#');
+			 var sc3 = '';
+			 $(ct).each(function(k, v){ sc3 += '<li>'+ct[k]+'</li>'; }); 
+			 $('ul.sub-content-3').html(sc3);
 			 
 		 } else if ( p == 'booking-info.php' ){
 			 $('title').text(data.booking_info[key].title);
@@ -258,6 +337,13 @@ function language(l, p){
 		 } else if ( p == 'travel-services.php' ){
 			 $('title').text(data.travel_services[key].title);
 			 $('div.content-title').text(data.travel_services[key].content_title);
+			 $('div.content').html(data.travel_services[key].content.split("|").join("<br/><br/>"));
+			 
+			//content-image-title
+			 var ct = data.travel_services[key].content_image_title.split(',');
+			 $('div.content-image-title').each(function(k, v){
+				 $(this).text(ct[k]);
+			 }); 
 			 
 		 }  else if ( p == 'contact.php' ){
 			 $('title').text(data.contact[key].title);
@@ -322,7 +408,38 @@ function language(l, p){
 		 $('body').show();
 
 	 });
+	 
+	 //AUDIO
+	 /*document.getElementById('zorba').addEventListener('ended', function(){
+	    this.currentTime = 0;
+	}, false);*/
 
+}
+
+
+function geolocation2(position){
+	
+	var myLatlng = new google.maps.LatLng(37.985298,23.719681);
+	
+    var mapOptions = {
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoom: 11
+    };
+    
+	if ( $('#googleMap-2').length ){
+    	map2 = new google.maps.Map(document.getElementById("googleMap-2"), mapOptions);
+    }
+	
+	markerInfo2(map2, createMarker(map2, myLatlng));
+	
+	var airportLatLng = new google.maps.LatLng(37.935647,23.948416);
+	createMarker(map2, airportLatLng);
+	var portLatLng = new google.maps.LatLng(37.940555,23.6333333);
+	createMarker(map2, portLatLng);
+	var trainLatLng = new google.maps.LatLng(37.991851,23.721024);
+	createMarker(map2, trainLatLng);
+	
 }
 
 
@@ -342,29 +459,31 @@ function geolocation(position){
     	map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
     }
     
-    var marker = createMarker(map, myLatlng);
-    markerInfo(map, marker);
+    markerInfo(map, createMarker(map, myLatlng));
+
 }
 
 
-function createMarker(map, myLatlng){
+function createMarker(map, Latlng){
 	var marker = new google.maps.Marker({
 		map: map,
-        position: myLatlng,
-        title: "Hotel Rio Athens",
+        position: Latlng,
     });
 	return marker;
 }
-	
+
 
 function markerInfo(map, marker){
-   var address = "Hotel Rio Athens";
-   var infoLen = address.length * 8;
-   var infoStyle = "style=width:"+infoLen+"px";
-   infowindow = new google.maps.InfoWindow({
-      content: '<div id="infoWindow"'+infoStyle+'>' + address,
-   });
+   var infowindow = new google.maps.InfoWindow({ content: '<div id="map-1-info">Hotel Rio Athens</div>' });
    infowindow.open(map, marker);
+}
+
+
+function markerInfo2(map, marker){
+   var info = '<div id="map-1-info"><img id="map-image" src="images/map-image.jpg" /></div>';
+   info += '<div id="map-2-info"><b>Hotel Rio Athens</b><br/>Οδυσσέως 13 -17,<br/>Πλατεία Καραισκάκη</div>';
+   var infowindow = new google.maps.InfoWindow({ content: info });
+   infowindow.open(map2, marker);
 }
 
 
@@ -398,5 +517,4 @@ function getTomorrow(){
 	} 
 	return today;
 }
-
 

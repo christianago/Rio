@@ -49,6 +49,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=el"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/index.js"></script>

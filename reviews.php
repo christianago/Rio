@@ -120,12 +120,12 @@
 				
 				
 				<div class="row"><br/>
-					<div class="col-xs-3 content">Κωδικός κράτησης</div>
-					<div class="col-xs-3"><input type="text" class="form-control" name="reserveid" required="required" /></div>
-					<div class="col-xs-2"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="Αξιολόγηση" /></div>
+					<div class="col-xs-2 col-xs-offset-4"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="Αξιολόγηση" /></div>
 				</div>
 				
 				<?php 
+				
+					//$review = date('Y/m/d').'#'.$data['reserveid'].'#'.$data['rv1'].'#'.$data['rv2'].'#'.$data['rv3'].'#'.$data['rv4'].'#'.$data['rv5'].'#'.$data['comments'];
 				
 					$reviews = array();
 					$avg = array();
@@ -138,18 +138,18 @@
 					    	if ( strlen($line) < 20 ) continue;
 					 		$reviews[] = $line;
 					    }
-					} else {
-						exit(0);
-					} 
+					} else { exit(0); } 
 					fclose($handle);
 					
 					$reviews = array_reverse($reviews);
 					
 					foreach($reviews as $k=>$v){
 						$part = explode('#', $v);
+						if ( $part[0] == '0' ) continue; //unapproved review
+						
 						$values = array();
 						
-						for($i = 2; $i < 7; $i++){
+						for($i = 3; $i < 8; $i++){
 							if ( $part[$i] != '0' ){
 								$values[] = $part[$i];
 							}
@@ -159,8 +159,8 @@
 						if ( $av == 0 ) continue;
 							
 						$avg[] = $av;
-						$dates[] =  $part[0];
-						$comments[] = $part[7].'&nbsp;';
+						$dates[] =  $part[1];
+						$comments[] = $part[8].'&nbsp;';
 					}
 					
 				?>
@@ -197,7 +197,6 @@
 </div>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="http://www.google-analytics.com/ga.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
