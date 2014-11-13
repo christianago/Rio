@@ -12,14 +12,14 @@ $(document).ready(function(){
 	
 	//var language = window.navigator.userLanguage || window.navigator.language;
 	
-	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'location.php', 'photo-gallery.php', 'bar-restaurant.php', 'contact.php', 'reviews.php'];
+	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'location.php', 'photo-gallery.php', 'travel-services.php', 'contact.php', 'reviews.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
 
 	
-	preventBack();
+	//preventBack();
 	
 	
 	if ( $.inArray(myURL, pages) != -1 ){
@@ -45,7 +45,15 @@ $(document).ready(function(){
 	
 	
 	//SLIDESHOW//
-	$('div.slideshow').cycle('fade');
+	$('div.slideshow')
+	.cycle({
+		fx: 'fade',
+		pager: '#nav',
+		 pagerAnchorBuilder: function(idx, slide) { 
+	        return '<li><a href="#"><img src="' + slide.src + '" width="70" height="50" /></a></li>'; 
+	    }
+	});
+
 	setTimeout(function(){
 		$('div.slideshow-container').fadeIn('slow');
 	}, 500);
@@ -122,6 +130,7 @@ $(document).ready(function(){
 	 }).on('mouseleave', 'span.footer-elem, span.footer-elem a', function(e){
 		 $('span.active-footer-elem').removeClass('active-footer-elem');
 	 });
+
 	 
 	 $(this).on('mouseenter', '#check-availability', function(e){
 		 $(this).addClass('text-hover');
@@ -246,9 +255,9 @@ function language(l, p){
 			 $('title').text(data.photo_gallery[key].title);
 			 $('div.content-title').text(data.photo_gallery[key].content_title);
 			 
-		 } else if ( p == 'bar-restaurant.php' ){
-			 $('title').text(data.bar_restaurant[key].title);
-			 $('div.content-title').text(data.bar_restaurant[key].content_title);
+		 } else if ( p == 'travel-services.php' ){
+			 $('title').text(data.travel_services[key].title);
+			 $('div.content-title').text(data.travel_services[key].content_title);
 			 
 		 }  else if ( p == 'contact.php' ){
 			 $('title').text(data.contact[key].title);
@@ -281,7 +290,7 @@ function language(l, p){
 		 }else{
 			 $('title').text(data.index[key].title);
 			 $('div.content-title').text(data.index[key].content_title);
-			 $('div.content').text(data.index[key].content);
+			 $('div.content').html(data.index[key].content.split("|").join("<br/><br/>"));
 		 }
 
 		 //header
@@ -291,7 +300,7 @@ function language(l, p){
 		 }); 
 		 
 		 //footer
-		 var footer = data.general[key].footer.split(',');
+		 var footer = data.general[key].footer.split('#');
 		 $('.footer-item').each(function(k, v){
 			 $(this).html(footer[k].split("|").join("<br/>"));
 		 });

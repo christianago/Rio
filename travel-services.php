@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bar &amp; Restaurant - Hotel Rio Athens</title>
+<title>Travel Services - Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -24,8 +24,7 @@
 	<div class="general-area-1 row">
 	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="content-title" align="center">Bar &amp; Restaurant στο Rio Athens</div><br/>
-
+			<div class="content-title" align="center"></div><br/>
 		</div>
 
 	</div>

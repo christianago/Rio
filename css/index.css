@@ -6,41 +6,100 @@
     src: url(fonts/Roboto-greek.woff);
 }
 
+@font-face {
+    font-family: Calligraphy;
+    src: url(fonts/cal.otf);
+}
+
 body{
-	background: rgba(226,226,226,1);
-	background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 61%, rgba(254,254,254,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(61%, rgba(219,219,219,1)), color-stop(100%, rgba(254,254,254,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 61%, rgba(254,254,254,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 61%, rgba(254,254,254,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 61%, rgba(254,254,254,1) 100%);
-	background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 61%, rgba(254,254,254,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top right, #FAFFFA 0%, #C9C9C9 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top right, #FAFFFA 0%, #C9C9C9 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top right, #FAFFFA 0%, #C9C9C9 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #FAFFFA), color-stop(1, #C9C9C9));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top right, #FAFFFA 0%, #C9C9C9 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom left, #FAFFFA 0%, #C9C9C9 100%);
 	display: none;
 }
 
 .container{
 	margin: 0 auto;
     width: 100%;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 	font-family: 'Roboto', sans serif;
 	font-size: 11pt;
 }
 
-
 /*HEADERS*/
-.the-header{
-	float: none;
-	margin: 0 auto;
-}
-
 .header-1{
-	padding-top: 5px;
-	height: 35px;
+	padding-top: 30px;
+	background: url(../images/sky.bmp) no-repeat;
+	background-size: cover;
 }
 
 .header-2{
 	background: #8B0000;
 	color: #fff;
+}
+
+#logo{
+	font-family: 'Calligraphy', sans serif;
+	font-size: 30pt;
+	letter-spacing: 5px;
+	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+	//margin-top: 5px; 
+}
+
+.slideshow-container{
+	display: none;
+	width:  650px; 
+	height: 420px; 
+}
+
+#nav{ 
+	width: 650px;
+	position: relative;
+	top: -50px;
+}
+
+#nav li{
+	float: left;
+	list-style: none;
+}
+
+li:hover{
+	opacity: 0.7;
+}
+
+.activeSlide img{
+	outline: 3px solid #537cb4;
+}
+
+#lezanta{
+	width: 650px;
+	font-family: 'Calligraphy', sans serif;
+	font-size: 30pt;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+	z-index: 100;
+	position: relative;
+	top: -38px;
+	background: #DCDCDC;
+	opacity: 0.4;
+	padding-right: 5px;
+	text-align: right;
+}
+
+.fa-circle{
+	font-size: 5pt;
+	position: relative;
+	top: -4px;
 }
 
 .header-hover{
@@ -71,28 +130,23 @@ a, a:active, a:hover{
 	cursor: pointer;
 }
 
-.slideshow img{
-    width:  670px; 
-    height: 420px; 
-    top:  0; 
-    right: 0; 
-} 
-
 .languages{
 	margin: 0 auto;
 	margin-top: 10px;
-	margin-left: 10px;
+	//margin-left: 10px;
 }
 
 .flag{
 	width: 20px;
-	margin-right: 10px;
+	margin-right: 7px;
 	cursor: pointer;
 }
 
 .book-online-container{
 	float: left;
 	text-align: left;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .book-online-literal{
@@ -117,12 +171,8 @@ a, a:active, a:hover{
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-}
-
-.slideshow-container{
-	display: none;
-	float: right;
-	width: 670px;
+	float: left;
+	
 }
 
 .active-link{
@@ -133,15 +183,30 @@ a, a:active, a:hover{
 	margin-top: 10px;
 	font-size: 13pt;
 	position: relative;
-	left: 6px;
+	left: 10px;
 	cursor: pointer;
 	color: #c7bc67;
+}
+
+.fa-asterisk{
+	color: #8B0000;
+	margin-top: 10px;
+	font-size: 9pt;
+}
+
+.datepicker{
+	font-size: 8pt;
 }
 
 .datepicker .table-condensed thead tr:nth-child(1){
 	background: #8B0000;
 	color: #fff;
 }
+
+.datepicker, input, .modal{
+	font-family: 'Roboto', sans serif;
+}
+
 
 td.disabled.day{
 	color: #000 !important;
@@ -161,11 +226,6 @@ td.day.active{
 	width: 100px;
 }
 /*->HEADERS*/
-
-
-.datepicker, input, .modal{
-	font-family: 'Roboto', sans serif;
-}
 
 input, select{
 	height: 30px;
@@ -210,7 +270,6 @@ input#check-availability{
 .welcome{
 	float: none;
 	margin: 0 auto;
-	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -224,7 +283,7 @@ input#check-availability{
 	color: #8B0000;
 }
 
-.footer-1{
+.footer-social{
 	background: #F4F4F4;
 	border-top: 1px solid #8B0000;
 	border-bottom: 1px solid #8B0000;
@@ -233,8 +292,28 @@ input#check-availability{
 	font-size: 9pt;
 }
 
-.footer-1 img{
-	width: 35px;
+.footer-social img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+#wifi{
+	width: 90px;
+}
+
+.footer-flash{
+	border-top: 1px solid #989898;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 10pt;
+}
+
+.markiza{
+	margin-top: 80px;
+}
+
+.rolex{
+	cursor: pointer;
 }
 
 
@@ -296,9 +375,9 @@ input#check-availability{
 
 /*LOCATION*/
 #googleMap{
-	margin-top: 50px;
+	//margin-top: 50px;
 	width: 100%;
-	height: 350px;
+	height: 250px;
 }
 
 #view-map{
@@ -326,7 +405,6 @@ input#check-availability{
 .review-label .fa-star-o, .review-label .fa-star{
 	cursor: pointer;
 }
-
 
 .review-container div{
 	border-bottom: 1px dotted #8B0000;
@@ -360,6 +438,14 @@ input#check-availability{
 	width: 100px;
 }
 
+.copyright{
+	margin-top: 5px;
+}
+
+.email a{
+	color: #000;
+}
+
 
 .contact-field{
 	margin-bottom: 10px;
@@ -369,7 +455,7 @@ input#check-availability{
 	@media (max-width: 1200px) {
 		
 		.header-2{
-			margin-top: 40px;
+			//margin-top: 40px;
 		}
 	
 	}

@@ -52,11 +52,11 @@
       </div>
       <div class="modal-body">
       
-      	 <div class="email-message" title="EL">Το μήνυμά σας εστάλη με επιτυχία.'</div>
-     	 <div class="email-message" title="EN">Your message sent succesfully.</div>
+      	 <div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.'</div>
+     	 <div class="email-message" title="EN">Thank you! Your message sent succesfully.</div>
      	 
-     	 <div class="review-message" title="EL">Η αξιολόγησή σας έγινε με επιτυχία.</div>
-     	 <div class="review-message" title="EN">Your review succesfully submited.</div>
+     	 <div class="review-message" title="EL">Ευχαριστούμε! Η αξιολόγησή σας έγινε με επιτυχία.</div>
+     	 <div class="review-message" title="EN">Thank you! Your review succesfully submited.</div>
      	 
      	 <div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
      	 <div class="fail-message" title="EN">Error occured. Please try again later.</div>

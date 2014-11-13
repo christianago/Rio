@@ -11,14 +11,16 @@
 <link rel="stylesheet" href="css/index.css" />
 
 </head>
-<body">
+<body>
 
 <?php include_once 'modals.php'; ?>
 
 <div class="container">
 
-	<div class="row the-header" align="center">
-		<?php include_once 'header.php'; ?>
+	<div class="row the-header">
+		<div class="col-xs-12">
+			<?php include_once 'header.php'; ?>
+		</div>
 	</div>
 
 	<div class="row">
@@ -46,7 +48,6 @@
 </div>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="http://www.google-analytics.com/ga.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
