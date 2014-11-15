@@ -5,8 +5,10 @@
 		"header":"Αρχική,Διαμονή,Κράτηση,Φωτογραφίες,Travel Services,Επικοινωνία,Αξιολογήσεις",
 		"reservation_item":"Κάντε κράτηση,Άφιξη,Αναχώρηση,Ενήλικες,Παιδιά,Δωμάτια,Έλεγχος διαθεσιμότητας",
 		"modal":"Καιρός,Τοπική Ώρα,Συνάλλαγμα,Χάρτης",
-		"footer":
-		"Καιρός#Πολιτική ξενοδοχείου#Τοπική ώρα#Συνάλλαγμα#Προτείνετε σε φίλο#Χρήσιμοι σύνδεσμοι#Οργανισμός Σιδηροδρόμων Ελλάδος#Διεθνής Αερολιμένας Αθηνών «Ελευθέριος Βενιζέλος»#Οργανισμός Λιμένος Πειραιώς#ΚΤΕΛ Αττικής#Νοσοκομεία στην Αθήνα#Τράπεζα της Ελλάδος#Εθνικό Κέντρο Άμεσης Βοήθειας#Γιατροί του Κόσμου#Ελληνική Αστυνομία#Λιμάνι Ραφήνας#Λιμάνι Λαυρίου"
+		"contact_details":"Τοποθεσία#Οδυσσέως 13 -17, Πλατεία Καραισκάκη#10436 Αθήνα κέντρο, Ελλάδα#Τηλ.: +30 210 5227075#Fax: +30 210 5227377#Email:#Γεωγ. μήκος: 37.985298#Γεωγ. πλάτος: 23.719681",
+		"modal_map_title":"Άφιξη από το αεροδρόμιο,Άφιξη από το λιμάνι Πειραιώς,Άφιξη από το σταθμό τρένο,Οδυσσέως 13 - 17,Πλατεία Καραισκάκη",
+		"modal_map_content":"Μετρό: Γραμμή 3 - Σύνταγμα, Γραμμή 2 - Μεταξουργείο#Λεωφορείο: Χ95 - Σύνταγμα, Τρόλλευ 11 - Ομόνοια#Μετρό: Γραμμή 1 - Ομόνοια#Μετρό: Γραμμή 2 - Μεταξουργείο",
+		"footer":"Καιρός#Πολιτική ξενοδοχείου#Τοπική ώρα#Συνάλλαγμα#Προτείνετε σε φίλο#Χρήσιμοι σύνδεσμοι#Οργανισμός Σιδηροδρόμων Ελλάδος#Διεθνής Αερολιμένας Αθηνών «Ελευθέριος Βενιζέλος»#Οργανισμός Λιμένος Πειραιώς#ΚΤΕΛ Αττικής#Νοσοκομεία στην Αθήνα#Τράπεζα της Ελλάδος#Εθνικό Κέντρο Άμεσης Βοήθειας#Γιατροί του Κόσμου#Ελληνική Αστυνομία#Λιμάνι Ραφήνας#Λιμάνι Λαυρίου"
 		},
 		
 		{
@@ -14,8 +16,65 @@
 		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
 		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
 		"modal":"Weather,Local time,Currency,Map",
-		"footer":
-		"Καιρός#Πολιτική ξενοδοχείου#Συνάλλαγμα#Προτείνετε σε φίλο#Τηλ.: 210 5227075 | Fax: 210 5227377#Χρήσιμοι σύνδεσμοι#Οργανισμός Σιδηροδρόμων Ελλάδος#Διεθνής Αερολιμένας Αθηνών «Ελευθέριος Βενιζέλος»#Οργανισμός Λιμένος Πειραιώς#ΚΤΕΛ Αττικής#Νοσοκομεία στην Αθήνα#Τράπεζα της Ελλάδος#Εθνικό Κέντρο Άμεσης Βοήθειας#Γιατροί του Κόσμου#Ελληνική Αστυνομία#Λιμάνι Ραφήνας#Λιμάνι Λαυρίου"
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
+		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		},
+		
+		{
+		"lang":"FR",
+		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
+		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
+		"modal":"Weather,Local time,Currency,Map",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
+		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		},
+		
+		{
+		"lang":"SP",
+		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
+		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
+		"modal":"Weather,Local time,Currency,Map",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
+		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		},
+		
+		{
+		"lang":"IT",
+		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
+		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
+		"modal":"Weather,Local time,Currency,Map",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
+		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		},
+		
+		{
+		"lang":"RU",
+		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
+		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
+		"modal":"Weather,Local time,Currency,Map",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
+		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		},
+		
+		{
+		"lang":"DE",
+		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
+		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
+		"modal":"Weather,Local time,Currency,Map",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
+		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
 		}
 	],
 	
@@ -24,16 +83,49 @@
 		"lang":"EL",
 		"title":"Ξενοδοχείο Rio Athens",
 		"content_title":"Καλώς ορίσατε στο ξενοδοχείο Rio Athens",		
-		"content":
-		"Το Ξενοδοχείο ΡΙΟ βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του Μετρό ΜΕΤΑΞΟΥΡΓΕΙΟ και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό της Αθήνας. Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος, απέχει 25΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του ΠΕΙΡΑΙΑ, με τον ηλεκτρικό σιδηρόδρομο. Το Ξενοδοχείο ΡΙΟ στεγάζεται σε ένα πολύ όμορφο νεοκλασικό κτίριο το οποίο έχει ανακαινισθεί πλήρως, συνδυάζοντας όλες τις ευκολίες της σύγχρονης ζωής με την κλασική αισθητική του κτιρίου.  Τα δωμάτια του Ξενοδοχείου είναι φιλόξενα και εξοπλισμένα με σύστημα κλιματισμού, ατομική τουαλέτα με μπάνιο ή ντουζιέρα, δορυφορική τηλεόραση, mini bar, στεγνωτήρα μαλλιών, τηλεφωνική συσκευή άμεσης κλήσης, που αποσκοπούν στην πλήρη προσωπική σας ικανοποίηση.|Το Bar - Εστιατόριο που βρίσκεται στο ισόγειο του ξενοδοχείου, αποτελεί έναν ιδανικό χώρο για να απολαύσετε το ποτό και το φαγητό σας, ακούγοντας ευχάριστη μουσική. Σερβίρονται πολλά είδη ποτών και εδεσμάτων από την ελληνική κουζίνα, έως τις πρώτες πρωινές ώρες.|Το Ξενοδοχείο ΡΙΟ συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον."
+		"content":"Το Ξενοδοχείο ΡΙΟ βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του Μετρό ΜΕΤΑΞΟΥΡΓΕΙΟ και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό της Αθήνας. Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος, απέχει 25΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του ΠΕΙΡΑΙΑ, με τον ηλεκτρικό σιδηρόδρομο.|Το Ξενοδοχείο ΡΙΟ στεγάζεται σε ένα πολύ όμορφο νεοκλασικό κτίριο το οποίο έχει ανακαινισθεί πλήρως, συνδυάζοντας όλες τις ευκολίες της σύγχρονης ζωής με την κλασική αισθητική του κτιρίου.  Τα δωμάτια του Ξενοδοχείου είναι φιλόξενα και εξοπλισμένα με σύστημα κλιματισμού, ατομική τουαλέτα με μπάνιο ή ντουζιέρα, δορυφορική τηλεόραση, mini bar, στεγνωτήρα μαλλιών, τηλεφωνική συσκευή άμεσης κλήσης, που αποσκοπούν στην πλήρη προσωπική σας ικανοποίηση.|Το Bar - Εστιατόριο που βρίσκεται στο ισόγειο του ξενοδοχείου, αποτελεί έναν ιδανικό χώρο για να απολαύσετε το ποτό και το φαγητό σας, ακούγοντας ευχάριστη μουσική. Σερβίρονται πολλά είδη ποτών και εδεσμάτων από την ελληνική κουζίνα, έως τις πρώτες πρωινές ώρες.|Το Ξενοδοχείο ΡΙΟ συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον."
 		},
 		
 		{
-		"lang":"EL",
+		"lang":"EN",
 		"title":"Hotel Rio Athens",
 		"content_title":"Welcome to Rio Athens Hotel",
-		"content":
-		"Το Ξενοδοχείο ΡΙΟ βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του Μετρό ΜΕΤΑΞΟΥΡΓΕΙΟ και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό της Αθήνας. Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος, απέχει 25΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του ΠΕΙΡΑΙΑ, με τον ηλεκτρικό σιδηρόδρομο. Το Ξενοδοχείο ΡΙΟ στεγάζεται σε ένα πολύ όμορφο νεοκλασικό κτίριο το οποίο έχει ανακαινισθεί πλήρως, συνδυάζοντας όλες τις ευκολίες της σύγχρονης ζωής με την κλασική αισθητική του κτιρίου.  Τα δωμάτια του Ξενοδοχείου είναι φιλόξενα και εξοπλισμένα με σύστημα κλιματισμού, ατομική τουαλέτα με μπάνιο ή ντουζιέρα, δορυφορική τηλεόραση, mini bar, στεγνωτήρα μαλλιών, τηλεφωνική συσκευή άμεσης κλήσης, που αποσκοπούν στην πλήρη προσωπική σας ικανοποίηση.|Το Bar - Εστιατόριο που βρίσκεται στο ισόγειο του ξενοδοχείου, αποτελεί έναν ιδανικό χώρο για να απολαύσετε το ποτό και το φαγητό σας, ακούγοντας ευχάριστη μουσική. Σερβίρονται πολλά είδη ποτών και εδεσμάτων από την ελληνική κουζίνα, έως τις πρώτες πρωινές ώρες.|Το Ξενοδοχείο ΡΙΟ συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον."
+		"content":"Hotel RIO is located in the center of Athens, on the quiet pedestrian street of the Karaiskaki square, next the subway station METAXOURGHIO and quite near the international railway station. It is 1 Km away from the Syntagma sq, a 25 minutes drive from the Athens international airport and 15 minutes from the port of PIREAUS by subway. |RIO is a beautiful neoclassical building entirely restored, blending every modern convenience with the classical aesthetic.  The hotel rooms are welcoming and fitted out with air-conditioning, personal bath or shower, satellite TV, mini bar, hairdryer, direct dial phone with the aim of your complete comfort. |The Bar-Restaurant, at the ground floor, is the ideal place to relax enjoying drinks, food and pleasant music. It serves many kinds of drinks and Greek specialities until well after midnight. |Hotel RIO is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips.  During all the year, everything is at your disposal, for a reasonable price, with a quality of service in a friendly environment. "
+		},
+		
+		{
+		"lang":"FR",
+		"title":"Hotel Rio Athens",
+		"content_title":"Bienvenue à Rio Athens Hotel",
+		"content":"L'hotel RIO est situe au centre d'Athenes, sur la rue pietonne paisible de la place Karaiskaki, apres la station de metro METAXOURGHIO et tres pres de la gare internationale des trains. Il est situe a un kilometre de distance de la place Syntagma, a 35 minutes de l'aeroport international d'Athenes et a 15 minutes de metro du port du PIREE. RIO est un beau batiment neoclassique entierement restaure, combinant tous les conforts modernes avec l'esthetique classique.  Les chambres d'hotel sont accueillantes et climatisees, equipees d'une salle de bain personnelle ou d'une douche, d'un televiseur relie au satellite, d'un mini bar, d'un seche-cheveux et d'une ligne de telephone directe; Tout cela dans le but de vous offrir le confort le plus total. Le Bar-Restaurant, au rez-de-chaussee, est l'endroit ideal pour vous detendre en profitant des boissons, des repas et de l'agreable musique. On y sert beaucoup de boissons et de specialites grecques meme apres minuit. L'hotel RIO est recommande par beaucoup de guides touristiques internationaux dans le monde non seulement pour des sejours de vacances, mais egalement pour des voyages d'affaires.  Pendant toute l'annee, tout est a votre disposition -un service de qualite dans un environnement convivial- a un prix raisonnable. "
+		},
+		
+		{
+		"lang":"SP",
+		"title":"Hotel Rio Athens",
+		"content_title":"Bienvenido en Rio Athens Hotel",
+		"content":"El Hotel RIO esta situado en el centro de Atenas, en la silenciosa calle peatonal de la plaza de Karaiskaki, proxima a la estacion de metro METAXOURGHIO y cerca de la estacion de tren internacional. Se encuentra a 1 Km de distancia de la Plaza de Syntagma, a 35 minutos en coche del aeropuerto internacional de Atenas y a 15 minutos en metro del puerto del EL PIREO. RIO es un bonito edificio neoclasico completamente restaurado, en donde se funde su moderno confort con la estetica clasica.  Las habitaciones del hotel son acogedoras y estan equipadas con aire acondicionado, bano o ducha independiente, television satelite, mini bar, secador, asi como de linea de telefono directa, para ofrecerle un confort total. El Bar-Restaurante, situado en la planta baja, es el lugar ideal para relajarse disfrutando de bebidas, comida y de una musica muy agradable. Se sirven muchos tipos de bebidas diferentes y de especialidades griegas hasta bien entrada la medianoche. El Hotel RIO esta recomendado en muchas guias turisticas del mundo, no solo para vacaciones sino tambien para estancias de negocios.  A lo largo de todo el ano se encuentra todo a su disposicion, a un precio razonable y con calidad de servicio, todo ello rodeado de una atmosfera cordial. "
+		},
+		
+		{
+		"lang":"IT",
+		"title":"Hotel Rio Athens",
+		"content_title":"Benvenuto a Rio Athens Hotel",
+		"content":"L' albergo RIO e situato nel centro di Atene, in una tranquilla stradina pedonale della piazza Karaiskaki, nelle vicinanze della fermata METAXOURGHIO del metro e presso la stazione internazionale dei treni. Dista 1 km da piazza Sintagma, 35 minuti dall'aeroporto internazionale di Atene e 15 minuti dal porto di Pireo con la metropolitana. L' albergo RIO e un edificio neoclassico molto bello, interamente ristrutturato, combinando l'estetica dell'architettura classica con la convenienza odierna.  Le sue camere sono confortevoli e attrezzate di aria condizionata, bagno con vasca o doccia, televisione satellitare, mini bar, asciugacapelli, telefono diretto, tutti comfort per garantire un soggiorno ideale. Il Bar-Ristorante, sul piano terra, e un posto ideale dove per i momenti di relax si puo sorseggiare un drink e ascoltare della musica, mentre al ristorante si possono gustare piatti della cucina greca. Ristorante e bar servono fino a mezzanotte. L'albergo RIO e raccomandato in molte guide turistiche in tutto il mondo non solo come albergo dove trascorrere le vacanze, ma adatto anche per viaggi di lavoro.  A prezzi raggionevoli durante l'anno ci si puo trovare un servizio di qualita e un ambiente amichevole. "		
+		},
+		
+		{
+		"lang":"RU",
+		"title":"Hotel Rio Athens",
+		"content_title":"Добро пожаловать на Rio Athens Hotel",
+		"content":"РИО-отель расположен в самом центре Афин, на тихой пешеходной улице Karaiskaki площади, рядом станция метро METAXOURGHIO и совсем недалеко от международной железнодорожной станции. Она составляет 1 км от Syntagma SQ, 35 минутах езды от международного аэропорта Афин и в 15 минутах езды от порта Пирей на метро. РИО является прекрасным неоклассических зданий полностью восстановлена, сочетание всех современных удобств с классическими эстетическими. В номерах приветствуя и оснащены кондиционером, личная ванная или душ, спутниковое телевидение, мини-бар, фен, прямой телефон с целью вашего полного комфорта.  Το Бар-ресторан, на первом этаже, является идеальным местом для отдыха пользуются напитки, продукты питания и приятной музыки. Он выполняет различные виды напитков и греческие блюда до и после полуночи.  Отель 'РИО' рекомендуется во многих международных туристических руководство книг во всем мире не только в праздничные дни пребывания, но и для деловых поездок.  Καθ' όλη τη διάρκεια В течение всего года, все в вашем распоряжении, за разумную цену, с качеством обслуживания в дружественной среде."
+		},
+		
+		{
+		"lang":"DE",
+		"title":"Hotel Rio Athens",
+		"content_title":"Willkommen auf Rio Athens Hotel",
+		"content":"Das Hotel RIO befindet sich im Zentrum von Athen, auf der stillen Fussgaengerzone auf dem Karaiskaki Platz, neben der U-Bahn Station METAXOURGHIO und ziemlich nahe an der internationalen Bahnstelle. Es ist 1 Km weit vom Syntagma Platz, 35 Minuten mit dem Auto von dem internationalen Flughafen Athens und 15 Minuten von dem Piraeus Schiffhafen mit der S-Bahn. RIO ist ein schoenes neuklassisches total renoviertes Gebaude, modern und klassisch aestaetisch zugleich.  Die Hotel Zimmer sind willkommend und mit A/C, persoenliches Bad oder Dusche, Satelliten Fernseher, Mini Bar, Haartrockner und direkte Telephonverbindung zu Ihrem vollstaendigen Komfort ausgestattet. Das Bar-Restaurant in dem Erdgeschoss ist ein ideales Platz um sich zu entspannen und Getraenke, Essen und angenehme Musik zu geniessen. Man serviert eine grosse Vielfalt von Getraenken und Griechischen Gerichten bis weit nach Mitternacht. Das Hotel RIO ist in vielen internationalen turistischen Reisefuehrer auf der ganzen Welt empfohlen, nicht nur fuer Ferien, aber auch fuer Geschaeftsreisen.  Das ganze Jahr lang ist alles auf Ihre Verfuegung, fuer einen vernuenftigen Preis, bei einer Dienstqualitaet in einer freundlichen Umgebung. "
 		}
 	],
 
@@ -64,33 +156,29 @@
 		{
 		"lang":"EL",
 		"title":"Κράτηση - Hotel Rio Athens",
-		"content_title":"Κρατήσεις,Εγγυημένες κρατήσεις και καταθέσεις,Πολιτικές,Σύνδεσμοι,Τιμές,Επιπλέον παροχές,Εκπτώσεις,Όροι πληρωμής,Πολιτική ακύρωσης,Αποδεκτές πιστωτικές κάρτες",
+		"content_title":"Πολιτική Ξενοδοχείου,Κρατήσεις,Εγγυημένες κρατήσεις και καταθέσεις,Τιμές,Επιπλέον παροχές,Εκπτώσεις,Όροι πληρωμής,Αποδεκτές πιστωτικές κάρτες",
+		"content_0":"Cancellation Policy: 72 hours before arrival, otherwise we will charge you for one night's fee.|No Show Policy : No refunds will be made for no-shows or early checkouts.|Child Policy: The first child under 5(five) years of age is free of charge in parent's bed. All other child(ren) under 12(twelve) years of age, pay 50% from the adult rate. More than 12(twelve) years of age is considered adult.|Quad / Family room fits 4(four) guests, 2(two) adults and 2(two) children or 1( one) adult and 3(three) children. More guests than 4(four) adult(s) or child(ren) in the quad / family room will be charged with 20% of the room rate each.",
 		"content_1":"The 'Reservations' panel will take you through a very quick, user-friendly online booking system. You will be able to check room availability and make your booking; to confirm reservation, you will receive a confirmation within 8 business hours. In addition you will receive an e-mail including details of your reservation.",
-		"content_2":"By securing your online reservation with a credit card ( VeriSign Secured), you are eligible for our Reservations Guarantee even if you check in late. All reservations made through the web site must be by Visa Card or MasterCard. You will be charged for the first night. Please check for full deposit requirements at time of booking. ",
-		"content_3":"Cancellation Policy: Cancellations for a hotel room reservation must be received within the cancellation policy indicated on the reservation. If cancellation of a guaranteed reservation is not received by the required date, the hotel will charge for one night's accommodation. For details of cancellation policies and deposit requirements, please check at time of booking. No Show Policy: No refunds will be made for no-shows or early checkouts. Child Policy: The first child under 5 (five) years of age is free of charge in parent's bed. All other child(ren) under 12(twelve) years of age, pay 50 % from the adult rate. More than 12 years of age is considered adult. Family room fits 4(four) guests, 2(two) adults and 2(two) children or 1( one) adult and 3(three) children. More guests adult(s) or child(ren) in the family room will be charged with 20% of the room rate each. ",
-		"content_4":"All links provided the website of Hotel Rio Athens are done so in good faith, to offer an additional facility to visitors of this site. Hotel Rio Athens is not responsible for any content held within any such website, nor for any links contained in them. The inclusion of external links does not signify any endorsement by Hotel Rio Athens. ",
-		"content_5":"Όλες οι τιμές περιλαμβάνουν: Πλήρες πρωινό μπουφέ, τοπικούς φόρους και τέλη. ",
-		"content_6":"Μεσημεριανό ή δείπνο μόνο για γκρουπ ανά άτομο - 15 ευρώ | Ποτό καλωσορίσματος (ούζο ή μαλακά ποτά με σνακ) - 5 ευρώ | Παιδικό κρεβάτι - 5 ευρώ ",
-		"content_7":"Παρακαλώ σημειώστε ότι γκρουπ τιμή προσφέρεται για 20 άτομα και πάνω. | Για κάθε 25 άτομα, ένα άτομο είναι δωρεάν στην τιμή του δίκλινου δωματίου (μισό δίκλινο). ",
-		"content_8":"Για μεμονωμένους πελάτες, θα σας ζητηθεί η πιστωτική σας κάρτα ως εγγύηση μέχρι 48 ώρες πριν την άφιξη. | Μετά από αυτό θα χρεωθείτε για την πρώτη νύχτα. | Για τα γκρουπ, 50% προκαταβολή με την επιβεβαίωση, ολόκληρη πληρωμή αναλόγως τη συμφωνία.",
-		"content_9":"Για μεμονωμένους πελάτες μέχρι 48 ώρες πριν την άφιξη, οι πελάτες δεν χρεώνονται. | Για γκρουπ αναλόγως τη συμφωνία. | Η προκαταβολή δεν επιστρέφεται. | Το ξενοδοχείο Ρίο διατηρεί του δικαιώματός του για χρέωση της πιστωτικής σας κάρτας για τη νύχτα, σε περίπτωση που χωρίς να έχετε ακυρώσει δεν παρευρεθείτε. Για κάθε ακύρωση θα πρέπει να λαμβάνεται αντίστοιχη επιβεβαίωση της ακύρωσης. ",
-		"content_10":"Visa, Mastercard."
+		"content_2":"By securing your online reservation with a credit card (VeriSign Secured), you are eligible for our Reservations Guarantee even if you check in late. All reservations made through the web site must be by Visa Card or MasterCard. You will be charged for the first night. Please check for full deposit requirements at time of booking. ",
+		"content_3":"Όλες οι τιμές περιλαμβάνουν: Πλήρες πρωινό μπουφέ, τοπικούς φόρους και τέλη. ",
+		"content_4":"Μεσημεριανό ή δείπνο μόνο για γκρουπ ανά άτομο - 15 ευρώ | Ποτό καλωσορίσματος (ούζο ή μαλακά ποτά με σνακ) - 5 ευρώ | Παιδικό κρεβάτι - 5 ευρώ ",
+		"content_5":"Παρακαλώ σημειώστε ότι γκρουπ τιμή προσφέρεται για 20 άτομα και πάνω. | Για κάθε 25 άτομα, ένα άτομο είναι δωρεάν στην τιμή του δίκλινου δωματίου (μισό δίκλινο). ",
+		"content_6":"Για μεμονωμένους πελάτες, θα σας ζητηθεί η πιστωτική σας κάρτα ως εγγύηση μέχρι 48 ώρες πριν την άφιξη. | Μετά από αυτό θα χρεωθείτε για την πρώτη νύχτα. | Για τα γκρουπ, 50% προκαταβολή με την επιβεβαίωση, ολόκληρη πληρωμή αναλόγως τη συμφωνία.",
+		"content_7":"Visa, Mastercard."
 		},
 		
 		{
 		"lang":"EN",
 		"title":"Booking info - Hotel Rio Athens",
-		"content_title":"Reservations,Guaranteed Reservations and Deposits,Policies,Links,Prices,Extra services,Discounts,Payment terms,Cancelation policy,Accepted credit cards",
+		"content_title":"Hotel Policy,Reservations,Guaranteed Reservations and Deposits,Prices,Extra services,Discounts,Payment terms,Accepted credit cards",
+		"content_0":"Cancellation Policy: 72 hours before arrival, otherwise we will charge you for one night's fee.|No Show Policy : No refunds will be made for no-shows or early checkouts.|Child Policy: The first child under 5(five) years of age is free of charge in parent's bed. All other child(ren) under 12(twelve) years of age, pay 50% from the adult rate. More than 12(twelve) years of age is considered adult.|Quad / Family room fits 4(four) guests, 2(two) adults and 2(two) children or 1( one) adult and 3(three) children. More guests than 4(four) adult(s) or child(ren) in the quad / family room will be charged with 20% of the room rate each.",
 		"content_1":"The 'Reservations' panel will take you through a very quick, user-friendly online booking system. You will be able to check room availability and make your booking; to confirm reservation, you will receive a confirmation within 8 business hours. In addition you will receive an e-mail including details of your reservation.",
-		"content_2":"By securing your online reservation with a credit card ( VeriSign Secured), you are eligible for our Reservations Guarantee even if you check in late. All reservations made through the web site must be by Visa Card or MasterCard. You will be charged for the first night. Please check for full deposit requirements at time of booking. ",
-		"content_3":"Cancellation Policy: Cancellations for a hotel room reservation must be received within the cancellation policy indicated on the reservation. If cancellation of a guaranteed reservation is not received by the required date, the hotel will charge for one night's accommodation. For details of cancellation policies and deposit requirements, please check at time of booking. No Show Policy: No refunds will be made for no-shows or early checkouts. Child Policy: The first child under 5 (five) years of age is free of charge in parent's bed. All other child(ren) under 12(twelve) years of age, pay 50 % from the adult rate. More than 12 years of age is considered adult. Family room fits 4(four) guests, 2(two) adults and 2(two) children or 1( one) adult and 3(three) children. More guests adult(s) or child(ren) in the family room will be charged with 20% of the room rate each. ",
-		"content_4":"All links provided the website of Hotel Rio Athens are done so in good faith, to offer an additional facility to visitors of this site. Hotel Rio Athens is not responsible for any content held within any such website, nor for any links contained in them. The inclusion of external links does not signify any endorsement by Hotel Rio Athens. ",
-		"content_5":"Όλες οι τιμές περιλαμβάνουν: Πλήρες πρωινό μπουφέ, τοπικούς φόρους και τέλη.",
-		"content_6":"Μεσημεριανό ή δείπνο μόνο για γκρουπ ανά άτομο - 15 ευρώ | Ποτό καλωσορίσματος (ούζο ή μαλακά ποτά με σνακ) - 5 ευρώ | Παιδικό κρεβάτι - 5 ευρώ ",
-		"content_7":"Παρακαλώ σημειώστε ότι γκρουπ τιμή προσφέρεται για 20 άτομα και πάνω. | Για κάθε 25 άτομα, ένα άτομο είναι δωρεάν στην τιμή του δίκλινου δωματίου (μισό δίκλινο). ",
-		"content_8":"Για μεμονωμένους πελάτες, θα σας ζητηθεί η πιστωτική σας κάρτα ως εγγύηση μέχρι 48 ώρες πριν την άφιξη. | Μετά από αυτό θα χρεωθείτε για την πρώτη νύχτα. | Για τα γκρουπ, 50% προκαταβολή με την επιβεβαίωση, ολόκληρη πληρωμή αναλόγως τη συμφωνία.",
-		"content_9":"Για μεμονωμένους πελάτες μέχρι 48 ώρες πριν την άφιξη, οι πελάτες δεν χρεώνονται. | Για γκρουπ αναλόγως τη συμφωνία. | Η προκαταβολή δεν επιστρέφεται. | Το ξενοδοχείο Ρίο διατηρεί του δικαιώματός του για χρέωση της πιστωτικής σας κάρτας για τη νύχτα, σε περίπτωση που χωρίς να έχετε ακυρώσει δεν παρευρεθείτε. Για κάθε ακύρωση θα πρέπει να λαμβάνεται αντίστοιχη επιβεβαίωση της ακύρωσης. ",
-		"content_10":"Visa, Mastercard."
+		"content_2":"By securing your online reservation with a credit card (VeriSign Secured), you are eligible for our Reservations Guarantee even if you check in late. All reservations made through the web site must be by Visa Card or MasterCard. You will be charged for the first night. Please check for full deposit requirements at time of booking. ",
+		"content_3":"Όλες οι τιμές περιλαμβάνουν: Πλήρες πρωινό μπουφέ, τοπικούς φόρους και τέλη.",
+		"content_4":"Μεσημεριανό ή δείπνο μόνο για γκρουπ ανά άτομο - 15 ευρώ | Ποτό καλωσορίσματος (ούζο ή μαλακά ποτά με σνακ) - 5 ευρώ | Παιδικό κρεβάτι - 5 ευρώ ",
+		"content_5":"Παρακαλώ σημειώστε ότι γκρουπ τιμή προσφέρεται για 20 άτομα και πάνω. | Για κάθε 25 άτομα, ένα άτομο είναι δωρεάν στην τιμή του δίκλινου δωματίου (μισό δίκλινο). ",
+		"content_6":"Για μεμονωμένους πελάτες, θα σας ζητηθεί η πιστωτική σας κάρτα ως εγγύηση μέχρι 48 ώρες πριν την άφιξη. | Μετά από αυτό θα χρεωθείτε για την πρώτη νύχτα. | Για τα γκρουπ, 50% προκαταβολή με την επιβεβαίωση, ολόκληρη πληρωμή αναλόγως τη συμφωνία.",
+		"content_7":"Visa, Mastercard."
 		}
 	],
 	
@@ -149,7 +237,7 @@
 		"lang":"EL",
 		"title":"Επικοινωνία - Hotel Rio Athens",
 		"content_title":"Διεύθυνση,Φόρμα επικοινωνίας",
-		"content_1":"Οδυσσέως 13, Πλατεία Καραισκάκη | Τηλ.: 210 5227075 | Fax: 210 5227377 | 10436 Αθήνα κέντρο, Ελλάδα",
+		"content_1":"Οδυσσέως 13 - 17, Πλατεία Καραισκάκη | Τηλ.: +30 210 5227075 | Fax: +30 210 5227377 | 10436 Αθήνα κέντρο, Ελλάδα",
 		"content_2":"Όνομα:,Επώνυμο:,Χώρα:,Διεύθυνση:,Τηλέφωνο:,Email:,Μήνυμα:,Αποστολή"
 		},
 		
@@ -157,7 +245,7 @@
 		"lang":"EN",
 		"title":"Contact - Hotel Rio Athens",
 		"content_title":"Address,Contact form",
-		"content_1":"13 Odysseos str. - Karaiskaki sq.| Tel.: 210 5227075 | Fax: 210 5227377 | 10436 Athens, Greece",
+		"content_1":"13 - 17 Odysseos str., Karaiskaki sq.| Tel.: +30 210 5227075 | Fax: +30 210 5227377 | 10436 Athens center, Greece",
 		"content_2":"First name:, Last name:,Country:,Address:,Tel:,Email:,Message:,Send"
 		}
 	],
@@ -177,6 +265,4 @@
 	]
 
 }
-
-
 

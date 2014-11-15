@@ -10,7 +10,25 @@ $emailFrom = "info@hotel-rio.gr";
 $emailTo = "chrilamp@gmail.com";
 $domain = 'http://kris-demo.eu/';
 
+$headers = array("Content-Type: text/html; charset=UTF-8");
+$headers .= "Organization: Sender Organization\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/plain; charset=utf-8\r\n";
+$headers .= "X-Priority: 3\r\n";
+$headers .= "From: $emailFrom" . "\r\n";
+$headers .= "X-Mailer: PHP". phpversion() ."\r\n";
+
 if ( isset($_POST['email-us']) ){
+	
+	include_once 'securimage/securimage.php';
+	
+	$securimage = new Securimage();
+	
+	if ( $securimage->check($_POST['captcha']) == false ){
+		$_SESSION['message'] = "3";
+		header('Location: contact.php');
+		exit(0);
+	}
 	
 	$data = $_POST;
 	array_walk($data, "filter");
@@ -25,14 +43,7 @@ if ( isset($_POST['email-us']) ){
 	$msg .= 'Τηλέφωνο: '.$data['tel']."\r\n";
 	$msg .= 'Mήνυμα: '.$data['message']."\r\n";
 	
-	$headers = array("Content-Type: text/html; charset=UTF-8");
-	$headers .= "Organization: Sender Organization\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-type: text/plain; charset=utf-8\r\n";
-	$headers .= "X-Priority: 3\r\n";
-	$headers .= "From: $emailFrom" . "\r\n";
-	$headers .= "X-Mailer: PHP". phpversion() ."\r\n";
-		
+
 	$mail = mail($emailTo, $subject, $msg, $headers);
 	if ( $mail == 1 ){
 		$_SESSION['message'] = "1";
@@ -48,7 +59,6 @@ if ( isset($_POST['email-us']) ){
 	
 	$data = $_POST;
 	array_walk($data, "filter");
-	
 	//print_r($data);
 	
 	$file = "rv";
@@ -75,14 +85,6 @@ if ( isset($_POST['email-us']) ){
 	$reviewMsg .='Σχόλια: '.$data['comments']."\r\n";
 	$reviewMsg .="Έγκριση: \r\n";
 	$reviewMsg .= $domain.'approve-review.php?id='.$linecount;
-	
-	$headers = array("Content-Type: text/html; charset=UTF-8");
-	$headers .= "Organization: Sender Organization\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-type: text/plain; charset=utf-8\r\n";
-	$headers .= "X-Priority: 3\r\n";
-	$headers .= "From: $emailFrom" . "\r\n";
-	$headers .= "X-Mailer: PHP". phpversion() ."\r\n";
 
 	$mail = mail($emailTo, $subject, $reviewMsg, $headers);
 	

@@ -127,6 +127,8 @@ a, a:active, a:hover{
 }
 
 .useful-links{
+	position: relative;
+	left: -20px;
 	display: none;
 }
 
@@ -365,7 +367,7 @@ input#check-availability{
 	width: 300px;
 }
 
-.email-message, .review-message, .fail-message{
+.email-message, .review-message, .fail-message, .captcha-message{
 	display: none;
 }
 
@@ -409,10 +411,17 @@ input#check-availability{
 
 #map-1-info{
 	width: 110px; 
-	float: left; 	
+	overflow: hidden !important;;
+	white-space: nowrap;
+	height: 20px;
 }
 
 #map-2-info{
+	width: 110px; 
+	float: left; 	
+}
+
+#map-3-info{
 	overflow: hidden !important;;
 	white-space: nowrap;
 	width: 140px;
@@ -492,6 +501,18 @@ input#check-availability{
 
 .content-sub-title{
 	font-weight: bold;
+}
+
+#captcha-img{
+	width: 190px;
+}
+
+#captcha-text{
+	font-size: 9pt;
+}
+
+.modal-map-title.address{
+	display: none;
 }
 
 .contact-field{

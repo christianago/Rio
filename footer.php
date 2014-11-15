@@ -4,15 +4,26 @@
 		<div class="googleMap" id="googleMap"></div>
 	</div>
 
-	<div class="col-xs-3 col-lg-2">												
-		<b>Τοποθεσία</b> <br/>Οδυσσέως 13 -17, Πλατεία Καραισκάκη <br/>
-		10436 Αθήνα κέντρο, Ελλάδα <br/><br/>
-		Τηλ.: 210 5227075 <br/>
-		Fax: 210 5227377 <br/>
-		Email: <span class="email"><a href="mailto:?subject=Hotel Rio Athens&body=www.hotel-rio.gr">info-hotel-rio.gr</a></span><br/><br/>
-		Γεωγ. μήκος: 37.985298 <br/>
-		Γεωγ. πλάτος: 23.719681
+	<div class="col-xs-3 col-lg-2 contact-details">												
+		<b class="cd"></b>
+		<br/>
+		<span class="cd"></span> <br/>
+		<span class="cd"></span>
+		<br/><br/>
+		<span class="cd"></span>
+		<br/>
+		<span class="cd"></span>
+		<br/>
+		<span class="cd"></span>
+		<span class="email"><a href="mailto:?subject=Hotel Rio Athens&body=www.hotel-rio.gr">info-hotel-rio.gr</a></span>
+		<br/><br/>
+		<span class="cd"></span>
+		<br/>
+		<span class="cd"></span>
 	</div>	
+	
+	<span class="modal-map-title address"></span>
+	<span class="modal-map-title address"></span>
 	
 	<div class="col-xs-4 col-lg-2 markiza">												
 		<embed src="flash/e-led.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="370" height="85" wmode="undefined" type="application/x-shockwave-flash"></embed>
@@ -55,7 +66,7 @@
 		
 		
 		<div class="row">
-			<div class="col-xs-3 footer-elem col-xs-offset-2">
+			<div class="col-xs-6 footer-elem col-xs-offset-2">
 				<span class="footer-elem useful-links-container footer-item"></span>
 				<div><br/>
 					<ul class="useful-links">

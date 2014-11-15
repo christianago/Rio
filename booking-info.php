@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -26,56 +26,30 @@
 	<div class="general-area-1 row">
 	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="content-title"></div><br/>
-<div class="content">
-
-</div>
-			
-<br/><br/><div class="content-title"></div><br/>
-
-<div class="content">
-</div>
-
-<br/><br/><div class="content-title"></div><br/>
-
-<div class="content">
-</div>
 
 <br/><br/><div class="content-title">Links</div><br/>
-
-<div class="content">
-</div>
+<div class="content"></div>
 
 <br/><br/><div class="content-title"></div><br/>
+<div class="content"></div>
 
-<div class="content">
-</div>
-
-
-<br/><br/><div class="content-title"></div><br/>
-
-<div class="content">
-</div>
+<br/><br/><div class="content-title">Links</div><br/>
+<div class="content"></div>
 
 <br/><br/><div class="content-title"></div><br/>
-
-<div class="content">
-</div>
+<div class="content"></div>
 
 <br/><br/><div class="content-title"></div><br/>
-
-<div class="content">
-</div>
+<div class="content"></div>
 
 <br/><br/><div class="content-title"></div><br/>
-
-<div class="content">
-</div>
+<div class="content"></div>
 
 <br/><br/><div class="content-title"></div><br/>
+<div class="content"></div>
 
-<div class="content">
-</div>
+<br/><br/><div class="content-title"></div><br/>
+<div class="content"></div>
 
 		</div>
 
@@ -87,6 +61,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/index.js"></script>

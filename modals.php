@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Καιρός</h4>
+        <h4 class="modal-title">Weather</h4>
       </div>
       <div class="modal-body">
         <iframe id="forecast_embed" scrolling="no" frameborder="0" height="420" width="800" src="http://www.wunderground.com/q/locid:GRIX0012#city-page"></iframe>
@@ -18,7 +18,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Τοπική Ώρα</h4>
+        <h4 class="modal-title">Local Time</h4>
       </div>
       <div class="modal-body">
         <iframe frameborder="0" height="500" width="100%" src="http://www.worldtimeserver.com/current_time_in_GR.aspx"></iframe>
@@ -33,7 +33,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Συνάλλαγμα</h4>
+        <h4 class="modal-title">Currency</h4>
       </div>
       <div class="modal-body">
         <iframe id="tmcmini" src="http://themoneyconverter.com/MoneyConverter.aspx?from=USD&amp;to=EUR"
@@ -49,21 +49,21 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Χάρτης</h4>
+        <h4 class="modal-title">Map</h4>
       </div>
       <div class="modal-body">
-	      <b>Άφιξη από το αεροδρόμιο</b><br/>
+	      <b class="modal-map-title"></b><br/>
 	      <ul>
-	      	<li>Μετρό: Γραμμή 3 - Σύνταγμα, Γραμμή 2 - Μεταξουργείο</li>
-	      	<li>Λεωφορείο: Χ95 - Σύνταγμα, Τρόλλευ 11 - Ομόνοια</li>
+	      	<li class="modal-map-content"></li>
+	      	<lo class="modal-map-content"></li>
 	      </ul>
-	      <b>Άφιξη από το λιμάνι Πειραιώς</b>
+	      <b class="modal-map-title"></b>
 	      <ul>
-	      	<li>Μετρό: Γραμμή 1 - Ομόνοια</li>
+	      	<li class="modal-map-content"></li>
 	      </ul>
-	      <b>Άφιξη από το σταθμό τρένου</b>
+	      <b class="modal-map-title"></b>
 	      <ul>
-	      	<li>Μετρό: Γραμμή 2 - Μεταξουργείο</li>
+	      	<li class="modal-map-content"></li>
 	      </ul>
 	      <br/>
        	<div class="googleMap-2" id="googleMap-2"></div>
@@ -82,8 +82,11 @@
       </div>
       <div class="modal-body">
       
-      	 <div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.'</div>
+      	 <div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.</div>
      	 <div class="email-message" title="EN">Thank you! Your message sent succesfully.</div>
+     	 
+     	 <div class="captcha-message" title="EL">Ο κωδικός CAPTCHA δεν είναι σωστός. Παρακαλούμε προσπαθήστε ξανά.</div>
+     	 <div class="captcha-message" title="EN">CAPTCHA code is not correct. Please try again.</div>
      	 
      	 <div class="review-message" title="EL">Ευχαριστούμε! Η αξιολόγησή σας έγινε με επιτυχία και θα ελεγχθεί σύντομα.</div>
      	 <div class="review-message" title="EN">Thank you! Your review succesfully submited and it will be briefly verified.</div>

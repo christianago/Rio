@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Αξιολογήσεις - Hotel Rio Athens</title>
+<title>Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -29,7 +29,7 @@
 	<div class="row">
 	
 		<div class="col-xs-11 col-lg-8 welcome">
-			<div class="content-title content">Αξιολογήστε το ξενοδοχείο μας</div><br/>
+			<div class="content-title content"></div><br/>
 			
 			<form id="review-form" action="submit.php" method="post">
 			
@@ -37,7 +37,7 @@
 					<input name="rv1" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-hospital-o fa-2x"></i>
-						<span class="content">Γενική εικόνα</span>
+						<span class="content"></span>
 					</div>
 					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
@@ -52,7 +52,7 @@
 				<input name="rv2" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-female fa-2x"></i>
-						<span class="content">Προσωπικό</span>
+						<span class="content"></span>
 					</div>
 					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
@@ -67,7 +67,7 @@
 				<input name="rv3" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-map-marker fa-2x"></i>
-						<span class="content">Τοποθεσία</span>
+						<span class="content"></span>
 					</div>
 					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
@@ -82,7 +82,7 @@
 				<input name="rv4" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-trash fa-2x"></i>
-						<span class="content">Καθαριότητα</span>
+						<span class="content"></span>
 					</div>
 					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
@@ -111,7 +111,7 @@
 				<div class="row">
 				<br/>
 					<div class="col-xs-3">
-						<span class="content"><b>Σχόλια</b></span>
+						<span class="content"><b></b></span>
 					</div>
 					<div class="col-xs-3">
 						<textarea class="form-control" rows="5" name="comments"></textarea>
@@ -198,6 +198,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/index.js"></script>

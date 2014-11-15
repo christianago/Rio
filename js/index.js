@@ -19,15 +19,16 @@ function preventBack(){
 
 $(window).blur(function() {
 	var audio = document.getElementById("zorba");
-	audio.pause();
+	if ( audio ) audio.pause();
 });
 
 $(window).focus(function() {
+	var audio = document.getElementById("zorba");
 	if ( playSound ){
-		var audio = document.getElementById("zorba");
-		audio.play();
+		if ( audio ) audio.play();
 	}
 });
+
 
 $(document).ready(function(){
 	
@@ -39,13 +40,13 @@ $(document).ready(function(){
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
 	
-	 //MAPS
-	 //geolocation();
-	 google.maps.event.addDomListener(window, 'load', geolocation);
-
-	
 	//preventBack();
 	
+	 //MAPS
+	 geolocation(1, 15);
+	 //google.maps.event.addDomListener(window, 'load', geolocation);
+	 //<-MAPS
+	 
 	
 	if ( $.inArray(myURL, pages) != -1 ){
 		var key = $.inArray(myURL, pages);
@@ -75,11 +76,11 @@ $(document).ready(function(){
 		var audio = document.getElementById("zorba");
 		if ( src == 'images/nosound.png' ){
 			$(this).attr('src', 'images/sound.png');
-			audio.play();
+			if ( audio ) audio.play();
 			playSound = true;
 		} else{
 			$(this).attr('src', 'images/nosound.png');
-			audio.pause();
+			if ( audio ) audio.pause();
 			playSound = false;
 		}
 	 });
@@ -124,8 +125,8 @@ $(document).ready(function(){
 	 $(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
 		$(this).css('background', '#8B0000');
 	 });
-	 $('#start-date').val(getToday());
-	 $('#end-date').val(getTomorrow());
+	 $('#start-date').val(getDate(0));
+	 $('#end-date').val(getDate(1));
 	 //<-DATEPICKER//
 	 
 	 
@@ -135,17 +136,20 @@ $(document).ready(function(){
 	 $(this).on('click', '.currency', function(e){ $('#currency-window').modal('show'); });
 	 $(this).on('click', '#googleMap', function(e){ 
 		 $('#map-window').modal('show'); 
-		 geolocation2();
+		 geolocation(2, 11);
 		 google.maps.event.trigger(map2, 'resize'); 
 	 });
 	 //<-MODALS//
 	 
 	 
+	 //USEFUL LINKS
 	 $(this).on('click', '.useful-links-container', function(e){
 		 $('ul.useful-links').slideToggle();
 	 });
+	//<-USEFUL LINKS
 	 
 	 
+	 //BOOKMARK
 	 $(this).on('click', '.bookmarkme', function() {
          if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
              window.sidebar.addPanel(document.title,window.location.href,'');
@@ -158,9 +162,10 @@ $(document).ready(function(){
              alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
          }
      });
-
+	//<-BOOKMARK
 
 	
+	//HEADER MENU
 	$(this).on('mouseenter', 'div.header-hover:not(.active-link)', function(){
 		$(this).css('background', '#888888');
 	}).on('mouseleave', 'div.header-hover:not(.active-link)', function(){
@@ -169,33 +174,40 @@ $(document).ready(function(){
 		var link = $(this).find('a').attr('href');
 		window.location.href = link;
 	});
+	//<-HEADER MENU
 	
 	
+	 //FOOTER MENU
 	 $(this).on('mouseenter', 'span.footer-elem, span.footer-elem a', function(e){
 		 $('span.active-footer-elem').removeClass('active-footer-elem');
 		 $(this).addClass('active-footer-elem');
 	 }).on('mouseleave', 'span.footer-elem, span.footer-elem a', function(e){
 		 $('span.active-footer-elem').removeClass('active-footer-elem');
 	 });
+	//<-FOOTER MENU
 
 	 
+	 //AVAILABILITY BUTTON
 	 $(this).on('mouseenter', '#check-availability', function(e){
 		 $(this).addClass('text-hover');
 	 }).on('mouseleave', '#check-availability', function(e){
 		 $(this).removeClass('text-hover');
 	 });
+	 //<-AVAILABILITY BUTTON
 	 
 	 
+	 //REVIEW STARS
 	 $(this).on('mouseover click', '.review-label .fa-star-o, .review-label .fa-star', function(e){
 		 $(this).nextAll().removeClass('fa-star').addClass('fa-star-o');
 		 $(this).prevAll().andSelf().removeClass('fa-star-o').addClass('fa-star');
 	 });
+	 //<-REVIEW STARS
 	
 	
 	//AUTO SELECT DROPDOWNS
 	$('select.select-adults option:eq(1)').attr('selected',true);
 	$('select.select-rooms option:eq(1)').attr('selected',true);
-	 
+	//<-AUTO SELECT DROPDOWNS
 	 
      //GALLERY//
 	 $(this).on('click', 'body', function(e){
@@ -216,32 +228,27 @@ $(document).ready(function(){
 	 
 
 	 //CONTACT-REVIEW//
-	 if ( $('#message').text() == '2' || $('#message').text() == '1' || $('#message').text() == '0' ){
+	 if ( $('#message').text() == '3' || $('#message').text() == '2' || $('#message').text() == '1' || $('#message').text() == '0' ){
 		 
 		 $('#message-window div.modal-body .review-message').hide();
 		 $('#message-window div.modal-body .email-message').hide();
 		 $('#message-window div.modal-body .fail-message').hide();
+		 $('#message-window div.modal-body .captcha-message').hide();
 		 
-		 if ( $('#message').html() == '2' ){
-			 if ( $('#message-window div.modal-body .review-message[title="'+currentLanguage+'"]').length ){
-				 $('#message-window div.modal-body .review-message[title="'+currentLanguage+'"]').show();
-			 } else{
-				 $('#message-window div.modal-body .review-message[title=EN]').show();
-			 }
-			
-		 } else if ( $('#message').html() == '1' ){
-			 if ( $('#message-window div.modal-body .email-message[title="'+currentLanguage+'"]').length ){
-				 $('#message-window div.modal-body .email-message[title="'+currentLanguage+'"]').show();
-			 } else{
-				 $('#message-window div.modal-body .email-message[title=EN]').show();
-			 }
+		 var type = '';
+		 var message = $('#message').html();
+		 
+		 if ( message == '3' ){ type = '.captcha-message'; } 
+		 else if ( message == '2' ){ type = '.review-message';} 
+		 else if ( message == '1' ){ type = '.email-message'; } 
+		 else { type = '.fail-message'; }
+		 
+		 if ( $('#message-window div.modal-body '+type+'[title="'+currentLanguage+'"]').length ){
+			  $('#message-window div.modal-body '+type+'[title="'+currentLanguage+'"]').show();
 		 } else{
-			 if ( $('#message-window div.modal-body .fail-message[title="'+currentLanguage+'"]').length ){
-				 $('#message-window div.modal-body .fail-message[title="'+currentLanguage+'"]').show();
-			 } else{
-				 $('#message-window div.modal-body .fail-message[title=EN]').show();
-			 }
+			 $('#message-window div.modal-body '+type+'[title=EN]').show();
 		 }
+
 		 $('#message-window').modal('show');
 	 }
 	 //<-CONTACT-REVIEW//
@@ -263,8 +270,8 @@ $(document).ready(function(){
 function language(l, p){
 	
 	 $('body').hide();
-	
-	 var langs = ['EL', 'EN'];
+
+	 var langs = ['EL', 'EN', 'FR', 'SP', 'IT', 'RU', 'DE'];
 	 var key = 1;
 	 for(var i = 0; i < langs.length; i++){
 		 if ( l == langs[i] ){
@@ -272,11 +279,13 @@ function language(l, p){
 			 break;
 		 }
 	 }
-	 
+
 
 	 $.getJSON('languages.json', function(data){
 		 
-		 if ( p == 'accomodation.php' ){
+		 if ( p == 'accomodation.php' ){ //accomodation
+			 if ( data.accomodation[key] == undefined ){ key = 1; }
+				 
 			 $('title').text(data.accomodation[key].title);
 			 $('div.content-title').text(data.accomodation[key].content_title);
 			 $('div.content').text(data.accomodation[key].content);
@@ -305,7 +314,9 @@ function language(l, p){
 			 $(ct).each(function(k, v){ sc3 += '<li>'+ct[k]+'</li>'; }); 
 			 $('ul.sub-content-3').html(sc3);
 			 
-		 } else if ( p == 'booking-info.php' ){
+		 } else if ( p == 'booking-info.php' ){ //booking-info
+			 if ( data.booking_info[key] == undefined ){ key = 1; }
+			 
 			 $('title').text(data.booking_info[key].title);
 			 
 			 //content-title
@@ -315,26 +326,24 @@ function language(l, p){
 			 }); 
 			 
 			 //content
-			 $('div.content:eq(0)').html(data.booking_info[key].content_1.split("|").join("<br/>"));
-			 $('div.content:eq(1)').html(data.booking_info[key].content_2.split("|").join("<br/>"));
-			 $('div.content:eq(2)').html(data.booking_info[key].content_3.split("|").join("<br/>"));
-			 $('div.content:eq(3)').html(data.booking_info[key].content_4.split("|").join("<br/>"));
-			 $('div.content:eq(4)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
-			 $('div.content:eq(5)').html(data.booking_info[key].content_6.split("|").join("<br/>"));
-			 $('div.content:eq(6)').html(data.booking_info[key].content_7.split("|").join("<br/>"));
-			 $('div.content:eq(7)').html(data.booking_info[key].content_8.split("|").join("<br/>"));
-			 $('div.content:eq(8)').html(data.booking_info[key].content_9.split("|").join("<br/>"));
-			 $('div.content:eq(9)').html(data.booking_info[key].content_10.split("|").join("<br/>"));
+			 $('div.content:eq(0)').html(data.booking_info[key].content_0.split("|").join("<br/>"));
+			 $('div.content:eq(1)').html(data.booking_info[key].content_1.split("|").join("<br/>"));
+			 $('div.content:eq(2)').html(data.booking_info[key].content_2.split("|").join("<br/>"));
+			 $('div.content:eq(3)').html(data.booking_info[key].content_3.split("|").join("<br/>"));
+			 $('div.content:eq(4)').html(data.booking_info[key].content_4.split("|").join("<br/>"));
+			 $('div.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
+			 $('div.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>"));
+			 $('div.content:eq(7)').html(data.booking_info[key].content_7.split("|").join("<br/>"));
 			 
-		 } else if ( p == 'location.php' ){
-			 $('title').text(data.location[key].title);
-			 $('div.content-title').text(data.location[key].content_title);
+		 } else if ( p == 'photo-gallery.php' ){ //photo-gallery
+			 if ( data.photo_gallery[key] == undefined ){ key = 1; }
 			 
-		 } else if ( p == 'photo-gallery.php' ){
 			 $('title').text(data.photo_gallery[key].title);
 			 $('div.content-title').text(data.photo_gallery[key].content_title);
 			 
-		 } else if ( p == 'travel-services.php' ){
+		 } else if ( p == 'travel-services.php' ){ //travel-services
+			 if ( data.travel_services[key] == undefined ){ key = 1; }
+			 
 			 $('title').text(data.travel_services[key].title);
 			 $('div.content-title').text(data.travel_services[key].content_title);
 			 $('div.content').html(data.travel_services[key].content.split("|").join("<br/><br/>"));
@@ -345,7 +354,9 @@ function language(l, p){
 				 $(this).text(ct[k]);
 			 }); 
 			 
-		 }  else if ( p == 'contact.php' ){
+		 }  else if ( p == 'contact.php' ){ //contact
+			 if ( data.contact[key] == undefined ){ key = 1; }
+			 
 			 $('title').text(data.contact[key].title);
 			 
 			 var ct = data.contact[key].content_title.split(',');
@@ -362,7 +373,9 @@ function language(l, p){
 			 
 			 $('input.content:last').val(c[c.length-1]);
 			 
-		 } else if ( p == 'reviews.php' ){
+		 } else if ( p == 'reviews.php' ){ //reviews
+			 if ( data.reviews[key] == undefined ){ key = 1; }
+			 
 			 $('title').text(data.reviews[key].title);
 			 
 			 var c = data.reviews[key].content.split(',');
@@ -373,12 +386,16 @@ function language(l, p){
 			 $('input.content').val(c[c.length-2]);
 			 $('.content:last').text(c[c.length-1]);
 			 
-		 }else{
+		 }else{ //index
+			 if ( data.index[key] == undefined ){ key = 1; }
+			 
 			 $('title').text(data.index[key].title);
 			 $('div.content-title').text(data.index[key].content_title);
 			 $('div.content').html(data.index[key].content.split("|").join("<br/><br/>"));
 		 }
 
+		 if ( data.general[key] == undefined ){ key = 1; }
+		 
 		 //header
 		 var header = data.general[key].header.split(',');
 		 $('div.header-hover a').each(function(k, v){
@@ -391,12 +408,30 @@ function language(l, p){
 			 $(this).html(footer[k].split("|").join("<br/>"));
 		 });
 		 
-		//modals
+		 //modals
 		 var modal = data.general[key].modal.split(',');
 		 $('.modal-title').each(function(k, v){
 			 $(this).text(modal[k]);
 		 });
 		 
+		 //modal-map-title
+		 var m = data.general[key].modal_map_title.split(',');
+		 $('.modal-map-title').each(function(k, v){
+			 $(this).text(m[k]);
+		 });
+		 
+		 //modal-map-content
+		 m = data.general[key].modal_map_content.split('#');
+		 $('.modal-map-content').each(function(k, v){
+			 $(this).html('<li>'+m[k]+'</li>');
+		 });
+		 
+		 //contact-details
+		 var cd = data.general[key].contact_details.split('#');
+		 $('.cd').each(function(k, v){
+			 $(this).text(cd[k]);
+		 });
+
 		 //reservation items
 		 var ri = data.general[key].reservation_item.split(',');
 		 $('div.reservation-item').each(function(k, v){
@@ -408,42 +443,11 @@ function language(l, p){
 		 $('body').show();
 
 	 });
-	 
-	 //AUDIO
-	 /*document.getElementById('zorba').addEventListener('ended', function(){
-	    this.currentTime = 0;
-	}, false);*/
 
 }
 
 
-function geolocation2(position){
-	
-	var myLatlng = new google.maps.LatLng(37.985298,23.719681);
-	
-    var mapOptions = {
-      center: myLatlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      zoom: 11
-    };
-    
-	if ( $('#googleMap-2').length ){
-    	map2 = new google.maps.Map(document.getElementById("googleMap-2"), mapOptions);
-    }
-	
-	markerInfo2(map2, createMarker(map2, myLatlng));
-	
-	var airportLatLng = new google.maps.LatLng(37.935647,23.948416);
-	createMarker(map2, airportLatLng);
-	var portLatLng = new google.maps.LatLng(37.940555,23.6333333);
-	createMarker(map2, portLatLng);
-	var trainLatLng = new google.maps.LatLng(37.991851,23.721024);
-	createMarker(map2, trainLatLng);
-	
-}
-
-
-function geolocation(position){
+function geolocation(type, zoomLevel){
 	
 	//var lng = position.coords.longitude;
 	//var lat = position.coords.latitude;
@@ -452,61 +456,62 @@ function geolocation(position){
     var mapOptions = {
       center: myLatlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-      zoom: 15
+      zoom: zoomLevel
     };
     
-    if ( $('#googleMap').length ){
+    if ( type == 1 && $('#googleMap').length ){
     	map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
     }
     
-    markerInfo(map, createMarker(map, myLatlng));
+    if ( type == 2 && $('#googleMap-2').length ){
+    	map2 = new google.maps.Map(document.getElementById("googleMap-2"), mapOptions);
+    }
+    
+    if ( type == 2 ){
+    	markerInfo(2, map2, createMarker(map2, myLatlng));
+    	var airportLatLng = new google.maps.LatLng(37.935647,23.948416);
+    	createMarker(map2, airportLatLng);
+    	var portLatLng = new google.maps.LatLng(37.940555,23.6333333);
+    	createMarker(map2, portLatLng);
+    	var trainLatLng = new google.maps.LatLng(37.991851,23.721024);
+    	createMarker(map2, trainLatLng);
+    } else{
+    	var marker = createMarker(map, myLatlng);
+    	markerInfo(1, map, marker);
+    }
 
 }
 
 
-function createMarker(map, Latlng){
+function createMarker(mymap, Latlng){
 	var marker = new google.maps.Marker({
-		map: map,
+		map: mymap,
+		title:'Hotel Rio Athens',
         position: Latlng,
     });
 	return marker;
 }
 
 
-function markerInfo(map, marker){
-   var infowindow = new google.maps.InfoWindow({ content: '<div id="map-1-info">Hotel Rio Athens</div>' });
-   infowindow.open(map, marker);
-}
-
-
-function markerInfo2(map, marker){
-   var info = '<div id="map-1-info"><img id="map-image" src="images/map-image.jpg" /></div>';
-   info += '<div id="map-2-info"><b>Hotel Rio Athens</b><br/>Οδυσσέως 13 -17,<br/>Πλατεία Καραισκάκη</div>';
+function markerInfo(type, mymap, marker){
+   var info = '';
+   if ( type == 2 ){
+	   var address = $('span.modal-map-title.address:first').html() + ",<br/>" + $('span.modal-map-title.address:last').html();
+	   
+	   info = '<div id="map-2-info"><img id="map-image" src="images/map-image.jpg" /></div>';
+	   info += '<div id="map-3-info"><b>Hotel Rio Athens</b><br/>'+address+'</div>';
+   } else{
+	   info = '<div id="map-1-info">Hotel Rio Athens</div>';
+   }
    var infowindow = new google.maps.InfoWindow({ content: info });
-   infowindow.open(map2, marker);
+   infowindow.open(mymap, marker);
 }
 
 
-function getToday(){
+function getDate(plus){
 	var today = new Date();
-	var dd = today.getDate();
-	var mm = today.getMonth()+1;
-	var yyyy = today.getFullYear();
-	if(dd<10) {
-	    dd='0'+dd;
-	} 
-	today = dd+'/'+mm+'/'+yyyy;
-	if(mm<10) {
-	    mm='0'+mm;
-	} 
-	return today;
-}
-
-
-function getTomorrow(){
-	var today = new Date();
-	var dd = today.getDate()+1;
-	var mm = today.getMonth()+1;
+	var dd = today.getDate() + plus;
+	var mm = today.getMonth() + 1;
 	var yyyy = today.getFullYear();
 	if(dd<10) {
 	    dd='0'+dd;
