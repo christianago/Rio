@@ -107,6 +107,19 @@
 					<div class="col-xs-3">
 						<input class="form-control" type="text" id="captcha-text" name="captcha" required="required" placeholder="Please enter the captcha code" />
 						<br/>
+						
+						<div class="system-message">
+							<div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.</div>
+					     	 <div class="email-message" title="EN">Thank you! Your message sent succesfully.</div>
+					     	 
+					     	 <div class="captcha-message" title="EL">Ο κωδικός CAPTCHA δεν είναι σωστός. Παρακαλούμε προσπαθήστε ξανά.</div>
+					     	 <div class="captcha-message" title="EN">CAPTCHA code is not correct. Please try again.</div>
+					     	 
+					     	 <div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
+					     	 <div class="fail-message" title="EN">Error occured. Please try again later.</div>
+						</div>
+						
+						<br/>
 						<input class="form-control btn btn-primary content" type="submit" id="email-us" name="email-us" value="Αποστολή" />
 					</div>
 					<div class="col-xs-1"><i class="fa fa-asterisk"></i></div>

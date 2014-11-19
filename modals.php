@@ -82,17 +82,7 @@
       </div>
       <div class="modal-body">
       
-      	 <div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.</div>
-     	 <div class="email-message" title="EN">Thank you! Your message sent succesfully.</div>
-     	 
-     	 <div class="captcha-message" title="EL">Ο κωδικός CAPTCHA δεν είναι σωστός. Παρακαλούμε προσπαθήστε ξανά.</div>
-     	 <div class="captcha-message" title="EN">CAPTCHA code is not correct. Please try again.</div>
-     	 
-     	 <div class="review-message" title="EL">Ευχαριστούμε! Η αξιολόγησή σας έγινε με επιτυχία και θα ελεγχθεί σύντομα.</div>
-     	 <div class="review-message" title="EN">Thank you! Your review succesfully submited and it will be briefly verified.</div>
-     	 
-     	 <div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
-     	 <div class="fail-message" title="EN">Error occured. Please try again later.</div>
+      	 
      	 
       </div>
     </div><!-- /.modal-content -->

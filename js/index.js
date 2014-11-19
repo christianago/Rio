@@ -243,7 +243,9 @@ $(document).ready(function(){
 	 //CONTACT-REVIEW//
 	 if ( $('#message').text() == '3' || $('#message').text() == '2' || $('#message').text() == '1' || $('#message').text() == '0' ){
 		 
-		 $('#message-window div.modal-body .review-message').hide();
+		 $('div.system-message').show();
+		 
+		 /*$('#message-window div.modal-body .review-message').hide();
 		 $('#message-window div.modal-body .email-message').hide();
 		 $('#message-window div.modal-body .fail-message').hide();
 		 $('#message-window div.modal-body .captcha-message').hide();
@@ -262,7 +264,7 @@ $(document).ready(function(){
 			 $('#message-window div.modal-body '+type+'[title=EN]').show();
 		 }
 
-		 $('#message-window').modal('show');
+		 $('#message-window').modal('show');*/
 	 }
 	 //<-CONTACT-REVIEW//
 	 
