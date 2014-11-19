@@ -26,7 +26,7 @@
 	<span class="modal-map-title address"></span>
 	
 	<div class="col-xs-4 col-lg-2 markiza">												
-		<embed src="flash/e-led.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="370" height="85" wmode="undefined" type="application/x-shockwave-flash"></embed>
+		<embed src="flash/e-led.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="370" height="85" wmode="opaque" type="application/x-shockwave-flash"></embed>
 	</div>	
 
 </div>

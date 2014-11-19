@@ -25,11 +25,21 @@
 
 	<div class="row">
 	
-		<div class="col-xs-11 col-lg-8 welcome gallery-container">
+		<div class="col-xs-9 col-lg-8 welcome gallery-container">
 			<div class="content-title" align="center"></div><br/>
 			
 				<div class="row">
-					<img src="images/balcony view2.jpg" /> 
+					<img src="images/rio_athens1.jpg" /> 
+					<img src="images/pedestrian.jpg" /> 
+					<img src="images/lobby3.jpg" /> 
+					<img src="images/exte.jpg" /> 
+					<img src="images/bar2.jpg" /> 
+					<img src="images/rion.jpg" /> 
+					<img src="images/anfas ktirio.jpg" /> 
+					<img src="images/beds.jpg" /> 
+					<img src="images/rio-night.jpg" /> 
+					<img src="images/view.jpg" /> 
+				    <img src="images/balcony view2.jpg" /> 
 				    <img src="images/bat bottles.jpg" /> 
 				    <img src="images/cafe.jpg" /> 
 				    <img src="images/bar.jpg" /> 

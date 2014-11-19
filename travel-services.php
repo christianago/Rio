@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<title>Hotel Rio Athens</title>
+<title>Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -24,22 +24,25 @@
 
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-11 col-lg-8 welcome">
+		<div class="col-xs-10 col-lg-6 welcome">
 			<div class="content-title" align="center"></div><br/>
-			<div class="content"></div><br/><br/>
-			<div class="row">
-				<div class="col-xs-2 content-image-title"></div>
-				<div class="col-xs-2 content-image-title"></div>
-				<div class="col-xs-2 content-image-title"></div>
-				<div class="col-xs-2 content-image-title"></div>
-				<div class="col-xs-2 content-image-title"></div>
-			</div>
-			<div class="row travel-images">
-				<div class="col-xs-2"><img src="images/sounio.jpg" /></div>
-				<div class="col-xs-2"><img src="images/santorini.jpg" /></div>
-				<div class="col-xs-2"><img src="images/stadio.jpg" /></div>
-				<div class="col-xs-2"><img src="images/acro.jpg" /></div>
-				<div class="col-xs-2"><img src="images/theatre.jpg" /></div>
+			<div class="read">
+				<div class="content"></div><br/><br/>
+				<div class="row">
+					<div class="col-xs-2 content-image-title"></div>
+					<div class="col-xs-2 content-image-title"></div>
+					<div class="col-xs-2 content-image-title"></div>
+					<div class="col-xs-2 content-image-title"></div>
+					<div class="col-xs-2 content-image-title"></div>
+				</div>
+				
+				<div class="row travel-images">
+					<div class="col-xs-2"><img src="images/sounio.jpg" /></div>
+					<div class="col-xs-2"><img src="images/santorini.jpg" /></div>
+					<div class="col-xs-2"><img src="images/acro.jpg" /></div>
+					<div class="col-xs-2"><img src="images/theatre.jpg" /></div>
+					<div class="col-xs-2"><img src="images/mykonos.jpg" /></div>
+				</div>
 			</div>
 			
 		</div>

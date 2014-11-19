@@ -19,7 +19,7 @@
 		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
 		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
 		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
-		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#Athens International Airport#National trains organization#Port of Piraeus#Port of Rafina#Port of Laurio#Athens urban buses#National Bank of Greece#Hellenic Police#Medecins Du Monde#Athen's hospitals#National hospital"
 		},
 		
 		{
@@ -219,7 +219,7 @@
 		"lang":"EL",
 		"title":"Travel Services - Hotel Rio Athens",
 		"content_title":"Travel Services",
-		"content_image_title":"Σούνιο,Σαντορίνη,Καλλιμάρμαρο,Ακρόπολη,Δελφοί",
+		"content_image_title":"Σούνιο,Σαντορίνη,Ακρόπολη,Δελφοί,Μύκονος",
 		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece.|We can arrange your visit to Santorini, Mykonos, Naxos, Paros or other Greek islands at reasonable prices! "
 		},
 		
@@ -227,7 +227,7 @@
 		"lang":"EN",
 		"title":"Travel Services - Hotel Rio Athens",
 		"content_title":"Travel Services",
-		"content_image_title":"Sounio,Santorini,Kallimarmaro,Acropolis,Delphi",
+		"content_image_title":"Sounio,Santorini,Acropolis,Delphi,Mykonos",
 		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece.|We can arrange your visit to Santorini, Mykonos, Naxos, Paros or other Greek islands at reasonable prices! "
 		}
 	],
@@ -237,7 +237,7 @@
 		"lang":"EL",
 		"title":"Επικοινωνία - Hotel Rio Athens",
 		"content_title":"Διεύθυνση,Φόρμα επικοινωνίας",
-		"content_1":"Οδυσσέως 13 - 17, Πλατεία Καραισκάκη | Τηλ.: +30 210 5227075 | Fax: +30 210 5227377 | 10436 Αθήνα κέντρο, Ελλάδα",
+		"content_1":"Οδυσσέως 13 - 17, Πλατεία Καραισκάκη | Τηλ.: +30 210 5227075 | Fax: +30 210 5227377 | 10436 Αθήνα κέντρο, Ελλάδα | Email: info-hotel-rio.gr ",
 		"content_2":"Όνομα:,Επώνυμο:,Χώρα:,Διεύθυνση:,Τηλέφωνο:,Email:,Μήνυμα:,Αποστολή"
 		},
 		
@@ -245,7 +245,7 @@
 		"lang":"EN",
 		"title":"Contact - Hotel Rio Athens",
 		"content_title":"Address,Contact form",
-		"content_1":"13 - 17 Odysseos str., Karaiskaki sq.| Tel.: +30 210 5227075 | Fax: +30 210 5227377 | 10436 Athens center, Greece",
+		"content_1":"13 - 17 Odysseos str., Karaiskaki sq.| Tel.: +30 210 5227075 | Fax: +30 210 5227377 | 10436 Athens center, Greece | Email: info-hotel-rio.gr ",
 		"content_2":"First name:, Last name:,Country:,Address:,Tel:,Email:,Message:,Send"
 		}
 	],

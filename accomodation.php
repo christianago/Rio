@@ -25,18 +25,20 @@
 
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-11 col-lg-8 welcome">
+		<div class="col-xs-9 col-lg-6 welcome">
 			<div class="content-title" align="center"></div><br/>
-			<div class="content"></div><br/><br/>
-			
-			<div class="content-sub-title"></div><br/>
-			<ul class="sub-content-3"></ul><br/><br/>
-			
-			<div class="content-sub-title"></div><br/>
-			<ul class="sub-content-1"></ul><br/><br/>
-			
-			<div class="content-sub-title"></div><br/>
-			<ul class="sub-content-2"></ul>
+			<div class="read">
+				<div class="content"></div><br/><br/>
+				
+				<div class="content-sub-title"></div><br/>
+				<ul class="sub-content-3"></ul><br/><br/>
+				
+				<div class="content-sub-title"></div><br/>
+				<ul class="sub-content-1"></ul><br/><br/>
+				
+				<div class="content-sub-title"></div><br/>
+				<ul class="sub-content-2"></ul>
+			</div>
 		</div>
 
 	</div>

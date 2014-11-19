@@ -22,18 +22,20 @@
 <div id="message"><?php echo @$_SESSION['message'];?></div>
 <?php $_SESSION['message'] = ''; ?>
 
-	<div class="row the-header" align="center">
-		<?php include_once 'header.php'; ?>
+	<div class="row the-header">
+		<div class="col-xs-12">
+			<?php include_once 'header.php'; ?>
+		</div>
 	</div>
 
 	<div class="row">
 	
-		<div class="col-xs-11 col-lg-8 welcome">
+		<div class="col-xs-9 col-lg-6 welcome">
 			<div class="content-title content"></div><br/>
 			
 			<form id="review-form" action="submit.php" method="post">
 			
-				<div class="row review-label">
+				<div class="row review-label" id="r0">
 					<input name="rv1" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-hospital-o fa-2x"></i>
@@ -48,7 +50,7 @@
 					</div>
 				</div>
 				
-				<div class="row review-label">
+				<div class="row review-label" id="r1">
 				<input name="rv2" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-female fa-2x"></i>
@@ -63,7 +65,7 @@
 					</div>
 				</div>
 				
-				<div class="row review-label">
+				<div class="row review-label" id="r2">
 				<input name="rv3" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-map-marker fa-2x"></i>
@@ -78,7 +80,7 @@
 					</div>
 				</div>
 	
-				<div class="row review-label">
+				<div class="row review-label" id="r3">
 				<input name="rv4" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-trash fa-2x"></i>
@@ -93,11 +95,11 @@
 					</div>
 				</div>
 				
-				<div class="row review-label">
+				<div class="row review-label" id="r4">
 				<input name="rv5" type="hidden" />
 					<div class="col-xs-3">
 						<i class="fa fa-euro fa-2x"></i>
-						<span class="content">Τιμή</span>
+						<span class="content"></span>
 					</div>
 					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
@@ -111,7 +113,7 @@
 				<div class="row">
 				<br/>
 					<div class="col-xs-3">
-						<span class="content"><b></b></span>
+						<b><span class="content"></span></b>
 					</div>
 					<div class="col-xs-3">
 						<textarea class="form-control" rows="5" name="comments"></textarea>
@@ -182,7 +184,7 @@
 						}
 				?>
 					<br/><br/>
-					<div class="row review-container">
+					<div class="row review-container read">
 						<div class="col-xs-2 review-date"><?=$v?></div>
 						<div class="col-xs-6 review-comment"><?=$comments[$k]?></div>
 						<div class="col-xs-2 review-star"><?=$star?></div>

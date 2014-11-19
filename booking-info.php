@@ -25,31 +25,31 @@
 	
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-11 col-lg-8 welcome">
+		<div class="col-xs-9 col-lg-6 welcome">
 
-<br/><br/><div class="content-title">Links</div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title"></div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title">Links</div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title"></div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title"></div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title"></div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title"></div><br/>
-<div class="content"></div>
-
-<br/><br/><div class="content-title"></div><br/>
-<div class="content"></div>
+		<br/><br/><div class="content-title">Links</div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title">Links</div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
 
 		</div>
 

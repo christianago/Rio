@@ -1,6 +1,7 @@
 var map = null, map2 = null;
 var currentLanguage = localStorage.getItem('language');
 var playSound = true;
+var reviewLock = [false, false, false, false, false];
 
 
 jQuery.fn.center = function () {
@@ -136,7 +137,7 @@ $(document).ready(function(){
 	 $(this).on('click', '.currency', function(e){ $('#currency-window').modal('show'); });
 	 $(this).on('click', '#googleMap', function(e){ 
 		 $('#map-window').modal('show'); 
-		 geolocation(2, 11);
+		 geolocation(2, 14);
 		 google.maps.event.trigger(map2, 'resize'); 
 	 });
 	 //<-MODALS//
@@ -167,9 +168,9 @@ $(document).ready(function(){
 	
 	//HEADER MENU
 	$(this).on('mouseenter', 'div.header-hover:not(.active-link)', function(){
-		$(this).css('background', '#888888');
-	}).on('mouseleave', 'div.header-hover:not(.active-link)', function(){
-		$(this).css('background', '#8B0000');
+		$(this).addClass('active-link-hover');
+	}).on('mouseleave', 'div.header-hover', function(){
+		$(this).removeClass('active-link-hover');
 	}).on('click', 'div.header-hover:not(.active-link)', function(){
 		var link = $(this).find('a').attr('href');
 		window.location.href = link;
@@ -197,10 +198,22 @@ $(document).ready(function(){
 	 
 	 
 	 //REVIEW STARS
-	 $(this).on('mouseover click', '.review-label .fa-star-o, .review-label .fa-star', function(e){
+	 $(this).on('mouseover', '.review-label .fa-star-o, .review-label .fa-star', function(e){
+		 var index = parseInt($(this).closest('div.review-label').attr('id').split('r')[1]);
+		 if ( reviewLock[index] == false ){
+			 $(this).nextAll().removeClass('fa-star').addClass('fa-star-o');
+			 $(this).prevAll().andSelf().removeClass('fa-star-o').addClass('fa-star');
+		 } 
+	 });
+	 
+	 $(this).on('click', '.review-label .fa-star-o, .review-label .fa-star', function(e){
+		 var index = parseInt($(this).closest('div.review-label').attr('id').split('r')[1]);
+		 reviewLock[index] = !reviewLock[index];
 		 $(this).nextAll().removeClass('fa-star').addClass('fa-star-o');
 		 $(this).prevAll().andSelf().removeClass('fa-star-o').addClass('fa-star');
 	 });
+	 
+	 
 	 //<-REVIEW STARS
 	
 	
@@ -468,13 +481,20 @@ function geolocation(type, zoomLevel){
     }
     
     if ( type == 2 ){
-    	markerInfo(2, map2, createMarker(map2, myLatlng));
+    	/*markerInfo(2, map2, createMarker(map2, myLatlng));
     	var airportLatLng = new google.maps.LatLng(37.935647,23.948416);
     	createMarker(map2, airportLatLng);
     	var portLatLng = new google.maps.LatLng(37.940555,23.6333333);
     	createMarker(map2, portLatLng);
     	var trainLatLng = new google.maps.LatLng(37.991851,23.721024);
-    	createMarker(map2, trainLatLng);
+    	createMarker(map2, trainLatLng);*/
+    	var marker2 = createMarker(map2, myLatlng);
+    	markerInfo(2, map2, marker2);
+    	
+    	google.maps.event.addListener(marker2, 'click', function() {
+    		markerInfo(2, map2, marker2);
+    	});
+    	
     } else{
     	var marker = createMarker(map, myLatlng);
     	markerInfo(1, map, marker);
@@ -486,7 +506,7 @@ function geolocation(type, zoomLevel){
 function createMarker(mymap, Latlng){
 	var marker = new google.maps.Marker({
 		map: mymap,
-		title:'Hotel Rio Athens',
+		//title:'Hotel Rio Athens',
         position: Latlng,
     });
 	return marker;
@@ -497,7 +517,6 @@ function markerInfo(type, mymap, marker){
    var info = '';
    if ( type == 2 ){
 	   var address = $('span.modal-map-title.address:first').html() + ",<br/>" + $('span.modal-map-title.address:last').html();
-	   
 	   info = '<div id="map-2-info"><img id="map-image" src="images/map-image.jpg" /></div>';
 	   info += '<div id="map-3-info"><b>Hotel Rio Athens</b><br/>'+address+'</div>';
    } else{

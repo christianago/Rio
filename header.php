@@ -1,12 +1,23 @@
+
+<!--  
 <audio id="zorba" autoplay loop>
   <source src="audio/zorba.mp3" type="audio/ogg">
   <source src="audio/zorba.mp3" type="audio/mpeg">
 </audio>
- 
+-->
+
 <div class="row header-1">
-	<div class="col-xs-5 col-lg-2 col-lg-offset-2" id="logo">RIO Athens Hotel</div>
-	<div class="col-xs-7 col-lg-5">
-		<img id="acropolis" src="images/acropolis.png" align="right" /> 
+	<div class="col-xs-2 col-lg-2 col-lg-offset-2" id="logo">
+	<img src="images/logo.png" /> 
+	</div>
+	<div class="col-xs-10 col-lg-5">
+	<div class="collage">
+		<a href="#"><img src="images/acro-day.jpg" /></a>
+		<a href="#"><img src="images/exte.jpg" /></a>
+		<a href="#"><img src="images/acro-night.jpg" /></a>
+		<a href="#"><img src="images/rio-night.jpg" /></a>
+	</div>
+		 
 	</div>
 </div>
 
@@ -43,7 +54,7 @@
 					<img class="flag" title="DE" src="images/de.png" />
 					<img class="flag" title="RU" src="images/rus.png" />
 					<img class="flag" title="CN" src="images/cn.png" />
-					<img class="flag" title="PT" src="images/pt.png" />
+					<img class="flag" title="BR" src="images/br.png" />
 				</div>
 			</div>
 			
@@ -91,10 +102,8 @@
 							    <option value="-1">select</option>
 								<option value="0">0</option>
 								<option value="1">1</option>
-							    <option value="1">1</option>
 							    <option value="2">2</option>
 							    <option value="3">3</option>
-							    <option value="4">4</option>
 							</select>
 						</div>
 					</div>
@@ -123,6 +132,12 @@
 					</div>
 					
 				</div>
+				
+				
+				<div class="col-xs-12" align="center">
+					<img id="best-price" src="images/Best-Price-Guarantee.png" />
+				</div>
+				
 			</div>
 			
 		</div>
@@ -135,6 +150,16 @@
 <div class="col-xs-8 col-lg-4">
 	
 	<div class="row slideshow">
+		<img src="images/rio_athens1.jpg" /> 
+		<img src="images/pedestrian.jpg" /> 
+		<img src="images/lobby3.jpg" /> 
+		<img src="images/exte.jpg" /> 
+		<img src="images/bar2.jpg" /> 
+		<img src="images/rion.jpg" /> 
+		<img src="images/anfas ktirio.jpg" /> 
+		<img src="images/beds.jpg" /> 
+		<img src="images/rio-night.jpg" /> 
+		<img src="images/view.jpg" /> 
 	    <img src="images/balcony view2.jpg" /> 
 	    <img src="images/bat bottles.jpg" /> 
 	    <img src="images/cafe.jpg" /> 
@@ -153,6 +178,7 @@
 	    <img src="images/rio bar.jpg" /> 
 	    <img src="images/shower.jpg" /> 
 	</div>
+	
 	<div class="row" id="lezanta">
 		<div class="col-xs-12">
 		<i class="fa fa-circle"></i>
@@ -161,7 +187,9 @@
 		in the center of Athens</div>
 	</div>
 	
-	<div class="row">
+	<div class="row stand">&nbsp;</div>
+	
+	<div class="row nav-container">
 		<div class="col-xs-12">
 			<div id="nav" class="nav"></div>
 		</div>

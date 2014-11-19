@@ -30,7 +30,7 @@
 
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-11 col-lg-8 welcome">
+		<div class="col-xs-9 col-lg-6 welcome">
 			<div class="content-title"></div><br/>
 			
 			<div class="content"></div>
@@ -39,7 +39,7 @@
 			<form action="submit.php" method="post">
 			
 				<div class="row contact-field">
-					<div class="col-xs-12"><br/><div class="sub-title content-title">Φόρμα επικοινωνίας</div><br/></div>
+					<div class="col-xs-12"><br/><div class="sub-title content-title"></div><br/></div>
 				
 				<div class="row contact-field">
 					<div class="col-xs-3 content"></div>

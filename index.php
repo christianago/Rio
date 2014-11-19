@@ -25,9 +25,9 @@
 
 	<div class="row">
 	
-		<div class="col-xs-11 col-lg-8 welcome">
+		<div class="col-xs-9 col-lg-6 welcome">
 			<div class="content-title" align="center">Welcome to Rio Athens</div><br/>
-			<div class="content">
+			<div class="content read">
 				Hotel RIO is located in the center of Athens, on the quiet pedestrian street of the Karaiskaki square, next the subway station METAXOURGHIO and quite near the international railway station. 
 				It is 1 Km away from the Syntagma sq, a 25 minutes drive from the Athens international airport and 15 minutes from the port of PIREAUS by subway.
 				<br/>
