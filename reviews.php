@@ -120,18 +120,20 @@
 					</div>
 				</div>
 				
+				<br/>
 				<div class="row">
-					<div class="col-xs-12 system-message">
-			     	 <div class="review-message" title="EL">Ευχαριστούμε! Η αξιολόγησή σας έγινε με επιτυχία και θα ελεγχθεί σύντομα.</div>
-			     	 <div class="review-message" title="EN">Thank you! Your review succesfully submited and it will be briefly verified.</div>
-			     	 
-			     	 <div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
-			     	 <div class="fail-message" title="EN">Error occured. Please try again later.</div>
+					<div class="col-xs-4 col-xs-offset-2">
+						<div class="system-message">
+				     	 	<div class="review-message" title="EL">Ευχαριστούμε! Η αξιολόγησή σας έγινε με επιτυχία και θα ελεγχθεί σύντομα.</div>
+				     	 	<div class="review-message" title="EN">Thank you! Your review succesfully submited and it will be briefly verified.</div>
+				     		<div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
+				     	 	<div class="fail-message" title="EN">Error occured. Please try again later.</div>
+				     	 </div>
 					</div>
 				</div>
 				
 				<div class="row"><br/>
-					<div class="col-xs-2 col-xs-offset-4"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="Αξιολόγηση" /></div>
+					<div class="col-xs-2 col-xs-offset-4"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="" /></div>
 				</div>
 				
 				<?php 

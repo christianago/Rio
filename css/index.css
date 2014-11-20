@@ -371,7 +371,6 @@ input#check-availability{
 	cursor: pointer;
 }
 
-
 .footer-2{
 	padding-top: 30px;
 	color: #000;
@@ -418,20 +417,20 @@ input#check-availability{
 	width: 205px;
 }
 
-#message-window .modal-dialog{
-	width: 300px;
-}
-
-.email-message, .review-message, .fail-message, .captcha-message{
+.email-message, .review-message{
+	background: #006400;
+	color: #fff;
+	opacity: 0.8;
+	padding: 15px;
 	display: none;
 }
 
-.system-message{
+.fail-message, .captcha-message{
 	background: #8B0000;
 	color: #fff;
 	opacity: 0.8;
 	padding: 15px;
-	display: none
+	display: none;
 }
 
 /*GALLERY*/
@@ -441,9 +440,6 @@ input#check-availability{
 
 .collage {
 	margin: 20px auto;
-	background: url(../images/frame.png);
-	height: 100px;
-	width: 300px;
 }
 
 .collage a {

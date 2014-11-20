@@ -109,7 +109,7 @@
 						<br/>
 						
 						<div class="system-message">
-							<div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.</div>
+							 <div class="email-message" title="EL">Ευχαριστούμε! Το μήνυμά σας εστάλη με επιτυχία.</div>
 					     	 <div class="email-message" title="EN">Thank you! Your message sent succesfully.</div>
 					     	 
 					     	 <div class="captcha-message" title="EL">Ο κωδικός CAPTCHA δεν είναι σωστός. Παρακαλούμε προσπαθήστε ξανά.</div>

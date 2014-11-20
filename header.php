@@ -1,10 +1,10 @@
 
-<!--  
-<audio id="zorba" autoplay loop>
+
+<audio id="zorba" loop>
   <source src="audio/zorba.mp3" type="audio/ogg">
   <source src="audio/zorba.mp3" type="audio/mpeg">
 </audio>
--->
+
 
 <div class="row header-1">
 	<div class="col-xs-2 col-lg-2 col-lg-offset-2" id="logo">

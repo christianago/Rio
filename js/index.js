@@ -11,24 +11,19 @@ jQuery.fn.center = function () {
     return this;
 }
 
-function preventBack(){
-	window.history.forward();
-	if ( $('body').hasClass('modal-open') ){
-		window.history.forward();
-	}
-}
 
-$(window).blur(function() {
+/*$(window).blur(function() {
 	var audio = document.getElementById("zorba");
 	if ( audio ) audio.pause();
 });
+
 
 $(window).focus(function() {
 	var audio = document.getElementById("zorba");
 	if ( playSound ){
 		if ( audio ) audio.play();
 	}
-});
+});*/
 
 
 $(document).ready(function(){
@@ -41,7 +36,10 @@ $(document).ready(function(){
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
 	
-	//preventBack();
+	if ( myURL == '' ){
+		var audio = document.getElementById("zorba");
+		if ( playSound && audio ) audio.play();
+	}
 	
 	 //MAPS
 	 geolocation(1, 15);
@@ -243,13 +241,6 @@ $(document).ready(function(){
 	 //CONTACT-REVIEW//
 	 if ( $('#message').text() == '3' || $('#message').text() == '2' || $('#message').text() == '1' || $('#message').text() == '0' ){
 		 
-		 $('div.system-message').show();
-		 
-		 /*$('#message-window div.modal-body .review-message').hide();
-		 $('#message-window div.modal-body .email-message').hide();
-		 $('#message-window div.modal-body .fail-message').hide();
-		 $('#message-window div.modal-body .captcha-message').hide();
-		 
 		 var type = '';
 		 var message = $('#message').html();
 		 
@@ -258,13 +249,15 @@ $(document).ready(function(){
 		 else if ( message == '1' ){ type = '.email-message'; } 
 		 else { type = '.fail-message'; }
 		 
-		 if ( $('#message-window div.modal-body '+type+'[title="'+currentLanguage+'"]').length ){
-			  $('#message-window div.modal-body '+type+'[title="'+currentLanguage+'"]').show();
+		 if ( $('div.system-message '+type+'[title="'+currentLanguage+'"]').length ){
+			  $('div.system-message '+type+'[title="'+currentLanguage+'"]').show();
 		 } else{
-			 $('#message-window div.modal-body '+type+'[title=EN]').show();
+			 $('div.system-message '+type+'[title=EN]').show();
 		 }
+		 
+		 $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
-		 $('#message-window').modal('show');*/
+		
 	 }
 	 //<-CONTACT-REVIEW//
 	 
