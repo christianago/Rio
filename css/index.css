@@ -310,7 +310,7 @@ input#review-us{
 
 input#check-availability{
 	font-size: 12pt;
-	width: 190px;
+	width: 210px;
 	height: 40px;
 	background: #8B0000;
 	border: 1px #875422 solid;
@@ -407,6 +407,7 @@ input#check-availability{
 #map-window .modal-dialog{
 	z-index: 9999;
 	width: 800px;
+	font-size: 10pt;
 }
 
 #weather-window .modal-dialog{

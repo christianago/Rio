@@ -91,7 +91,7 @@
 		
 		<div class="row copyright">
 			<div class="col-xs-2 col-xs-offset-3"><img id="wifi" src="images/wifi.png" /></div>
-			<div class="col-xs-5 copyright">All rights reserved | ΡΙΟ Hotel Athens</div>
+			<div class="col-xs-5 copyright">All rights reserved | RIO Hotel Athens</div>
 		</div>
 
 	</div>

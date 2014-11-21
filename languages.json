@@ -2,12 +2,12 @@
 	"general":[
 		{
 		"lang":"EL", 
-		"header":"Αρχική,Διαμονή,Κράτηση,Φωτογραφίες,Travel Services,Επικοινωνία,Αξιολογήσεις",
+		"header":"Αρχική,Διαμονή,Κράτηση,Φωτογραφίες,Υπηρεσίες ταξιδιωτών,Επικοινωνία,Αξιολογήσεις",
 		"reservation_item":"Κάντε κράτηση,Άφιξη,Αναχώρηση,Ενήλικες,Παιδιά,Δωμάτια,Έλεγχος διαθεσιμότητας",
 		"modal":"Καιρός,Τοπική Ώρα,Συνάλλαγμα,Χάρτης",
 		"contact_details":"Τοποθεσία#Οδυσσέως 13 -17, Πλατεία Καραισκάκη#10436 Αθήνα κέντρο, Ελλάδα#Τηλ.: +30 210 5227075#Fax: +30 210 5227377#Email:#Γεωγ. μήκος: 37.985298#Γεωγ. πλάτος: 23.719681",
-		"modal_map_title":"Άφιξη από το αεροδρόμιο,Άφιξη από το λιμάνι Πειραιώς,Άφιξη από το σταθμό τρένο,Οδυσσέως 13 - 17,Πλατεία Καραισκάκη",
-		"modal_map_content":"Μετρό: Γραμμή 3 - Σύνταγμα, Γραμμή 2 - Μεταξουργείο#Λεωφορείο: Χ95 - Σύνταγμα, Τρόλλευ 11 - Ομόνοια#Μετρό: Γραμμή 1 - Ομόνοια#Μετρό: Γραμμή 2 - Μεταξουργείο",
+		"modal_map_title":"Διεθνής Αερολιμένας Αθηνών « Ελευθέριος  Βενιζέλος»,Λιμάνι Πειραιά,Λιμάνι Ραφήνας,Διεθνής Σιδηροδρομικός Σταθμός Αθηνών « Σταθμός Λαρίσης»,Σταθμός υπεραστικών λεωφορείων Κηφισσού,Σταθμός Υπεραστικών λεωφορείων Λιοσίων,Οδυσσέως 13 - 17,Πλατεία Καραισκάκη",
+		"modal_map_content":"Με μετρό.|Παίρνετε την μπλε γραμμή του μετρό από το αεροδρόμιο και αποβιβάζεστε στο σταθμό Σύνταγμα, έπειτα παίρνετε την κόκκινη γραμμή με κατεύθυνση Ανθούπολη και αποβιβάζεστε στον σταθμό Μεταξουργείο.#Με λεωφορείο.|Παίρνετε το λεωφορείο Χ95 και αποβιβάζεστε στο Σύνταγμα, έπειτα παίρνετε την κόκκινη γραμμή του μετρό με κατεύθυνση Ανθούπολη και αποβιβάζεστε στον σταθμό Μεταξουργείο.#Παίρνετε το μετρό και αποβιβάζεστε στο σταθμό Ομόνοια, έπειτα παίρνετε την κόκκινη γραμμή με κατεύθυνση Ανθούπολη και αποβιβάζεστε στον σταθμό Μεταξουργείο.#Παίρνετε το λεωφορείο του ΚΤΕΛ με κατεύθυνση την Αθήνα, αποβιβάζεστε στο τέρμα, στην πλατεία Πεδίον του Άρεως.#Με μετρό παίρνετε την κόκκινη γραμμή με κατεύθυνση Ελληνικό  και αποβιβάζεστε στον σταθμό Μεταξουργείο.#Παίρνετε το λεωφορείο 051 ΟΜΟΝΟΙΑ - ΣΤΑΘ. ΥΠΕΡ. ΛΕΩΦ. ΚΗΦΙΣΟΥ και αποβιβάζεστε στην στάση Μεταξουργείο.#Με μετρό  από τον σταθμό μετρό Αττικη, παίρνετε την κόκκινη γραμμή με κατεύθυνση Ελληνικό  και αποβιβάζεστε στον σταθμό Μεταξουργείο.",
 		"footer":"Καιρός#Πολιτική ξενοδοχείου#Τοπική ώρα#Συνάλλαγμα#Προτείνετε σε φίλο#Χρήσιμοι σύνδεσμοι#Οργανισμός Σιδηροδρόμων Ελλάδος#Διεθνής Αερολιμένας Αθηνών «Ελευθέριος Βενιζέλος»#Οργανισμός Λιμένος Πειραιώς#ΚΤΕΛ Αττικής#Νοσοκομεία στην Αθήνα#Τράπεζα της Ελλάδος#Εθνικό Κέντρο Άμεσης Βοήθειας#Γιατροί του Κόσμου#Ελληνική Αστυνομία#Λιμάνι Ραφήνας#Λιμάνι Λαυρίου"
 		},
 		
@@ -17,65 +17,87 @@
 		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
 		"modal":"Weather,Local time,Currency,Map",
 		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
-		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
-		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
+		"modal_map_title":"Athens International Airport 'Eleftherios Venizelos',Port of Piraeus,Rafina Port,International Railway Station of Athens 'Larisa Station',Intercity bus station Kifissos,Intercity Bus Station Liosion,13 - 17 Odysseos street, Karaiskaki sq.",
+		"modal_map_content":"By metro.|Take the blue metro line from the airport and get off at Syntagma station, then take the red line towards Anthoupoli and get off at the station Metaxourghio.#By bus.|Take bus X95 and get off at Syntagma, then take the red metro line towards Anthoupoli and get off at the station Metaxourghio.#Take the metro and get off at Omonia station, then take the red line towards Anthoupoli and get off at the station Metaxourghio.#Take the bus heading to Athens, get off at the terminal, Square Pedion tou Areos.#By metro take the red line towards Elliniko and get off at the station Metaxourghio.#You take the bus 051 Omonia – Kifissos bus station and get off at the stop Metaxourghio.#By Metro from the Attiki metro, take the red line towards Elliniko and get off at the station Metaxourghio.",
 		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#Athens International Airport#National trains organization#Port of Piraeus#Port of Rafina#Port of Laurio#Athens urban buses#National Bank of Greece#Hellenic Police#Medecins Du Monde#Athen's hospitals#National hospital"
 		},
 		
 		{
 		"lang":"FR",
-		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
-		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
-		"modal":"Weather,Local time,Currency,Map",
+		"header":"Maison,Hébergement,Information de réservation,Galerie de photos,Services de voyage,Contact,Commentaires",
+		"reservation_item":"Réservez en ligne, Arrivée, Départ, adultes, enfants, chambres, Vérifier la disponibilité",
+		"modal":"Météo,Heure Locale, Monnaie, Carte",
 		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
-		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
-		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
-		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		"modal_map_title": "l'aéroport international d'Athènes 'Eleftherios Venizelos',Port du Pirée,De Rafina Port,La gare internationale des Larisa Station 'Athènes, Station de bus interurbain Kifissos, Intercity Bus station Liosion, 13-17 rue Odysseos, Karaiskaki carrés." ,
+		"modal_map_content":"En métro|Prendre la ligne bleue du métro de l'aéroport et descendre à la station Syntagma, puis prendre la ligne rouge vers Anthoupoli et descendre à la station Metaxourghio de#En bus|Prendre le bus X95 et descendre à Syntagma, puis prendre la ligne rouge du métro vers Anthoupoli et descendre à la station Metaxourghio.#Prendre le métro et descendre à la station Omonia, puis prendre la ligne rouge vers Anthoupoli et descendre à la station Metaxourghio.#Prendre le bus en direction de Athènes, descendre à la borne, Carré Pedion tou Areos#En métro, prendre la ligne rouge vers Elliniko et descendre à la station Metaxourghio#Vous prenez le bus 051 Omonia - station de bus Kifissos et descendez à l'arrêt Metaxourghio de # en métro de la. Attiki métro, prendre la ligne rouge vers Elliniko et descendre à la station Metaxourghio.",
+		"footer":"Politique Météo#Politique de Hôtel#Heure Locale#Devise#Recommander à un ami#Liens utiles#Organisation nationale des trains#Aéroport international d'Athènes # Port du Pirée#Athènes autobus urbains#Hôpitaux de Athen#Banque Nationale de l'hôpital de la Grèce#National#Médecins du Monde#Hellénique Police#Port de Rafina#Port de Laurio"
 		},
 		
 		{
 		"lang":"SP",
-		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
-		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
-		"modal":"Weather,Local time,Currency,Map",
+		"header":"Inicio,Alojamiento,Información de reservas,Galería de fotos,Servicios Turísticos,Contacto,Comentarios",
+		"reservation_item":"Reserve online,Llegada, Salida,Adultos, niños,Habitaciones,Ver disponibilidad",
+		"modal":"Tiempo,Tiempo local,Moneda,Mapa",
 		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
-		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
-		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
-		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		"modal_map_title": "El aeropuerto internacional de Atenas Eleftherios Venizelos ', Puerto de El Pireo, Rafina puerto, la estación de tren internacional de' la estación de Larisa 'de Atenas, la estación de autobuses interurbanos Kifissos, Intercity Bus Station Liosion, 13-17 calle Odysseos, Karaiskaki sq." ,		
+		"modal_map_content": "En metro|Tome la línea azul del metro desde el aeropuerto y bajarse en la estación de Syntagma, luego tomar la línea roja hacia Anthoupoli y bajar en la estación de Metaxourghio#En autobús | Tome el autobús X95 y bajar. en Syntagma, luego tomar la línea roja del metro hacia Anthoupoli y bajar en la estación de Metaxourghio.#Tomar el metro y bajar en la estación de Omonia, a continuación, tomar la línea roja hacia Anthoupoli y bajar en la estación de Metaxourghio.#tome el encabezamiento de autobús a Atenas, bajar en la terminal, la plaza Pedion tou Areos#en metro tomar la línea roja hacia Elliniko y bajar en la estación de Metaxourghio#Usted toma el autobús 051 Omonia - estación de autobuses Kifissos y bajar en la parada Metaxourghio.#En metro desde la estación de metro Attiki, tomar la línea roja hacia Elliniko y bajar en la estación de Metaxourghio. ",
+		"footer": "Tiempo#Política Hotel#Hora local#Moneda#Recomiéndanos a un amigo#Enlaces útiles#Organización Nacional de trenes#Autobuses urbanos Aeropuerto internacional de Atenas#Puerto de Pireo#Atenas#hospitales de Atenas#Hospital de Banco Nacional de Grecia#Nacional#Médicos del Mundo#Policía helénicos#Puerto de Rafina#Puerto de Laurio"		
 		},
 		
 		{
 		"lang":"IT",
-		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
-		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
-		"modal":"Weather,Local time,Currency,Map",
+		"header":"Casa,Alloggio,Informazioni di prenotazione,Galleria fotografica,Servizi di viaggio,Contatto,Recensioni",
+		"reservation_item":"Prenota on line,Check in,Check out,Adulti,Bambini,Camere,Controlla disponibilità",
+		"modal":"Meteo,Tempo locale,Valuta,Mappa",
 		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
-		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
-		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
-		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
-		},
-		
-		{
-		"lang":"RU",
-		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
-		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
-		"modal":"Weather,Local time,Currency,Map",
-		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
-		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
-		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
-		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		"modal_map_title": "Aeroporto Internazionale di Atene 'Eleftherios Venizelos', Porto del Pireo, Rafina Porto, Stazione ferroviaria internazionale di 'Larisa Station' di Atene, la stazione degli autobus Intercity Kifissos, Intercity Bus Station Liosion, 13-17 strada Odysseos, Karaiskaki sq." ,		
+		"modal_map_content":"In metropolitana|Prendere la linea blu della metropolitana per l'aeroporto e scendere alla stazione Syntagma, quindi prendere la linea rossa in direzione Anthoupoli e scendere alla stazione di Metaxourghio#In autobus|Prendere l'autobus X95 e scendere a Syntagma, poi prendere la linea rossa della metropolitana in direzione Anthoupoli e scendere alla stazione di Metaxourghio.#Prendere la metropolitana e scendere alla stazione di Omonia, quindi prendere la linea rossa in direzione Anthoupoli e scendere alla stazione di Metaxourghio.#Prendere l'autobus linea ad Atene, scendere al terminal, piazza Pedion tou Areos#In metropolitana prendere la linea rossa in direzione Elliniko e scendere alla stazione di Metaxourghio#Prendete l'autobus 051 Omonia - stazione degli autobus Kifissos e scendere alla fermata Metaxourghio.#In metropolitana dalla metropolitana Attiki, prendere la linea rossa in direzione Elliniko e scendere alla stazione di Metaxourghio.",	
+		"footer": "Weather#Politica Hotel#Ora locale#Valuta#Raccomandare ad un amico#Link utili#Aeroporto Internazionale di Atene#Nazionale treni organizzazione#Porto del Pireo#Porto di Rafina#Porto di autobus urbani Laurio#Atene#Banca nazionale di Grecia#Polizia Hellenic#Ospedali Medecins Du Monde#Di Atene#Ospedale nazionale "		
 		},
 		
 		{
 		"lang":"DE",
-		"header":"Home,Accomodation,Booking info,Photo gallery,Travel Services,Contact,Reviews",
-		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
-		"modal":"Weather,Local time,Currency,Map",
+		"header":"Heim,Planungs-Anfrage Informationen,Fotogalerie,Reisebüros,Kontakt,Bewertungen",
+		"reservation_item":"Buchen Sie online,Check-in,Check-out,Erwachsene,Kinder,Zimmer,Verfügbarkeit prüfen",
+		"modal":"Wetter,Ortszeit,Währung,Karte",
 		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
-		"modal_map_title":"Arrival from the airport,Arrival from the port of Piraeus,Arrival from the train station,13 - 17 Odysseos str., Karaiskaki sq.",
-		"modal_map_content":"Subway: Blue line - Syntagma, Red line - Metaksourgeio#Bus: X95 - Syntagma, Trolley 11 - Omonoia#Subway: Green line - Omonoia#Subway: Red line - Metaksourgeio",
-		"footer":"Weather#Hotel policy#Local time#Currency#Recommend us to a friend#Useful links#National trains organization#Athens International Airport#Port of Piraeus#Athens urban buses#Athen's hospitals#National Bank of Greece#National hospital#Medecins Du Monde#Hellenic Police#Port of Rafina#Port of Laurio"
+		"modal_map_title": "Athens International Airport 'Eleftherios Venizelos', Hafen von Piräus, Rafina Hafen, dem internationalen Bahnhof von Athen 'Larisa Station', Busbahnhof Kifissos, Intercity Busbahnhof Liosion, 13-17 Odysseos Straße, Karaiskaki sq. ",
+		"modal_map_content":"Mit der Metro | Nehmen Sie die blaue U-Bahnlinie vom Flughafen und steigen Sie an der Station Syntagma, dann nehmen Sie die rote Linie in Richtung Anthoupoli und steigen an der Station Metaxourghio#Mit dem Bus | Nehmen Sie den Bus X95 bis zur Haltestelle am Syntagma, dann nehmen Sie die rote U-Bahn-Linie in Richtung Anthoupoli und steigen an der Station Metaxourghio.#Nehmen Sie die U-Bahn und steigen an der Station Omonia, dann nehmen Sie die rote Linie in Richtung Anthoupoli und steigen an der Station Metaxourghio.#nehmen Sie den Bus Überschrift nach Athen, steigen Sie an der Klemme, Quadratisch Pedion tou Areos#Mit der Metro nehmen Sie die rote Linie in Richtung Elliniko und steigen an der Station Metaxourghio.#Sie nehmen den Bus 051 Omonia - Kifissos Busbahnhof und steigen Sie an der Haltestelle Metaxourghio.#Mit der Metro von der Attiki Metro, nehmen Sie die rote Linie in Richtung Elliniko und steigen an der Station Metaxourghio. ",
+		"footer": "Wetter#Hotelrichtlinien#Ortszeit#Währung#Empfehlen Sie uns an einen Freund#Nützliche Links#Athens International Airport#Nationale Züge Organisation#Hafen von Piräus#Hafen von Rafina#Port of Laurio#Athens Stadtbussen#Nationalbank Griechenlands#Hellenic Police#Médecins du Monde#Athen Krankenhäuser#National Hospital "
+		},
+		
+		{
+		"lang":"RU",
+		"header":"Главная,Размещение,бронирование Информация,Фотогалерея,Туристические услуги,Контакт, отзывы",
+		"reservation_item":"Book online,Check in,Check out,Adults,Children,Rooms,Check availability",
+		"modal":"Погода,местное время,Валюта,Карта",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title": "Афинский международный аэропорт Элефтериос Венизелос , Порт Пирей, Рафина Порт, Международный железнодорожный вокзал из Афин Лариса станции, автовокзал межгород Kifissos, Междугородные автобусы станции Liosion, 13 - 17 улице Odysseos, Karaiskaki кв. ",
+		"modal_map_content": "На метро | Возьмите синюю линию метро от аэропорта и выйти на станции Синтагма, а затем взять красную линию в сторону Anthoupoli и сойти на станции Metaxourghio#На автобусе | Автобус X95 и сойти. на площади Синтагма, а затем взять на красную линию метро в сторону Anthoupoli и сойти на станции Metaxourghio.#Возьмите метро и выйти на станции Омония, а затем взять красную линию к Anthoupoli и сойти на станции Metaxourghio.#Возьмите заголовок шины в Афины, сойти на терминале, Square Марсово поле#на метро по красной линии в сторону Elliniko и сойти на станции Metaxourghio#Вы садитесь на автобус 051 Омония - автовокзал Kifissos и сойти на остановке Metaxourghio.#на метро от станции метро Аттики, принять красную линию в сторону Elliniko и сойти на станции Metaxourghio. ",
+		"footer": "Погода#Политика отеля#Местное время#Валюта#Рекомендовать нас другу#Полезные ссылки#Афинский международный аэропорт#Национальный готовит организацию#Порт Пирей#порта Рафина#Порт Laurio#Афинах городских автобусов#Национальный банк из Греции#эллинских полиции#больницы Врачи мира#Атена#Национальный госпиталь "		},
+		
+		{
+		"lang":"CN",
+		"header":"首页,住宿，预订信息,照片画廊,旅游服务,联系人,评论论,评论",
+		"reservation_item":"在线预订,入住,退房,成人,儿童房,空房查询",
+		"modal":"天气,本地时间,货币,地图",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"雅典国际机场埃莱夫塞里奥韦尼泽洛斯,港口比雷埃夫斯,拉斐那港,雅典的拉里萨站,城际公交车站Kifissos,长途汽车站Liosion,13国际火车站 - 17 Odysseos街,卡莱斯卡克平方米。",
+		"modal_map_content":"地铁|乘坐蓝线地铁从机场下车宪法广场站,然后坐往Anthoupoli红线下车,在车站Metaxourghio#乘坐公交车。|乘坐X95下车宪法,然后取对Anthoupoli红色地铁线和下车在车站Metaxourghio。#乘坐地铁下车奥莫尼亚站,然后坐红线往Anthoupoli下车,在车站Metaxourghio。#乘坐巴士前往雅典,下车。从Kifissos汽车站下车的站Metaxourghio#乘坐地铁 - 在码头,广场着Pedion土特产品Areos#乘坐地铁乘坐红线对Elliniko下车,在车站Metaxourghio#您乘坐公共汽车051奥莫尼亚。阿提卡地铁,乘坐红线对Elliniko下车,在车站Metaxourghio。",
+		"footer":"天气#酒店政策#当地时间#货币#我们推荐给您的朋友#相关链接#雅典国际机场#国家培训机构#港#国#希腊希腊警察的银行比雷埃夫斯港##拉斐那港Laurio#雅典城市公交车的#世界医师协会#雅典的医院#国立医院"
+		},
+		
+		{
+		"lang":"BR",
+		"header":"Casa,Alojamento,Informações de reserva,Galeria de Fotos,Serviços de Viagem,Contato,Comentários",
+		"reservation_item":"Reserve online,Check-in,Check-out,Adultos,Crianças,Quartos,Verificar disponibilidade",
+		"modal":"Tempo,Tempo local,Moeda,Mapa",
+		"contact_details":"Location#13 - 17 Odysseos str., Karaiskaki sq.#10436 Athens center, Greece#Tel.: +30 210 5227075#Fax: +30 210 5227377#Email:#Latitude: 37.985298#Longitude: 23.719681",
+		"modal_map_title":"O Aeroporto Internacional de Atenas Eleftherios Venizelos ',Porto de Piraeu,Rafina Port,International Railway Station of Athens 'Larisa Station',Estação de ônibus Intercity Kifissos,Intercity Bus Station Liosion,13-17 Odysseos rua, Karaiskaki sq.",
+		"modal_map_content":"Por metro |Pegue a linha azul do metrô do aeroporto e descer na estação Syntagma, em seguida, tomar a linha vermelha para Anthoupoli e desça na estação Metaxourghio.#De ônibus |Apanhe o autocarro X95 e saia na Praça Syntagma, em seguida, tomar a linha vermelha do metro em direção Anthoupoli e desça na estação Metaxourghio.#Pegue o metrô e desça na estação Omonia, em seguida, tomar a linha vermelha para Anthoupoli e desça na estação Metaxourghio.#Tome a direção a Atenas ônibus, desça no terminal, Praça Pedion tou Areos.#De metro, apanhe a linha vermelha para Elliniko e desça na estação Metaxourghio # Você pega o ônibus 051 Omonia -. Rodoviária Kifissos e descer na parada Metaxourghio.#De metro do metro Ática, apanhe a linha vermelha para Elliniko e desça na estação Metaxourghio.",
+		"footer":"Tempo#Política Hotel#Hora local#Moeda#Recomende-nos a um amigo#Links úteis#Aeroporto Internacional de Atenas#Organização nacional trens#Porto de Piraeus#Porto de Rafina#Porto de Laurio#Atenas ônibus urbanos#Banco Nacional da Grécia#Hellenic Police#Medecins Du Monde#Hospitais de Athen#Hospital Nacional"
 		}
+		
 	],
 	
 	"index":[
@@ -83,21 +105,21 @@
 		"lang":"EL",
 		"title":"Ξενοδοχείο Rio Athens",
 		"content_title":"Καλώς ορίσατε στο ξενοδοχείο Rio Athens",		
-		"content":"Το Ξενοδοχείο ΡΙΟ βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του Μετρό ΜΕΤΑΞΟΥΡΓΕΙΟ και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό της Αθήνας. Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος, απέχει 25΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του ΠΕΙΡΑΙΑ, με τον ηλεκτρικό σιδηρόδρομο.|Το Ξενοδοχείο ΡΙΟ στεγάζεται σε ένα πολύ όμορφο νεοκλασικό κτίριο το οποίο έχει ανακαινισθεί πλήρως, συνδυάζοντας όλες τις ευκολίες της σύγχρονης ζωής με την κλασική αισθητική του κτιρίου.  Τα δωμάτια του Ξενοδοχείου είναι φιλόξενα και εξοπλισμένα με σύστημα κλιματισμού, ατομική τουαλέτα με μπάνιο ή ντουζιέρα, δορυφορική τηλεόραση, mini bar, στεγνωτήρα μαλλιών, τηλεφωνική συσκευή άμεσης κλήσης, που αποσκοπούν στην πλήρη προσωπική σας ικανοποίηση.|Το Bar - Εστιατόριο που βρίσκεται στο ισόγειο του ξενοδοχείου, αποτελεί έναν ιδανικό χώρο για να απολαύσετε το ποτό και το φαγητό σας, ακούγοντας ευχάριστη μουσική. Σερβίρονται πολλά είδη ποτών και εδεσμάτων από την ελληνική κουζίνα, έως τις πρώτες πρωινές ώρες.|Το Ξενοδοχείο ΡΙΟ συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον."
+		"content":"Το Ξενοδοχείο Ρίο βρίσκεται στο κέντρο της Αθήνας, σε έναν ήσυχο πεζόδρομο της πλατείας Καραϊσκάκη, δίπλα στον σταθμό του μετρό «ΜΕΤΑΞΟΥΡΓΕΙΟ» και πολύ κοντά στον Διεθνή Σιδηροδρομικό Σταθμό  «Λαρίσης». Βρίσκεται σε απόσταση 1 χιλιομέτρου από την πλατεία Συντάγματος και την Ακρόπολη,  25΄ λεπτά από τον Διεθνή Αερολιμένα Αθηνών «Ελευθέριος Βενιζέλος» με αυτοκίνητο, και 15΄ λεπτά από το λιμάνι του «ΠΕΙΡΑΙΑ», με τον ηλεκτρικό σιδηρόδρομο. | Το Ξενοδοχείο Ρίο στεγάζεται σε ένα πολύ όμορφο νεοκλασικό κτίριο το οποίο έχει ανακαινισθεί πλήρως, συνδυάζοντας όλες τις ευκολίες της σύγχρονης ζωής με την κλασική αισθητική του κτιρίου. Τα δωμάτια του Ξενοδοχείου είναι φιλόξενα και εξοπλισμένα με σύστημα κλιματισμού, ατομική τουαλέτα με μπάνιο ή ντουζιέρα, δορυφορική τηλεόραση, mini bar, στεγνωτήρα μαλλιών, τηλέφωνο, δωρεάν ασύρματο ίντερνετ, που αποσκοπούν στην πλήρη προσωπική σας ικανοποίηση για την ευχάριστη διαμονή σας. | Το Bar και  Εστιατόριο που βρίσκεται στο ισόγειο του ξενοδοχείου, αποτελούν έναν ιδανικό χώρο για να απολαύσετε το ποτό ή το φαγητό σας, ακούγοντας ευχάριστη μουσική. Σερβίρονται πολλά είδη ποτών και εδεσμάτων από την ελληνική και ιταλική  κουζίνα, έως τις πρώτες πρωινές ώρες. | Το Ξενοδοχείο Ρίο συστήνεται από έναν μεγάλο αριθμό τουριστικών οδηγών σε ολόκληρο τον κόσμο, όχι μόνο σαν χώρος διαμονής σε περιόδους διακοπών, αλλά και κατά τη διάρκεια επιχειρηματικών ταξιδιών. Καθ' όλη τη διάρκεια του έτους, οι ανέσεις του ξενοδοχείου μας είναι στη διάθεσή σας, σε λογικές τιμές, υψηλή ποιότητα παρεχόμενων υπηρεσιών και μέσα σε ένα φιλικό περιβάλλον."
 		},
 		
 		{
 		"lang":"EN",
 		"title":"Hotel Rio Athens",
 		"content_title":"Welcome to Rio Athens Hotel",
-		"content":"Hotel RIO is located in the center of Athens, on the quiet pedestrian street of the Karaiskaki square, next the subway station METAXOURGHIO and quite near the international railway station. It is 1 Km away from the Syntagma sq, a 25 minutes drive from the Athens international airport and 15 minutes from the port of PIREAUS by subway. |RIO is a beautiful neoclassical building entirely restored, blending every modern convenience with the classical aesthetic.  The hotel rooms are welcoming and fitted out with air-conditioning, personal bath or shower, satellite TV, mini bar, hairdryer, direct dial phone with the aim of your complete comfort. |The Bar-Restaurant, at the ground floor, is the ideal place to relax enjoying drinks, food and pleasant music. It serves many kinds of drinks and Greek specialities until well after midnight. |Hotel RIO is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips.  During all the year, everything is at your disposal, for a reasonable price, with a quality of service in a friendly environment. "
+		"content":"Hotel Rio Athens is located in the center of Athens, on the quiet pedestrian street of the Karaiskaki square, next to the metro station «METAXOURGHIO» and quite near to the international railway station ‘’Larisis’’. It is 1 km away from the Syntagma sq, and Acropolis, a 25 minutes drive from the Athens international airport «El. Venizelos», 15 minutes from the port of« PIREAUS» by metro. | Hotel Rio Athens is a beautiful neoclassical building entirely restored, blending every modern convenience with the classical aesthetic. The hotel rooms are welcoming and fitted out with air-conditioning, personal bath or shower, satellite TV, mini bar, safe, hairdryer, wireless internet connection, telephone, with the aim of your complete comfort. | The Bar and the Restaurant, at the ground floor, are the ideal places to relax enjoying drinks, food and pleasant music. It serves many kinds of drinks, Greek or Italian specialities until well after midnight. | Hotel Rio Athens is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips. During all year round, everything is at your disposal, for a reasonable price, with a quality of service in a friendly environment. "
 		},
 		
 		{
 		"lang":"FR",
 		"title":"Hotel Rio Athens",
 		"content_title":"Bienvenue à Rio Athens Hotel",
-		"content":"L'hotel RIO est situe au centre d'Athenes, sur la rue pietonne paisible de la place Karaiskaki, apres la station de metro METAXOURGHIO et tres pres de la gare internationale des trains. Il est situe a un kilometre de distance de la place Syntagma, a 35 minutes de l'aeroport international d'Athenes et a 15 minutes de metro du port du PIREE. RIO est un beau batiment neoclassique entierement restaure, combinant tous les conforts modernes avec l'esthetique classique.  Les chambres d'hotel sont accueillantes et climatisees, equipees d'une salle de bain personnelle ou d'une douche, d'un televiseur relie au satellite, d'un mini bar, d'un seche-cheveux et d'une ligne de telephone directe; Tout cela dans le but de vous offrir le confort le plus total. Le Bar-Restaurant, au rez-de-chaussee, est l'endroit ideal pour vous detendre en profitant des boissons, des repas et de l'agreable musique. On y sert beaucoup de boissons et de specialites grecques meme apres minuit. L'hotel RIO est recommande par beaucoup de guides touristiques internationaux dans le monde non seulement pour des sejours de vacances, mais egalement pour des voyages d'affaires.  Pendant toute l'annee, tout est a votre disposition -un service de qualite dans un environnement convivial- a un prix raisonnable. "
+		"content":"Hôtel Rio Athens se trouve dans le centre d'Athènes, sur la rue piétonne de la place Karaiskaki, à côté de la station de métro «METAXOURGHIO» et tout près de la gare internationale '' Larisis ''. Il se trouve à 1 km de la place Syntagma et de l'Acropole, à 25 minutes en voiture de l'aéroport international d'Athènes «El. Venizelos », à 15 minutes du port de« PIREAUS »par le métro. | Hôtel Rio Athens est un beau bâtiment néoclassique entièrement restaurée, alliant tout le confort moderne avec l'esthétique classique. Les chambres de l'hôtel sont accueillants et équipés avec air conditionné, salle de bain personnelle ou douche, télévision par satellite, mini-bar, coffre-fort, sèche-cheveux, connexion Internet sans fil, téléphone, avec l'objectif de votre confort. | Le bar et le restaurant, au rez-de-chaussée, sont l'endroit idéal pour se détendre en profitant des boissons, de la nourriture et la musique agréable. Il sert toutes sortes de boissons, grec ou spécialités italiennes jusqu'à bien après minuit.| Hôtel Rio Athens est recommandé dans de nombreux guides touristiques internationaux à travers le monde, non seulement pour des séjours de vacances, mais aussi pour les voyages d'affaires. Pendant toute l'année, tout est à votre disposition, pour un prix raisonnable, avec une qualité de service dans un environnement convivial."
 		},
 		
 		{
@@ -115,6 +137,13 @@
 		},
 		
 		{
+		"lang":"DE",
+		"title":"Hotel Rio Athens",
+		"content_title":"Willkommen auf Rio Athens Hotel",
+		"content":"Das Hotel RIO befindet sich im Zentrum von Athen, auf der stillen Fussgaengerzone auf dem Karaiskaki Platz, neben der U-Bahn Station METAXOURGHIO und ziemlich nahe an der internationalen Bahnstelle. Es ist 1 Km weit vom Syntagma Platz, 35 Minuten mit dem Auto von dem internationalen Flughafen Athens und 15 Minuten von dem Piraeus Schiffhafen mit der S-Bahn. RIO ist ein schoenes neuklassisches total renoviertes Gebaude, modern und klassisch aestaetisch zugleich.  Die Hotel Zimmer sind willkommend und mit A/C, persoenliches Bad oder Dusche, Satelliten Fernseher, Mini Bar, Haartrockner und direkte Telephonverbindung zu Ihrem vollstaendigen Komfort ausgestattet. Das Bar-Restaurant in dem Erdgeschoss ist ein ideales Platz um sich zu entspannen und Getraenke, Essen und angenehme Musik zu geniessen. Man serviert eine grosse Vielfalt von Getraenken und Griechischen Gerichten bis weit nach Mitternacht. Das Hotel RIO ist in vielen internationalen turistischen Reisefuehrer auf der ganzen Welt empfohlen, nicht nur fuer Ferien, aber auch fuer Geschaeftsreisen.  Das ganze Jahr lang ist alles auf Ihre Verfuegung, fuer einen vernuenftigen Preis, bei einer Dienstqualitaet in einer freundlichen Umgebung. "
+		},
+		
+		{
 		"lang":"RU",
 		"title":"Hotel Rio Athens",
 		"content_title":"Добро пожаловать на Rio Athens Hotel",
@@ -122,10 +151,17 @@
 		},
 		
 		{
-		"lang":"DE",
+		"lang":"CN",
 		"title":"Hotel Rio Athens",
-		"content_title":"Willkommen auf Rio Athens Hotel",
-		"content":"Das Hotel RIO befindet sich im Zentrum von Athen, auf der stillen Fussgaengerzone auf dem Karaiskaki Platz, neben der U-Bahn Station METAXOURGHIO und ziemlich nahe an der internationalen Bahnstelle. Es ist 1 Km weit vom Syntagma Platz, 35 Minuten mit dem Auto von dem internationalen Flughafen Athens und 15 Minuten von dem Piraeus Schiffhafen mit der S-Bahn. RIO ist ein schoenes neuklassisches total renoviertes Gebaude, modern und klassisch aestaetisch zugleich.  Die Hotel Zimmer sind willkommend und mit A/C, persoenliches Bad oder Dusche, Satelliten Fernseher, Mini Bar, Haartrockner und direkte Telephonverbindung zu Ihrem vollstaendigen Komfort ausgestattet. Das Bar-Restaurant in dem Erdgeschoss ist ein ideales Platz um sich zu entspannen und Getraenke, Essen und angenehme Musik zu geniessen. Man serviert eine grosse Vielfalt von Getraenken und Griechischen Gerichten bis weit nach Mitternacht. Das Hotel RIO ist in vielen internationalen turistischen Reisefuehrer auf der ganzen Welt empfohlen, nicht nur fuer Ferien, aber auch fuer Geschaeftsreisen.  Das ganze Jahr lang ist alles auf Ihre Verfuegung, fuer einen vernuenftigen Preis, bei einer Dienstqualitaet in einer freundlichen Umgebung. "
+		"content_title":"Добро пожаловать на Rio Athens Hotel",
+		"content":"РИО-отель расположен в самом центре Афин, на тихой пешеходной улице Karaiskaki площади, рядом станция метро METAXOURGHIO и совсем недалеко от международной железнодорожной станции. Она составляет 1 км от Syntagma SQ, 35 минутах езды от международного аэропорта Афин и в 15 минутах езды от порта Пирей на метро. РИО является прекрасным неоклассических зданий полностью восстановлена, сочетание всех современных удобств с классическими эстетическими. В номерах приветствуя и оснащены кондиционером, личная ванная или душ, спутниковое телевидение, мини-бар, фен, прямой телефон с целью вашего полного комфорта.  Το Бар-ресторан, на первом этаже, является идеальным местом для отдыха пользуются напитки, продукты питания и приятной музыки. Он выполняет различные виды напитков и греческие блюда до и после полуночи.  Отель 'РИО' рекомендуется во многих международных туристических руководство книг во всем мире не только в праздничные дни пребывания, но и для деловых поездок.  Καθ' όλη τη διάρκεια В течение всего года, все в вашем распоряжении, за разумную цену, с качеством обслуживания в дружественной среде."
+		},
+		
+		{
+		"lang":"BR",
+		"title":"Hotel Rio Athens",
+		"content_title":"Добро пожаловать на Rio Athens Hotel",
+		"content":"РИО-отель расположен в самом центре Афин, на тихой пешеходной улице Karaiskaki площади, рядом станция метро METAXOURGHIO и совсем недалеко от международной железнодорожной станции. Она составляет 1 км от Syntagma SQ, 35 минутах езды от международного аэропорта Афин и в 15 минутах езды от порта Пирей на метро. РИО является прекрасным неоклассических зданий полностью восстановлена, сочетание всех современных удобств с классическими эстетическими. В номерах приветствуя и оснащены кондиционером, личная ванная или душ, спутниковое телевидение, мини-бар, фен, прямой телефон с целью вашего полного комфорта.  Το Бар-ресторан, на первом этаже, является идеальным местом для отдыха пользуются напитки, продукты питания и приятной музыки. Он выполняет различные виды напитков и греческие блюда до и после полуночи.  Отель 'РИО' рекомендуется во многих международных туристических руководство книг во всем мире не только в праздничные дни пребывания, но и для деловых поездок.  Καθ' όλη τη διάρκεια В течение всего года, все в вашем распоряжении, за разумную цену, с качеством обслуживания в дружественной среде."
 		}
 	],
 
@@ -181,23 +217,7 @@
 		"content_7":"Visa, Mastercard."
 		}
 	],
-	
-	"location":[
-		{
-		"lang":"EL",
-		"title":"Τοποθεσία - Hotel Rio Athens",
-		"content_title":"Η τοποθεσία του Rio Athens",
-		"content":""
-		},
-		
-		{
-		"lang":"EN",
-		"title":"Location - Hotel Rio Athens",
-		"content_title":"Location of Rio Athens",
-		"content":""
-		}
-	],
-	
+
 	"photo_gallery":[
 		{
 		"lang":"EL",
@@ -217,10 +237,10 @@
 	"travel_services":[
 		{
 		"lang":"EL",
-		"title":"Travel Services - Hotel Rio Athens",
-		"content_title":"Travel Services",
+		"title":"Υπηρεσίες ταξιδιωτών - Hotel Rio Athens",
+		"content_title":"Υπηρεσίες ταξιδιωτών",
 		"content_image_title":"Σούνιο,Σαντορίνη,Ακρόπολη,Δελφοί,Μύκονος",
-		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece.|We can arrange your visit to Santorini, Mykonos, Naxos, Paros or other Greek islands at reasonable prices! "
+		"content":"Το ξενοδοχείο Ρίο μπορεί να σας προσφέρει υψηλής ποιότητας ταξιδιωτικές υπηρεσίες, για την Αθήνα ή και για οποιοδήποτε σημείο  της Ελλάδας. Σας βοηθάμε για  την περιήγηση σας με λεωφορείο στην Αθήνα, Κόρινθο. Αρχαία Ολυμπία.Επίσης για την επίσκεψη σας στους πιο διάσημους προορισμούς όπως Δελφούς, Μετέωρα , τον ναό του Απόλλωνα στο Σούνιο, Σαντορίνη, Μύκονο, Νάξο , Πάρο Κρήτη, Ρόδο ή σε οποιδήποτε άλλο νησί, σε πολύ λογικές τιμές!!. | Καθώς και για  την ενοικίαση  αυτοκινήτου ή μοτοσυκλέτας με παράδοση στο ξενοδοχείο όποτε το ζητήσετε!"
 		},
 		
 		{
@@ -228,7 +248,7 @@
 		"title":"Travel Services - Hotel Rio Athens",
 		"content_title":"Travel Services",
 		"content_image_title":"Sounio,Santorini,Acropolis,Delphi,Mykonos",
-		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece.|We can arrange your visit to Santorini, Mykonos, Naxos, Paros or other Greek islands at reasonable prices! "
+		"content":"Hotel RIO is also offering quality travel services for Athens or any other place in Greece. We help you to navigate with sightseeing bus to Athens, Corinth. Ancient Olympia. Also for your visit to most famous destinations of Greece,  Delphi, Meteora, Cape Sounio, Santorini, Mykonos, Naxos, Paros, Crete, Rhodes  or other Greek islands on reasonable prices! | We can also help you with your car or motorbike rental, wich will be in the front of the hotel the time you ask for it! "
 		}
 	],
 	

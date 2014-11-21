@@ -231,7 +231,7 @@ $(document).ready(function(){
 		 $('div.full-image img').fadeIn();
 		 $('div.full-image img').attr('src', $(this).attr('src'));
 		 var w = $(window).width() - 100;
-		 if ( w > 1000 ){ w = 1000; }
+		 if ( w > 1100 ){ w = 11000; }
 		 $('div.full-image img').css({width:w});
 		 $('div.full-image img').center();
 	 });
@@ -279,7 +279,7 @@ function language(l, p){
 	
 	 $('body').hide();
 
-	 var langs = ['EL', 'EN', 'FR', 'SP', 'IT', 'RU', 'DE'];
+	 var langs = ['EL', 'EN', 'FR', 'SP', 'IT', 'DE', 'RU', 'CN', 'BR'];
 	 var key = 1;
 	 for(var i = 0; i < langs.length; i++){
 		 if ( l == langs[i] ){
@@ -287,7 +287,8 @@ function language(l, p){
 			 break;
 		 }
 	 }
-
+	 
+	 //key = 0;
 
 	 $.getJSON('languages.json', function(data){
 		 
@@ -431,7 +432,9 @@ function language(l, p){
 		 //modal-map-content
 		 m = data.general[key].modal_map_content.split('#');
 		 $('.modal-map-content').each(function(k, v){
-			 $(this).html('<li>'+m[k]+'</li>');
+			 //if ( k == 1 ) return false;
+			 var mk = m[k].split("|").join("<br/><br/>");
+			 $(this).html('<li>'+mk+'</li>');
 		 });
 		 
 		 //contact-details
@@ -501,7 +504,7 @@ function geolocation(type, zoomLevel){
 function createMarker(mymap, Latlng){
 	var marker = new google.maps.Marker({
 		map: mymap,
-		//title:'Hotel Rio Athens',
+		title:'Hotel Rio Athens',
         position: Latlng,
     });
 	return marker;

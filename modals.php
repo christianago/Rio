@@ -54,13 +54,27 @@
       <div class="modal-body">
 	      <b class="modal-map-title"></b><br/>
 	      <ul>
+	      	<li class="modal-map-content"></li><br/>
 	      	<li class="modal-map-content"></li>
-	      	<lo class="modal-map-content"></li>
 	      </ul>
 	      <b class="modal-map-title"></b>
 	      <ul>
 	      	<li class="modal-map-content"></li>
 	      </ul>
+	      <b class="modal-map-title"></b>
+	      <ul>
+	      	<li class="modal-map-content"></li>
+	      </ul>
+	      <b class="modal-map-title"></b>
+	      <ul>
+	      	<li class="modal-map-content"></li>
+	      </ul>
+	      <br/>
+	      <b class="modal-map-title"></b>
+	      <ul>
+	      	<li class="modal-map-content"></li>
+	      </ul>
+	      <br/>
 	      <b class="modal-map-title"></b>
 	      <ul>
 	      	<li class="modal-map-content"></li>
