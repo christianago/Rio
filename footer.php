@@ -1,3 +1,6 @@
+<div class="row divider"></div>
+
+
 <div class="row footer-flash">
 
 	<div class="col-xs-4 col-lg-offset-1">		
