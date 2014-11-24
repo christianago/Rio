@@ -2,7 +2,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img class="close-icon" src="images/close.png" data-dismiss="modal"/>
         <h4 class="modal-title">Weather</h4>
       </div>
       <div class="modal-body">
@@ -17,7 +17,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img class="close-icon" src="images/close.png" data-dismiss="modal"/>
         <h4 class="modal-title">Local Time</h4>
       </div>
       <div class="modal-body">
@@ -32,7 +32,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img class="close-icon" src="images/close.png" data-dismiss="modal"/>
         <h4 class="modal-title">Currency</h4>
       </div>
       <div class="modal-body">
@@ -48,7 +48,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img class="close-icon" src="images/close.png" data-dismiss="modal"/>
         <h4 class="modal-title">Map</h4>
       </div>
       <div class="modal-body">

@@ -1,5 +1,4 @@
 
-
 <audio id="zorba" loop>
   <source src="audio/zorba.mp3" type="audio/ogg">
   <source src="audio/zorba.mp3" type="audio/mpeg">
@@ -11,27 +10,30 @@
 	<img src="images/logo.png" /> 
 	</div>
 	<div class="col-xs-10 col-lg-5">
-	<div class="collage">
-		<a href="#"><img src="images/acro-day.jpg" /></a>
-		<a href="#"><img src="images/exte.jpg" /></a>
-		<a href="#"><img src="images/acro-night.jpg" /></a>
-		<a href="#"><img src="images/rio-night.jpg" /></a>
-	</div>
-		 
+		<img id="sticker" src="images/sticker.png"/>
+		<img id="sticker2" src="images/sticker.png"/>
+		<img id="sticker3" src="images/sticker.png"/>
+		<div class="collage">
+			<a href="#"><img src="images/acro-day.jpg" /></a>
+			<a href="#"><img src="images/exte.jpg" /></a>
+			<a href="#"><img src="images/acro-night.jpg" /></a>
+			<a href="#"><img src="images/rio-night.jpg" /></a>
+		</div>
 	</div>
 </div>
 
 
-<img id="sound" src="images/sound.png" /> 
+<i id="sound" class="fa fa-volume-up fa-2x"></i> 
 
 
 <div class="row header-2">
-	<div class="col-xs-offset-1 col-md-offset-2 col-lg-offset-3">
+	<div class="col-xs-12">
 		<div class="header-hover"><a href="index.php"></a></div>
 		<div class="header-hover"><a href="accomodation.php"></a></div>
 		<div class="header-hover"><a href="booking-info.php"></a></div>
 		<div class="header-hover"><a href="photo-gallery.php"></a></div>
 		<div class="header-hover"><a href="travel-services.php"></a></div>
+		<div class="header-hover"><a href="facilities.php"></a></div>
 		<div class="header-hover"><a href="contact.php"></a></div>
 		<div class="header-hover"><a href="reviews.php"></a></div>
 	</div>

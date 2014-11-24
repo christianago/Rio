@@ -30,7 +30,7 @@ $(document).ready(function(){
 	
 	//var language = window.navigator.userLanguage || window.navigator.language;
 	
-	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'contact.php', 'reviews.php'];
+	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'facilities.php', 'contact.php', 'reviews.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
@@ -71,16 +71,15 @@ $(document).ready(function(){
 	 
 	 //AUDIO
 	 $(this).on('click', '#sound', function(e){
-		var src = $(this).attr('src');
 		var audio = document.getElementById("zorba");
-		if ( src == 'images/nosound.png' ){
-			$(this).attr('src', 'images/sound.png');
-			if ( audio ) audio.play();
-			playSound = true;
-		} else{
-			$(this).attr('src', 'images/nosound.png');
+		if ( $(this).hasClass('fa-volume-up') ){
+			$(this).removeClass('fa-volume-up').addClass('fa-volume-off');
 			if ( audio ) audio.pause();
 			playSound = false;
+		} else{
+			$(this).removeClass('fa-volume-off').addClass('fa-volume-up');
+			if ( audio ) audio.play();
+			playSound = true;
 		}
 	 });
 	 //<-AUDIO
@@ -121,9 +120,9 @@ $(document).ready(function(){
 	     e.stopPropagation();
 	 });
 	 
-	 $(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
+	 /*$(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
 		$(this).css('background', '#8B0000');
-	 });
+	 });*/
 	 $('#start-date').val(getDate(0));
 	 $('#end-date').val(getDate(1));
 	 //<-DATEPICKER//
@@ -142,9 +141,9 @@ $(document).ready(function(){
 	 
 	 
 	 //USEFUL LINKS
-	 $(this).on('click', '.useful-links-container', function(e){
+	 /*$(this).on('click', '.useful-links-trigger', function(e){
 		 $('ul.useful-links').slideToggle();
-	 });
+	 });*/
 	//<-USEFUL LINKS
 	 
 	 
@@ -231,7 +230,7 @@ $(document).ready(function(){
 		 $('div.full-image img').fadeIn();
 		 $('div.full-image img').attr('src', $(this).attr('src'));
 		 var w = $(window).width() - 100;
-		 if ( w > 1100 ){ w = 11000; }
+		 if ( w > 1100 ){ w = 1100; }
 		 $('div.full-image img').css({width:w});
 		 $('div.full-image img').center();
 	 });
@@ -395,14 +394,45 @@ function language(l, p){
 			 $('input.content').val(c[c.length-2]);
 			 $('.content:last').text(c[c.length-1]);
 			 
-		 }else{ //index
+		 } else if ( p == 'facilities.php' ){ //facilities
+			 if ( data.facilities[key] == undefined ){ key = 1; }
+				 
+			 $('title').text(data.facilities[key].title);
+			 $('div.content-title').text(data.facilities[key].content_title);
+			 
+			 var ct = data.facilities[key].content_title.split(',');
+			 
+			 $('div.content-title:first').text(ct[0]);
+			 $('div.content-sub-title').each(function(k){
+				 $(this).text(ct[k+1]);
+			 });
+			 
+			 ct = data.facilities[key].content.split('#');
+			 $('div.content').each(function(k){
+				 $(this).text(ct[k]);
+			 });
+			 
+			 var li = data.facilities[key].content_list.split(',');
+			 var str = '';
+			 $(li).each(function(k, v){
+				 str += '<li>'+v+'</li>';
+			 });
+			 
+			 console.log(str);
+			 
+			 $('ul.content_list').html(str);
+			 
+			
+		 } else{ //index
 			 if ( data.index[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.index[key].title);
 			 $('div.content-title').text(data.index[key].content_title);
 			 $('div.content').html(data.index[key].content.split("|").join("<br/><br/>"));
+			 
 		 }
 
+		 
 		 if ( data.general[key] == undefined ){ key = 1; }
 		 
 		 //header
