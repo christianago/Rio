@@ -24,12 +24,10 @@
 	</div>
 
 	<div class="row">
-	
 		<div class="col-xs-9 col-lg-8 welcome gallery-container">
 			<div class="content-title" align="center"></div><br/>
-			
-				<div class="row">
-					<img src="images/rio_athens1.jpg" /> 
+			<div class="row">
+				<img src="images/rio_athens1.jpg" /> 
 					<img src="images/pedestrian.jpg" /> 
 					<img src="images/lobby3.jpg" /> 
 					<img src="images/exte.jpg" /> 
@@ -56,10 +54,8 @@
 				    <img src="images/quad2.jpg" /> 
 				    <img src="images/rio bar.jpg" /> 
 				    <img src="images/shower.jpg" /> 
-				</div>
-		
 			</div>
-
+		</div>
 	</div>
 	
 	<?php include_once 'footer.php'; ?>
@@ -74,4 +70,3 @@
 	<script src="js/index.js"></script>
 </body>
 </html>
-

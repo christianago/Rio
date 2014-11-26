@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +16,7 @@
 <?php include_once 'modals.php'; ?>
 
 <div class="container">
-
+	
 	<div class="row the-header">
 		<div class="col-xs-12">
 			<?php include_once 'header.php'; ?>
@@ -24,29 +25,8 @@
 
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-10 col-lg-6 welcome">
-			<div class="content-title" align="center"></div><br/>
-			<div class="read">
-				<div class="content"></div><br/><br/>
-				<div class="row">
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-				</div>
-				
-				<div class="row travel-images">
-					<div class="col-xs-1"><img src="images/sounio.jpg" /></div>
-					<div class="col-xs-1"><img src="images/santorini.jpg" /></div>
-					<div class="col-xs-1"><img src="images/acro.jpg" /></div>
-					<div class="col-xs-1"><img src="images/theatre.jpg" /></div>
-					<div class="col-xs-1"><img src="images/mykonos.jpg" /></div>
-					<div class="col-xs-1"><img src="images/olympia.jpg" /></div>
-				</div>
-			</div>
-			
+		<div class="col-xs-11 welcome maps">
+			<div class="googleMap" id="googleMap-3"></div>
 		</div>
 
 	</div>
@@ -63,4 +43,3 @@
 	<script src="js/index.js"></script>
 </body>
 </html>
-

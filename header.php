@@ -6,8 +6,12 @@
 
 
 <div class="row header-1">
-	<div class="col-xs-2 col-lg-2 col-lg-offset-2" id="logo">
-	<img src="images/logo.png" /> 
+	<div class="col-xs-2 col-lg-2 col-lg-offset-2">
+		<img id="logo" src="images/logo.png" /> 
+		<div id="hotel">HOTEL</div>
+		<img class="gold-star" src="images/gold-star.gif" /> 
+		<img class="gold-star" src="images/gold-star.gif" /> 
+		<img class="gold-star" src="images/gold-star.gif" /> 
 	</div>
 	<div class="col-xs-10 col-lg-5">
 		<img id="sticker" src="images/sticker.png"/>
@@ -40,7 +44,7 @@
 </div>
 
 
-<div class="col-xs-4 col-lg-3 col-lg-offset-2">
+<div class="col-xs-4 col-lg-3 col-lg-offset-2 book-slide">
 
 	<div class="row">
 	
@@ -149,36 +153,16 @@
 	
 </div>
 
-<div class="col-xs-8 col-lg-4">
+<div class="col-xs-8 col-lg-4 book-slide">
 	
 	<div class="row slideshow">
-		<img src="images/rio_athens1.jpg" /> 
-		<img src="images/pedestrian.jpg" /> 
-		<img src="images/lobby3.jpg" /> 
-		<img src="images/exte.jpg" /> 
-		<img src="images/bar2.jpg" /> 
-		<img src="images/rion.jpg" /> 
-		<img src="images/anfas ktirio.jpg" /> 
-		<img src="images/beds.jpg" /> 
-		<img src="images/rio-night.jpg" /> 
-		<img src="images/view.jpg" /> 
-	    <img src="images/balcony view2.jpg" /> 
-	    <img src="images/bat bottles.jpg" /> 
-	    <img src="images/cafe.jpg" /> 
-	    <img src="images/bar.jpg" /> 
-	    <img src="images/chair.jpg" /> 
-	    <img src="images/chairs.jpg" /> 
-	    <img src="images/extern.jpg" /> 
-	    <img src="images/fountane view.jpg" /> 
-	    <img src="images/fountane.jpg" /> 
-	    <img src="images/lobby1.jpg" /> 
-	    <img src="images/lobby2.jpg" /> 
-	    <img src="images/pedestrian restaurant.jpg" /> 
-	    <img src="images/quad triple.jpg" /> 
-	    <img src="images/quad.jpg" /> 
-	    <img src="images/quad2.jpg" /> 
-	    <img src="images/rio bar.jpg" /> 
-	    <img src="images/shower.jpg" /> 
+		<?php 
+		if ( strpos( $_SERVER["REQUEST_URI"], 'reviews.php') === FALSE ){
+			include_once 'slides-1.php'; 
+		} else{
+			include_once 'slides-2.php';
+		}
+		?>
 	</div>
 	
 	<div class="row" id="lezanta">

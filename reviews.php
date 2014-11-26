@@ -30,7 +30,7 @@
 
 	<div class="row">
 	
-		<div class="col-xs-9 col-lg-6 welcome">
+		<div class="col-xs-9 col-lg-6 welcome review-page">
 			<div class="content-title content"></div><br/>
 			
 			<form id="review-form" action="submit.php" method="post">
@@ -198,7 +198,7 @@
 					<div class="row review-container read">
 						<div class="col-xs-2 review-date"><?=$v?></div>
 						<div class="col-xs-6 review-comment"><?=$comments[$k]?></div>
-						<div class="col-xs-2 review-star"><?=$star?></div>
+						<div class="col-xs-4 review-star"><?=$star?></div>
 					</div>
 				<?php endforeach; ?>
 		</form>

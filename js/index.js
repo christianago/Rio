@@ -1,4 +1,4 @@
-var map = null, map2 = null;
+var map = null, map2 = null, map3 = null;
 var currentLanguage = localStorage.getItem('language');
 var playSound = true;
 var reviewLock = [false, false, false, false, false];
@@ -30,7 +30,7 @@ $(document).ready(function(){
 	
 	//var language = window.navigator.userLanguage || window.navigator.language;
 	
-	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'facilities.php', 'contact.php', 'reviews.php'];
+	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'facilities.php', 'contact.php', 'reviews.php', 'map.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
@@ -39,10 +39,16 @@ $(document).ready(function(){
 	if ( myURL == '' ){
 		var audio = document.getElementById("zorba");
 		if ( playSound && audio ) audio.play();
+	} else if ( myURL == 'map.php' ){
+		$('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
 	}
 	
 	 //MAPS
-	 geolocation(1, 15);
+	 try{ 
+		 if ( myURL != 'map.php' )
+		 geolocation(1, 15);
+		 else geolocation(3, 17);
+	 } catch (e) {}
 	 //google.maps.event.addDomListener(window, 'load', geolocation);
 	 //<-MAPS
 	 
@@ -104,7 +110,8 @@ $(document).ready(function(){
 	//DATEPICKER//
 	$('input.datepicker').datepicker({
 		autoclose: true,
-		startDate: '+1d'
+		startDate: '+1d',
+		orientation: 'top'
 	});
 	
 	 $(this).on('focus', 'input', function(){
@@ -120,9 +127,6 @@ $(document).ready(function(){
 	     e.stopPropagation();
 	 });
 	 
-	 /*$(this).on('mouseenter', '.datepicker-switch, th.next, th.prev', function(){
-		$(this).css('background', '#8B0000');
-	 });*/
 	 $('#start-date').val(getDate(0));
 	 $('#end-date').val(getDate(1));
 	 //<-DATEPICKER//
@@ -134,7 +138,8 @@ $(document).ready(function(){
 	 $(this).on('click', '.currency', function(e){ $('#currency-window').modal('show'); });
 	 $(this).on('click', '#googleMap', function(e){ 
 		 $('#map-window').modal('show'); 
-		 geolocation(2, 14);
+		 try{ geolocation(2, 14);
+		 } catch (e) { }
 		 google.maps.event.trigger(map2, 'resize'); 
 	 });
 	 //<-MODALS//
@@ -402,7 +407,7 @@ function language(l, p){
 			 
 			 var ct = data.facilities[key].content_title.split(',');
 			 
-			 $('div.content-title:first').text(ct[0]);
+			 $('div.content-title:first').text(ct[0]+",");
 			 $('div.content-sub-title').each(function(k){
 				 $(this).text(ct[k+1]);
 			 });
@@ -444,7 +449,7 @@ function language(l, p){
 		 //footer
 		 var footer = data.general[key].footer.split('#');
 		 $('.footer-item').each(function(k, v){
-			 $(this).html(footer[k].split("|").join("<br/>"));
+			 $(this).html(footer[k]);
 		 });
 		 
 		 //modals
@@ -492,6 +497,7 @@ function geolocation(type, zoomLevel){
 	
 	//var lng = position.coords.longitude;
 	//var lat = position.coords.latitude;
+	
 	var myLatlng = new google.maps.LatLng(37.985298,23.719681);
 	
     var mapOptions = {
@@ -506,9 +512,12 @@ function geolocation(type, zoomLevel){
     
     if ( type == 2 && $('#googleMap-2').length ){
     	map2 = new google.maps.Map(document.getElementById("googleMap-2"), mapOptions);
+    } 
+    if ( type == 3 && $('#googleMap-3').length ){
+    	map3 = new google.maps.Map(document.getElementById("googleMap-3"), mapOptions);
     }
     
-    if ( type == 2 ){
+    if ( type == 2){
     	/*markerInfo(2, map2, createMarker(map2, myLatlng));
     	var airportLatLng = new google.maps.LatLng(37.935647,23.948416);
     	createMarker(map2, airportLatLng);
@@ -523,7 +532,14 @@ function geolocation(type, zoomLevel){
     		markerInfo(2, map2, marker2);
     	});
     	
-    } else{
+    } else if ( type == 3 ){
+    	var marker3 = createMarker(map3, myLatlng);
+    	markerInfo(2, map3, marker3);
+    	
+    	google.maps.event.addListener(marker3, 'click', function() {
+    		markerInfo(2, map3, marker3);
+    	});
+    } else {
     	var marker = createMarker(map, myLatlng);
     	markerInfo(1, map, marker);
     }
@@ -544,7 +560,8 @@ function createMarker(mymap, Latlng){
 function markerInfo(type, mymap, marker){
    var info = '';
    if ( type == 2 ){
-	   var address = $('span.modal-map-title.address:first').html() + ",<br/>" + $('span.modal-map-title.address:last').html();
+	   //var address = $('span.modal-map-title.address:first').html() + ",<br/>" + $('span.modal-map-title.address:last').html();
+	   var address = '13 - 17 Odysseos street, <br/> Karaiskaki sq.';
 	   info = '<div id="map-2-info"><img id="map-image" src="images/map-image.jpg" /></div>';
 	   info += '<div id="map-3-info"><b>Hotel Rio Athens</b><br/>'+address+'</div>';
    } else{

@@ -45,9 +45,27 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-#logo img{
+#logo{
 	width: 150px;
 	margin-top: 60px;
+}
+
+#hotel{
+	font-size: 17pt;
+	color: #E7C719;
+	letter-spacing: 4px;
+	position: relative;
+	left: 62px;
+	top: -5px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.gold-star{
+	width: 15px;
+	margin-right: 5px;
+	position: relative;
+	left: 71px;
+	top: -14px;
 }
 
 #sound{
@@ -60,11 +78,11 @@ body{
 }
 
 .fa-volume-up{
-	right: 50px;
+	right: 30px;
 }
 
 .fa-volume-off{
-	right: 65px;
+	right: 45px;
 }
 
 .nav-container{
@@ -176,6 +194,11 @@ body{
 a, a:active, a:hover{
 	text-decoration: none;
 	color: #fff;
+}
+
+.useful-links li{
+	position: relative;
+	left: -20px;
 }
 
 .useful-links li a{
@@ -303,6 +326,10 @@ div.datepicker{
 	color: #8B4513;
 }
 
+.datepicker .table-condensed>tbody>tr>td, .datepicker .table-condensed>tfoot>tr>td {
+	padding: 2px;
+}
+
 .datepicker-switch, .datepicker .next, .datepicker .prev{
 	color: #c7bc67;
 	background: rgb(169,3,41); /* Old browsers */
@@ -418,8 +445,26 @@ input#check-availability{
 	margin-right: 10px;
 }
 
+.footer-images{
+	float: right;
+	margin-right: 50px;
+}
+
+#we-are-here{
+	font-weight: bold;	
+	font-size: 10pt;
+}
+
+#here a{
+	color: red;
+}
+
+.footer-images img{
+	padding-right: 15px;
+}
+
 #wifi{
-	width: 90px;
+	width: 80px;
 }
 
 .footer-flash{
@@ -444,7 +489,7 @@ input#check-availability{
 }
 
 .footer-2{
-	padding-top: 30px;
+	padding-top: 20px;
 	color: #000;
 	font-size: 9pt;
 	background: rgba(255, 239, 213, .4);
@@ -630,6 +675,16 @@ input#check-availability{
 	height: 400px;
 }
 
+#googleMap-3{
+	width: 100%;
+	height: 800px;
+	border: 3px solid #DAA520;
+}
+
+.maps{
+	margin-top: 50px;
+}
+
 #map-image{
 	width: 80px;
 }
@@ -685,7 +740,7 @@ input#check-availability{
 .review-date{
 	font-size: 12px;
 	width: 90px;
-	padding-bottom: 4px; 
+	padding-bottom: 5px; 
 	border-right: 1px dotted #8B0000;
 }
 
@@ -703,7 +758,7 @@ input#check-availability{
 .review-star{
 	color: #8B0000;
 	font-weight: bold;
-	width: 100px;
+	width: 120px;
 }
 
 .copyright{
@@ -714,14 +769,18 @@ input#check-availability{
 	color: #000;
 }
 
+.travel-images div{
+	margin-right: 60px;
+}
+
 .travel-images img{
 	width: 120px;
 	height: 100px;
 }
 
 .content-image-title{
-	margin-left: 1px;
-	margin-bottom: 5px;
+	margin-right: 60px;
+	font-size: 11pt;
 }
 
 .content-sub-title{
@@ -748,6 +807,10 @@ input#check-availability{
 
 .contact-field{
 	margin-bottom: 10px;
+}
+
+.review-page{
+	margin-top: 50px;
 }
 
 .divider{
@@ -799,4 +862,20 @@ input#check-availability{
     -o-transform:rotate(20deg);
 	opacity: 0.7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
