@@ -4,6 +4,7 @@
   <source src="audio/zorba.mp3" type="audio/mpeg">
 </audio>
 
+<img id="backtotop" src="images/backtotop.png"/>
 
 <div class="row header-1">
 	<div class="col-xs-2 col-lg-2 col-lg-offset-2">
@@ -148,6 +149,18 @@
 			
 		</div>
 		
+	</div>
+	
+	
+	<div class="row last-minute-container">
+		<div class="col-xs-12">
+			<img id="last-minute" src="images/last-minute-hotel_04.gif" />
+			<div id="phone" align="center">
+			<a href="tel:+30 210 5227075">+30 210 5227075 &nbsp;</a>
+			Call now &nbsp;
+			<i class="fa fa-phone"></i>
+			</div>
+		</div>
 	</div>
 
 	

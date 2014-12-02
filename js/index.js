@@ -36,6 +36,22 @@ $(document).ready(function(){
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
 	
+	
+	$('img.gold-star:eq(1)').css({top:0});
+	
+	//BACKTOTOP
+	$(window).scroll(function(){
+		if ( $(this).scrollTop() > 100 ){
+			$('#backtotop').fadeIn();
+		} else{
+			$('#backtotop').fadeOut();
+		}
+	});
+	 $(this).on('click', '#backtotop', function(e){
+		 $('html, body').animate({scrollTop : 0}, 500);
+	 });
+	//<-BACKTOTOP
+	
 	if ( myURL == '' ){
 		var audio = document.getElementById("zorba");
 		if ( playSound && audio ) audio.play();
@@ -44,11 +60,11 @@ $(document).ready(function(){
 	}
 	
 	 //MAPS
-	 try{ 
-		 if ( myURL != 'map.php' )
-		 geolocation(1, 15);
-		 else geolocation(3, 17);
-	 } catch (e) {}
+	 if ( myURL != 'map.php' ){
+		 try{  geolocation(1, 15); } catch(e){}
+	 } else{ 
+		 try{ geolocation(3, 17); } catch(e){}
+	 }
 	 //google.maps.event.addDomListener(window, 'load', geolocation);
 	 //<-MAPS
 	 
@@ -96,8 +112,10 @@ $(document).ready(function(){
 	.cycle({
 		fx: 'fade',
 		pager: '#nav',
-		 pagerAnchorBuilder: function(idx, slide) { 
-	        return '<li><a href="#"><img src="' + slide.src + '" width="70" height="50" /></a></li>'; 
+		pagerAnchorBuilder: function(idx, slide){ 
+			if ( myURL != 'reviews.php' ){
+				return '<li><a href="#"><img src="' + slide.src + '" width="70" height="50" /></a></li>'; 
+			}
 	    }
 	});
 
@@ -346,7 +364,6 @@ function language(l, p){
 			 $('div.content:eq(4)').html(data.booking_info[key].content_4.split("|").join("<br/>"));
 			 $('div.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
 			 $('div.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>"));
-			 $('div.content:eq(7)').html(data.booking_info[key].content_7.split("|").join("<br/>"));
 			 
 		 } else if ( p == 'photo-gallery.php' ){ //photo-gallery
 			 if ( data.photo_gallery[key] == undefined ){ key = 1; }
@@ -380,11 +397,11 @@ function language(l, p){
 			 $('div.content:eq(0)').html(data.contact[key].content_1.split("|").join("<br/>"));
 			 
 			 var c = data.contact[key].content_2.split(',');
-			 $('div.content:gt(0)').each(function(k, v){
+			 $('.content:gt(0)').each(function(k, v){
 				 $(this).text(c[k]);
 			 }); 
 			 
-			 $('input.content:last').val(c[c.length-1]);
+			 //$('input.content:last').val(c[c.length-1]);
 			 
 		 } else if ( p == 'reviews.php' ){ //reviews
 			 if ( data.reviews[key] == undefined ){ key = 1; }

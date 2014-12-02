@@ -25,3 +25,11 @@
     <img src="images/quad2.jpg" /> 
     <img src="images/rio bar.jpg" /> 
     <img src="images/shower.jpg" /> 
+    <img src="images/booking_1.jpg" /> 
+    <img src="images/booking_2.jpg" /> 
+    <img src="images/booking_3.jpg" /> 
+    <img src="images/booking_4.jpg" /> 
+    <img src="images/booking_5.jpg" /> 
+    <img src="images/booking_6.jpg" /> 
+    <img src="images/booking_7.jpg" /> 
+    <img src="images/booking_8.jpg" /> 

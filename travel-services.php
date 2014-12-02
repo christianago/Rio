@@ -27,7 +27,10 @@
 		<div class="col-xs-10 col-lg-6 welcome">
 			<div class="content-title" align="center"></div><br/>
 			<div class="read">
-				<div class="content"></div><br/><br/>
+				<div class="content"></div><br/>
+				
+				<img src="images/alamo.jpg" /><br/><br/>
+				
 				<div class="row">
 					<div class="col-xs-1 content-image-title"></div>
 					<div class="col-xs-1 content-image-title"></div>

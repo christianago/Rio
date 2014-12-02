@@ -49,8 +49,10 @@
 		<div class="content read"></div>
 		
 		<br/><br/><div class="content-title"></div><br/>
-		<div class="content read"></div>
-
+		<div class="read">Visa<i class="fa fa-cc-visa"></i>,
+		Mastercard<i class="fa fa-cc-mastercard"></i>
+		</div>
+		
 		</div>
 
 	</div>

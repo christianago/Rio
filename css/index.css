@@ -47,7 +47,9 @@ body{
 
 #logo{
 	width: 150px;
-	margin-top: 60px;
+	position: relative;
+	left: -10px;
+	margin-top: 40px;
 }
 
 #hotel{
@@ -55,7 +57,7 @@ body{
 	color: #E7C719;
 	letter-spacing: 4px;
 	position: relative;
-	left: 62px;
+	left: 52px;
 	top: -5px;
 	text-shadow: 2px 2px 2px #000;
 }
@@ -64,8 +66,8 @@ body{
 	width: 15px;
 	margin-right: 5px;
 	position: relative;
-	left: 71px;
-	top: -14px;
+	left: 61px;
+	top: -10px;
 }
 
 #sound{
@@ -98,6 +100,7 @@ body{
 	-o-filter: sepia(100%);
 	 -ms-filter: sepia(100%);
 	-webkit-filter: sepia(100%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.64 0.55 0.15 0 0 0.52 0.49 0.14 0 0 0.18 0.38 0.13 0 0 0 0 0 1 0\'/></filter></svg>#old-timey")
 }
 
 #nav{ 
@@ -266,6 +269,7 @@ a, a:active, a:hover{
 }
 
 .book-online{
+	float: left;
 	margin-left: 10px;
 	margin-top: 20px;
 	color: #8B4513;
@@ -274,7 +278,6 @@ a, a:active, a:hover{
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	float: left;
 	background: url(../images/header-bg.jpg);
 	background-size: cover;
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -381,6 +384,7 @@ input#review-us{
 	width: 120px;
 	height: 40px;
 	background: #8B0000;
+	//margin-left: 200px;
 }
 
 .modal-title{
@@ -560,6 +564,7 @@ input#check-availability{
 	-o-filter: sepia(100%);
 	 -ms-filter: sepia(100%);
 	-webkit-filter: sepia(100%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.64 0.55 0.15 0 0 0.52 0.49 0.14 0 0 0.18 0.38 0.13 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
 }
 
 .collage a {
@@ -648,6 +653,7 @@ input#check-availability{
 	-o-filter: sepia(100%);
 	 -ms-filter: sepia(100%);
 	-webkit-filter: sepia(100%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.64 0.55 0.15 0 0 0.52 0.49 0.14 0 0 0.18 0.38 0.13 0 0 0 0 0 1 0\'/></filter></svg>#old-timey")
 }
 
 .full-image img{
@@ -727,6 +733,8 @@ input#check-availability{
 
 .review-label .fa-star-o, .review-label .fa-star{
 	cursor: pointer;
+	font-size: 13pt;
+	margin-top: 8px;
 }
 
 .review-container div{
@@ -811,6 +819,9 @@ input#check-availability{
 
 .review-page{
 	margin-top: 50px;
+	font-size: 10pt;
+	position: relative;
+	left: 30%;
 }
 
 .divider{
@@ -863,11 +874,49 @@ input#check-availability{
 	opacity: 0.7;
 }
 
+.fa-cc-visa, .fa-cc-mastercard{
+	margin-left: 5px;
+}
 
+.required-note{
+	color: #8B0000;
+	font-size: 10pt;
+}
 
+#backtotop{
+	width: 60px;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	display: none;
+	cursor: pointer;
+	z-index: 99999;
+}
 
+.last-minute-container{
+	width: 280px;
+	margin-top: 50px;
+	margin-left: 1px;
+	color: #8B4513;
+	font-weight:bold;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: url(../images/header-bg.jpg);
+	background-size: cover;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
 
+.last-minute-container a{
+	color: #8B4513;
+}
 
+#phone{
+	margin-top: 5px;
+	padding-bottom: 10px;
+}
 
 
 

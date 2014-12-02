@@ -105,7 +105,7 @@
 				<div class="row contact-field">
 					<div class="col-xs-3"></div>
 					<div class="col-xs-3">
-						<input class="form-control" type="text" id="captcha-text" name="captcha" required="required" placeholder="Please enter the captcha code" />
+						<input class="form-control" type="text" id="captcha-text" name="captcha" required="required" placeholder="Please enter the above text" />
 						<br/>
 						
 						<div class="system-message">
@@ -124,6 +124,12 @@
 					</div>
 					<div class="col-xs-1"><i class="fa fa-asterisk"></i></div>
 				</div>	
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<span class="content required-note"></span>&nbsp;<i class="fa fa-asterisk">&nbsp;</i><span class="content required-note"></span>
+					</div>
+				</div>
 			
 			</form>
 			

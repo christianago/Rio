@@ -43,6 +43,7 @@
 		<a target="_blank" href="https://el-gr.facebook.com/pages/Hotel-Rio-Athens/163973293694518"><img src="images/social-facebook.png" /></a>
 		<img src="images/social-twitter.png" />
 		<img src="images/social-google.png" />
+		<img src="images/social-linkedin.png" />
 	</div>	
 </div>
 
@@ -60,7 +61,7 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-xs-5 col-xs-offset-5 col-lg-4 col-lg-offset-5">
+			<div class="col-xs-8 col-xs-offset-4 col-lg-4 col-lg-offset-5">
 				<a href="booking-info.php"><span class="footer-elem footer-item"></span></a> / 
 				<a href="mailto:?subject=Hotel Rio Athens&body=www.hotel-rio.gr"><span class="footer-elem footer-item recommend"></span></a> /
 				<span class="footer-elem bookmarkme">Bookmark this site</span>
@@ -74,7 +75,6 @@
 			<img id="wifi" src="images/wifi.png" />
 			<img src="images/footer-img-1.gif" />
 			<img src="images/footer-img-2.gif" />
-			<img src="images/footer-img-3.gif" />
 			<span id="we-are-here">We are <span id="here"><a href="map.php">HERE</a></span></span>
 			<br/><br/>
 		</div>

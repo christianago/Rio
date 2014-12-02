@@ -30,18 +30,18 @@
 
 	<div class="row">
 	
-		<div class="col-xs-9 col-lg-6 welcome review-page">
+		<div class="welcome review-page">
 			<div class="content-title content"></div><br/>
 			
 			<form id="review-form" action="submit.php" method="post">
 			
 				<div class="row review-label" id="r0">
 					<input name="rv1" type="hidden" />
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<i class="fa fa-hospital-o fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-10">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -52,11 +52,11 @@
 				
 				<div class="row review-label" id="r1">
 				<input name="rv2" type="hidden" />
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<i class="fa fa-female fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-10">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -67,11 +67,11 @@
 				
 				<div class="row review-label" id="r2">
 				<input name="rv3" type="hidden" />
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<i class="fa fa-map-marker fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-2">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -82,11 +82,11 @@
 	
 				<div class="row review-label" id="r3">
 				<input name="rv4" type="hidden" />
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<i class="fa fa-trash fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-10">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -97,11 +97,11 @@
 				
 				<div class="row review-label" id="r4">
 				<input name="rv5" type="hidden" />
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<i class="fa fa-euro fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-10">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -112,10 +112,10 @@
 				
 				<div class="row">
 				<br/>
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<b><span class="content"></span></b>
 					</div>
-					<div class="col-xs-3">
+					<div class="col-xs-2">
 						<textarea class="form-control" rows="5" name="comments"></textarea>
 					</div>
 				</div>
@@ -133,77 +133,75 @@
 				</div>
 				
 				<div class="row"><br/>
-					<div class="col-xs-2 col-xs-offset-4"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="" /></div>
+					<div class="col-xs-offset-2 col-lg-offset-3"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="" /></div>
 				</div>
-				
-				<?php 
-				
-					//$review = date('Y/m/d').'#'.$data['reserveid'].'#'.$data['rv1'].'#'.$data['rv2'].'#'.$data['rv3'].'#'.$data['rv4'].'#'.$data['rv5'].'#'.$data['comments'];
-				
-					$reviews = array();
-					$avg = array();
-					$dates = array();
-					$comments = array();
-					
-					$handle = fopen("rv", "r");
-					if ( $handle ) {
-					    while (($line = fgets($handle)) !== false) {
-					    	if ( strlen($line) < 20 ) continue;
-					 		$reviews[] = $line;
-					    }
-					} else { exit(0); } 
-					fclose($handle);
-					
-					$reviews = array_reverse($reviews);
-					
-					foreach($reviews as $k=>$v){
-						$part = explode('#', $v);
-						if ( $part[0] == '0' ) continue; //unapproved review
-						
-						$values = array();
-						
-						for($i = 3; $i < 8; $i++){
-							if ( $part[$i] != '0' ){
-								$values[] = $part[$i];
-							}
-						}
-						
-						$av = array_sum($values) / count($values);
-						if ( $av == 0 ) continue;
-							
-						$avg[] = $av;
-						$dates[] =  $part[1];
-						$comments[] = $part[8].'&nbsp;';
-					}
-					
-				?>
-				
-				<br/><hr class="review-line" />
-				<div class="sub-title content" align="center">Οι αξιολογήσεις των φιλοξενούμενών μας</div><br/>
-	
-				
-				<?php 
-					foreach ($dates as $k=>$v):
-						$total = (int) $avg[$k];
-						$star = '';
-						for($i = 0; $i < $total; $i++){
-							$star .= '<i class="fa fa-star"></i>';
-						}
-						$total = (float) $avg[$k];
-						if ( strlen($total) > 1 ){
-							$star .= '<i class="fa fa-star-half-o"></i>';
-						}
-				?>
-					<br/><br/>
-					<div class="row review-container read">
-						<div class="col-xs-2 review-date"><?=$v?></div>
-						<div class="col-xs-6 review-comment"><?=$comments[$k]?></div>
-						<div class="col-xs-4 review-star"><?=$star?></div>
-					</div>
-				<?php endforeach; ?>
-		</form>
+			</form>
+			
+		</div>
 		
-	</div>
+		<?php 
+			$reviews = array();
+			$avg = array();
+			$dates = array();
+			$comments = array();
+			
+			$handle = fopen("rv", "r");
+			if ( $handle ) {
+			    while (($line = fgets($handle)) !== false) {
+			    	if ( strlen($line) < 20 ) continue;
+			 		$reviews[] = $line;
+			    }
+			} else { exit(0); } 
+			fclose($handle);
+			
+			$reviews = array_reverse($reviews);
+			
+			foreach($reviews as $k=>$v){
+				$part = explode('#', $v);
+				if ( $part[0] == '0' ) continue; //unapproved review
+				
+				$values = array();
+				
+				for($i = 3; $i < 8; $i++){
+					if ( $part[$i] != '0' ){
+						$values[] = $part[$i];
+					}
+				}
+				
+				$av = array_sum($values) / count($values);
+				if ( $av == 0 ) continue;
+					
+				$avg[] = $av;
+				$dates[] =  $part[1];
+				$comments[] = $part[8].'&nbsp;';
+			}
+			
+		?>
+		
+		<br/><hr class="review-line" />
+		<div class="sub-title content" align="center">Οι αξιολογήσεις των φιλοξενούμενών μας</div><br/>
+
+		
+		<?php 
+			foreach ($dates as $k=>$v):
+				$total = (int) $avg[$k];
+				$star = '';
+				for($i = 0; $i < $total; $i++){
+					$star .= '<i class="fa fa-star"></i>';
+				}
+				$total = (float) $avg[$k];
+				if ( strlen($total) > 1 ){
+					$star .= '<i class="fa fa-star-half-o"></i>';
+				}
+		?>
+			<br/>
+			<div class="row review-container read">
+				<div class="col-xs-2 col-xs-offset-2 review-date"><?=$v?></div>
+				<div class="col-xs-5 review-comment"><?=$comments[$k]?></div>
+				<div class="col-xs-3 review-star"><?=$star?></div>
+			</div>
+		<?php endforeach; ?>
+
 	
 	<?php include_once 'footer.php'; ?>
 
