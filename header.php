@@ -156,9 +156,9 @@
 		<div class="col-xs-12">
 			<img id="last-minute" src="images/last-minute-hotel_04.gif" />
 			<div id="phone" align="center">
-			<a href="tel:+30 210 5227075">+30 210 5227075 &nbsp;</a>
-			Call now &nbsp;
-			<i class="fa fa-phone"></i>
+				<a href="tel:+30 210 5227075">+30 210 5227075 &nbsp;</a>
+				Call now &nbsp;
+				<i class="fa fa-phone"></i>
 			</div>
 		</div>
 	</div>
@@ -184,6 +184,12 @@
 		<i class="fa fa-circle"></i>
 		<i class="fa fa-circle"></i>
 		in the center of Athens</div>
+	</div>
+	
+	<div class="row" id="lezanta-2">
+		<div class="col-xs-12">
+		Hotel RIO is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips
+		</div>
 	</div>
 	
 	<div class="row stand">&nbsp;</div>

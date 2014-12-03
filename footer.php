@@ -89,17 +89,17 @@
 			<br/><br/>
 			<ul class="useful-links">
 				<li><a target="_blank" href="http://www.travelbudget.gr/">Travelbudget agency</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.ose.gr/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.aia.gr/traveler/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.olp.gr/en/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.ktelattikis.gr/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.in.gr/more/useful/efimeries/hospitals/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.bankofgreece.gr/Pages/default.aspx"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.ekab.gr/web/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.astynomia.gr/index.php?lang=EN"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.ose.gr"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://travel.viva.gr/en/home"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.rafinaport.gr/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.oll.gr/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.ktelattikis.gr/"></a></li>
+				<li><a target="_blank" class="footer-item" href="https://www.nbg.gr/en"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.astynomia.gr/index.php?lang=EN"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/en"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.healthpages.gr/portal/page/portal/1535/Fullstory?ArticleID=358/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.ekab.gr/web/"></a></li>
 			</ul>
 		
 		</div>
@@ -109,13 +109,13 @@
 		
 			<br/><br/>
 			<ul class="useful-links">
-				<li><a target="_blank" class="footer-item" href="http://www.theacropolismuseum.gr/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.panathenaicstadium.gr/Contact/tabid/93/language/en-US/Default.aspx"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/gr/venue18-wdeio-irwdoy-attikoy.htm"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://project.athens-agora.gr/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.athenshappytrain.com/sights/gr-temple-of-zeus-handrian-arch.html"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.greece-athens.com/place.php?place_id=1"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.panathenaicstadium.gr/ThePanathenaicStadium/History/tabid/96/language/en-US/Default.aspx"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en/venue18-wdeio-irwdoy-attikoy.htm"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2485"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.athensinfoguide.com/wtsarch.htm"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2392"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.greece-athens.com/place.php?place_id=110"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.athensguide.com/temple-of-olympian-zeus/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.athensinfoguide.com/wtsphilopappou.htm"></a></li>
 			</ul>
 		
@@ -126,12 +126,12 @@
 		
 			<br/><br/>
 			<ul class="useful-links">
-				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/gh351.jsp?obj_id=2384"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.theacropolismuseum.gr/en"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.namuseum.gr/index-en.html"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.cycladic.gr/frontoffice/portal.asp?cpage=NODE&cnode=1"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.benaki.gr/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.cycladic.gr/frontoffice/portal.asp?cpage=NODE&cnode=1&clang=1"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.benaki.gr/index.asp?lang=en"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.amnh.org/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.nma.gr/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.nma.gr/index_en.htm"></a></li>
 			</ul>
 		
 		</div>

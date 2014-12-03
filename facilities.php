@@ -27,9 +27,10 @@
 		<div class="col-xs-9 col-lg-6 welcome">
 			<div class="content-title" align="center"></div><br/>
 				<div class="content-sub-title"></div><br/>
-				<div class="content read"></div><br/><br/>
+				<div class="content read"></div><br/>
 				<div class="content-sub-title"></div><br/>
-				<div class="content read"></div>
+				<div class="content read"></div><br/>
+				<div class="content-sub-title"></div><br/>
 				<ul class="content_list read"></ul>
 		</div>
 	</div>

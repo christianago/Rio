@@ -52,12 +52,20 @@ $(document).ready(function(){
 	 });
 	//<-BACKTOTOP
 	
+	 
 	if ( myURL == '' ){
 		var audio = document.getElementById("zorba");
 		if ( playSound && audio ) audio.play();
 	} else if ( myURL == 'map.php' ){
 		$('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
 	}
+	
+	
+	 if ( myURL == 'reviews.php' ){
+		 $('#lezanta, .stand').hide();
+		 $('#lezanta-2').show();
+	 }
+	
 	
 	 //MAPS
 	 if ( myURL != 'map.php' ){
