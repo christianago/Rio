@@ -1,7 +1,7 @@
 
 <audio id="zorba" loop>
-  <source src="audio/zorba.mp3" type="audio/ogg">
-  <source src="audio/zorba.mp3" type="audio/mpeg">
+  <source src="audio/ChariotsofFire.mp3" type="audio/ogg">
+  <source src="audio/ChariotsofFire.mp3" type="audio/mpeg">
 </audio>
 
 <img id="backtotop" src="images/backtotop.png"/>
