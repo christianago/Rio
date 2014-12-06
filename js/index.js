@@ -1,6 +1,5 @@
 var map = null, map2 = null, map3 = null;
 var currentLanguage = localStorage.getItem('language');
-var playSound = true;
 var reviewLock = [false, false, false, false, false];
 
 
@@ -12,18 +11,24 @@ jQuery.fn.center = function () {
 }
 
 
-/*$(window).blur(function() {
-	var audio = document.getElementById("zorba");
+$(window).blur(function() {
+	var audio = document.getElementById("myaudio");
+	var audioCurrentTime = audio.currentTime;
+	localStorage.setItem('audioCurrentTime', audioCurrentTime);
 	if ( audio ) audio.pause();
 });
 
 
 $(window).focus(function() {
-	var audio = document.getElementById("zorba");
-	if ( playSound ){
-		if ( audio ) audio.play();
+	var audio = document.getElementById("myaudio");
+	var canPlaySound = localStorage.getItem('canPlaySound');
+	var audioCurrentTime = audio.currentTime;
+	
+	if ( (canPlaySound == '1' || canPlaySound == null) && audio ) {
+		audio.currentTime = parseFloat(audioCurrentTime);
+		audio.play();
 	}
-});*/
+});
 
 
 $(document).ready(function(){
@@ -37,7 +42,10 @@ $(document).ready(function(){
 	console.log(myURL);
 	
 	
+	//MIDDLE STAR
 	$('img.gold-star:eq(1)').css({top:0});
+	//<-MIDDLE STAR
+	
 	
 	//BACKTOTOP
 	$(window).scroll(function(){
@@ -53,17 +61,11 @@ $(document).ready(function(){
 	//<-BACKTOTOP
 	
 	 
-	if ( myURL == '' ){
-		var audio = document.getElementById("zorba");
-		if ( playSound && audio ) audio.play();
-	} else if ( myURL == 'map.php' ){
-		$('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
-	}
-	
-	
 	 if ( myURL == 'reviews.php' ){
 		 $('#lezanta, .stand').hide();
 		 $('#lezanta-2').show();
+	 } else if ( myURL == 'map.php' ){
+		 $('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
 	 }
 	
 	
@@ -100,16 +102,32 @@ $(document).ready(function(){
 	 
 	 
 	 //AUDIO
+	 var canPlaySound = localStorage.getItem('canPlaySound');
+	 var audio = document.getElementById("myaudio");
+	 
+	 if ( audio ) {
+		 if ( canPlaySound == '1' || canPlaySound == null ){
+			 var audioCurrentTime = localStorage.getItem('audioCurrentTime');
+			 audio.currentTime = parseFloat(audioCurrentTime);
+			 audio.play();
+		 } else{
+			 $('#sound').removeClass('fa-volume-up').addClass('fa-volume-off');
+		 }
+	 } 
+	 
 	 $(this).on('click', '#sound', function(e){
-		var audio = document.getElementById("zorba");
 		if ( $(this).hasClass('fa-volume-up') ){
 			$(this).removeClass('fa-volume-up').addClass('fa-volume-off');
-			if ( audio ) audio.pause();
-			playSound = false;
+			localStorage.setItem('canPlaySound', '0');
+			if ( audio ) {
+				var audioCurrentTime = audio.currentTime;
+				localStorage.setItem('audioCurrentTime', audioCurrentTime);
+				audio.pause();
+			}
 		} else{
 			$(this).removeClass('fa-volume-off').addClass('fa-volume-up');
+			localStorage.setItem('canPlaySound', '1');
 			if ( audio ) audio.play();
-			playSound = true;
 		}
 	 });
 	 //<-AUDIO

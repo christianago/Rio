@@ -1,5 +1,5 @@
 
-<audio id="zorba" loop>
+<audio id="myaudio" loop preload="auto">
   <source src="audio/ChariotsofFire.mp3" type="audio/ogg">
   <source src="audio/ChariotsofFire.mp3" type="audio/mpeg">
 </audio>
