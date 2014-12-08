@@ -53,7 +53,7 @@
 	<div class="col-xs-8 col-lg-offset-1">
 	
 		<div class="row">
-			<div class="col-xs-5 col-xs-offset-5 col-lg-4 col-lg-offset-5">
+			<div class="col-xs-6 col-xs-offset-5 col-lg-4 col-lg-offset-5">
 				<span class="footer-elem footer-item weather"></span> / 
 				<span class="footer-elem footer-item time"></span> / 
 				<span class="footer-elem footer-item currency"></span>
@@ -61,7 +61,7 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-xs-8 col-xs-offset-4 col-lg-4 col-lg-offset-5">
+			<div class="col-xs-9 col-xs-offset-3 col-lg-4 col-lg-offset-5">
 				<a href="booking-info.php"><span class="footer-elem footer-item"></span></a> / 
 				<a href="mailto:?subject=Hotel Rio Athens&body=www.hotel-rio.gr"><span class="footer-elem footer-item recommend"></span></a> /
 				<span class="footer-elem bookmarkme">Bookmark this site</span>
@@ -90,7 +90,7 @@
 			<ul class="useful-links">
 				<li><a target="_blank" href="http://www.travelbudget.gr/">Travelbudget agency</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.aia.gr/traveler/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.ose.gr"></a></li>
+				<li><a target="_blank" class="footer-item" href="https://tickets.trainose.gr/dromologia/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://travel.viva.gr/en/home"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.rafinaport.gr/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.oll.gr/"></a></li>
@@ -100,6 +100,7 @@
 				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/en"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.athensguide.org/athens-hospitals.html"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.ekab.gr/web/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.athensauthenticmarathon.gr/index.php?lang=en"></a></li>
 			</ul>
 		
 		</div>
@@ -130,7 +131,7 @@
 				<li><a target="_blank" class="footer-item" href="http://www.namuseum.gr/index-en.html"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.cycladic.gr/frontoffice/portal.asp?cpage=NODE&cnode=1&clang=1"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.benaki.gr/index.asp?lang=en"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.gnhm.gr/en/"></a></li>
+				<li><a target="_blank" class="footer-item" href="www.gnhm.gr/en/the-museum/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.nma.gr/index_en.htm"></a></li>
 			</ul>
 		
