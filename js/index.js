@@ -258,8 +258,6 @@ $(document).ready(function(){
 		 $(this).nextAll().removeClass('fa-star').addClass('fa-star-o');
 		 $(this).prevAll().andSelf().removeClass('fa-star-o').addClass('fa-star');
 	 });
-	 
-	 
 	 //<-REVIEW STARS
 	
 	
@@ -268,10 +266,14 @@ $(document).ready(function(){
 	$('select.select-rooms option:eq(1)').attr('selected',true);
 	//<-AUTO SELECT DROPDOWNS
 	 
+	
      //GALLERY//
 	 $(this).on('click', 'body', function(e){
 		 if( $('div.full-image img').length )
 		 $('div.full-image img').fadeOut();
+		 
+		 if( $('div.full-image-travel-services img').length )
+		 $('div.full-image-travel-services img').fadeOut();
 	 });
 	 
 	 $(this).on('click', 'div.gallery-container img', function(e){
@@ -279,11 +281,24 @@ $(document).ready(function(){
 		 $('div.full-image img').fadeIn();
 		 $('div.full-image img').attr('src', $(this).attr('src'));
 		 var w = $(window).width() - 100;
-		 if ( w > 1100 ){ w = 1100; }
+		 if ( w > 1000 ){ w = 1000; }
 		 $('div.full-image img').css({width:w});
 		 $('div.full-image img').center();
 	 });
 	 //<-GALLERY//
+	 
+	 
+     //TRAVEL SERVICES//
+	 $(this).on('click', 'div.travel-images img', function(e){
+		 e.stopImmediatePropagation();
+		 $('div.full-image-travel-services img').fadeIn();
+		 $('div.full-image-travel-services img').attr('src', $(this).attr('src'));
+		 var w = $(window).width() - 100;
+		 if ( w > 1000 ){ w = 1000; }
+		 $('div.full-image-travel-services img').css({width:w});
+		 $('div.full-image-travel-services img').center();
+	 });
+	//<-TRAVEL SERVICES//
 	 
 
 	 //CONTACT-REVIEW//
@@ -327,7 +342,7 @@ function language(l, p){
 	
 	 $('body').hide();
 
-	 var langs = ['EL', 'EN', 'FR', 'SP', 'IT', 'DE', 'RU', 'CN', 'BR'];
+	 var langs = ['EL', 'EN', 'FR', 'SP', 'IT', 'DE', 'RU', 'CN', 'BR', 'PL', 'SE'];
 	 var key = 1;
 	 for(var i = 0; i < langs.length; i++){
 		 if ( l == langs[i] ){
@@ -335,6 +350,8 @@ function language(l, p){
 			 break;
 		 }
 	 }
+	 
+	 //console.log(key);
 	 
 	 //key = 0;
 
@@ -379,7 +396,9 @@ function language(l, p){
 			 //content-title
 			 var ct = data.booking_info[key].content_title.split(',');
 			 $('div.content-title').each(function(k, v){
-				 $(this).text(ct[k]);
+				 if ( k == 0 )
+				 $(this).text(ct[k]+",");
+				 else $(this).text(ct[k]);
 			 }); 
 			 
 			 //content
@@ -390,6 +409,8 @@ function language(l, p){
 			 $('div.content:eq(4)').html(data.booking_info[key].content_4.split("|").join("<br/>"));
 			 $('div.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
 			 $('div.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>"));
+			 $('div.content:eq(7)').html(data.booking_info[key].content_7.split("|").join("<br/>"));
+			 $('div.content:eq(8)').html(data.booking_info[key].content_8.split("|").join("<br/>"));
 			 
 		 } else if ( p == 'photo-gallery.php' ){ //photo-gallery
 			 if ( data.photo_gallery[key] == undefined ){ key = 1; }
@@ -465,9 +486,7 @@ function language(l, p){
 			 $(li).each(function(k, v){
 				 str += '<li>'+v+'</li>';
 			 });
-			 
-			 console.log(str);
-			 
+
 			 $('ul.content_list').html(str);
 			 
 			
@@ -538,9 +557,6 @@ function language(l, p){
 
 function geolocation(type, zoomLevel){
 	
-	//var lng = position.coords.longitude;
-	//var lat = position.coords.latitude;
-	
 	var myLatlng = new google.maps.LatLng(37.985298,23.719681);
 	
     var mapOptions = {
@@ -561,13 +577,6 @@ function geolocation(type, zoomLevel){
     }
     
     if ( type == 2){
-    	/*markerInfo(2, map2, createMarker(map2, myLatlng));
-    	var airportLatLng = new google.maps.LatLng(37.935647,23.948416);
-    	createMarker(map2, airportLatLng);
-    	var portLatLng = new google.maps.LatLng(37.940555,23.6333333);
-    	createMarker(map2, portLatLng);
-    	var trainLatLng = new google.maps.LatLng(37.991851,23.721024);
-    	createMarker(map2, trainLatLng);*/
     	var marker2 = createMarker(map2, myLatlng);
     	markerInfo(2, map2, marker2);
     	

@@ -163,13 +163,13 @@ body{
 	width: 639px;
 	height: 70px;
 	font-family: 'Calligraphy', sans serif;
-	font-size: 27pt;
+	font-size: 23pt;
 	font-weight: bold;
 	letter-spacing: 5px;
 	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
 	z-index: 100;
 	position: relative;
-	top: -70px;
+	top: -35px;
 	background: #DCDCDC;
 	opacity: 0.7;
 	text-align: right;
@@ -177,12 +177,12 @@ body{
 }
 
 .stand{
+	position: relative;
+	top: -65px;
 	background: url(../images/divider.jpg);
 	height: 29px;
 	width: 636px;
 	background-size: 90px;
-	position: relative;
-	top: -100px;
 	z-index: 999999;
 }
 
@@ -235,12 +235,13 @@ a, a:active, a:hover{
 .languages{
 	margin: 0 auto;
 	margin-top: 20px;
-	//margin-left: 10px;
+	position: relative;
+	left: -5px;
 }
 
 .flag{
-	width: 20px;
-	margin-right: 7px;
+	width: 17px;
+	margin-right: 5px;
 	cursor: pointer;
 }
 
@@ -682,6 +683,14 @@ input#check-availability{
 }
 /*->GALLERY*/
 
+.full-image-travel-services img{
+	z-index: 200;
+	display: none;
+	text-align: center;
+	-webkit-box-shadow: 0 4px 6px;
+	-moz-box-shadow: 0 4px 6px;
+	box-shadow: 0 4px 6px;
+}
 
 /*LOCATION*/
 #googleMap{
@@ -792,6 +801,8 @@ input#check-availability{
 
 .travel-images div{
 	margin-right: 60px;
+	margin-bottom: 7px;
+	cursor: pointer;
 }
 
 .travel-images img{
@@ -926,10 +937,28 @@ input#check-availability{
 	color: #8B4513;
 }
 
-#phone{
-	margin-top: 5px;
-	padding-bottom: 10px;
+#phone a{
+	color: #CC0101;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
 }
+
+#callnow{
+	width: 120px;
+}
+
+.credit-card{
+	width: 60px;
+}
+
+
+
+
+
+
+
+
 
 
 

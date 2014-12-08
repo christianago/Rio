@@ -31,7 +31,9 @@
 				<div class="content-sub-title"></div><br/>
 				<div class="content read"></div><br/>
 				<div class="content-sub-title"></div><br/>
-				<ul class="content_list read"></ul>
+				<ul class="content_list read"></ul><br/>
+				<div class="content-sub-title"></div><br/>
+				<div class="content read"></div><br/>
 		</div>
 	</div>
 	

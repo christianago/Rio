@@ -98,7 +98,7 @@
 				<li><a target="_blank" class="footer-item" href="https://www.nbg.gr/en"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.astynomia.gr/index.php?lang=EN"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/en"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.healthpages.gr/portal/page/portal/1535/Fullstory?ArticleID=358/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.athensguide.org/athens-hospitals.html"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.ekab.gr/web/"></a></li>
 			</ul>
 		
@@ -109,14 +109,14 @@
 		
 			<br/><br/>
 			<ul class="useful-links">
-				<li><a target="_blank" class="footer-item" href="http://www.greece-athens.com/place.php?place_id=1"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2384"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.panathenaicstadium.gr/ThePanathenaicStadium/History/tabid/96/language/en-US/Default.aspx"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en/venue18-wdeio-irwdoy-attikoy.htm"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/2/eh251.jsp?obj_id=6622"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2485"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.athensinfoguide.com/wtsarch.htm"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Arch_of_Hadrian_(Athens)"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2392"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.athensguide.com/temple-of-olympian-zeus/"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.athensinfoguide.com/wtsphilopappou.htm"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2488/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Philopappos_Monument"></a></li>
 			</ul>
 		
 		</div>
@@ -130,7 +130,7 @@
 				<li><a target="_blank" class="footer-item" href="http://www.namuseum.gr/index-en.html"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.cycladic.gr/frontoffice/portal.asp?cpage=NODE&cnode=1&clang=1"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.benaki.gr/index.asp?lang=en"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.amnh.org/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.gnhm.gr/en/"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.nma.gr/index_en.htm"></a></li>
 			</ul>
 		

@@ -27,13 +27,7 @@
 	
 		<div class="col-xs-9 col-lg-6 welcome">
 
-		<br/><br/><div class="content-title">Links</div><br/>
-		<div class="content read"></div>
-		
 		<br/><br/><div class="content-title"></div><br/>
-		<div class="content read"></div>
-		
-		<br/><br/><div class="content-title">Links</div><br/>
 		<div class="content read"></div>
 		
 		<br/><br/><div class="content-title"></div><br/>
@@ -49,9 +43,22 @@
 		<div class="content read"></div>
 		
 		<br/><br/><div class="content-title"></div><br/>
-		<div class="read">Visa<i class="fa fa-cc-visa"></i>,
-		Mastercard<i class="fa fa-cc-mastercard"></i>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="read">
+			<img class="credit-card" src="images/visa.png">
+			<img class="credit-card"src="images/mastercard.png">
 		</div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
 		
 		</div>
 

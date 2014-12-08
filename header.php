@@ -53,15 +53,17 @@
 	
 			<div class="row languages">
 				<div class="col-xs-12">
-					<img class="flag" title="EN" src="images/en.png" />
+					<img class="flag" title="EN" src="images/uk.png" />
 					<img class="flag" title="EL" src="images/gr.png" />
 					<img class="flag" title="FR" src="images/fr.png" />
-					<img class="flag" title="SP" src="images/sp.png" />
+					<img class="flag" title="SP" src="images/es.png" />
 					<img class="flag" title="IT" src="images/it.png" />
 					<img class="flag" title="DE" src="images/de.png" />
-					<img class="flag" title="RU" src="images/rus.png" />
+					<img class="flag" title="RU" src="images/ru.png" />
 					<img class="flag" title="CN" src="images/cn.png" />
 					<img class="flag" title="BR" src="images/br.png" />
+					<img class="flag" title="PL" src="images/pl.png" />
+					<img class="flag" title="SE" src="images/se.png" />
 				</div>
 			</div>
 			
@@ -156,9 +158,10 @@
 		<div class="col-xs-12">
 			<img id="last-minute" src="images/last-minute-hotel_04.gif" />
 			<div id="phone" align="center">
-				<a href="tel:+30 210 5227075">+30 210 5227075 &nbsp;</a>
-				Call now &nbsp;
-				<i class="fa fa-phone"></i>
+				<a href="tel:+30 210 5227075">+30 210 5227075
+				<br/>
+				<img id="callnow" src="images/callnow.png"/>
+				</a>
 			</div>
 		</div>
 	</div>

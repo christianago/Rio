@@ -16,6 +16,8 @@
 
 <div class="container">
 
+<div class="full-image-travel-services"><img /></div>
+
 	<div class="row the-header">
 		<div class="col-xs-12">
 			<?php include_once 'header.php'; ?>
@@ -29,17 +31,8 @@
 			<div class="read">
 				<div class="content"></div><br/>
 				
-				<img src="images/alamo.jpg" /><br/><br/>
-				
-				<div class="row">
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-					<div class="col-xs-1 content-image-title"></div>
-				</div>
-				
+				<a href="http://www.travelbudget.gr/" target="_blank"><img src="images/alamo.jpg" /></a><br/><br/>
+
 				<div class="row travel-images">
 					<div class="col-xs-1"><img src="images/sounio.jpg" /></div>
 					<div class="col-xs-1"><img src="images/santorini.jpg" /></div>
@@ -47,6 +40,15 @@
 					<div class="col-xs-1"><img src="images/theatre.jpg" /></div>
 					<div class="col-xs-1"><img src="images/mykonos.jpg" /></div>
 					<div class="col-xs-1"><img src="images/olympia.jpg" /></div>
+				</div>
+				
+				<div class="row image-titles">
+					<div class="col-xs-1 content-image-title"></div>
+					<div class="col-xs-1 content-image-title"></div>
+					<div class="col-xs-1 content-image-title"></div>
+					<div class="col-xs-1 content-image-title"></div>
+					<div class="col-xs-1 content-image-title"></div>
+					<div class="col-xs-1 content-image-title"></div>
 				</div>
 			</div>
 			
