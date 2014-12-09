@@ -44,6 +44,7 @@
 		<img src="images/social-twitter.png" />
 		<img src="images/social-google.png" />
 		<img src="images/social-linkedin.png" />
+		<img src="images/social-pinit.png" />
 	</div>	
 </div>
 
@@ -116,7 +117,7 @@
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2485"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Arch_of_Hadrian_(Athens)"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2392"></a></li>
-				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2488/"></a></li>
+				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Temple_of_Olympian_Zeus,_Athens"></a></li>
 				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Philopappos_Monument"></a></li>
 			</ul>
 		

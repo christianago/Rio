@@ -205,6 +205,7 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 	cursor: pointer;
+	font-weight: bold;
 }
 
 a, a:active, a:hover{
@@ -321,11 +322,12 @@ a, a:active, a:hover{
 
 .fa-calendar{
 	margin-top: 10px;
-	font-size: 13pt;
+	font-size: 15pt;
 	position: relative;
 	left: 10px;
 	cursor: pointer;
 	color: #8B4513;
+	font-weight: bold;
 }
 
 .fa-asterisk{
@@ -939,13 +941,19 @@ input#check-availability{
 
 #phone a{
 	color: #CC0101;
-	font-size: 10pt;
+	font-size: 13pt;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 #callnow{
-	width: 120px;
+	width: 50px;
+}
+
+#call-now-literal{
+	//background: #CC0101;
+	//color: #fff;
+	margin-left: 5px;
 }
 
 .credit-card{

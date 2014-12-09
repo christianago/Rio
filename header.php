@@ -160,7 +160,7 @@
 			<div id="phone" align="center">
 				<a href="tel:+30 210 5227075">+30 210 5227075
 				<br/>
-				<img id="callnow" src="images/callnow.png"/>
+				<img id="callnow" src="images/callnow.png"/><span id="call-now-literal">Call now</span>
 				</a>
 			</div>
 		</div>

@@ -263,7 +263,7 @@ $(document).ready(function(){
 	
 	//AUTO SELECT DROPDOWNS
 	$('select.select-adults option:eq(1)').attr('selected',true);
-	$('select.select-rooms option:eq(1)').attr('selected',true);
+	$('select.select-rooms option:eq(0)').attr('selected',true);
 	//<-AUTO SELECT DROPDOWNS
 	 
 	
