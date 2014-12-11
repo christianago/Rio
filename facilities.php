@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="general-area-1 row">
-		<div class="col-xs-9 col-lg-6 welcome">
+		<div class="col-xs-9 col-lg-8 welcome">
 			<div class="content-title" align="center"></div><br/>
 				<div class="content-sub-title"></div><br/>
 				<div class="content read"></div><br/>
@@ -32,8 +32,6 @@
 				<div class="content read"></div><br/>
 				<div class="content-sub-title"></div><br/>
 				<ul class="content_list read"></ul><br/>
-				<div class="content-sub-title"></div><br/>
-				<div class="content read"></div><br/>
 		</div>
 	</div>
 	

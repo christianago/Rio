@@ -7,17 +7,18 @@
 <img id="backtotop" src="images/backtotop.png"/>
 
 <div class="row header-1">
-	<div class="col-xs-2 col-lg-2 col-lg-offset-2">
+	<div class="col-xs-2 col-lg-3">
 		<img id="logo" src="images/logo.png" /> 
 		<div id="hotel">HOTEL</div>
 		<img class="gold-star" src="images/gold-star.gif" /> 
 		<img class="gold-star" src="images/gold-star.gif" /> 
 		<img class="gold-star" src="images/gold-star.gif" /> 
 	</div>
-	<div class="col-xs-10 col-lg-5">
+	<div class="col-xs-10 col-lg-9">
 		<img id="sticker" src="images/sticker.png"/>
 		<img id="sticker2" src="images/sticker.png"/>
 		<img id="sticker3" src="images/sticker.png"/>
+		<img id="sticker4" src="images/sticker.png"/>
 		<div class="collage">
 			<a href="#"><img src="images/acro-day.jpg" /></a>
 			<a href="#"><img src="images/exte.jpg" /></a>
@@ -45,7 +46,7 @@
 </div>
 
 
-<div class="col-xs-4 col-lg-3 col-lg-offset-2 book-slide">
+<div class="col-xs-4 col-lg-4 col-lg-offset-1 book-slide">
 
 	<div class="row">
 	

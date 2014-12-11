@@ -827,6 +827,7 @@ input#check-availability{
 
 #captcha-text{
 	font-size: 9pt;
+	width: 190px;
 }
 
 .modal-map-title.address{
@@ -900,6 +901,19 @@ input#check-availability{
 	opacity: 0.7;
 }
 
+#sticker4{
+	width: 80px;
+	position: absolute;
+	left: 610px;
+	z-index: 99999;
+	transform:rotate(-5deg);
+    transform:rotate(-5deg);
+    transform:rotate(-5deg);
+    transform:rotate(-5deg);
+    transform:rotate(-5deg);
+	opacity: 0.7;
+}
+
 .fa-cc-visa, .fa-cc-mastercard{
 	margin-left: 5px;
 }
@@ -941,7 +955,7 @@ input#check-availability{
 
 #phone a{
 	color: #CC0101;
-	font-size: 13pt;
+	font-size: 15pt;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -951,9 +965,8 @@ input#check-availability{
 }
 
 #call-now-literal{
-	//background: #CC0101;
-	//color: #fff;
 	margin-left: 5px;
+	font-size: 11pt;
 }
 
 .credit-card{
@@ -961,6 +974,46 @@ input#check-availability{
 }
 
 
+@media all and (min-width: 1200px) {
+   
+  #logo{
+      margin-left: 10px;
+  }
+  
+  #sticker{
+  		left: 100px;
+  }
+  
+  #sticker2{
+  		left: 300px;
+  }
+  
+  #sticker3{
+  		left: 450px;
+  }
+  
+  #sticker4{
+  		left: 650px;
+  }
+  
+}
+
+@media all and (min-width: 1900px) {
+
+  
+  #sticker2{
+  		left: 350px;
+  }
+  
+  #sticker3{
+  		left: 750px;
+  }
+  
+   #sticker4{
+  		left: 950px;
+  }
+  
+}
 
 
 

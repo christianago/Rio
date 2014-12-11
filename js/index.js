@@ -397,20 +397,27 @@ function language(l, p){
 			 var ct = data.booking_info[key].content_title.split(',');
 			 $('div.content-title').each(function(k, v){
 				 if ( k == 0 )
-				 $(this).text(ct[k]+",");
-				 else $(this).text(ct[k]);
+				 $(this).html(ct[k]+",");
+				 else $(this).html(ct[k]);
 			 }); 
 			 
 			 //content
-			 $('div.content:eq(0)').html(data.booking_info[key].content_0.split("|").join("<br/>"));
-			 $('div.content:eq(1)').html(data.booking_info[key].content_1.split("|").join("<br/>"));
-			 $('div.content:eq(2)').html(data.booking_info[key].content_2.split("|").join("<br/>"));
-			 $('div.content:eq(3)').html(data.booking_info[key].content_3.split("|").join("<br/>"));
-			 $('div.content:eq(4)').html(data.booking_info[key].content_4.split("|").join("<br/>"));
-			 $('div.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
-			 $('div.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>"));
-			 $('div.content:eq(7)').html(data.booking_info[key].content_7.split("|").join("<br/>"));
-			 $('div.content:eq(8)').html(data.booking_info[key].content_8.split("|").join("<br/>"));
+			 $('.content:eq(0)').html(data.booking_info[key].content_0.split("|").join("<br/>").replace('(', '<b>').replace(')', '</b>'));
+			 $('.content:eq(1)').html(data.booking_info[key].content_1.split("|").join("<br/>"));
+			 $('.content:eq(2)').html(data.booking_info[key].content_2.split("|").join("<br/>"));
+			 $('.content:eq(3)').html(data.booking_info[key].content_3.split("|").join("<br/>"));
+			 $('.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
+			 $('.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>").replace('(', '<b>').replace(')', '</b>'));
+			 $('.content:eq(7)').append(data.booking_info[key].content_7.split("|").join("<br/>"));
+			 $('.content:eq(8)').html(data.booking_info[key].content_8.split("|").join("<br/>"));
+
+			 var extra_services = '';
+			 var temp = data.booking_info[key].content_4.split("|");
+			 $(temp).each(function(k, v){
+				 extra_services += '<li>'+v+'</li>';
+			 });
+			 
+			 $('.content:eq(4)').html(extra_services);
 			 
 		 } else if ( p == 'photo-gallery.php' ){ //photo-gallery
 			 if ( data.photo_gallery[key] == undefined ){ key = 1; }

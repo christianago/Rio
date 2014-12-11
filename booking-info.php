@@ -25,7 +25,7 @@
 	
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-9 col-lg-6 welcome">
+		<div class="col-xs-9 col-lg-8 welcome">
 
 		<br/><br/><div class="content-title"></div><br/>
 		<div class="content read"></div>
@@ -40,7 +40,7 @@
 		<div class="content read"></div>
 		
 		<br/><br/><div class="content-title"></div><br/>
-		<div class="content read"></div>
+		<ul class="content read"></ul>
 		
 		<br/><br/><div class="content-title"></div><br/>
 		<div class="content read"></div>
@@ -49,12 +49,10 @@
 		<div class="content read"></div>
 		
 		<br/><br/><div class="content-title"></div><br/>
-		<div class="content read"></div>
-		
-		<br/><br/><div class="content-title"></div><br/>
-		<div class="read">
+		<div class="content read">
 			<img class="credit-card" src="images/visa.png">
 			<img class="credit-card"src="images/mastercard.png">
+			<br/>
 		</div>
 		
 		<br/><br/><div class="content-title"></div><br/>

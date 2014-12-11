@@ -25,7 +25,7 @@
 
 	<div class="row">
 	
-		<div class="col-xs-9 col-lg-6 welcome">
+		<div class="col-xs-9 col-lg-8 welcome">
 			<div class="content-title" align="center">Welcome to Rio Athens</div><br/>
 			<div class="content read">
 				Hotel RIO is located in the center of Athens, on the quiet pedestrian street of the Karaiskaki square, next the subway station METAXOURGHIO and quite near the international railway station. 
