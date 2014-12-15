@@ -31,6 +31,33 @@ $(window).focus(function() {
 });
 
 
+$(window).resize(function(){
+    google.maps.event.trigger(map, 'resize');
+    map.setZoom(map.getZoom());
+});
+
+
+$(window).load(function(){
+	 //MAPS
+	 var myURL = document.URL.split('/');
+	 myURL = myURL[myURL.length-1];
+	 myURL = myURL.replace("#", "");
+	 if ( myURL != 'map.php' ){
+		 try{  
+			 geolocation(1, 15); 
+			 google.maps.event.trigger(map, 'resize');
+		 } catch(e){}
+	 } else{ 
+		 try{
+			 geolocation(3, 17);
+			 google.maps.event.trigger(map, 'resize');
+		 } catch(e){}
+	 }
+	 
+	 //<-MAPS
+});
+
+
 $(document).ready(function(){
 	
 	//var language = window.navigator.userLanguage || window.navigator.language;
@@ -68,16 +95,6 @@ $(document).ready(function(){
 		 $('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
 	 }
 	
-	
-	 //MAPS
-	 if ( myURL != 'map.php' ){
-		 try{  geolocation(1, 15); } catch(e){}
-	 } else{ 
-		 try{ geolocation(3, 17); } catch(e){}
-	 }
-	 //google.maps.event.addDomListener(window, 'load', geolocation);
-	 //<-MAPS
-	 
 	
 	if ( $.inArray(myURL, pages) != -1 ){
 		var key = $.inArray(myURL, pages);

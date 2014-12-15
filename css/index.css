@@ -366,11 +366,16 @@ div.datepicker{
 	color: #fff;
 }
 
-td.disabled.day{
-	color: #808080 !important;
+.datepicker td.disabled.day{
+	//color: #808080 !important;
+	visibility: hidden;
 }
 
-td.day.active{
+.datepicker td.new.day{
+	display: none;
+}
+
+.datepicker td.day.active{
 	background: #8B0000 !important;
 }
 
