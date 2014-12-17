@@ -2,7 +2,8 @@
 
 <div class="row footer-flash">
 
-	<div class="col-xs-4 col-lg-offset-1">		
+	<div class="col-xs-4 col-lg-offset-1">	
+		<div id="map-directions" align="center"></div><br/>	
 		<div class="googleMap" id="googleMap"></div>
 	</div>
 

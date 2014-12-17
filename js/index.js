@@ -1,6 +1,7 @@
 var map = null, map2 = null, map3 = null;
 var currentLanguage = localStorage.getItem('language');
 var reviewLock = [false, false, false, false, false];
+var startDate = '', endDate = '';
 
 
 jQuery.fn.center = function () {
@@ -172,17 +173,44 @@ $(document).ready(function(){
 	$('input.datepicker').datepicker({
 		autoclose: true,
 		startDate: '+1d',
-		orientation: 'top'
+		orientation: 'top',
+		todayHighlight: true
 	});
+	
+	
+	
+	//$('.datepicker tr td').css('background', 'red');
+	
 	
 	 $(this).on('focus', 'input', function(){
 		 if ( $('.datepicker').length )
 		 $('input.datepicker').datepicker('hide');
+		 if ( $('input.datepicker:first').val() != '' )
+		 startDate = $('input.datepicker:first').val();
+		 if ( $('input.datepicker:last').val() != '' )
+		 endDate = $('input.datepicker:last').val();
 	 });
 	 
 	 $(this).on('click', '.fa-calendar', function(){
 		$(this).closest('div.book-field').find('input.datepicker:first').datepicker('show');
+		if ( $('input.datepicker:first').val() != '' )
+		startDate = $('input.datepicker:first').val();
+		if ( $('input.datepicker:last').val() != '' )
+		endDate = $('input.datepicker:last').val();
 	 });
+	 
+	 $(this).on('click', '.datepicker td.day', function(){
+		startDate = $('input.datepicker:first').val();
+		endDate = $('input.datepicker:last').val();
+	 });
+	 
+	 $(this).on('click', 'body', function(){
+		 if ( $('input.datepicker:first').val() == '' )
+		 $('input.datepicker:first').val(startDate);
+		 if ( $('input.datepicker:last').val() == '' )
+		 $('input.datepicker:last').val(endDate);
+	 });
+
 	
 	 $(this).on('click', '.dropdown-menu *', function(e){
 	     e.stopPropagation();
@@ -197,10 +225,10 @@ $(document).ready(function(){
 	 $(this).on('click', '.weather', function(e){ $('#weather-window').modal('show'); });
 	 $(this).on('click', '.time', function(e){ $('#time-window').modal('show'); });
 	 $(this).on('click', '.currency', function(e){ $('#currency-window').modal('show'); });
-	 $(this).on('click', '#googleMap', function(e){ 
+	 $(this).on('click', '#map-directions', function(e){ 
 		 $('#map-window').modal('show'); 
 		 try{ geolocation(2, 14);
-		 } catch (e) { }
+		 } catch (e) {}
 		 google.maps.event.trigger(map2, 'resize'); 
 	 });
 	 //<-MODALS//
@@ -546,8 +574,9 @@ function language(l, p){
 		 
 		 //modal-map-title
 		 var m = data.general[key].modal_map_title.split(',');
+		 $('#map-directions').text(m[0]);
 		 $('.modal-map-title').each(function(k, v){
-			 $(this).text(m[k]);
+			 $(this).text(m[k+1]);
 		 });
 		 
 		 //modal-map-content

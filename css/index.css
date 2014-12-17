@@ -337,16 +337,9 @@ a, a:active, a:hover{
 }
 
 div.datepicker{
-	font-size: 8pt;
+	font-size: 9pt;
 	border: 2px solid #c7bc67;
-}
-
-.datepicker td.day{
-	color: #8B4513;
-}
-
-.datepicker .table-condensed>tbody>tr>td, .datepicker .table-condensed>tfoot>tr>td {
-	padding: 2px;
+	font-family: Trebuchet MS, sans-serif;
 }
 
 .datepicker-switch, .datepicker .next, .datepicker .prev{
@@ -361,22 +354,65 @@ div.datepicker{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.datepicker thead tr:first-child th:hover {
+    color: #c7bc67;
+	background: rgb(169,3,41); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.datepicker td.day.active{
+    background: #c7bc67;
+}
+
+.datepicker td.day:hover {
+	background: #A52A2A;
+	color: #fff;
+}
+
+.datepicker thead th.dow{
+	background: #c7bc67;;
+	color: #000;
+	//font-weight: normal;
+	border: 1px solid silver;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.datepicker td.day{
+	color: #CD5C5C;
+}
+
+.datepicker .table-condensed>tbody>tr>td, .datepicker .table-condensed>tfoot>tr>td {
+	padding: 2px;
+}
+
 .datepicker .table-condensed thead tr:nth-child(1){
 	background: #8B0000;
 	color: #fff;
 }
 
-.datepicker td.disabled.day{
-	//color: #808080 !important;
-	visibility: hidden;
+.datepicker td.disabled.day, .datepicker td.old.day{
+	color: #C0C0C0;
+	//opacity: 0.5;
 }
 
 .datepicker td.new.day{
 	display: none;
 }
 
-.datepicker td.day.active{
-	background: #8B0000 !important;
+.datepicker table td:nth-child(1), .datepicker table td:nth-child(7){
+	background: #008B8B;
+	color: #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 }
 
 .book-field{
@@ -976,6 +1012,13 @@ input#check-availability{
 
 .credit-card{
 	width: 60px;
+}
+
+#map-directions{
+	font-weight: bold;
+	font-size: 12pt;
+	color: #8B0000;
+	cursor: pointer;
 }
 
 

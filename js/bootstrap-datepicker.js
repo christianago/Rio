@@ -332,7 +332,7 @@
 					}]
 				];
 			}
-			this._events.push(
+			/*this._events.push(
 				// Component: listen for blur on element descendants
 				[this.element, '*', {
 					blur: $.proxy(function(e){
@@ -345,7 +345,7 @@
 						this._focused_from = e.target;
 					}, this)
 				}]
-			);
+			);*/
 
 			this._secondaryEvents = [
 				[this.picker, {
