@@ -45,7 +45,7 @@ $(window).load(function(){
 	 myURL = myURL.replace("#", "");
 	 if ( myURL != 'map.php' ){
 		 try{  
-			 geolocation(1, 15); 
+			 geolocation(1, 17); 
 			 google.maps.event.trigger(map, 'resize');
 		 } catch(e){}
 	 } else{ 
