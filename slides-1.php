@@ -28,7 +28,6 @@
     <img src="images/quad.jpg" /> 
     <img src="images/quad2.jpg" /> 
     <img src="images/rio bar.jpg" /> 
-    <img src="images/shower.jpg" /> 
     <img src="images/bar3.jpg" /> 
     <img src="images/side.jpg" /> 
     <img src="images/booking_1.jpg" /> 
@@ -39,7 +38,6 @@
     <img src="images/booking_6.jpg" /> 
     <img src="images/booking_7.jpg" /> 
     <img src="images/booking_8.jpg" /> 
-    <img src="images/bath.jpg" /> 
     <img src="images/front.jpg" /> 
     <img src="images/chairs-2.jpg" /> 
     <img src="images/chairs-out.jpg" /> 

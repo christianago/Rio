@@ -320,6 +320,10 @@ a, a:active, a:hover{
 	color: #8B4513;
 }
 
+input{
+	cursor: default !important;
+}
+
 .fa-calendar{
 	margin-top: 10px;
 	font-size: 15pt;

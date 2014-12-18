@@ -98,7 +98,6 @@
 				<li><a target="_blank" class="footer-item" href="http://www.oll.gr/">Port of Laurio</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.ktelattikis.gr/">Athens urban buses</a></li>
 				<li><a target="_blank" class="footer-item" href="https://www.nbg.gr/en">National Bank of Greece</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.astynomia.gr/index.php?lang=EN">Hellenic Police</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/en">Medecins Du Monde</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.athensguide.org/athens-hospitals.html">Athen's hospitals</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.ekab.gr/web/">National hospital</a></li>

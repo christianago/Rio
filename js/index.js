@@ -4,6 +4,7 @@ var reviewLock = [false, false, false, false, false];
 var startDate = '', endDate = '';
 
 
+
 jQuery.fn.center = function () {
     this.css("position","absolute");
     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +  $(window).scrollTop()) + "px");
@@ -178,43 +179,51 @@ $(document).ready(function(){
 	});
 	
 	
-	
-	//$('.datepicker tr td').css('background', 'red');
-	
-	
-	 $(this).on('focus', 'input', function(){
+	$(this).on('focus', 'input', function(){
 		 if ( $('.datepicker').length )
 		 $('input.datepicker').datepicker('hide');
-		 if ( $('input.datepicker:first').val() != '' )
-		 startDate = $('input.datepicker:first').val();
-		 if ( $('input.datepicker:last').val() != '' )
-		 endDate = $('input.datepicker:last').val();
 	 });
 	 
 	 $(this).on('click', '.fa-calendar', function(){
 		$(this).closest('div.book-field').find('input.datepicker:first').datepicker('show');
-		if ( $('input.datepicker:first').val() != '' )
+		if ( $('input.datepicker:first').val() != '' ){
+			startDate = $('input.datepicker:first').val();
+		}
+		if ( $('input.datepicker:last').val() != '' ){
+			endDate = $('input.datepicker:last').val();
+		}
+	 });
+	 
+	 $(this).on('click', 'div.datepicker td.day', function(){
 		startDate = $('input.datepicker:first').val();
-		if ( $('input.datepicker:last').val() != '' )
 		endDate = $('input.datepicker:last').val();
 	 });
 	 
-	 $(this).on('click', '.datepicker td.day', function(){
-		startDate = $('input.datepicker:first').val();
-		endDate = $('input.datepicker:last').val();
+	 
+	 $(this).on('change', 'input.datepicker:first', function(){
+		 $('#end-date').datepicker('remove');
+		 var startDay = Date.parse($('#start-date').val());
+		 var sd = startDay.add(1).days();
+		 $('#end-date').datepicker({
+			 autoclose: true,
+			 startDate: sd,
+			 orientation: 'top',
+			 todayHighlight: true
+		 });
 	 });
+	 
 	 
 	 $(this).on('click', 'body', function(){
-		 if ( $('input.datepicker:first').val() == '' )
-		 $('input.datepicker:first').val(startDate);
-		 if ( $('input.datepicker:last').val() == '' )
-		 $('input.datepicker:last').val(endDate);
+		 if ( $('input.datepicker:first').val() == '' ){
+			 $('input.datepicker:first').val(startDate);
+		 }
+		 if ( $('input.datepicker:last').val() == '' ){
+			 $('input.datepicker:last').val(endDate);
+		 }
 	 });
 
 	
-	 $(this).on('click', '.dropdown-menu *', function(e){
-	     e.stopPropagation();
-	 });
+	 $(this).on('click', '.dropdown-menu *', function(e){ e.stopPropagation(); });
 	 
 	 $('#start-date').val(getDate(0));
 	 $('#end-date').val(getDate(1));

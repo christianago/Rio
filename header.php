@@ -76,7 +76,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<input id="start-date" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
+							<input id="start-date" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 						</div>
 						<div class="col-xs-1 col-xs-offset-1">
 							<i class="fa fa-calendar"></i>
@@ -86,7 +86,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<input id="end-date" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
+							<input id="end-date" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 						</div>
 						<div class="col-xs-1 col-xs-offset-1">
 							<i class="fa fa-calendar"></i>
