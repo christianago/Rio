@@ -4,7 +4,6 @@ var reviewLock = [false, false, false, false, false];
 var startDate = '', endDate = '';
 
 
-
 jQuery.fn.center = function () {
     this.css("position","absolute");
     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +  $(window).scrollTop()) + "px");
@@ -25,7 +24,6 @@ $(window).focus(function() {
 	var audio = document.getElementById("myaudio");
 	var canPlaySound = localStorage.getItem('canPlaySound');
 	var audioCurrentTime = audio.currentTime;
-	
 	if ( (canPlaySound == '1' || canPlaySound == null) && audio ) {
 		audio.currentTime = parseFloat(audioCurrentTime);
 		audio.play();
@@ -38,9 +36,8 @@ $(window).resize(function(){
     map.setZoom(map.getZoom());
 });
 
-
+//MAPS
 $(window).load(function(){
-	 //MAPS
 	 var myURL = document.URL.split('/');
 	 myURL = myURL[myURL.length-1];
 	 myURL = myURL.replace("#", "");
@@ -56,14 +53,12 @@ $(window).load(function(){
 		 } catch(e){}
 	 }
 	 
-	 //<-MAPS
 });
+//<-MAPS
 
 
 $(document).ready(function(){
-	
-	//var language = window.navigator.userLanguage || window.navigator.language;
-	
+
 	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'facilities.php', 'contact.php', 'reviews.php', 'map.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
@@ -180,8 +175,9 @@ $(document).ready(function(){
 	
 	
 	$(this).on('focus', 'input', function(){
-		 if ( $('.datepicker').length )
-		 $('input.datepicker').datepicker('hide');
+		 if ( $('.datepicker').length ){
+			 $('input.datepicker').datepicker('hide');
+		 }
 	 });
 	 
 	 $(this).on('click', '.fa-calendar', function(){
@@ -203,7 +199,10 @@ $(document).ready(function(){
 	 $(this).on('change', 'input.datepicker:first', function(){
 		 $('#end-date').datepicker('remove');
 		 var startDay = Date.parse($('#start-date').val());
-		 var sd = startDay.add(1).days();
+		 var sd = '+1d';
+		 if ( startDay != null ){
+			 sd = startDay.add(1).days();
+		 }
 		 $('#end-date').datepicker({
 			 autoclose: true,
 			 startDate: sd,
