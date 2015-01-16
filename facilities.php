@@ -24,14 +24,57 @@
 	</div>
 
 	<div class="general-area-1 row">
-		<div class="col-xs-9 col-lg-8 welcome">
+		<div class="col-xs-10 col-lg-9 welcome facilities">
 			<div class="content-title" align="center"></div><br/>
 				<div class="content-sub-title"></div><br/>
+				
+				
+				<img src="images/espresso.png"/>
+				<img src="images/cappuccino.png"/>
+				<img src="images/freddo-capuccino.png"/>
+				<img src="images/frappe.png"/>
+				<img src="images/irishcoffee.jpg"/>
+				<img src="images/croissant.png"/>
+				<img src="images/toast.png"/>
+				<img src="images/sandwich.png"/>
+				<img src="images/baklava.png"/>
+				<img src="images/icecream.png"/>
+				<img src="images/ouzo.jpg"/>
+				<img src="images/wine.png"/>
+				<img src="images/beer.png"/>
+				<img src="images/guiness.png"/>
+				<img src="images/jack.png"/>
+				<img src="images/coctails.png"/>
+				
 				<div class="content read"></div><br/>
 				<div class="content-sub-title"></div><br/>
+				
+				<img src="images/greek-salad.jpg"/>
+				<img src="images/feta.png"/>
+				<img src="images/tzatziki.png"/>
+				<img src="images/eggs.jpg"/>
+				<img src="images/makaronia.png"/>
+				<img src="images/spaggeti-meatbals.jpg"/>
+				<img src="images/mousaka.jpg"/>
+				<img src="images/gemista.png"/>
+				<img src="images/chicken.png"/>
+				<img src="images/pizza.jpg"/>
+				
 				<div class="content read"></div><br/>
 				<div class="content-sub-title"></div><br/>
-				<ul class="content_list read"></ul><br/>
+				
+				<div class="facility-list-1">
+					<ul class="content_list read"></ul>
+				</div>
+				
+				<div class="facility-list-2">
+					<ul class="content_list read"></ul>
+				</div>
+				
+				<br/>
+				
+				
+				
 		</div>
 	</div>
 	

@@ -512,7 +512,10 @@ input#check-availability{
 
 .footer-images{
 	float: right;
-	margin-right: 50px;
+}
+
+.footer-images img{
+	padding-right: 10px;
 }
 
 #we-are-here{
@@ -522,10 +525,6 @@ input#check-availability{
 
 #here a{
 	color: red;
-}
-
-.footer-images img{
-	padding-right: 15px;
 }
 
 #wifi{
@@ -545,8 +544,8 @@ input#check-availability{
 	-webkit-filter: sepia(0.2);
 }
 
-.markiza{
-	margin-top: 80px;
+.markiza-recommended img{
+	margin-right: 5px;
 }
 
 .rolex{
@@ -1025,6 +1024,22 @@ input#check-availability{
 	cursor: pointer;
 }
 
+#they-recommend-us{
+	font-weight: bold;
+	font-size: 12pt;
+	color: #8B0000;
+}
+
+.facilities img{
+	padding-right: 3px;
+	padding-bottom: 10px;
+}
+
+.facility-list-1, .facility-list-2{
+	float: left;
+	width: 40%;
+}
+
 
 @media all and (min-width: 1200px) {
    
@@ -1067,6 +1082,32 @@ input#check-availability{
   
 }
 
+
+@media only screen and (max-width : 1000px) {
+   
+   .header-1{
+   		margin-left: 40%;
+   		margin-top: 10px;
+   		height: 120px;
+   }
+   
+   #logo{
+   	margin-top: 10px;
+   }
+   
+   .header-hover{
+   		font-size: 7pt;
+   }
+   
+   .book-online-container{
+   		width: 600px;
+   }
+  
+  embed, .gold-star, .slideshow, #lezanta, #lezanta-2, .nav, .stand, .collage, img[id^=sticker], #sound, #backtotop{
+  	display: none;
+  }
+  
+}
 
 
 

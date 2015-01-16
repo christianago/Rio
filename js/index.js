@@ -36,6 +36,7 @@ $(window).resize(function(){
     map.setZoom(map.getZoom());
 });
 
+
 //MAPS
 $(window).load(function(){
 	 var myURL = document.URL.split('/');
@@ -64,7 +65,7 @@ $(document).ready(function(){
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
-	
+
 	
 	//MIDDLE STAR
 	$('img.gold-star:eq(1)').css({top:0});
@@ -461,8 +462,10 @@ function language(l, p){
 			 $('.content:eq(3)').html(data.booking_info[key].content_3.split("|").join("<br/>"));
 			 $('.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
 			 $('.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>").replace('(', '<b>').replace(')', '</b>'));
-			 $('.content:eq(7)').append(data.booking_info[key].content_7.split("|").join("<br/>"));
+			 $('.content:eq(7)').html(data.booking_info[key].content_7);
 			 $('.content:eq(8)').html(data.booking_info[key].content_8.split("|").join("<br/>"));
+			 
+			 console.log(data.booking_info[key].content_7);
 
 			 var extra_services = '';
 			 var temp = data.booking_info[key].content_4.split("|");
@@ -542,12 +545,18 @@ function language(l, p){
 			 });
 			 
 			 var li = data.facilities[key].content_list.split(',');
-			 var str = '';
+			 var list = '', list2 = '';
+			 
 			 $(li).each(function(k, v){
-				 str += '<li>'+v+'</li>';
+				 if ( k < 9 ){
+					 list += '<li>'+v+'</li>';
+				 } else{
+					 list2 += '<li>'+v+'</li>';
+				 }
 			 });
 
-			 $('ul.content_list').html(str);
+			 $('ul.content_list:first').html(list);
+			 $('ul.content_list:last').html(list2);
 			 
 			
 		 } else{ //index
@@ -582,9 +591,10 @@ function language(l, p){
 		 
 		 //modal-map-title
 		 var m = data.general[key].modal_map_title.split(',');
-		 $('#map-directions').text(m[0]);
+		 $('#they-recommend-us').text(m[0]);
+		 $('#map-directions').text(m[1]);
 		 $('.modal-map-title').each(function(k, v){
-			 $(this).text(m[k+1]);
+			 $(this).text(m[k+2]);
 		 });
 		 
 		 //modal-map-content

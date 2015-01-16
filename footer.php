@@ -2,12 +2,12 @@
 
 <div class="row footer-flash">
 
-	<div class="col-xs-4 col-lg-offset-1">	
+	<div class="col-xs-4 col-lg-4">	
 		<div id="map-directions" align="center"></div><br/>	
 		<div class="googleMap" id="googleMap"></div>
 	</div>
 
-	<div class="col-xs-3 col-lg-2 contact-details">												
+	<div class="col-xs-3 col-lg-3 contact-details">												
 		<b class="cd"></b>
 		<br/>
 		<span class="cd"></span>
@@ -24,6 +24,8 @@
 		<span class="cd"></span>
 		<br/>
 		<span class="cd"></span>
+		<br/><br/>
+		<img id="wifi" src="images/wifi.png" />
 	</div>	
 	
 	<!--  
@@ -31,7 +33,12 @@
 	<span class="modal-map-title address"></span>
 	-->
 	
-	<div class="col-xs-4 col-lg-2 markiza">												
+	<div class="col-xs-5 col-lg-4 markiza-recommended" align="center">		
+		<div id="they-recommend-us"></div><br/>	
+		<img src="images/zoover.png">
+		<img src="images/holidaycheck.jpg">
+		<img src="images/venere.jpg">
+		<br/><br/>			
 		<embed src="flash/e-led.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="370" height="85" wmode="opaque" type="application/x-shockwave-flash"></embed>
 	</div>	
 
@@ -74,7 +81,9 @@
 	
 	<div class="row footer-images">
 		<div class="col-xs-12">
-			<img id="wifi" src="images/wifi.png" />
+			<img src="images/sete.jpg" />
+			<img src="images/association.png" />
+			<img src="images/chamber.jpg" />
 			<img src="images/footer-img-1.gif" />
 			<img src="images/footer-img-2.gif" />
 			<span id="we-are-here">We are <span id="here"><a href="map.php">HERE</a></span></span>
@@ -85,7 +94,7 @@
 	
 	<div class="col-xs-12">
 	
-		<div class="col-xs-4 col-lg-3 col-lg-offset-2">
+		<div class="col-xs-3 col-lg-3">
 			<span class="footer-elem footer-item useful-links-title">Useful links</span>
 		
 			<br/><br/>
@@ -106,7 +115,7 @@
 		<br/>
 		</div>
 		
-		<div class="col-xs-4 col-lg-3">
+		<div class="col-xs-3 col-lg-3">
 			<span class="footer-elem footer-item useful-links-title">Archaelogical sites in Athens</span>
 		
 			<br/><br/>
@@ -123,7 +132,7 @@
 		<br/>
 		</div>
 		
-		<div class="col-xs-4 col-lg-3">
+		<div class="col-xs-3 col-lg-3">
 			<span class="footer-elem footer-item useful-links-title">Museums in Athens</span>
 		
 			<br/><br/>
@@ -134,6 +143,19 @@
 				<li><a target="_blank" class="footer-item" href="http://www.benaki.gr/index.asp?lang=en">The Benaki Museum></a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.gnhm.gr/en/the-museum/">The Museum of Natural History</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.nma.gr/index_en.htm">The Numismatic Museum of Athens</a></li>
+			</ul>
+		<br/>
+		</div>
+		
+		<div class="col-xs-3 col-lg-3">
+			<span class="footer-elem footer-item useful-links-title">Famous Theaters</span>
+		
+			<br/><br/>
+			<ul class="useful-links">
+				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en/">Greekfestival</a></li>
+				<li><a target="_blank" class="footer-item" href="http://n-t.gr/en/">National theater</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.grdance.org/en/">Dora Stratou Dance theater</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.nationalopera.gr/en/">National Opera</a></li>
 			</ul>
 		<br/>
 		</div>

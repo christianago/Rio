@@ -6,8 +6,9 @@ function filter(&$value) {
 	$value = str_replace('#', '', htmlspecialchars($value, ENT_QUOTES, 'UTF-8'));
 }
 
-$emailFrom = "info@hotel-rio.gr";
-$emailTo = "chrilamp@gmail.com";
+$data = $_POST;
+$emailFrom = $data['email'];
+$emailTo = "info@hotel-rio.gr";
 $domain = 'http://kris-demo.eu/';
 
 $headers = array("Content-Type: text/html; charset=UTF-8");
@@ -30,7 +31,7 @@ if ( isset($_POST['email-us']) ){
 		exit(0);
 	}
 	
-	$data = $_POST;
+	
 	array_walk($data, "filter");
 	//print_r($data);
 	
