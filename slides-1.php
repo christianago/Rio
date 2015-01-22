@@ -23,7 +23,6 @@
     <img src="images/lobby1.jpg" /> 
     <img src="images/lobby2.jpg" /> 
     <img src="images/pedestrian-restaurant.jpg" /> 
-    <img src="images/martini.jpg" /> 
     <img src="images/quad triple.jpg" /> 
     <img src="images/quad.jpg" /> 
     <img src="images/quad2.jpg" /> 

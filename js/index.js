@@ -60,7 +60,9 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
-	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'travel-services.php', 'facilities.php', 'contact.php', 'reviews.php', 'map.php'];
+	 $("img.lazy").lazyload();
+	
+	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'bar-restaurant.php', 'travel-services.php', 'contact.php', 'reviews.php', 'map.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
@@ -123,7 +125,9 @@ $(document).ready(function(){
 	 if ( audio ) {
 		 if ( canPlaySound == '1' || canPlaySound == null ){
 			 var audioCurrentTime = localStorage.getItem('audioCurrentTime');
-			 audio.currentTime = parseFloat(audioCurrentTime);
+			 if ( audio.currentTime ) {
+				 audio.currentTime = parseFloat(audioCurrentTime);
+			 }
 			 audio.play();
 		 } else{
 			 $('#sound').removeClass('fa-volume-up').addClass('fa-volume-off');
@@ -414,6 +418,28 @@ function language(l, p){
 		 if ( p == 'accomodation.php' ){ //accomodation
 			 if ( data.accomodation[key] == undefined ){ key = 1; }
 				 
+			 var li = data.accomodation[key].content_list.split(',');
+			 var list = '', list2 = '';
+			 var divide = 10;
+			 
+			 if ( key == 0 ){
+				 divide = 12;
+				 $('div.specs').css('margin-top', '310px');
+			 } else{
+				 $('div.specs').css('margin-top', '260px');
+			 }
+			 
+			 $(li).each(function(k, v){
+				 if ( k < divide ){
+					 list += '<li>'+v+'</li>';
+				 } else{
+					 list2 += '<li>'+v+'</li>';
+				 }
+			 });
+
+			 $('ul.content_list:first').html(list);
+			 $('ul.content_list:last').html(list2);
+			 
 			 $('title').text(data.accomodation[key].title);
 			 $('div.content-title').text(data.accomodation[key].content_title);
 			 $('div.content').text(data.accomodation[key].content);
@@ -441,6 +467,13 @@ function language(l, p){
 			 var sc3 = '';
 			 $(ct).each(function(k, v){ sc3 += '<li>'+ct[k]+'</li>'; }); 
 			 $('ul.sub-content-3').html(sc3);
+			 
+			 $('ul.sub-content-2 li').each(function(){
+				 if ( $(this).is(':empty') ){
+					 $(this).css('visibility', 'hidden');
+				 }
+			 });
+			 
 			 
 		 } else if ( p == 'booking-info.php' ){ //booking-info
 			 if ( data.booking_info[key] == undefined ){ key = 1; }
@@ -526,7 +559,7 @@ function language(l, p){
 			 $('input.content').val(c[c.length-2]);
 			 $('.content:last').text(c[c.length-1]);
 			 
-		 } else if ( p == 'facilities.php' ){ //facilities
+		 } else if ( p == 'bar-restaurant.php' ){ //bar-restaurant
 			 if ( data.facilities[key] == undefined ){ key = 1; }
 				 
 			 $('title').text(data.facilities[key].title);
@@ -543,20 +576,6 @@ function language(l, p){
 			 $('div.content').each(function(k){
 				 $(this).text(ct[k]);
 			 });
-			 
-			 var li = data.facilities[key].content_list.split(',');
-			 var list = '', list2 = '';
-			 
-			 $(li).each(function(k, v){
-				 if ( k < 9 ){
-					 list += '<li>'+v+'</li>';
-				 } else{
-					 list2 += '<li>'+v+'</li>';
-				 }
-			 });
-
-			 $('ul.content_list:first').html(list);
-			 $('ul.content_list:last').html(list2);
 			 
 			
 		 } else{ //index

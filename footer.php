@@ -24,6 +24,8 @@
 		<span class="cd"></span>
 		<br/>
 		<span class="cd"></span>
+		<br/>
+		<span class="cd"></span>
 		<br/><br/>
 		<img id="wifi" src="images/wifi.png" />
 	</div>	

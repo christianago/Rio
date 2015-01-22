@@ -28,20 +28,36 @@
 		<div class="col-xs-9 col-lg-8 welcome">
 			<div class="content-title" align="center"></div><br/>
 			<div class="read">
+			
 				<div class="content"></div><br/><br/>
-				
+			
 				<div class="content-sub-title"></div><br/>
+			
+				<div class="facility-list-1">
+					<ul class="content_list"></ul>
+				</div>
+				
+				<div class="facility-list-2">
+					<ul class="content_list"></ul>
+				</div>
+				
+				<div class="content-sub-title specs"></div><br/>
 				<ul class="sub-content-3"></ul><br/><br/>
 				
-				<div class="content-sub-title"></div><br/>
-				<ul class="sub-content-1"></ul><br/><br/>
+				<div class="amenities-list-1 read">
+					<div class="content-sub-title"></div><br/>
+					<ul class="sub-content-1"></ul>
+				</div>
 				
-				<div class="content-sub-title"></div><br/>
-				<ul class="sub-content-2"></ul>
+				<div class="amenities-list-2 read">
+					<div class="content-sub-title"></div><br/>
+					<ul class="sub-content-2"></ul>
+				</div>
+				
 			</div>
 		</div>
-
 	</div>
+
 	
 	<?php include_once 'footer.php'; ?>
 
@@ -49,6 +65,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.lazyload.js"></script>
 	<script src="js/date.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/jquery.cycle.all.js"></script>

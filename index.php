@@ -49,6 +49,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.lazyload.js"></script>
 	<script src="js/date.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/jquery.cycle.all.js"></script>

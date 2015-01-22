@@ -38,8 +38,8 @@
 		<div class="header-hover"><a href="accomodation.php"></a></div>
 		<div class="header-hover"><a href="booking-info.php"></a></div>
 		<div class="header-hover"><a href="photo-gallery.php"></a></div>
+		<div class="header-hover"><a href="bar-restaurant.php"></a></div>
 		<div class="header-hover"><a href="travel-services.php"></a></div>
-		<div class="header-hover"><a href="facilities.php"></a></div>
 		<div class="header-hover"><a href="contact.php"></a></div>
 		<div class="header-hover"><a href="reviews.php"></a></div>
 	</div>

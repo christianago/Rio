@@ -865,6 +865,10 @@ input#check-availability{
 	font-weight: bold;
 }
 
+.content-sub-title.specs{
+	margin-top: 260px;
+}
+
 #captcha-img{
 	width: 190px;
 }
@@ -1035,7 +1039,7 @@ input#check-availability{
 	padding-bottom: 10px;
 }
 
-.facility-list-1, .facility-list-2{
+.facility-list-1, .facility-list-2, .amenities-list-1, .amenities-list-2{
 	float: left;
 	width: 40%;
 }

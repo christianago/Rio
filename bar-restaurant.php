@@ -63,14 +63,6 @@
 				<div class="content read"></div><br/>
 				<div class="content-sub-title"></div><br/>
 				
-				<div class="facility-list-1">
-					<ul class="content_list read"></ul>
-				</div>
-				
-				<div class="facility-list-2">
-					<ul class="content_list read"></ul>
-				</div>
-				
 				<br/>
 				
 				
@@ -84,6 +76,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.lazyload.js"></script>
 	<script src="js/date.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/jquery.cycle.all.js"></script>
