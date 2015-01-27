@@ -49,10 +49,9 @@
 		<div class="content read"></div>
 		
 		<br/><br/><div class="content-title"></div><br/>
-		<div class="content read">
-			<img class="credit-card" src="images/visa.png">
-			<img class="credit-card"src="images/mastercard.png">
-			<br/>
+		<img class="credit-card" src="images/visa.png">
+		<img class="credit-card"src="images/mastercard.png">
+		<div class="content read"><br/>
 		</div>
 		
 		<br/><br/><div class="content-title"></div><br/>

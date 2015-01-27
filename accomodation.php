@@ -41,8 +41,14 @@
 					<ul class="content_list"></ul>
 				</div>
 				
-				<div class="content-sub-title specs"></div><br/>
-				<ul class="sub-content-3"></ul><br/><br/>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="content-sub-title specs"></div><br/>
+						<ul class="sub-content-3"></ul>
+					</div>
+				</div>
+				
+				<br/>
 				
 				<div class="amenities-list-1 read">
 					<div class="content-sub-title"></div><br/>

@@ -6,7 +6,7 @@
         <h4 class="modal-title">Weather</h4>
       </div>
       <div class="modal-body">
-        <iframe id="forecast_embed" scrolling="no" frameborder="0" height="420" width="800" sandbox="allow-forms" src="http://www.wunderground.com/q/locid:GRIX0012#city-page"></iframe>
+        <iframe id="forecast_embed" scrolling="no" frameborder="0" height="420" width="800" src="http://www.wunderground.com/q/locid:GRIX0012#city-page"></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

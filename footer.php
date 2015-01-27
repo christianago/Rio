@@ -20,9 +20,9 @@
 		<br/>
 		<span class="cd"></span>
 		<span class="email"><a href="mailto:?subject=Hotel Rio Athens&body=www.hotel-rio.gr">info@hotel-rio.gr</a></span>
-		<br/><br/>
-		<span class="cd"></span>
 		<br/>
+		<span class="cd"></span>
+		<br/><br/>
 		<span class="cd"></span>
 		<br/>
 		<span class="cd"></span>
@@ -154,10 +154,10 @@
 		
 			<br/><br/>
 			<ul class="useful-links">
-				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en/">Greekfestival</a></li>
-				<li><a target="_blank" class="footer-item" href="http://n-t.gr/en/">National theater</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.grdance.org/en/">Dora Stratou Dance theater</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.nationalopera.gr/en/">National Opera</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en">Greekfestival</a></li>
+				<li><a target="_blank" class="footer-item" href="http://n-t.gr/en">National theater</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.grdance.org/en">Dora Stratou Dance theater</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.nationalopera.gr/en">National Opera</a></li>
 			</ul>
 		<br/>
 		</div>

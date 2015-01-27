@@ -88,6 +88,7 @@
 				</div>	
 				
 				<div class="row contact-field">
+					<div class="col-xs-3 content"></div>
 					<div class="col-xs-3">
 						<textarea class="form-control" name="message" required="required"></textarea>
 					</div>
@@ -95,7 +96,6 @@
 				</div>	
 				
 				<div class="row contact-field">
-				<div class="col-xs-3 content"></div>
 					<div class="col-xs-3"></div>
 					<div class="col-xs-2">
 						<img id="captcha-img" src="securimage/securimage_show.php" alt="CAPTCHA Image" />

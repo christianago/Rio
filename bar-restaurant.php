@@ -24,48 +24,75 @@
 	</div>
 
 	<div class="general-area-1 row">
-		<div class="col-xs-10 col-lg-9 welcome facilities">
+		<div class="col-xs-10 col-lg-9 welcome facilities read">
 			<div class="content-title" align="center"></div><br/>
 				<div class="content-sub-title"></div><br/>
 				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="content barre-1"></div>
+					
+						<div class="barre-2">
+							<img src="images/espresso.png"/>
+							<img src="images/cappuccino.png"/>
+							<img src="images/freddo-espresso.png"/>
+							<img src="images/freddo-cappuccino.png"/>
+							<img src="images/frappe.png"/>
+							<img src="images/irish-coffee.png"/>
+							<img src="images/juice.png"/>
+							<img src="images/toast.png"/>
+							<img src="images/sandwich.png"/>
+							<img src="images/club.png"/>
+							<img src="images/hotdog.png"/>
+							<img src="images/croissant.png"/>
+							<img src="images/donuts.png"/>
+							<img src="images/icecream.png"/>
+							<img src="images/milkshakes.png"/>
+							<img src="images/baklava.png"/>
+							<img src="images/jack.png"/>
+							<img src="images/cocktail.png"/>
+							<img src="images/wine.jpg"/>
+							<img src="images/beer.png"/>
+							<img src="images/guinness.png"/>
+							<img id="force" src="">
+						</div>
+					</div>
+				</div>
 				
-				<img src="images/espresso.png"/>
-				<img src="images/cappuccino.png"/>
-				<img src="images/freddo-capuccino.png"/>
-				<img src="images/frappe.png"/>
-				<img src="images/irishcoffee.jpg"/>
-				<img src="images/croissant.png"/>
-				<img src="images/toast.png"/>
-				<img src="images/sandwich.png"/>
-				<img src="images/baklava.png"/>
-				<img src="images/icecream.png"/>
-				<img src="images/ouzo.jpg"/>
-				<img src="images/wine.png"/>
-				<img src="images/beer.png"/>
-				<img src="images/guiness.png"/>
-				<img src="images/jack.png"/>
-				<img src="images/coctails.png"/>
+				<br/><br/>
 				
-				<div class="content read"></div><br/>
-				<div class="content-sub-title"></div><br/>
-				
-				<img src="images/greek-salad.jpg"/>
-				<img src="images/feta.png"/>
-				<img src="images/tzatziki.png"/>
-				<img src="images/eggs.jpg"/>
-				<img src="images/makaronia.png"/>
-				<img src="images/spaggeti-meatbals.jpg"/>
-				<img src="images/mousaka.jpg"/>
-				<img src="images/gemista.png"/>
-				<img src="images/chicken.png"/>
-				<img src="images/pizza.jpg"/>
-				
-				<div class="content read"></div><br/>
-				<div class="content-sub-title"></div><br/>
-				
-				<br/>
-				
-				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="content-sub-title"></div>
+						<div class="content barre-3"></div>
+						
+						<div class="barre-4">
+							<img src="images/greek-salad.png"/>
+							<img src="images/feta.png"/>
+							<img src="images/tzatziki.png"/>
+							<img src="images/eggs.jpg"/>
+							<img src="images/humburger.png"/>
+							<img src="images/green-salad.png"/>
+							<img src="images/carbonara.png"/>
+							<img src="images/makaronia.png"/>
+							<img src="images/spaghetti-meatballs.png"/>
+							<img src="images/kokinisto.png"/>
+							<img src="images/pastitsio.jpg"/>
+							<img src="images/moussaka.jpg"/>
+							<img src="images/kebab.png"/>
+							<img src="images/pizza.png"/>
+							<img src="images/steak.png"/>
+							<img src="images/chicken.png"/>
+							<img src="images/mpifteki.png"/>
+							<img src="images/gemista.png"/>
+							<img src="images/lahanodolmades.png"/>
+							<img src="images/papoutsakia.png"/>
+							<img src="images/omolette.png"/>
+							
+							<img id="force" src="" >
+						</div>
+				</div>
+			</div>
 				
 		</div>
 	</div>

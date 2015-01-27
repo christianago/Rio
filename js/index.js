@@ -60,14 +60,14 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
-	 $("img.lazy").lazyload();
+	$("img").lazyload();
 	
 	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'bar-restaurant.php', 'travel-services.php', 'contact.php', 'reviews.php', 'map.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
 	console.log(myURL);
-
+	
 	
 	//MIDDLE STAR
 	$('img.gold-star:eq(1)').css({top:0});
@@ -411,7 +411,18 @@ function language(l, p){
 	 
 	 //console.log(key);
 	 
+	 
 	 //key = 0;
+	 var len = $('a.footer-item').length;
+	 if ( key == 0 ){ //GREEK
+		 $($("a.footer-item").get().reverse()).each(function(k, v){
+			$(this).attr('href', $(this).attr('href').replace('/en', '/gr'));
+		 });
+	 } else{
+		 $($("a.footer-item").get().reverse()).each(function(k, v){
+			$(this).attr('href', $(this).attr('href').replace('/gr', '/en'));
+		 });
+	 }
 
 	 $.getJSON('languages.json', function(data){
 		 
@@ -424,9 +435,6 @@ function language(l, p){
 			 
 			 if ( key == 0 ){
 				 divide = 12;
-				 $('div.specs').css('margin-top', '310px');
-			 } else{
-				 $('div.specs').css('margin-top', '260px');
 			 }
 			 
 			 $(li).each(function(k, v){
@@ -467,6 +475,7 @@ function language(l, p){
 			 var sc3 = '';
 			 $(ct).each(function(k, v){ sc3 += '<li>'+ct[k]+'</li>'; }); 
 			 $('ul.sub-content-3').html(sc3);
+			 
 			 
 			 $('ul.sub-content-2 li').each(function(){
 				 if ( $(this).is(':empty') ){
