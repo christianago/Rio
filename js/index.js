@@ -410,19 +410,71 @@ function language(l, p){
 	 }
 	 
 	 //console.log(key);
-	 
-	 
 	 //key = 0;
-	 var len = $('a.footer-item').length;
+	 
+	 //ALTER LINKS ON LANGUAGE SWITCH
 	 if ( key == 0 ){ //GREEK
-		 $($("a.footer-item").get().reverse()).each(function(k, v){
-			$(this).attr('href', $(this).attr('href').replace('/en', '/gr'));
+		 
+		$('a.footer-item[href*=aia]').attr('href', $('a.footer-item[href*=aia]').attr('href').replace('/en/', '/el/'));
+		$('a.footer-item[href*=xo]').attr('href', $('a.footer-item[href*=xo]').attr('href').replace('greece-ferry-routes', 'dromologia-ploion'));
+		$('a.footer-item[href*=nbg]').attr('href', $('a.footer-item[href*=nbg]').attr('href').replace('/en/', '/el/'));
+		$('a.footer-item[href*=theacropolismuseum]').attr('href', $('a.footer-item[href*=theacropolismuseum]').attr('href').replace('en', 'el'));
+		$('a.footer-item[href*=cycladic]').attr('href', $('a.footer-item[href*=cycladic]').attr('href').replace('clang=1', 'clang=0'));
+		$('a.footer-item[href*=nma]').attr('href', $('a.footer-item[href*=nma]').attr('href').replace('index_en.htm', 'index.htm'));
+		$('a.footer-item[href*=wiki]').attr('href', $('a.footer-item[href*=wiki]').attr('href').replace('http://en.wikipedia.org/wiki/Arch_of_Hadrian_(Athens)', 'http://el.wikipedia.org/wiki/%CE%A0%CF%8D%CE%BB%CE%B7_%CF%84%CE%BF%CF%85_%CE%91%CE%B4%CF%81%CE%B9%CE%B1%CE%BD%CE%BF%CF%8D'));
+		$('a.footer-item[href*=gnhm]').attr('href', $('a.footer-item[href*=gnhm]').attr('href').replace('/en', ''));
+		
+		$('a.footer-item.national-theater').attr('href', 'http://n-t.gr/');
+		$('a.footer-item[href*=visitgreece]').attr('href', 'http://www.visitgreece.gr/el');
+	
+		
+		 $("a.footer-item").each(function(k, v){
+			if ( $(this).attr('href').indexOf('gnhm') == -1 && $(this).attr('href').indexOf('n-t.gr') == -1 )
+			$(this).attr('href', $(this).attr('href').replace('/en/', '/gr/'));
 		 });
+		 
+		 
+		 $('a.footer-item[href*=athensauthenticmarathon]').attr('href', $('a.footer-item[href*=athensauthenticmarathon]').attr('href').replace('=en', '=gr'));
+		 $('a.footer-item[href*=panathenaicstadium]').attr('href', $('a.footer-item[href*=panathenaicstadium]').attr('href').replace('en-US', 'el-GR'));
+		 $('a.footer-item[href*=namuseum]').attr('href', $('a.footer-item[href*=namuseum]').attr('href').replace('index-en', 'index'));
+		 $('a.footer-item[href*=benaki]').attr('href', $('a.footer-item[href*=benaki]').attr('href').replace('=en', '=gr'));
+		
+		 
+		 $("a.footer-item[href*=odysseus]").each(function(k, v){
+			$(this).attr('href', $(this).attr('href').replace('/eh', '/gh'));
+		 });
+		 
 	 } else{
-		 $($("a.footer-item").get().reverse()).each(function(k, v){
-			$(this).attr('href', $(this).attr('href').replace('/gr', '/en'));
+		 
+		 $('a.footer-item[href*=aia]').attr('href', $('a.footer-item[href*=aia]').attr('href').replace('/el/', '/en/'));
+		 $('a.footer-item[href*=xo]').attr('href', $('a.footer-item[href*=xo]').attr('href').replace('dromologia-ploion', 'greece-ferry-routes'));
+		 $('a.footer-item[href*=nbg]').attr('href', $('a.footer-item[href*=nbg]').attr('href').replace('/el/', '/en/'));
+		 $('a.footer-item[href*=athensauthenticmarathon]').attr('href', $('a.footer-item[href*=athensauthenticmarathon]').attr('href').replace('=gr', '=en'));
+		 $('a.footer-item[href*=panathenaicstadium]').attr('href', $('a.footer-item[href*=panathenaicstadium]').attr('href').replace('el-GR', 'en-US'));
+		 $('a.footer-item[href*=theacropolismuseum]').attr('href', $('a.footer-item[href*=theacropolismuseum]').attr('href').replace('el', 'en'));
+		 $('a.footer-item[href*=namuseum]').attr('href', $('a.footer-item[href*=namuseum]').attr('href').replace('index', 'index-en'));
+		 $('a.footer-item[href*=cycladic]').attr('href', $('a.footer-item[href*=cycladic]').attr('href').replace('clang=0', 'clang=1'));
+		 $('a.footer-item[href*=benaki]').attr('href', $('a.footer-item[href*=benaki]').attr('href').replace('=gr', '=en'));
+		 $('a.footer-item[href*=gnhm]').attr('href', $('a.footer-item[href*=gnhm]').attr('href').replace('gnhm.gr', 'gnhm.gr/en'));
+		 $('a.footer-item[href*=nma]').attr('href', $('a.footer-item[href*=nma]').attr('href').replace('index.htm', 'index_en.htm'));
+		 $('a.footer-item[href*=wiki]').attr('href', $('a.footer-item[href*=wiki]').attr('href').replace('http://el.wikipedia.org/wiki/%CE%A0%CF%8D%CE%BB%CE%B7_%CF%84%CE%BF%CF%85_%CE%91%CE%B4%CF%81%CE%B9%CE%B1%CE%BD%CE%BF%CF%8D', 'http://en.wikipedia.org/wiki/Arch_of_Hadrian_(Athens)'));
+		 
+		 $('a.footer-item[href*=visitgreece]').attr('href', 'http://www.visitgreece.gr/en');
+		 $('a.footer-item.national-theater').attr('href', 'http://n-t.gr/en');
+
+		 
+		 $("a.footer-item").each(function(k, v){
+			if ( $(this).attr('href').indexOf('gnhm') == -1 && $(this).attr('href').indexOf('n-t.gr') == -1 )
+			$(this).attr('href', $(this).attr('href').replace('/gr/', '/en/'));
 		 });
+		 
+		 
+		 $("a.footer-item[href*=odysseus]").each(function(k, v){
+			$(this).attr('href', $(this).attr('href').replace('/gh', '/eh'));
+		 });
+		 
 	 }
+	 
 
 	 $.getJSON('languages.json', function(data){
 		 

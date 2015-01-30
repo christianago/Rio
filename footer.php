@@ -102,17 +102,18 @@
 			<br/><br/>
 			<ul class="useful-links">
 				<li><a target="_blank" href="http://www.travelbudget.gr/">Travelbudget agency</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.aia.gr/traveler/">Athens International Airport</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.aia.gr/en/traveler/">Athens International Airport</a></li>
 				<li><a target="_blank" class="footer-item" href="https://tickets.trainose.gr/dromologia/">National trains organization</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.xo.gr/greece-ferry-routes/">Port of Piraeus</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.rafinaport.gr/">Port of Rafina</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.oll.gr/">Port of Laurio</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.ktelattikis.gr/">Athens urban buses</a></li>
-				<li><a target="_blank" class="footer-item" href="https://www.nbg.gr/en">National Bank of Greece</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/en">Medecins Du Monde</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.athensguide.org/athens-hospitals.html">Athen's hospitals</a></li>
+				<li><a target="_blank" class="footer-item" href="https://www.nbg.gr/en/">National Bank of Greece</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.mdmgreece.gr/en/">Medecins Du Monde</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.ektakta.gr/nosokomeia-attikis.html">Athen's hospitals</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.ekab.gr/web/">National hospital</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.athensauthenticmarathon.gr/index.php?lang=en">Athens Authentic Marathon</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.visitgreece.gr/en">Visit Greece</a></li>
 			</ul>
 		<br/>
 		</div>
@@ -123,13 +124,13 @@
 			<br/><br/>
 			<ul class="useful-links">
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2384">Acropolis</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.panathenaicstadium.gr/ThePanathenaicStadium/History/tabid/96/language/en-US/Default.aspx">Kalimarmaro</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.panathenaicstadium.gr/Default.aspx?tabid=84&language=en-US">Kalimarmaro</a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/2/eh251.jsp?obj_id=6622">Odeon of Herodes Atticus</a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2485">Ancient Agora</a></li>
 				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Arch_of_Hadrian_(Athens)">Hadrian's Gate</a></li>
 				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2392">Kerameikos</a></li>
-				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Temple_of_Olympian_Zeus,_Athens">Temple of Olympian Zeus</a></li>
-				<li><a target="_blank" class="footer-item" href="http://en.wikipedia.org/wiki/Philopappos_Monument">Pnyx Hill and Philopappou</a></li>
+				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/2/eh251.jsp?obj_id=12863">Temple of Olympian Zeus</a></li>
+				<li><a target="_blank" class="footer-item" href="http://odysseus.culture.gr/h/3/eh352.jsp?obj_id=12521">Pnyx Hill and Philopappou</a></li>
 			</ul>
 		<br/>
 		</div>
@@ -139,11 +140,11 @@
 		
 			<br/><br/>
 			<ul class="useful-links">
-				<li><a target="_blank" class="footer-item" href="http://www.theacropolismuseum.gr/en">The Acropolis Museum</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.theacropolismuseum.gr/en/">The Acropolis Museum</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.namuseum.gr/index-en.html">The Archaeological Museum of Athens</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.cycladic.gr/frontoffice/portal.asp?cpage=NODE&cnode=1&clang=1">The Archaeological Museum of Athens</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.benaki.gr/index.asp?lang=en">The Benaki Museum></a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.gnhm.gr/en/the-museum/">The Museum of Natural History</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.gnhm.gr/en">The Museum of Natural History</a></li>
 				<li><a target="_blank" class="footer-item" href="http://www.nma.gr/index_en.htm">The Numismatic Museum of Athens</a></li>
 			</ul>
 		<br/>
@@ -154,10 +155,10 @@
 		
 			<br/><br/>
 			<ul class="useful-links">
-				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en">Greekfestival</a></li>
-				<li><a target="_blank" class="footer-item" href="http://n-t.gr/en">National theater</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.grdance.org/en">Dora Stratou Dance theater</a></li>
-				<li><a target="_blank" class="footer-item" href="http://www.nationalopera.gr/en">National Opera</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.greekfestival.gr/en/">Greekfestival</a></li>
+				<li><a target="_blank" class="footer-item national-theater" href="http://n-t.gr/en">National theater</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.grdance.org/en/">Dora Stratou Dance theater</a></li>
+				<li><a target="_blank" class="footer-item" href="http://www.nationalopera.gr/en/">National Opera</a></li>
 			</ul>
 		<br/>
 		</div>
