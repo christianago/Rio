@@ -45,3 +45,5 @@
     <img src="images/restaurand.jpg" />  
     <img src="images/hotel-rio-sidewalk-cafe.jpg" />  
     <img src="images/rest1.jpg" /> 
+    <img src="images/flowers1.png" /> 
+    <img src="images/flowers2.png" /> 

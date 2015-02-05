@@ -49,7 +49,7 @@
 
 <div class="row footer-social">
 	<div class="col-xs-12" align="center">												
-		<b>Join us on Facebook &amp; share with your friends:</b>
+		<b>Join us on  social media &amp; share with your friends:</b>
 		<a target="_blank" href="https://el-gr.facebook.com/pages/Hotel-Rio-Athens/163973293694518"><img src="images/social-facebook.png" /></a>
 		<img src="images/social-twitter.png" />
 		<img src="images/social-google.png" />

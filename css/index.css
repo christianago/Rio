@@ -23,6 +23,10 @@ body{
 	background: url(../images/bg.jpg);
 }
 
+.container.the-review{
+	height: 2360px;
+}
+
 .read{
 	background: rgba(255, 239, 213, .5);
 	padding: 15px;
@@ -176,6 +180,7 @@ body{
 	border-bottom: 29px solid #D2B48C;
 }
 
+
 .stand{
 	position: relative;
 	top: -65px;
@@ -187,8 +192,8 @@ body{
 }
 
 #lezanta-2{
-	font-family: 'Newspaper', sans serif;
-	font-size: 19pt;
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 13pt;
 	top: 0px;
 	height: 100px;
 	display: none;
@@ -512,6 +517,8 @@ input#check-availability{
 
 .footer-images{
 	float: right;
+	position: relative;
+	right: 20px;
 }
 
 .footer-images img{
@@ -889,10 +896,16 @@ input#check-availability{
 }
 
 .review-page{
-	margin-top: 50px;
+	//margin-top: 10px;
 	font-size: 10pt;
 	position: relative;
-	left: 35%;
+	left: 45%;
+	padding-bottom: 0px;
+}
+
+.reviews{
+	position: relative;
+	top: -280px;
 }
 
 .divider{

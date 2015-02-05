@@ -17,7 +17,7 @@
 
 <?php include_once 'modals.php'; ?>
 
-<div class="container">
+<div class="container the-review">
 
 <div id="message"><?php echo @$_SESSION['message'];?></div>
 <?php $_SESSION['message'] = ''; ?>
@@ -28,9 +28,9 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row reviews">
 	
-		<div class="welcome review-page">
+		<div class="col-xs-12 welcome review-page">
 			<div class="content-title content"></div><br/>
 			
 			<form id="review-form" action="submit.php" method="post">
@@ -115,7 +115,7 @@
 					<div class="col-xs-2">
 						<b><span class="content"></span></b>
 					</div>
-					<div class="col-xs-2">
+					<div class="col-xs-3 col-md-2 col-lg-2">
 						<textarea class="form-control" rows="5" name="comments"></textarea>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 				</div>
 				
 				<div class="row"><br/>
-					<div class="col-xs-offset-2 col-lg-offset-3"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="" /></div>
+					<div class="col-xs-offset-3 col-lg-offset-3"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="" /></div>
 				</div>
 			</form>
 			
