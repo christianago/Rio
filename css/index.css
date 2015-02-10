@@ -13,6 +13,8 @@
 body{
 	display: none;
 	overflow-x: hidden;
+	background: url(../images/bg.jpg);
+    background-repeat: repeat;
 }
 
 .container{
@@ -20,7 +22,6 @@ body{
     width: 100%;
 	font-family: Trebuchet MS, sans-serif;
 	font-size: 12pt;
-	background: url(../images/bg.jpg);
 }
 
 .container.the-review{
@@ -82,7 +83,7 @@ body{
 #sound{
 	position: absolute;
 	float: right;
-	top: 20px;
+	top: 2px;
 	cursor: pointer;
 	color: #A0522D;
 	font-weight: bold;
@@ -157,10 +158,14 @@ body{
 	float: right;
 	position: relative;
 	top: -14px;
-	left: 13px;
+	left: 10px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+}
+
+.map-close{
+	left: 25px;
 }
 
 #lezanta, #lezanta-2{
@@ -586,7 +591,7 @@ input#check-availability{
 }
 
 #time-window .modal-dialog{
-	width: 900px;
+	width: 600px;
 }
 
 #map-window .modal-dialog{
@@ -596,7 +601,7 @@ input#check-availability{
 }
 
 #weather-window .modal-dialog{
-	width: 820px;
+	width: 550px;
 }
 
 #currency-window .modal-dialog{
@@ -622,6 +627,8 @@ input#check-availability{
 /*GALLERY*/
 .collage {
 	margin: 20px auto;
+	position: relative;
+	top: -15px;
 }
 
 .collage a img{
@@ -629,7 +636,7 @@ input#check-availability{
 	filter: sepia(100%);
 	-moz-filter: sepia(100%);
 	-o-filter: sepia(100%);
-	 -ms-filter: sepia(100%);
+	-ms-filter: sepia(100%);
 	-webkit-filter: sepia(100%);
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.64 0.55 0.15 0 0 0.52 0.49 0.14 0 0 0.18 0.38 0.13 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
 }
@@ -638,11 +645,6 @@ input#check-availability{
     position: absolute;
     padding: 10px;
     background: #fff;
-    transform:rotate(-7deg);
-    -ms-transform:rotate(-7deg); 
-    -moz-transform:rotate(-7deg);
-    -webkit-transform:rotate(-7deg);
-    -o-transform:rotate(-7deg);
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -656,31 +658,91 @@ input#check-availability{
     filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=1,OffY=1,Color=#33000000,Positive=true);
 }
 
-.collage a:nth-child(2) {
+#col-img-1{
+	-ms-transform:rotate(-7deg); 
+    -moz-transform:rotate(-7deg);
+    -webkit-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+}
+
+#col-img-2{
      transform:rotate(7deg);
     -ms-transform:rotate(7deg); 
     -moz-transform:rotate(7deg);
     -webkit-transform:rotate(7deg);
     -o-transform:rotate(7deg);
-    margin-left: 20%;
 }
 
-.collage a:nth-child(3) {
+#col-img-3{
     transform:rotate(-7deg);
     -ms-transform:rotate(-7deg); 
     -moz-transform:rotate(-7deg);
     -webkit-transform:rotate(-7deg);
     -o-transform:rotate(-7deg);
-    margin-left: 40%;
 }
 
-.collage a:nth-child(4) {
+#col-img-4{
      transform:rotate(7deg);
     -ms-transform:rotate(7deg); 
     -moz-transform:rotate(7deg);
     -webkit-transform:rotate(7deg);
     -o-transform:rotate(7deg);
-    margin-left: 60%;
+}
+
+#sticker{
+	width: 80px;
+	position: relative;
+	top: 15px;
+	left: 70px;
+	z-index: 99999;
+	 transform:rotate(5deg);
+    -ms-transform:rotate(5deg); 
+    -moz-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+	opacity: 0.7;
+}
+
+#sticker2{
+	width: 80px;
+	position: relative;
+	top: 15px;
+	left: 110px;
+	z-index: 99999;
+	transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg); 
+    -moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+	opacity: 0.7;
+}
+
+#sticker3{
+	width: 80px;
+	position: relative;
+	top: 10px;
+	left: 90px;
+	z-index: 99999;
+	transform:rotate(20deg);
+    -ms-transform:rotate(20deg); 
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+	opacity: 0.7;
+}
+
+#sticker4{
+	width: 80px;
+	position: relative;
+	top: 15px;
+	left: 100px;
+	z-index: 99999;
+	transform:rotate(-5deg);
+    transform:rotate(-5deg);
+    transform:rotate(-5deg);
+    transform:rotate(-5deg);
+    transform:rotate(-5deg);
+	opacity: 0.7;
 }
 
 .collage a:hover { 
@@ -722,6 +784,17 @@ input#check-availability{
 	-webkit-filter: sepia(100%);
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.64 0.55 0.15 0 0 0.52 0.49 0.14 0 0 0.18 0.38 0.13 0 0 0 0 0 1 0\'/></filter></svg>#old-timey")
 }
+/*->GALLERY*/
+
+.full-image-travel-services img{
+	z-index: 200;
+	display: none;
+	text-align: center;
+	-webkit-box-shadow: 0 4px 6px;
+	-moz-box-shadow: 0 4px 6px;
+	box-shadow: 0 4px 6px;
+}
+
 
 .full-image img{
 	z-index: 200;
@@ -729,16 +802,6 @@ input#check-availability{
 	background: #fff;
 	margin: 10px;
 	padding: 10px 10px 55px;
-	text-align: center;
-	-webkit-box-shadow: 0 4px 6px;
-	-moz-box-shadow: 0 4px 6px;
-	box-shadow: 0 4px 6px;
-}
-/*->GALLERY*/
-
-.full-image-travel-services img{
-	z-index: 200;
-	display: none;
 	text-align: center;
 	-webkit-box-shadow: 0 4px 6px;
 	-moz-box-shadow: 0 4px 6px;
@@ -919,58 +982,6 @@ input#check-availability{
 	-webkit-filter: drop-shadow(3px 3px 20px black);
 }
 
-#sticker{
-	width: 80px;
-	position: absolute;
-	left: 70px;
-	z-index: 99999;
-	 transform:rotate(5deg);
-    -ms-transform:rotate(5deg); 
-    -moz-transform:rotate(5deg);
-    -webkit-transform:rotate(5deg);
-    -o-transform:rotate(5deg);
-	opacity: 0.7;
-}
-
-#sticker2{
-	width: 80px;
-	position: absolute;
-	left: 230px;
-	z-index: 99999;
-	transform:rotate(-5deg);
-    -ms-transform:rotate(-5deg); 
-    -moz-transform:rotate(-5deg);
-    -webkit-transform:rotate(-5deg);
-    -o-transform:rotate(-5deg);
-	opacity: 0.7;
-}
-
-#sticker3{
-	width: 80px;
-	position: absolute;
-	left: 450px;
-	z-index: 99999;
-	transform:rotate(20deg);
-    -ms-transform:rotate(20deg); 
-    -moz-transform:rotate(20deg);
-    -webkit-transform:rotate(20deg);
-    -o-transform:rotate(20deg);
-	opacity: 0.7;
-}
-
-#sticker4{
-	width: 80px;
-	position: absolute;
-	left: 610px;
-	z-index: 99999;
-	transform:rotate(-5deg);
-    transform:rotate(-5deg);
-    transform:rotate(-5deg);
-    transform:rotate(-5deg);
-    transform:rotate(-5deg);
-	opacity: 0.7;
-}
-
 .fa-cc-visa, .fa-cc-mastercard{
 	margin-left: 5px;
 }
@@ -1083,70 +1094,120 @@ input#check-availability{
 }
 
 
+
+
 @media all and (min-width: 1200px) {
    
   #logo{
       margin-left: 10px;
   }
   
-  #sticker{
-  		left: 100px;
-  }
-  
-  #sticker2{
-  		left: 300px;
-  }
-  
-  #sticker3{
-  		left: 450px;
-  }
-  
-  #sticker4{
-  		left: 650px;
-  }
-  
 }
 
-@media all and (min-width: 1900px) {
 
-  
-  #sticker2{
-  		left: 350px;
-  }
-  
-  #sticker3{
-  		left: 750px;
-  }
-  
-   #sticker4{
-  		left: 950px;
-  }
-  
+@media only screen and (min-width : 1001px) and (max-width : 1280px) {
+	
+	.collage-container{
+   		position: relative;
+   		top: 10px;
+   }
+   
+	.collage a img{
+  		 width: 170px;
+   }
+	
 }
 
 
 @media only screen and (max-width : 1000px) {
    
+   body{
+   		overflow-x: visible; 
+   		//width: 200%;
+   }
+   
+   .container{
+   		//width: 200%;
+   }
+   
    .header-1{
-   		margin-left: 40%;
-   		margin-top: 10px;
-   		height: 120px;
+   		height: 170px;
+   }
+   
+   .header-2, .divider{
+   		width: 150%;
    }
    
    #logo{
-   	margin-top: 10px;
+   		width: 100%;
+   		min-width: 100px;
+   }
+   
+   #hotel{
+   		position: relative;
+   		left: 5px;
+   }
+   
+   .gold-star{
+   		position: relative;
+   		left: 15px;
+   }
+   
+   .collage-container{
+   		position: relative;
+   		left: -20px;
+   		top: 10px;
+   }
+   
+   .collage a img{
+  		 width: 120px;
+   }
+   
+   #sticker, #sticker2, #sticker3, #sticker4{
+   		left: 0px;
    }
    
    .header-hover{
-   		font-size: 7pt;
+   		font-size: 9pt;
+   		padding: 5px;
+   		padding-top: 10px;
+   		padding-bottom: 10px;
+   		position: relative;
+   		left: -200px;
    }
    
-   .book-online-container{
-   		width: 600px;
+   #sound{
+   		right: 15px;
+   }
+   
+    .book-right{
+    	left: 20%;
+   	
+   }
+   
+   .markiza-recommended img{
+   		width: 30%;
+   }
+   
+   .footer-social img{
+   		width: 40px;
    }
   
-  embed, .gold-star, .slideshow, #lezanta, #lezanta-2, .nav, .stand, .collage, img[id^=sticker], #sound, #backtotop{
-  	display: none;
+  embed{
+  		display: none;
+  }
+  
+  #map-window{
+  		left: 2%;
+  		width: 95%;
+  }
+  
+  #googleMap{
+  	width: 130%;
+  }
+  
+  .contact-details{
+  		left: 50px;
   }
   
 }

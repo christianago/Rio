@@ -7,23 +7,24 @@
 <img id="backtotop" src="images/backtotop.png"/>
 
 <div class="row header-1">
-	<div class="col-xs-2 col-lg-3">
+	<div class="col-xs-2">
 		<img id="logo" src="images/logo.png" /> 
 		<div id="hotel">HOTEL</div>
 		<img class="gold-star" src="images/gold-star.gif" /> 
 		<img class="gold-star" src="images/gold-star.gif" /> 
 		<img class="gold-star" src="images/gold-star.gif" /> 
 	</div>
-	<div class="col-xs-10 col-lg-9">
-		<img id="sticker" src="images/sticker.png"/>
-		<img id="sticker2" src="images/sticker.png"/>
-		<img id="sticker3" src="images/sticker.png"/>
-		<img id="sticker4" src="images/sticker.png"/>
-		<div class="collage">
-			<a href="#"><img src="images/acro-day.jpg" /></a>
-			<a href="#"><img src="images/exte.jpg" /></a>
-			<a href="#"><img src="images/acro-night.jpg" /></a>
-			<a href="#"><img src="images/rio-night.jpg" /></a>
+	<div class="col-xs-10 collage-container">
+		<div class="col-xs-3"><img id="sticker" src="images/sticker.png"/></div>
+		<div class="col-xs-3"><img id="sticker2" src="images/sticker.png"/></div>
+		<div class="col-xs-3"><img id="sticker3" src="images/sticker.png"/></div>
+		<div class="col-xs-3"><img id="sticker4" src="images/sticker.png"/></div>
+		
+		<div class="row collage">
+			<div class="col-xs-3"><a href="#" id="col-img-1"><img src="images/acro-day.jpg" /></a></div>
+			<div class="col-xs-3"><a href="#" id="col-img-2"><img src="images/exte.jpg" /></a></div>
+			<div class="col-xs-3"><a href="#" id="col-img-3"><img src="images/acro-night.jpg" /></a></div>
+			<div class="col-xs-3"><a href="#" id="col-img-4"><img src="images/rio-night.jpg" /></a></div>
 		</div>
 	</div>
 </div>
@@ -46,7 +47,7 @@
 </div>
 
 
-<div class="col-xs-4 col-lg-4 col-lg-offset-1 book-slide">
+<div class="col-xs-4 col-lg-4 col-lg-offset-1">
 
 	<div class="row">
 	
@@ -170,7 +171,7 @@
 	
 </div>
 
-<div class="col-xs-8 col-lg-4 book-slide">
+<div class="col-xs-8 col-lg-4 book-right">
 	
 	<div class="row slideshow">
 		<?php 
