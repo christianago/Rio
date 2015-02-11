@@ -37,6 +37,7 @@ $(window).resize(function(){
 });
 
 
+
 //MAPS
 $(window).load(function(){
 	 var myURL = document.URL.split('/');
@@ -153,22 +154,18 @@ $(document).ready(function(){
 	
 	
 	//SLIDESHOW//
-	$('div.slideshow')
+	$('.cycle-slideshow')
 	.cycle({
 		fx: 'fade',
-		pager: '#nav',
-		pagerAnchorBuilder: function(idx, slide){ 
+		/*pagerAnchorBuilder: function(idx, slide){ 
 			if ( myURL != 'reviews.php' ){
 				return '<li><a href="#"><img src="' + slide.src + '" width="70" height="50" /></a></li>'; 
 			}
-	    }
+	    }*/
 	});
 
-	setTimeout(function(){
-		$('div.slideshow-container').fadeIn('slow');
-	}, 500);
 	//<-SLIDESHOW//
-	
+
 	
 	//DATEPICKER//
 	$('input.datepicker').datepicker({
@@ -392,6 +389,7 @@ $(document).ready(function(){
 		 //return false;
 	 });
 	//<-REVIEWS// 
+
 
 });
 

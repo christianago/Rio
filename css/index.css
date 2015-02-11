@@ -28,6 +28,10 @@ body{
 	height: 2360px;
 }
 
+.the-sub-header{
+	padding-right: 0;
+}
+
 .read{
 	background: rgba(255, 239, 213, .5);
 	padding: 15px;
@@ -38,13 +42,13 @@ body{
 
 /*HEADERS*/
 .header-1{
-	height: 200px;
+	height: 280px;
 	background: rgba(255, 239, 213, .4);
 }
 
 .header-2{
 	text-align: center;
-	//font-weight: bold;
+	font-weight: bold;
 	background: rgb(169,3,41); /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
@@ -149,8 +153,20 @@ body{
 	-webkit-filter: none;
 }
 
-.slideshow{
+.cycle-slideshow{
+	margin: auto;
 	margin-top: 10px;
+	padding: 0;
+	width: 95%;
+	min-width: 200px;
+	max-width: 639px;
+	position: relative;
+	float: right;
+}
+
+.cycle-slideshow img{
+	width: 100%;
+	padding: 0;
 }
 
 .close-icon{
@@ -265,6 +281,7 @@ a, a:active, a:hover{
 
 .reservation-item{
 	margin-top: 7px;
+	margin-left: 10px;
 	width: 95px;
 }
 
@@ -276,10 +293,9 @@ a, a:active, a:hover{
 	margin: 0;
 	margin-bottom: 20px;
 	padding-bottom: 5px;
-	position:relative;
-	left: -15px;
 	padding-top: 5px;
-	width: 280px;
+	position: relative;
+	width: 100%;
 	background: rgb(169,3,41); /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
@@ -294,12 +310,14 @@ a, a:active, a:hover{
 }
 
 .book-online{
-	float: left;
+	//float: left;
 	margin-left: 10px;
+	margin-right: 0px;
 	margin-top: 20px;
 	color: #8B4513;
 	font-weight:bold;
-	width: 280px;
+	min-width: 235px;
+	max-width: 300px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -308,6 +326,10 @@ a, a:active, a:hover{
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    5px 5px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.book-online-sub{
+	padding: 0;
 }
 
 .active-link{
@@ -334,11 +356,15 @@ input{
 	cursor: default !important;
 }
 
+.calendar-item{
+	float: right;
+}
+
 .fa-calendar{
 	margin-top: 10px;
 	font-size: 15pt;
 	position: relative;
-	left: 10px;
+	left: -25px;
 	cursor: pointer;
 	color: #8B4513;
 	font-weight: bold;
@@ -632,7 +658,9 @@ input#check-availability{
 }
 
 .collage a img{
-	width: 210px;
+	width: 100%;
+	min-width: 180px;
+	max-width: 300px;
 	filter: sepia(100%);
 	-moz-filter: sepia(100%);
 	-o-filter: sepia(100%);
@@ -1102,6 +1130,16 @@ input#check-availability{
       margin-left: 10px;
   }
   
+  
+}
+
+
+@media only screen and (max-width : 1280px) {
+	
+	 .header-1{
+   		height: 225px;
+   }
+  
 }
 
 
@@ -1111,18 +1149,14 @@ input#check-availability{
    		position: relative;
    		top: 10px;
    }
-   
-	.collage a img{
-  		 width: 170px;
-   }
-	
+
 }
 
 
 @media only screen and (max-width : 1000px) {
    
    body{
-   		overflow-x: visible; 
+   		//overflow-x: visible; 
    		//width: 200%;
    }
    
@@ -1130,17 +1164,10 @@ input#check-availability{
    		//width: 200%;
    }
    
-   .header-1{
-   		height: 170px;
-   }
-   
-   .header-2, .divider{
-   		width: 150%;
-   }
-   
    #logo{
+   	    margin-top: 60px;
    		width: 100%;
-   		min-width: 100px;
+   		min-width: 80px;
    }
    
    #hotel{
@@ -1155,12 +1182,8 @@ input#check-availability{
    
    .collage-container{
    		position: relative;
-   		left: -20px;
+   		left: -50px;
    		top: 10px;
-   }
-   
-   .collage a img{
-  		 width: 120px;
    }
    
    #sticker, #sticker2, #sticker3, #sticker4{
@@ -1172,8 +1195,8 @@ input#check-availability{
    		padding: 5px;
    		padding-top: 10px;
    		padding-bottom: 10px;
-   		position: relative;
-   		left: -200px;
+   		//position: relative;
+   		//left: -200px;
    }
    
    #sound{
@@ -1181,8 +1204,7 @@ input#check-availability{
    }
    
     .book-right{
-    	left: 20%;
-   	
+    	//left: 20%;
    }
    
    .markiza-recommended img{

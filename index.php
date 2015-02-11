@@ -18,7 +18,7 @@
 <div class="container">
 
 	<div class="row the-header">
-		<div class="col-xs-12">
+		<div class="col-xs-12 the-sub-header">
 			<?php include_once 'header.php'; ?>
 		</div>
 	</div>

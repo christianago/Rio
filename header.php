@@ -47,7 +47,7 @@
 </div>
 
 
-<div class="col-xs-4 col-lg-4 col-lg-offset-1">
+<div class="col-xs-5 col-lg-4 col-lg-offset-1">
 
 	<div class="row">
 	
@@ -71,7 +71,7 @@
 			
 			
 			<div class="row book-online">
-				<div class="col-xs-12">
+				<div class="col-xs-12 book-online-sub">
 					<div class="book-online-literal reservation-item"></div>
 					
 					<div class="row book-field">
@@ -79,7 +79,7 @@
 						<div class="col-xs-4">
 							<input id="start-date" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 						</div>
-						<div class="col-xs-1 col-xs-offset-1">
+						<div class="col-xs-1 calendar-item">
 							<i class="fa fa-calendar"></i>
 						</div>
 					</div>
@@ -89,7 +89,7 @@
 						<div class="col-xs-4">
 							<input id="end-date" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 						</div>
-						<div class="col-xs-1 col-xs-offset-1">
+						<div class="col-xs-1 calendar-item">
 							<i class="fa fa-calendar"></i>
 						</div>
 					</div>
@@ -171,9 +171,9 @@
 	
 </div>
 
-<div class="col-xs-8 col-lg-4 book-right">
-	
-	<div class="row slideshow">
+<div class="col-xs-7 col-lg-7 book-right pull-right">
+
+	<div class="row cycle-slideshow responsive" data-cycle-carousel-fluid="true">
 		<?php 
 		if ( strpos( $_SERVER["REQUEST_URI"], 'reviews.php') === FALSE ){
 			include_once 'slides-1.php'; 

@@ -1,4 +1,3 @@
-	
 	<img src="images/rio-above.jpg" /> 
 	<img src="images/rio_athens1.jpg" /> 
 	<img src="images/pedestrian.jpg" /> 
