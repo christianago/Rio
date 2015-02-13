@@ -37,11 +37,11 @@
 			
 				<div class="row review-label" id="r0">
 					<input name="rv1" type="hidden" />
-					<div class="col-xs-2">
+					<div class="col-xs-3">
 						<i class="fa fa-hospital-o fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-10">
+					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -52,11 +52,11 @@
 				
 				<div class="row review-label" id="r1">
 				<input name="rv2" type="hidden" />
-					<div class="col-xs-2">
+					<div class="col-xs-3">
 						<i class="fa fa-female fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-10">
+					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -67,11 +67,11 @@
 				
 				<div class="row review-label" id="r2">
 				<input name="rv3" type="hidden" />
-					<div class="col-xs-2">
+					<div class="col-xs-3">
 						<i class="fa fa-map-marker fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-2">
+					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -82,11 +82,11 @@
 	
 				<div class="row review-label" id="r3">
 				<input name="rv4" type="hidden" />
-					<div class="col-xs-2">
-						<i class="fa fa-trash fa-2x"></i>
+					<div class="col-xs-3">
+						<i class="fa fa-sun-o fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-10">
+					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -97,11 +97,26 @@
 				
 				<div class="row review-label" id="r4">
 				<input name="rv5" type="hidden" />
-					<div class="col-xs-2">
+					<div class="col-xs-3">
 						<i class="fa fa-euro fa-2x"></i>
 						<span class="content"></span>
 					</div>
-					<div class="col-xs-10">
+					<div class="col-xs-9">
+						<i class="fa fa-star-o fa-2x"></i>
+						<i class="fa fa-star-o fa-2x"></i>
+						<i class="fa fa-star-o fa-2x"></i>
+						<i class="fa fa-star-o fa-2x"></i>
+						<i class="fa fa-star-o fa-2x"></i>
+					</div>
+				</div>
+				
+				<div class="row review-label" id="r5">
+				<input name="rv6" type="hidden" />
+					<div class="col-xs-3">
+						<i class="fa fa-info-circle fa-2x"></i>
+						<span class="content"></span>
+					</div>
+					<div class="col-xs-9">
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
 						<i class="fa fa-star-o fa-2x"></i>
@@ -162,7 +177,7 @@
 				
 				$values = array();
 				
-				for($i = 3; $i < 8; $i++){
+				for($i = 3; $i < 9; $i++){
 					if ( $part[$i] != '0' ){
 						$values[] = $part[$i];
 					}
@@ -173,7 +188,7 @@
 					
 				$avg[] = $av;
 				$dates[] =  $part[1];
-				$comments[] = $part[8].'&nbsp;';
+				$comments[] = $part[9].'&nbsp;';
 			}
 			
 		?>

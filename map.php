@@ -25,7 +25,7 @@
 
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-11 welcome maps">
+		<div class="col-xs-12 welcome maps">
 			<div class="googleMap" id="googleMap-3"></div>
 		</div>
 

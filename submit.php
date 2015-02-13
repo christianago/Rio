@@ -9,6 +9,7 @@ function filter(&$value) {
 $data = $_POST;
 $emailFrom = $data['email'];
 $emailTo = "info@hotel-rio.gr";
+#$emailTo = "chrilamp@gmail.com";
 $domain = 'http://kris-demo.eu/';
 
 $headers = array("Content-Type: text/html; charset=UTF-8");
@@ -38,10 +39,11 @@ if ( isset($_POST['email-us']) ){
 	$subject = "Μήνυμα μέσω της φόρμας επικοινωνίας της ιστοσελίδας";
 	$msg = '';
 	$msg = 'Ονοματεπώνυμο: '.$data['firstname'].' '.$data['lastname']."\r\n";
-	$msg .= 'Διεύθυνση: '.$data['address']."\r\n";
+	$msg .= 'Πόλη: '.$data['address']."\r\n";
 	$msg .= 'Email: '.$data['email']."\r\n";
 	$msg .= 'Χώρα: '.$data['country']."\r\n";
 	$msg .= 'Τηλέφωνο: '.$data['tel']."\r\n";
+	$msg .= 'Θέμα: '.$data['subject']."\r\n";
 	$msg .= 'Mήνυμα: '.$data['message']."\r\n";
 	
 
@@ -83,6 +85,7 @@ if ( isset($_POST['email-us']) ){
 	$reviewMsg .='Τοποθεσία: '.$data['rv3']."\r\n";
 	$reviewMsg .='Καθαριότητα: '.$data['rv4']."\r\n";
 	$reviewMsg .='Τιμή: '.$data['rv5']."\r\n";
+	$reviewMsg .='Υπηρεσίες: '.$data['rv6']."\r\n";
 	$reviewMsg .='Σχόλια: '.$data['comments']."\r\n";
 	$reviewMsg .="Έγκριση: \r\n";
 	$reviewMsg .= $domain.'approve-review.php?id='.$linecount;

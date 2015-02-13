@@ -173,7 +173,7 @@
 
 <div class="col-xs-7 col-lg-7 book-right pull-right">
 
-	<div class="row cycle-slideshow responsive" data-cycle-carousel-fluid="true">
+	<div class="row cycle-slideshow responsive" data-cycle-carousel-fluid="true" data-cycle-pager="#nav-container" data-cycle-pager-template="<a href='#'><img src='{{src}}' width=70 height=50>
 		<?php 
 		if ( strpos( $_SERVER["REQUEST_URI"], 'reviews.php') === FALSE ){
 			include_once 'slides-1.php'; 
@@ -181,29 +181,29 @@
 			include_once 'slides-2.php';
 		}
 		?>
-	</div>
-	
-	<div class="row" id="lezanta">
-		<div class="col-xs-12">
-		<i class="fa fa-circle"></i>
-		<i class="fa fa-circle"></i>
-		<i class="fa fa-circle"></i>
-		in the center of Athens</div>
-	</div>
-	
-	<div class="row" id="lezanta-2">
-		<div class="col-xs-12">
-		Hotel RIO is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips
+		
+		<div class="row lezanta-container">
+			<div id="lezanta">
+				<i class="fa fa-circle"></i>
+				<i class="fa fa-circle"></i>
+				<i class="fa fa-circle"></i>
+				in the center of Athens
+			</div>
+			
+			<div id="lezanta-2">Hotel RIO Athens is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips</div>
+			
+			<div class="row stand">&nbsp;</div>
+			
 		</div>
-	</div>
-	
-	<div class="row stand">&nbsp;</div>
-	
-	<div class="row nav-container">
-		<div class="col-xs-12">
-			<div id="nav" class="nav"></div>
+		
+		<div class="row">
+			<div class="col-xs-1 nav-container" id="nav-container"></div>
 		</div>
+		
 	</div>
 	
 </div>
+	
+	
+	
 	

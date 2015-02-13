@@ -26,7 +26,7 @@
 
 	<div class="general-area-1 row">
 	
-		<div class="col-xs-10 col-lg-8 welcome">
+		<div class="col-xs-12 col-lg-8 welcome">
 			<div class="content-title" align="center"></div><br/>
 			<div class="read">
 				<div class="content"></div><br/>

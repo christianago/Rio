@@ -63,7 +63,7 @@ $(document).ready(function(){
 
 	$("img").lazyload();
 	
-	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'bar-restaurant.php', 'travel-services.php', 'contact.php', 'reviews.php', 'map.php'];
+	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'bar-restaurant.php', 'travel-services.php', 'contact.php', 'reviews.php', 'map.php', 'policy.php'];
 	var myURL = document.URL.split('/');
 	myURL = myURL[myURL.length-1];
 	myURL = myURL.replace("#", "");
@@ -90,7 +90,7 @@ $(document).ready(function(){
 	
 	 
 	 if ( myURL == 'reviews.php' ){
-		 $('#lezanta, .stand').hide();
+		 $('#lezanta, .stand, #nav-container').hide();
 		 $('#lezanta-2').show();
 	 } else if ( myURL == 'map.php' ){
 		 $('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
@@ -154,16 +154,7 @@ $(document).ready(function(){
 	
 	
 	//SLIDESHOW//
-	$('.cycle-slideshow')
-	.cycle({
-		fx: 'fade',
-		/*pagerAnchorBuilder: function(idx, slide){ 
-			if ( myURL != 'reviews.php' ){
-				return '<li><a href="#"><img src="' + slide.src + '" width="70" height="50" /></a></li>'; 
-			}
-	    }*/
-	});
-
+	$('.cycle-slideshow').cycle({fx: 'fade'});
 	//<-SLIDESHOW//
 
 	
@@ -243,14 +234,7 @@ $(document).ready(function(){
 	 });
 	 //<-MODALS//
 	 
-	 
-	 //USEFUL LINKS
-	 /*$(this).on('click', '.useful-links-trigger', function(e){
-		 $('ul.useful-links').slideToggle();
-	 });*/
-	//<-USEFUL LINKS
-	 
-	 
+
 	 //BOOKMARK
 	 $(this).on('click', '.bookmarkme', function() {
          if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
@@ -375,7 +359,6 @@ $(document).ready(function(){
 		 
 		 $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
-		
 	 }
 	 //<-CONTACT-REVIEW//
 	 
@@ -528,7 +511,7 @@ function language(l, p){
 			 
 			 
 			 $('ul.sub-content-2 li').each(function(){
-				 if ( $(this).is(':empty') ){
+				if ( !$(this).text().trim().length ){
 					 $(this).css('visibility', 'hidden');
 				 }
 			 });
@@ -541,7 +524,7 @@ function language(l, p){
 			 
 			 //content-title
 			 var ct = data.booking_info[key].content_title.split(',');
-			 $('div.content-title').each(function(k, v){
+			 $('div.content-title').each(function(k){
 				 if ( k == 0 )
 				 $(this).html(ct[k]+",");
 				 else $(this).html(ct[k]);
@@ -552,12 +535,6 @@ function language(l, p){
 			 $('.content:eq(1)').html(data.booking_info[key].content_1.split("|").join("<br/>"));
 			 $('.content:eq(2)').html(data.booking_info[key].content_2.split("|").join("<br/>"));
 			 $('.content:eq(3)').html(data.booking_info[key].content_3.split("|").join("<br/>"));
-			 $('.content:eq(5)').html(data.booking_info[key].content_5.split("|").join("<br/>"));
-			 $('.content:eq(6)').html(data.booking_info[key].content_6.split("|").join("<br/>").replace('(', '<b>').replace(')', '</b>'));
-			 $('.content:eq(7)').html(data.booking_info[key].content_7);
-			 $('.content:eq(8)').html(data.booking_info[key].content_8.split("|").join("<br/>"));
-			 
-			 console.log(data.booking_info[key].content_7);
 
 			 var extra_services = '';
 			 var temp = data.booking_info[key].content_4.split("|");
@@ -586,7 +563,22 @@ function language(l, p){
 				 $(this).text(ct[k]);
 			 }); 
 			 
-		 }  else if ( p == 'contact.php' ){ //contact
+		 } else if ( p == 'policy.php' ){ //policy
+			 if ( data.policy[key] == undefined ){ key = 1; }
+			 
+			 $('title').text(data.policy[key].title);
+			 
+			 var ct = data.policy[key].content_title.split(',');
+			 $('div.content-title').each(function(k){
+				$(this).text(ct[k]);
+			 });
+			 
+			 $('div.content:eq(0)').html(data.policy[key].content_1.split("|").join("<br/><br/>"));
+			 $('div.content:eq(1)').html(data.policy[key].content_2.split("|").join("<br/><br/>").replace('(', '<b>').replace(')', '</b>'));
+			 $('div.content:eq(2)').html(data.policy[key].content_3.split("|").join("<br/><br/>"));
+			 $('div.content:eq(3)').html(data.policy[key].content_4.split("|").join("<br/><br/>"));
+			 
+		 } else if ( p == 'contact.php' ){ //contact
 			 if ( data.contact[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.contact[key].title);
@@ -599,6 +591,7 @@ function language(l, p){
 			 $('div.content:eq(0)').html(data.contact[key].content_1.split("|").join("<br/>"));
 			 
 			 var c = data.contact[key].content_2.split(',');
+			 console.log(c);
 			 $('.content:gt(0)').each(function(k, v){
 				 $(this).text(c[k]);
 			 }); 
@@ -628,12 +621,12 @@ function language(l, p){
 			 
 			 $('div.content-title:first').text(ct[0]+",");
 			 $('div.content-sub-title').each(function(k){
-				 $(this).text(ct[k+1]);
+				 $(this).html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ct[k+1]);
 			 });
 			 
 			 ct = data.facilities[key].content.split('#');
 			 $('div.content').each(function(k){
-				 $(this).text(ct[k]);
+				 $(this).html(ct[k].split("|").join("<br/>"));
 			 });
 			 
 			

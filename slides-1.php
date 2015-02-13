@@ -13,6 +13,7 @@
     <img src="images/balcony view2.jpg" /> 
     <img src="images/bat bottles.jpg" /> 
     <img src="images/cafe.jpg" /> 
+    <img src="images/flowers1.png" />
     <img src="images/bar.jpg" /> 
     <img src="images/chair.jpg" /> 
     <img src="images/chairs.jpg" /> 
@@ -44,5 +45,4 @@
     <img src="images/restaurand.jpg" />  
     <img src="images/hotel-rio-sidewalk-cafe.jpg" />  
     <img src="images/rest1.jpg" /> 
-    <img src="images/flowers1.png" /> 
     <img src="images/flowers2.png" /> 

@@ -41,7 +41,7 @@
 		<img src="images/holidaycheck.jpg">
 		<img src="images/venere.jpg">
 		<br/><br/>			
-		<embed src="flash/e-led.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="370" height="85" wmode="opaque" type="application/x-shockwave-flash"></embed>
+		<embed id="flash-1" src="flash/e-led.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="370" height="85" wmode="opaque" type="application/x-shockwave-flash"></embed>
 	</div>	
 
 </div>
@@ -73,7 +73,7 @@
 		
 		<div class="row">
 			<div class="col-xs-9 col-xs-offset-3 col-lg-6 col-lg-offset-4">
-				<a href="booking-info.php"><span class="footer-elem footer-item">Hotel policy</span></a> / 
+				<a href="policy.php"><span class="footer-elem footer-item">Hotel policy</span></a> / 
 				<a href="mailto:?subject=Hotel Rio Athens&body=www.hotel-rio.gr"><span class="footer-elem footer-item recommend">Recommend us to a friend</span></a> /
 				<span class="footer-elem bookmarkme">Bookmark this site</span>
 			</div>
@@ -83,9 +83,9 @@
 	
 	<div class="row footer-images">
 		<div class="col-xs-12">
-			<img src="images/sete.jpg" />
-			<img src="images/association.png" />
 			<img src="images/chamber.jpg" />
+			<img src="images/association.png" />
+			<img src="images/sete.jpg" />
 			<img src="images/footer-img-1.gif" />
 			<img src="images/footer-img-2.gif" />
 			<span id="we-are-here">We are <span id="here"><a href="map.php">HERE</a></span></span>
@@ -94,7 +94,9 @@
 	</div>
 	
 	
-	<div class="col-xs-12">
+	<div class="row">
+	
+		<div class="col-xs-11 col-xs-offset-1">
 	
 		<div class="col-xs-3 col-lg-3">
 			<span class="footer-elem footer-item useful-links-title">Useful links</span>
@@ -161,8 +163,17 @@
 				<li><a target="_blank" class="footer-item" href="http://www.nationalopera.gr/en/">National Opera</a></li>
 			</ul>
 		<br/>
+		
+		<a target="_blank" href="http://www.travelbudget.gr/">
+		<object height="135" width="135">
+			<embed src="flash/rolex.swf?Target=2008,8,8,8,8,0&amp;Title=Title&amp;Message=Message&amp;" width="135" height="135" wmode="transparent" type="application/x-shockwave-flash" />
+		</object>
+		  <i style="display:block; height: 135px; width: 135px;  position: relative; z-index: 9; margin-top: -135px;"></i>
+		</a>
+		
 		</div>
 				
+		</div>
 	</div>
 	
 	

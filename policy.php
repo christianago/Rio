@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>Hotel Rio Athens</title>
 
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,23 +13,37 @@
 </head>
 <body>
 
-<div class="container">
+<?php include_once 'modals.php'; ?>
 
-<div class="full-image"><img /></div>
+<div class="container">
 
 	<div class="row the-header">
 		<div class="col-xs-12">
 			<?php include_once 'header.php'; ?>
 		</div>
 	</div>
+	
+	<div class="general-area-1 row">
+	
+		<div class="col-xs-9 col-lg-8 welcome">
 
-	<div class="row" align="center">
-		<div class="col-xs-12 welcome gallery-container">
-			<div class="content-title" align="center"></div><br/>
-			<div class="row">
-			<?php include 'slides-1.php'; ?>
-			</div>
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<img class="credit-card" src="images/visa.png">
+		<img class="credit-card"src="images/mastercard.png">
+		<div class="content read"><br/>
 		</div>
+		
+		<br/><br/><div class="content-title"></div><br/>
+		<div class="content read"></div>
+		
+		</div>
+
 	</div>
 	
 	<?php include_once 'footer.php'; ?>
@@ -46,3 +60,4 @@
 	<script src="js/index.js"></script>
 </body>
 </html>
+
