@@ -7,7 +7,7 @@
 		<div class="googleMap" id="googleMap"></div>
 	</div>
 
-	<div class="col-xs-3 col-lg-3 contact-details">												
+	<div class="col-xs-4 col-md-2 col-lg-3 contact-details">												
 		<b class="cd"></b>
 		<br/>
 		<span class="cd"></span>
@@ -35,7 +35,7 @@
 	<span class="modal-map-title address"></span>
 	-->
 	
-	<div class="col-xs-5 col-lg-4 markiza-recommended" align="center">		
+	<div class="col-xs-4 col-md-5 col-lg-4 markiza-recommended" align="center">		
 		<div id="they-recommend-us"></div><br/>	
 		<img src="images/zoover.png">
 		<img src="images/holidaycheck.jpg">
@@ -182,6 +182,6 @@
 <div class="row divider"></div>
 
 <div class="row copyright">
-	<div class="col-xs-5 col-xs-offset-5 col-lg-offset-5 copyright">2015 All rights reserved | RIO Hotel Athens</div>
+	<div class="col-xs-5 col-xs-offset-5 col-lg-offset-5 copyright">2015 All rights reserved | Copyright &copy; RIO Hotel Athens</div>
 </div>
 

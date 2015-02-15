@@ -45,10 +45,10 @@
 							<img src="images/club.png"/>
 							<img src="images/hotdog.png"/>
 							<img src="images/croissant.png"/>
-							<img src="images/donuts.png"/>
+							<img src="images/baklava.png"/>
 							<img src="images/icecream.png"/>
 							<img src="images/milkshakes.png"/>
-							<img src="images/baklava.png"/>
+							<img src="images/donuts.png"/>
 							<img src="images/jack.png"/>
 							<img src="images/cocktail.png"/>
 							<img src="images/wine.jpg"/>

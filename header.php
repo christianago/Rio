@@ -202,6 +202,11 @@
 		
 	</div>
 	
+	
+	<?php 
+	if ( strpos($_SERVER["REQUEST_URI"], 'reviews.php') !== FALSE )
+	include_once 'reviews_inc.php'; ?>
+	
 </div>
 	
 	

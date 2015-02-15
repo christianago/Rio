@@ -27,198 +27,85 @@
 			<?php include_once 'header.php'; ?>
 		</div>
 	</div>
-
-	<div class="row reviews">
 	
-		<div class="col-xs-12 welcome review-page">
-			<div class="content-title content"></div><br/>
-			
-			<form id="review-form" action="submit.php" method="post">
-			
-				<div class="row review-label" id="r0">
-					<input name="rv1" type="hidden" />
-					<div class="col-xs-3">
-						<i class="fa fa-hospital-o fa-2x"></i>
-						<span class="content"></span>
-					</div>
-					<div class="col-xs-9">
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-					</div>
-				</div>
-				
-				<div class="row review-label" id="r1">
-				<input name="rv2" type="hidden" />
-					<div class="col-xs-3">
-						<i class="fa fa-female fa-2x"></i>
-						<span class="content"></span>
-					</div>
-					<div class="col-xs-9">
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-					</div>
-				</div>
-				
-				<div class="row review-label" id="r2">
-				<input name="rv3" type="hidden" />
-					<div class="col-xs-3">
-						<i class="fa fa-map-marker fa-2x"></i>
-						<span class="content"></span>
-					</div>
-					<div class="col-xs-9">
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-					</div>
-				</div>
 	
-				<div class="row review-label" id="r3">
-				<input name="rv4" type="hidden" />
-					<div class="col-xs-3">
-						<i class="fa fa-sun-o fa-2x"></i>
-						<span class="content"></span>
-					</div>
-					<div class="col-xs-9">
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-					</div>
-				</div>
-				
-				<div class="row review-label" id="r4">
-				<input name="rv5" type="hidden" />
-					<div class="col-xs-3">
-						<i class="fa fa-euro fa-2x"></i>
-						<span class="content"></span>
-					</div>
-					<div class="col-xs-9">
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-					</div>
-				</div>
-				
-				<div class="row review-label" id="r5">
-				<input name="rv6" type="hidden" />
-					<div class="col-xs-3">
-						<i class="fa fa-info-circle fa-2x"></i>
-						<span class="content"></span>
-					</div>
-					<div class="col-xs-9">
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-						<i class="fa fa-star-o fa-2x"></i>
-					</div>
-				</div>
-				
-				<div class="row">
-				<br/>
-					<div class="col-xs-2">
-						<b><span class="content"></span></b>
-					</div>
-					<div class="col-xs-3 col-md-2 col-lg-2">
-						<textarea class="form-control" rows="5" name="comments"></textarea>
-					</div>
-				</div>
-				
-				<br/>
-				<div class="row">
-					<div class="col-xs-4 col-xs-offset-2">
-						<div class="system-message">
-				     	 	<div class="review-message" title="EL">Ευχαριστούμε! Η αξιολόγησή σας έγινε με επιτυχία και θα ελεγχθεί σύντομα.</div>
-				     	 	<div class="review-message" title="EN">Thank you! Your review succesfully submited and it will be briefly verified.</div>
-				     		<div class="fail-message" title="EL">Προέκυψε κάποιο σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα.</div>
-				     	 	<div class="fail-message" title="EN">Error occured. Please try again later.</div>
-				     	 </div>
-					</div>
-				</div>
-				
-				<div class="row"><br/>
-					<div class="col-xs-offset-3 col-lg-offset-3"><input class="form-control btn btn-primary content" type="submit" id="review-us" name="review-us" value="" /></div>
-				</div>
-			</form>
-			
-		</div>
+	<?php 
+		$reviews = array();
+		$avg = array();
+		$dates = array();
+		$comments = array();
 		
-		<?php 
-			$reviews = array();
-			$avg = array();
-			$dates = array();
-			$comments = array();
+		$handle = fopen("rv", "r");
+		if ( $handle ) {
+		    while (($line = fgets($handle)) !== false) {
+		    	if ( strlen($line) < 20 ) continue;
+		 		$reviews[] = $line;
+		    }
+		} else { exit(0); } 
+		fclose($handle);
+		
+		$reviews = array_reverse($reviews);
+		
+		foreach($reviews as $k=>$v){
+			$part = explode('#', $v);
+			if ( $part[0] == '0' ) continue; //unapproved review
 			
-			$handle = fopen("rv", "r");
-			if ( $handle ) {
-			    while (($line = fgets($handle)) !== false) {
-			    	if ( strlen($line) < 20 ) continue;
-			 		$reviews[] = $line;
-			    }
-			} else { exit(0); } 
-			fclose($handle);
+			$values = array();
 			
-			$reviews = array_reverse($reviews);
-			
-			foreach($reviews as $k=>$v){
-				$part = explode('#', $v);
-				if ( $part[0] == '0' ) continue; //unapproved review
-				
-				$values = array();
-				
-				for($i = 3; $i < 9; $i++){
-					if ( $part[$i] != '0' ){
-						$values[] = $part[$i];
-					}
+			for($i = 3; $i < 9; $i++){
+				if ( $part[$i] != '0' ){
+					$values[] = $part[$i];
 				}
-				
-				$av = array_sum($values) / count($values);
-				if ( $av == 0 ) continue;
-					
-				$avg[] = $av;
-				$dates[] =  $part[1];
-				$comments[] = $part[9].'&nbsp;';
 			}
 			
-		?>
+			$av = array_sum($values) / count($values);
+			if ( $av == 0 ) continue;
+				
+			$avg[] = $av;
+			$dates[] =  $part[1];
+			$comments[] = $part[9].'&nbsp;';
+		}
 		
-		<br/><hr class="review-line" />
-		<div class="sub-title content" align="center">Οι αξιολογήσεις των φιλοξενούμενών μας</div><br/>
-
-		
-		<?php 
-			foreach ($dates as $k=>$v):
-				$total = (int) $avg[$k];
-				$star = '';
-				for($i = 0; $i < $total; $i++){
-					$star .= '<i class="fa fa-star"></i>';
-				}
-				$total = (float) $avg[$k];
-				if ( strlen($total) > 1 ){
-					$star .= '<i class="fa fa-star-half-o"></i>';
-				}
-		?>
-			<br/>
-			<div class="row review-container read">
-				<div class="col-xs-2 col-xs-offset-2 review-date"><?=$v?></div>
-				<div class="col-xs-5 review-comment"><?=$comments[$k]?></div>
-				<div class="col-xs-3 review-star"><?=$star?></div>
-			</div>
-		<?php endforeach; ?>
-
+	?>
 	
-	<?php include_once 'footer.php'; ?>
+	<div class="row reviews-bottom">
+	
+		<div class="col-xs-12">
+
+			<hr class="review-line" />
+			<div class="sub-title content" align="center">Οι αξιολογήσεις των φιλοξενούμενών μας</div><br/>
+			
+				<?php 
+				foreach ($dates as $k=>$v):
+					$total = (int) $avg[$k];
+					$star = '';
+					for($i = 0; $i < $total; $i++){
+						$star .= '<i class="fa fa-star"></i>';
+					}
+					$total = (float) $avg[$k];
+					if ( strlen($total) > 1 ){
+						$star .= '<i class="fa fa-star-half-o"></i>';
+					}
+				?>
+				
+				<br/>
+				<div class="row review-container read">
+					<div class="col-xs-2 col-xs-offset-2 review-date"><?=$v?></div>
+					<div class="col-xs-5 review-comment"><?=$comments[$k]?></div>
+					<div class="col-xs-3 review-star"><?=$star?></div>
+				</div>
+			<?php endforeach; ?>
+
+		</div>
+	
+	</div>
+		
+		
+		<div class="row reviews-footer">
+			<div class="col-xs-12">
+			<?php include_once 'footer.php'; ?>
+			</div>
+		</div>
 
 </div>
 
