@@ -83,7 +83,7 @@
 			<div class="row review-label" id="r5">
 			<input name="rv6" type="hidden" />
 				<div class="col-xs-3">
-					<i class="fa fa-info-circle fa-2x"></i>
+					<img id="hotel-services" src="images/services.png">
 					<span class="content"></span>
 				</div>
 				<div class="col-xs-9">

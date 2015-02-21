@@ -53,8 +53,8 @@
 		<a target="_blank" href="https://el-gr.facebook.com/pages/Hotel-Rio-Athens/163973293694518"><img src="images/social-facebook.png" /></a>
 		<img src="images/social-twitter.png" />
 		<img src="images/social-google.png" />
-		<img src="images/social-linkedin.png" />
 		<img src="images/social-pinit.png" />
+		<img src="images/social-instagram.png" />
 	</div>	
 </div>
 

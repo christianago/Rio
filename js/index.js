@@ -389,8 +389,6 @@ function language(l, p){
 			 break;
 		 }
 	 }
-	 
-	 //console.log(key);
 	 //key = 0;
 	 
 	 //ALTER LINKS ON LANGUAGE SWITCH
@@ -457,18 +455,18 @@ function language(l, p){
 	 }
 	 
 
+	 console.info('KEY '+key);
+	 
 	 $.getJSON('languages.json', function(data){
 		 
 		 if ( p == 'accomodation.php' ){ //accomodation
-			 if ( data.accomodation[key] == undefined ){ key = 1; }
+			 //if ( data.accomodation[key] == undefined ){ key = 1; }
 				 
 			 var li = data.accomodation[key].content_list.split(',');
 			 var list = '', list2 = '';
 			 var divide = 10;
 			 
-			 if ( key == 0 ){
-				 divide = 12;
-			 }
+			 if ( key == 0 ){ divide = 12; }
 			 
 			 $(li).each(function(k, v){
 				 if ( k < divide ){
@@ -483,12 +481,12 @@ function language(l, p){
 			 
 			 $('title').text(data.accomodation[key].title);
 			 $('div.content-title').text(data.accomodation[key].content_title);
-			 $('div.content').text(data.accomodation[key].content);
+			 $('div.content').html(data.accomodation[key].content.replace(/\s/g,' '));
 			 
 			 //content-sub-title
 			 var ct = data.accomodation[key].content_sub_title.split(',');
 			 $('div.content-sub-title').each(function(k, v){
-				 $(this).text(ct[k]);
+				 $(this).html(ct[k]);
 			 }); 
 			 
 			 //sub-content-1
@@ -518,7 +516,7 @@ function language(l, p){
 			 
 			 
 		 } else if ( p == 'booking-info.php' ){ //booking-info
-			 if ( data.booking_info[key] == undefined ){ key = 1; }
+			 //if ( data.booking_info[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.booking_info[key].title);
 			 
@@ -545,17 +543,17 @@ function language(l, p){
 			 $('.content:eq(4)').html(extra_services);
 			 
 		 } else if ( p == 'photo-gallery.php' ){ //photo-gallery
-			 if ( data.photo_gallery[key] == undefined ){ key = 1; }
+			 //if ( data.photo_gallery[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.photo_gallery[key].title);
 			 $('div.content-title').text(data.photo_gallery[key].content_title);
 			 
 		 } else if ( p == 'travel-services.php' ){ //travel-services
-			 if ( data.travel_services[key] == undefined ){ key = 1; }
+			 //if ( data.travel_services[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.travel_services[key].title);
 			 $('div.content-title').text(data.travel_services[key].content_title);
-			 $('div.content').html(data.travel_services[key].content.split("|").join("<br/><br/>"));
+			 $('div.content').html(data.travel_services[key].content.split("|").join("<br/><br/>").replace(/\s/g,' '));
 			 
 			//content-image-title
 			 var ct = data.travel_services[key].content_image_title.split(',');
@@ -564,7 +562,7 @@ function language(l, p){
 			 }); 
 			 
 		 } else if ( p == 'policy.php' ){ //policy
-			 if ( data.policy[key] == undefined ){ key = 1; }
+			 //if ( data.policy[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.policy[key].title);
 			 
@@ -579,7 +577,7 @@ function language(l, p){
 			 $('div.content:eq(3)').html(data.policy[key].content_4.split("|").join("<br/><br/>"));
 			 
 		 } else if ( p == 'contact.php' ){ //contact
-			 if ( data.contact[key] == undefined ){ key = 1; }
+			 //if ( data.contact[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.contact[key].title);
 			 
@@ -591,15 +589,16 @@ function language(l, p){
 			 $('div.content:eq(0)').html(data.contact[key].content_1.split("|").join("<br/>"));
 			 
 			 var c = data.contact[key].content_2.split(',');
-			 console.log(c);
 			 $('.content:gt(0)').each(function(k, v){
 				 $(this).text(c[k]);
 			 }); 
 			 
+			 $('input.content:last').val(c[c.length-2]);
+			 
 			 //$('input.content:last').val(c[c.length-1]);
 			 
 		 } else if ( p == 'reviews.php' ){ //reviews
-			 if ( data.reviews[key] == undefined ){ key = 1; }
+			 //if ( data.reviews[key] == undefined ){ key = 1; }
 			 
 			 $('title').text(data.reviews[key].title);
 			 
@@ -612,7 +611,7 @@ function language(l, p){
 			 $('.content:last').text(c[c.length-1]);
 			 
 		 } else if ( p == 'bar-restaurant.php' ){ //bar-restaurant
-			 if ( data.facilities[key] == undefined ){ key = 1; }
+			 //if ( data.facilities[key] == undefined ){ key = 1; }
 				 
 			 $('title').text(data.facilities[key].title);
 			 $('div.content-title').text(data.facilities[key].content_title);
@@ -626,17 +625,16 @@ function language(l, p){
 			 
 			 ct = data.facilities[key].content.split('#');
 			 $('div.content').each(function(k){
-				 $(this).html(ct[k].split("|").join("<br/>"));
+				 //console.info(ct[k]);
+				 $(this).html(ct[k].replace(/\s/g,' ').split("|").join("<br/>"));
 			 });
 			 
 			
 		 } else{ //index
 			 if ( data.index[key] == undefined ){ key = 1; }
-			 
 			 $('title').text(data.index[key].title);
 			 $('div.content-title').text(data.index[key].content_title);
 			 $('div.content').html(data.index[key].content.split("|").join("<br/><br/>"));
-			 
 		 }
 
 		 
@@ -664,13 +662,13 @@ function language(l, p){
 		 var m = data.general[key].modal_map_title.split(',');
 		 $('#they-recommend-us').text(m[0]);
 		 $('#map-directions').text(m[1]);
-		 $('.modal-map-title').each(function(k, v){
+		 $('.modal-map-title').each(function(k){
 			 $(this).text(m[k+2]);
 		 });
 		 
 		 //modal-map-content
-		 m = data.general[key].modal_map_content.split('#');
-		 $('.modal-map-content').each(function(k, v){
+		 var m = data.general[key].modal_map_content.split('#');
+		 $('.modal-map-content').each(function(k){
 			 //if ( k == 1 ) return false;
 			 var mk = m[k].split("|").join("<br/><br/>");
 			 $(this).html('<li>'+mk+'</li>');
@@ -684,7 +682,7 @@ function language(l, p){
 
 		 //reservation items
 		 var ri = data.general[key].reservation_item.split(',');
-		 $('div.reservation-item').each(function(k, v){
+		 $('div.reservation-item').each(function(k){
 			 $(this).text(ri[k]); 
 		 }); 
 		 $('#check-availability').val(ri[ri.length-1]);

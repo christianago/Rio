@@ -1,3 +1,5 @@
 <?php
 
-file_put_contents('languages.json', $_POST['data']);
+//$data = str_replace('&nbsp;', '', $_POST['data']);
+$data = $_POST['data'];
+file_put_contents('languages.json', $data);

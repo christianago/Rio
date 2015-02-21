@@ -181,7 +181,6 @@
 			include_once 'slides-2.php';
 		}
 		?>
-		
 		<div class="row lezanta-container">
 			<div id="lezanta">
 				<i class="fa fa-circle"></i>
@@ -189,26 +188,18 @@
 				<i class="fa fa-circle"></i>
 				in the center of Athens
 			</div>
-			
 			<div id="lezanta-2">Hotel RIO Athens is recommended in many international tourist guide books around the world not only for holidays stays, but also for business trips</div>
-			
 			<div class="row stand">&nbsp;</div>
-			
 		</div>
 		
 		<div class="row">
 			<div class="col-xs-1 nav-container" id="nav-container"></div>
 		</div>
-		
 	</div>
-	
 	
 	<?php 
 	if ( strpos($_SERVER["REQUEST_URI"], 'reviews.php') !== FALSE )
 	include_once 'reviews_inc.php'; ?>
 	
 </div>
-	
-	
-	
 	
