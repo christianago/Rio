@@ -12,10 +12,11 @@
 
 </head>
 <body>
-
+<img id="happy-hour" src="images/happy.png"/>
 <?php include_once 'modals.php'; ?>
 
 <div class="container">
+
 
 	<div class="row the-header">
 		<div class="col-xs-12">
@@ -102,6 +103,7 @@
 </div>
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.lazyload.js"></script>
 	<script src="js/date.js"></script>

@@ -208,7 +208,7 @@ embed{
 	padding-left: 5px;
 	text-align: left;
 	font-family: Trebuchet MS, sans-serif;
-	font-size: 13pt;
+	font-size: 11pt;
 	display: none;
 	white-space: normal;
 	letter-spacing: 2px;
@@ -912,6 +912,9 @@ input#check-availability{
 	margin-left: 10px;
 	font-weight: bold;
 	color: #000;
+	position: absolute;
+	left : 40px;
+	
 }
 
 .review-label .fa-star-o, .review-label .fa-star{
@@ -1131,10 +1134,10 @@ input#check-availability{
 	left: 5%;
 	padding: 15px;
 	border-width: 27px;
-	-moz-border-image: url(../images/wood.png) 27 repeat;
+	/*-moz-border-image: url(../images/wood.png) 27 repeat;
 	-webkit-border-image: url(../images/wood.png) 27 repeat;
 	-o-border-image: url(../images/wood.png) 27 repeat;
-	border-image: url(../images/wood.png) 27 fill repeat;
+	border-image: url(../images/wood.png) 27 fill repeat;*/
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    5px 5px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         5px 5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -1149,6 +1152,14 @@ input#check-availability{
 	width: 22px;
 }
 
+#happy-hour{
+	display: none;
+	z-index: 9999999;
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	width: 280px;
+}
 
 
 
@@ -1308,10 +1319,6 @@ input#check-availability{
 
 
 @media only screen and (max-width : 1024px) {
-	
-	#lezanta-2{
-		font-size: 12pt;
-	}
 	
 	.reviews{
 		top: -17%;

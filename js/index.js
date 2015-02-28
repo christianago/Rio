@@ -38,7 +38,6 @@ $(window).resize(function(){
 
 
 
-//MAPS
 $(window).load(function(){
 	 var myURL = document.URL.split('/');
 	 myURL = myURL[myURL.length-1];
@@ -48,20 +47,24 @@ $(window).load(function(){
 			 geolocation(1, 17); 
 			 google.maps.event.trigger(map, 'resize');
 		 } catch(e){}
-	 } else{ 
+	 } else{
 		 try{
 			 geolocation(3, 17);
 			 google.maps.event.trigger(map, 'resize');
 		 } catch(e){}
 	 }
 	 
+	 if ( myURL == 'bar-restaurant.php' ){
+		 $('#happy-hour').fadeIn(700);
+		 setTimeout(function(){ $('#happy-hour').effect('blind', null, 2000); }, 5000);
+	 }
+	 
 });
-//<-MAPS
 
 
 $(document).ready(function(){
 
-	$("img").lazyload();
+	//$("img").lazyload();
 	
 	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'bar-restaurant.php', 'travel-services.php', 'contact.php', 'reviews.php', 'map.php', 'policy.php'];
 	var myURL = document.URL.split('/');
@@ -94,6 +97,12 @@ $(document).ready(function(){
 		 $('#lezanta-2').show();
 	 } else if ( myURL == 'map.php' ){
 		 $('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
+	 } else if ( myURL == 'photo-gallery.php' ){
+		 $('#nav-container').hide();
+	 }
+	 
+	 if ( myURL != 'bar-restaurant.php' ){
+		 $('#happy-hour').hide();
 	 }
 	
 	
@@ -687,6 +696,20 @@ function language(l, p){
 		 }); 
 		 $('#check-availability').val(ri[ri.length-1]);
 		 
+		 
+		 //stuff
+		 var st = data.general[key].stuff.split('#');
+		 $('#join-social-media-literal').text(st[0]);
+		 $('#call-now-literal').text(st[1]);
+		 $('#lezanta-2').text(st[2]);
+		 
+		 
+		 //CHINESE TOP MENU -> MORE PADDING
+		 if ( key == 7 ){
+			 $('div.header-hover').css('padding-left', '15px').css('padding-right', '15px');
+		 } else{
+			 $('div.header-hover').css('padding-left', '5px').css('padding-right', '5px');
+		 }
 		 
 		 $('body').show();
 
