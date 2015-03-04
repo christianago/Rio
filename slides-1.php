@@ -1,4 +1,7 @@
+
+	<img src="" /> 
 	<img src="images/rio-above.jpg" /> 
+	<img src="images/salon1.jpg" /> 
 	<img src="images/rio_athens1.jpg" /> 
 	<img src="images/pedestrian.jpg" /> 
 	<img src="images/lobby3.jpg" /> 
@@ -14,6 +17,7 @@
     <img src="images/bat bottles.jpg" /> 
     <img src="images/cafe.jpg" /> 
     <img src="images/flowers1.png" />
+    <img src="images/salon3.jpg" /> 
     <img src="images/bar.jpg" /> 
     <img src="images/chair.jpg" /> 
     <img src="images/chairs.jpg" /> 
@@ -22,6 +26,7 @@
     <img src="images/fountane.jpg" /> 
     <img src="images/lobby1.jpg" /> 
     <img src="images/lobby2.jpg" /> 
+    <img src="images/salon4.jpg" /> 
     <img src="images/pedestrian-restaurant.jpg" /> 
     <img src="images/quad triple.jpg" /> 
     <img src="images/quad.jpg" /> 
@@ -30,9 +35,11 @@
     <img src="images/bar3.jpg" /> 
     <img src="images/side.jpg" /> 
     <img src="images/booking_1.jpg" /> 
+    <img src="images/salon2.jpg" /> 
     <img src="images/booking_2.jpg" /> 
     <img src="images/booking_3.jpg" /> 
     <img src="images/booking_4.jpg" /> 
+    <img src="images/salon6.jpg" /> 
     <img src="images/booking_5.jpg" /> 
     <img src="images/booking_6.jpg" /> 
     <img src="images/booking_7.jpg" /> 
@@ -45,4 +52,5 @@
     <img src="images/restaurand.jpg" />  
     <img src="images/hotel-rio-sidewalk-cafe.jpg" />  
     <img src="images/rest1.jpg" /> 
+    <img src="images/salon5.jpg" /> 
     <img src="images/flowers2.png" /> 
