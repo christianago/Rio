@@ -2,6 +2,8 @@ var map = null, map2 = null, map3 = null;
 var currentLanguage = localStorage.getItem('language');
 var reviewLock = [false, false, false, false, false];
 var startDate = '', endDate = '';
+var mouseY = 0;
+var happyHourTimer = null;
 
 
 jQuery.fn.center = function () {
@@ -38,6 +40,14 @@ $(window).resize(function(){
 
 
 
+
+document.addEventListener('mousemove', function(e){ 
+	mouseY = e.clientY || e.pageY + 200;
+	$('#happy-hour').center();
+}, false);
+
+
+
 $(window).load(function(){
 	 var myURL = document.URL.split('/');
 	 myURL = myURL[myURL.length-1];
@@ -55,8 +65,10 @@ $(window).load(function(){
 	 }
 	 
 	 if ( myURL == 'bar-restaurant.php' ){
-		 $('#happy-hour').fadeIn(700);
-		 setTimeout(function(){ $('#happy-hour').effect('blind', null, 2000); }, 5000);
+		 $('#happy-hour').fadeIn(500, function(){
+			 happyHourTimer = setTimeout(function(){ $('#happy-hour').effect('blind', null, 2000); }, 10000);
+		 });
+		 
 	 }
 	 
 });
@@ -90,6 +102,15 @@ $(document).ready(function(){
 		 $('html, body').animate({scrollTop : 0}, 500);
 	 });
 	//<-BACKTOTOP
+	 
+	 
+	 //HAPPY HOUR
+	 $(this).on('mouseenter', '#happy-hour', function(e){
+		 clearTimeout(happyHourTimer);
+	 }).on('mouseleave', '#happy-hour', function(e){
+		 happyHourTimer = setTimeout(function(){ $('#happy-hour').effect('blind', null, 2000); }, 10000);
+	 });
+	 //<-HAPPY HOUR
 	
 	 
 	 if ( myURL == 'reviews.php' ){
@@ -98,7 +119,7 @@ $(document).ready(function(){
 	 } else if ( myURL == 'map.php' ){
 		 $('div.book-slide, div.footer-flash, div.footer-social, div.footer-2, div.divider:last').hide();
 	 } else if ( myURL == 'photo-gallery.php' ){
-		 $('#nav-container').hide();
+		 $('#nav-container, .gallery-container img:first, div.last-minute-container').hide();
 	 }
 	 
 	 if ( myURL != 'bar-restaurant.php' ){

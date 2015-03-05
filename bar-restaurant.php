@@ -52,7 +52,8 @@
 							<img src="images/donuts.png"/>
 							<img src="images/jack.png"/>
 							<img src="images/cocktail.png"/>
-							<img src="images/wine.jpg"/>
+							<img src="images/red-wine.png"/>
+							<img src="images/white-wine.png"/>
 							<img src="images/beer.png"/>
 							<img src="images/guinness.png"/>
 							<img id="force" src="">
