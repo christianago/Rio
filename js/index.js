@@ -2,7 +2,6 @@ var map = null, map2 = null, map3 = null;
 var currentLanguage = localStorage.getItem('language');
 var reviewLock = [false, false, false, false, false];
 var startDate = '', endDate = '';
-var mouseY = 0;
 var happyHourTimer = null;
 
 
@@ -10,6 +9,12 @@ jQuery.fn.center = function () {
     this.css("position","absolute");
     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +  $(window).scrollTop()) + "px");
     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) +  $(window).scrollLeft()) + "px");
+    return this;
+}
+
+jQuery.fn.centerHappyClose = function () {
+	this.css('top', ($('#happy-hour').position().top-10));
+    this.css('left', ($('#happy-hour').position().left+270));
     return this;
 }
 
@@ -40,10 +45,11 @@ $(window).resize(function(){
 
 
 
-
 document.addEventListener('mousemove', function(e){ 
-	mouseY = e.clientY || e.pageY + 200;
-	$('#happy-hour').center();
+	if ( $('#happy-hour').length ){
+		$('#happy-hour').center();
+		$('.close-happy-hour').centerHappyClose();
+	}
 }, false);
 
 
@@ -65,8 +71,8 @@ $(window).load(function(){
 	 }
 	 
 	 if ( myURL == 'bar-restaurant.php' ){
-		 $('#happy-hour').fadeIn(500, function(){
-			 happyHourTimer = setTimeout(function(){ $('#happy-hour').effect('blind', null, 2000); }, 10000);
+		 $('#happy-hour, .close-happy-hour').fadeIn(500, function(){
+			 happyHourTimer = setTimeout(function(){ $('#happy-hour, .close-happy-hour').effect('blind', null, 2000); }, 10000);
 		 });
 		 
 	 }
@@ -78,9 +84,24 @@ $(document).ready(function(){
 
 	//$("img").lazyload();
 	
+	
+	//FORM COSMORES
 	$("#frmSearchCosmoresBooking").cosmoresbooking({
-		"hotelUrl":"https://riohotel.cosmores.com","numberOfMonths":1,"siteId":1095,"firstDay":0,"dateFormat":"dd/mm/yy","showToday":true,"checkInDateFailureMessage":"Check-in date field is required","checkInDateName":"check_in_date_cosmores","checkOutDateFailureMessage":"Check-out date field is required","checkOutDateName":"check_out_date_cosmores","checkOutMinDate":1,"adultsName":"adults_cosmores","roomsName":"rooms_cosmores","childrenName":"children_cosmores","buttonName":"button_cosmores","childrenCancelText":"Cancel","childrenOKText":"OK" ,"childrenText":"Child","childrenHeaderText":"Age(s) of children.","openNewWindow":0,"enableDays":[]
+		"hotelUrl":"https://riohotel.cosmores.com","numberOfMonths":1,"siteId":1095,"firstDay":1,"dateFormat":"dd-mm-yy","showToday":true,"checkInDateFailureMessage":"Check-in date field is required","checkInDateName":"check_in_date_cosmores","checkOutDateFailureMessage":"Check-out date field is required","checkOutDateName":"check_out_date_cosmores","checkOutMinDate":1,"adultsName":"adults_cosmores","roomsName":"rooms_cosmores","childrenName":"children_cosmores","buttonName":"button_cosmores","childrenCancelText":"Cancel","childrenOKText":"OK" ,"childrenText":"Child","childrenHeaderText":"Age(s) of children.","openNewWindow":0,"enableDays":[]
 	});	
+	
+	
+	$(this).on('mouseenter mousedown click', '#gotoCosmores', function(e){
+		var temp = $('input.datepicker:first').val().split("/");
+		var d1 = temp[2] +'-'+ temp[1] +'-'+ temp[0];
+		temp = $('input.datepicker:last').val().split("/");
+		var d2 = temp[2] +'-'+ temp[1] +'-'+ temp[0];
+		var val = 'https://riohotel.cosmores.com/?SITE=1095&CHECK_IN_DATE='+d1+'&CHECK_OUT_DATE='+d2+'&lan=' + currentLanguage.toLowerCase();
+		$('#gotoCosmores').attr('href', val);
+		//console.log(d1, d2);
+	});
+	//<-FORM COSMORES
+	
 	
 	var pages = ['index.php', 'accomodation.php', 'booking-info.php', 'photo-gallery.php', 'bar-restaurant.php', 'travel-services.php', 'contact.php', 'reviews.php', 'map.php', 'policy.php'];
 	var myURL = document.URL.split('/');
@@ -114,6 +135,11 @@ $(document).ready(function(){
 	 }).on('mouseleave', '#happy-hour', function(e){
 		 happyHourTimer = setTimeout(function(){ $('#happy-hour').effect('blind', null, 2000); }, 10000);
 	 });
+	 $(this).on('click', '.close-happy-hour', function(e){
+		 clearTimeout(happyHourTimer);
+		 $(this).hide();
+		 $('#happy-hour').hide();
+	 })
 	 //<-HAPPY HOUR
 	
 	 
@@ -195,7 +221,6 @@ $(document).ready(function(){
 	//DATEPICKER//
 	$('input.datepicker').datepicker({
 		autoclose: true,
-		startDate: '+1d',
 		orientation: 'top',
 		todayHighlight: true
 	});
@@ -234,7 +259,6 @@ $(document).ready(function(){
 			 autoclose: true,
 			 startDate: sd,
 			 orientation: 'top',
-			 todayHighlight: true
 		 });
 	 });
 	 
@@ -308,9 +332,9 @@ $(document).ready(function(){
 
 	 
 	 //AVAILABILITY BUTTON
-	 $(this).on('mouseenter', '#button_cosmores', function(e){
+	 $(this).on('mouseenter', '#check-availability', function(e){
 		 $(this).addClass('text-hover');
-	 }).on('mouseleave', '#button_cosmores', function(e){
+	 }).on('mouseleave', '#check-availability', function(e){
 		 $(this).removeClass('text-hover');
 	 });
 	 //<-AVAILABILITY BUTTON
@@ -719,7 +743,7 @@ function language(l, p){
 		 $('div.reservation-item').each(function(k){
 			 $(this).text(ri[k]); 
 		 }); 
-		 $('#button_cosmores').val(ri[ri.length-1]);
+		 $('#check-availability').val(ri[ri.length-1]);
 		 
 		 
 		 //stuff
@@ -737,8 +761,6 @@ function language(l, p){
 		 }
 		 
 		 $('body').show();
-		 
-		 $('#lan_cosmores').val(langs[key].toLowerCase());
 
 	 });
 
@@ -825,6 +847,7 @@ function getDate(plus){
 	if( mm < 10 ) {
 	    mm = '0'+mm;
 	} 
+	//today = dd+'-'+mm+'-'+yyyy;
 	today = dd+'/'+mm+'/'+yyyy;
 	return today;
 }

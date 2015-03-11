@@ -197,7 +197,7 @@ embed{
 	height: 29px;
 	width: 100%;
 	background-size: 90px;
-	z-index: 999999;
+	z-index: 200;
 }
 
 #lezanta-2{
@@ -227,6 +227,7 @@ embed{
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	z-index:10000;
 }
 
 .map-close{
@@ -505,7 +506,7 @@ input#review-us{
 	border: 1px solid #8B0000;
 }
 
-input#button_cosmores{
+input#check-availability{
 	cursor: pointer !important;
 	font-size: 12pt;
 	width: 210px;
@@ -605,7 +606,7 @@ input#button_cosmores{
 }
 
 .footer-2{
-	padding-top: 20px;
+	//padding-top: 20px;
 	color: #000;
 	font-size: 9pt;
 	background: rgba(255, 239, 213, .4);
@@ -1155,10 +1156,20 @@ input#button_cosmores{
 
 #happy-hour{
 	display: none;
-	z-index: 9999999;
+	z-index: 9999;
 	position: absolute;
 	left: 40%;
 	width: 280px;
+}
+
+.close-happy-hour{
+	display: none;
+	position: absolute;
+	cursor: pointer;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	z-index: 99999;
 }
 
 

@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<img class="close-happy-hour" src="images/close-happy-hour.png" />
 <img id="happy-hour" src="images/happy.png"/>
 <?php include_once 'modals.php'; ?>
 

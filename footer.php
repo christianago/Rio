@@ -48,13 +48,29 @@
 
 
 <div class="row footer-social">
-	<div class="col-xs-12" align="center">												
+
+
+	<div class="col-xs-2">
+	<u>Hotel Rio Athens GDS Hotel Codes</u>
+	<br/><br/>
+    <b>Amadeus GDS:</b> SC ATH736
+    <br/>
+    <b>Galileo/Apollo GDS:</b>  SC 59546
+    <br/>
+    <b>Sabre GDS:</b>  SC 052648
+    <br/>
+    <b>WorldSpan GDS:</b>  SC 736
+    <br/>
+    <b>Reps:</b>  Euro-Connection
+	</div>
+	
+	<div class="col-xs-8" align="center">												
 		<b id="join-social-media-literal">Join us on  social media</b>
 		<a target="_blank" href="https://el-gr.facebook.com/pages/Hotel-Rio-Athens/163973293694518"><img src="images/social-facebook.png" /></a>
 		<img src="images/social-twitter.png" />
 		<img src="images/social-google.png" />
 		<img src="images/social-pinit.png" />
-		<img src="images/social-instagram.png" />
+		<a target="_blank" href="https://instagram.com/rio_athens/"><img src="images/social-instagram.png" /></a>
 	</div>	
 </div>
 

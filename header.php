@@ -112,7 +112,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<select class="form-control select-kids" name="rooms_cosmores" id="rooms_cosmores">
+							<select class="form-control select-kids">
 							    <option value="-1">select</option>
 								<option value="0">0</option>
 								<option value="1">1</option>
@@ -125,7 +125,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<select class="form-control select-rooms">
+							<select class="form-control select-rooms" name="rooms_cosmores" id="rooms_cosmores">
 							    <option value="1">1</option>
 							    <option value="2">2</option>
 							    <option value="3">3</option>
@@ -141,7 +141,14 @@
 					
 					<div class="row book-field">
 						<div class="col-xs-12" align="center">
-							<input class="form-control btn btn-primary reservation-item" type="submit" id="button_cosmores" name="button_cosmores" value="Έλεγχος διαθεσιμότητας" />
+
+						<input type="hidden" name="button_cosmores" id="button_cosmores" />
+						
+						<a id="gotoCosmores" href="https://riohotel.cosmores.com/?SITE=1095">
+						
+							<input class="form-control btn btn-primary reservation-item" id="check-availability" type="button" value="Έλεγχος διαθεσιμότητας" />
+						</a>
+						
 						</div>
 					</div>
 					
