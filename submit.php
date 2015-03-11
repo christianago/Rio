@@ -10,15 +10,13 @@ $data = $_POST;
 $emailFrom = $data['email'];
 $emailTo = "info@hotel-rio.gr";
 #$emailTo = "chrilamp@gmail.com";
-$domain = 'http://kris-demo.eu/';
+$domain = 'www.hotel-rio.gr/';
 
-$headers = array("Content-Type: text/html; charset=UTF-8");
-$headers .= "Organization: Sender Organization\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/plain; charset=utf-8\r\n";
-$headers .= "X-Priority: 3\r\n";
-$headers .= "From: $emailFrom" . "\r\n";
-$headers .= "X-Mailer: PHP". phpversion() ."\r\n";
+$header = "Content-Type: text/html; charset=utf-8\r\n"; 
+$header .= "MIME-Version: 1.0\r\n";
+$header .= "X-Priority: 1\r\n"; 
+$header .= "From: $emailFrom \r\n";
+$header.= "X-Mailer: PHP". phpversion() ."\r\n";
 
 if ( isset($_POST['email-us']) ){
 	
@@ -55,7 +53,6 @@ if ( isset($_POST['email-us']) ){
 	}
 	
 	header('Location: contact.php');
-	exit(0);
 	
 	
 } else if ( isset($_POST['review-us']) ){
@@ -65,17 +62,42 @@ if ( isset($_POST['email-us']) ){
 	//print_r($data);
 	
 	$file = "rv";
-	$review = '0#'.date('Y/m/d').'#'.$data['reserveid'].'#'.$data['rv1'].'#'.$data['rv2'].'#'.$data['rv3'].'#'.$data['rv4'].'#'.$data['rv5'].'#'.$data['comments'];
-	file_put_contents($file, $review."\r\n", FILE_APPEND);
-	
 	$linecount = 0;
 	$handle = fopen($file, "r");
 	while(!feof($handle)){
 		$line = fgets($handle);
 		$linecount++;
 	}
-	$linecount--;
+	//$linecount--;
 	fclose($handle);
+	
+	
+	if ( !isset($data['rv1']) || $data['rv1'] == '' || $data['rv1'] == ' ' ){
+		$rv1 = 5;
+	}
+	
+	if ( !isset($data['rv2']) || $data['rv2'] == '' || $data['rv2'] == ' ' ){
+		$rv2 = 5;
+	}
+	
+	if ( !isset($data['rv3']) || $data['rv3'] == '' || $data['rv3'] == ' ' ){
+		$rv3 = 5;
+	}
+	
+	if ( !isset($data['rv4']) || $data['rv4'] == '' || $data['rv4'] == ' ' ){
+		$rv4 = 5;
+	}
+	
+	if ( !isset($data['rv5']) || $data['rv5'] == '' || $data['rv5'] == ' ' ){
+		$rv5 = 5;
+	}
+	
+	if ( !isset($data['rv6']) || $data['rv6'] == '' || $data['rv6'] == ' ' ){
+		$rv6 = 5;
+	}
+	
+	$review = '0#'.date('Y/m/d').'#123456789#'.$rv1.'#'.$rv2.'#'.$rv3.'#'.$rv4.'#'.$rv5.'#'.$rv6.'#'.$data['comments']."\n";
+	file_put_contents($file, $review, FILE_APPEND);
 	
 	$subject = "Αξιολόγηση του ξενοδοχείου μέσω της ιστοσελίδας";
 	
@@ -94,9 +116,4 @@ if ( isset($_POST['email-us']) ){
 	
 	header('Location: reviews.php');
 	$_SESSION['message'] = "2";
-	exit(0);
 }
-
-header('Location: index.php');
-
-?>

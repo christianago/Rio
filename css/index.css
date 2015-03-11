@@ -505,7 +505,8 @@ input#review-us{
 	border: 1px solid #8B0000;
 }
 
-input#check-availability{
+input#button_cosmores{
+	cursor: pointer !important;
 	font-size: 12pt;
 	width: 210px;
 	height: 40px;

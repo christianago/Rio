@@ -41,6 +41,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="http://www.cosmores.com/plugins/js/cosmoresbooking.search.plugin.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

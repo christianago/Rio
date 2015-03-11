@@ -181,6 +181,8 @@
 
 <div class="row divider"></div>
 
+<!-- Hotel, hotels, hotel in Athens, hotel  in Greece, hotels in athens Greece, Athens Greece, accommodation, downtown Athens, tourist guide, travel to Athens, travel to Greece, Athens 2004, travel agency, rooms to let, holidays Athens, conferences, acropolis, center of Athens, entertainment, ξενοδοχείο, ξενοδοχεία, ξενοδοχείο στην Αθήνα, διαμονή Αθήνα, δωμάτιο, δωμάτια, διασκέδαση, τουριστικό γραφείο, ταξίδι!-->
+
 <div class="row copyright">
 	<div class="col-xs-5 col-xs-offset-5 col-lg-offset-5 copyright">2015 All rights reserved | Copyright &copy; RIO Hotel Athens</div>
 </div>

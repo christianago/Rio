@@ -1,4 +1,3 @@
-
 <audio id="myaudio" loop preload="auto">
   <source src="audio/ChariotsofFire.mp3" type="audio/ogg">
   <source src="audio/ChariotsofFire.mp3" type="audio/mpeg">
@@ -56,20 +55,24 @@
 			<div class="row languages">
 				<div class="col-xs-12">
 					<img class="flag" title="EN" src="images/uk.png" />
-					<img class="flag" title="EL" src="images/gr.png" />
-					<img class="flag" title="FR" src="images/fr.png" />
-					<img class="flag" title="SP" src="images/es.png" />
-					<img class="flag" title="IT" src="images/it.png" />
 					<img class="flag" title="DE" src="images/de.png" />
+					<img class="flag" title="IT" src="images/it.png" />
+					<img class="flag" title="SP" src="images/es.png" />
+					<img class="flag" title="FR" src="images/fr.png" />
+					<img class="flag" title="EL" src="images/gr.png" />
 					<img class="flag" title="RU" src="images/ru.png" />
-					<img class="flag" title="CN" src="images/cn.png" />
 					<img class="flag" title="BR" src="images/br.png" />
+					
+					<img class="flag" title="CN" src="images/cn.png" />
 					<img class="flag" title="PL" src="images/pl.png" />
 					<img class="flag" title="SE" src="images/se.png" />
 				</div>
 			</div>
 			
 			
+			<form name="frmSearchCosmoresBooking" id="frmSearchCosmoresBooking" method="get" target="_blank">
+			<input type="hidden" name="lan_cosmores" id="lan_cosmores" value="EN" />
+				
 			<div class="row book-online">
 				<div class="col-xs-12 book-online-sub">
 					<div class="book-online-literal reservation-item"></div>
@@ -77,7 +80,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<input id="start-date" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
+							<input type="text" id="check_in_date_cosmores" name="check_in_date_cosmores" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 						</div>
 						<div class="col-xs-1 calendar-item">
 							<i class="fa fa-calendar"></i>
@@ -87,7 +90,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<input id="end-date" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
+							<input type="text" id="check_out_date_cosmores" name="check_out_date_cosmores" readonly="readonly" class="datepicker form-control" data-date-format="dd/mm/yyyy" />
 						</div>
 						<div class="col-xs-1 calendar-item">
 							<i class="fa fa-calendar"></i>
@@ -97,7 +100,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<select class="form-control select-adults">
+							<select class="form-control select-adults"  name="adults_cosmores" id="adults_cosmores">
 							    <option value="1">1</option>
 							    <option value="2">2</option>
 							    <option value="3">3</option>
@@ -109,7 +112,7 @@
 					<div class="row book-field">
 						<div class="col-xs-4 reservation-item"></div>
 						<div class="col-xs-4">
-							<select class="form-control select-kids">
+							<select class="form-control select-kids" name="rooms_cosmores" id="rooms_cosmores">
 							    <option value="-1">select</option>
 								<option value="0">0</option>
 								<option value="1">1</option>
@@ -138,18 +141,19 @@
 					
 					<div class="row book-field">
 						<div class="col-xs-12" align="center">
-							<input class="form-control btn btn-primary reservation-item" type="submit" id="check-availability" value="Έλεγχος διαθεσιμότητας" />
+							<input class="form-control btn btn-primary reservation-item" type="submit" id="button_cosmores" name="button_cosmores" value="Έλεγχος διαθεσιμότητας" />
 						</div>
 					</div>
 					
 				</div>
-				
 				
 				<div class="col-xs-12" align="center">
 					<img id="best-price" src="images/Best-Price-Guarantee.png" />
 				</div>
 				
 			</div>
+			
+			</form>
 			
 		</div>
 		
