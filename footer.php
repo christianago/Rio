@@ -7,7 +7,7 @@
 		<div class="googleMap" id="googleMap"></div>
 	</div>
 
-	<div class="col-xs-4 col-md-2 col-lg-3 contact-details">												
+	<div class="col-xs-4 col-md-3 col-lg-3 contact-details">												
 		<b class="cd"></b>
 		<br/>
 		<span class="cd"></span>
@@ -37,6 +37,7 @@
 	
 	<div class="col-xs-4 col-md-5 col-lg-4 markiza-recommended" align="center">		
 		<div id="they-recommend-us"></div><br/>	
+		<img src="images/rio-award.png">
 		<img src="images/zoover.png">
 		<img src="images/holidaycheck.jpg">
 		<img src="images/venere.jpg">
@@ -67,10 +68,10 @@
 	<div class="col-xs-8" align="center">												
 		<b id="join-social-media-literal">Join us on  social media</b>
 		<a target="_blank" href="https://el-gr.facebook.com/pages/Hotel-Rio-Athens/163973293694518"><img src="images/social-facebook.png" /></a>
-		<img src="images/social-twitter.png" />
+		<a target="_blank" href=" https://twitter.com/HotelRioAthens/"><img src="images/social-twitter.png" /></a>
 		<img src="images/social-google.png" />
-		<img src="images/social-pinit.png" />
-		<a target="_blank" href="https://instagram.com/rio_athens/"><img src="images/social-instagram.png" /></a>
+		<a target="_blank" href=" https://twitter.com/HotelRioAthens/"><img src="images/social-pinit.png" /></a>
+		<a target="_blank" href=" https://gr.pinterest.com/hotelrio/"><img src="images/social-instagram.png" /></a>
 	</div>	
 </div>
 

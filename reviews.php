@@ -59,7 +59,9 @@
 			}
 			
 			$av = array_sum($values) / count($values);
-			if ( $av == 0 ) continue;
+			if ( $av == 0 ){
+				$av = 0.5;
+			}
 				
 			$avg[] = $av;
 			$dates[] =  $part[1];
